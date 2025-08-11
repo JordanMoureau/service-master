@@ -1,0 +1,304 @@
+@import "../styles/variables.scss";
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  max-height: 46.94em;
+  min-height: 27.5em;
+  padding-top: calc(5.8rem * 0.6);
+  padding-bottom: calc(5.8rem * 3.5);
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85) 5%,
+      rgba(0, 0, 0, 0.4) 10%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("/headermain.jpg") center/cover no-repeat;
+}
+
+.hero {
+  color: white;
+  position: relative;
+  width: 100%;
+  flex: 0 1 auto;
+}
+
+.hero-inner {
+  min-height: 20rem;
+  height: 77%;
+  display: flex;
+  align-items: stretch;
+  display: flex;
+
+  h1 {
+    font-size: 3.2em;
+    padding-top: 3.45rem;
+    padding-left: 3%;
+    display: flex;
+    max-width: 44.6%;
+    font-size: 3.2em;
+    padding-right: 10%;
+    font-weight: 400;
+    line-height: 1;
+    align-self: flex-end;
+    position: relative;
+    text-shadow: 0 0 7px black;
+    padding-bottom: 1.5rem;
+  }
+  svg {
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+    color: $primary;
+    font-size: 2.556rem;
+    margin-right: 0.889rem;
+    margin-top: 0.333rem;
+    flex: 0 0 auto;
+  }
+}
+
+.hero-lower {
+  overflow: hidden;
+
+  h3 {
+    font-family: $primary;
+    font-weight: 300;
+    width: 52%;
+    padding-top: 2.5em;
+    padding-bottom: 1.8em;
+    padding-left: 12%;
+    padding-right: 10%;
+    font-size: 1.3em;
+    line-height: 1.2;
+  }
+
+  button {
+    background-color: $primary;
+    border: 3px black solid;
+    color: black;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    padding: 0.7em 1.25em;
+    letter-spacing: 0.015em;
+    font-size: 1.222rem;
+    font-weight: 400;
+    margin-left: 10%;
+  }
+
+  .button-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.box-animation {
+  flex: 1 1 auto;
+  position: relative;
+
+  .a1 {
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: -153%;
+    transition: width 1s ease 0s;
+
+    &.grow {
+      width: 141%;
+    }
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .line::before {
+    content: "";
+    display: block;
+    width: 98.5%;
+    height: 7px;
+    transform: translate(-5px, -7px) skew(55deg);
+    right: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .a1::after {
+    content: "";
+    display: block;
+    width: 98.5%;
+    height: 7px;
+    transform: translate(-5px, 0px) skew(-55deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+    background-color: $primary;
+  }
+
+  .inner-box {
+    right: 28px;
+    overflow: hidden;
+    display: block;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    position: absolute;
+    top: -7px;
+  }
+
+  .a2 {
+    &.grow {
+      width: 100%;
+    }
+
+    height: 0;
+    width: 0;
+    bottom: 7px;
+    left: 42px;
+    transition: width 1.5s ease 1s;
+  }
+  .a2::before {
+    content: "";
+    display: block;
+    width: 100.5%;
+    height: 7px;
+    transform: translate(-5px, -7px) skew(55deg);
+    right: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .a2::after {
+    content: "";
+    display: block;
+    width: 100.5%;
+    height: 7px;
+    transform: translate(-5px, 0px) skew(-55deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+    background-color: $primary;
+  }
+
+  .a3 {
+    height: 0%;
+    width: 0;
+    bottom: 0;
+    right: 7px;
+    transition: height 1s ease 2.15s;
+
+    &.grow {
+      height: 103%;
+    }
+  }
+
+  .a3::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 98.5%;
+    transform: translate(0, 4px) skew(0, -55deg);
+    right: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .a3::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 98.5%;
+    transform: translate(7px, 4px) skew(0, 55deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+    background-color: $primary;
+  }
+
+  .a4 {
+    height: 0;
+    width: 0%;
+    top: 7px;
+    right: 0;
+    transition: width 1s ease 3s;
+
+    &.grow {
+      width: 101%;
+    }
+  }
+
+  .a4::before {
+    content: "";
+    display: block;
+    width: 98.5%;
+    height: 7px;
+    transform: translate(-5px, -7px) skew(-55deg);
+    right: 0;
+    background-color: $primary;
+    position: absolute;
+  }
+
+  .a4::after {
+    content: "";
+    display: block;
+    width: 98.5%;
+    height: 7px;
+    transform: translate(-5px, 0px) skew(55deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+    background-color: $primary;
+  }
+
+  .a5 {
+    height: 0%;
+    width: 0;
+    top: -6.1px;
+    left: -35.4px;
+    transition: height 1.75s ease 3.85s;
+
+    &.grow {
+      height: 145%;
+    }
+  }
+
+  .a5::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 98.5%;
+    transform: translate(0, 4px) skew(0, 55deg);
+    right: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .a5::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 98.5%;
+    transform: translate(7px, 4px) skew(0, -55deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+    background-color: $primary;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-inner {
+    h1 {
+      font-size: 3.8em;
+    }
+  }
+}

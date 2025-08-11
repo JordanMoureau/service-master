@@ -1,0 +1,60 @@
+.lower-hero {
+  max-width: 71.9rem;
+  margin: 0 auto;
+}
+
+.grid-box {
+  margin-top: -6.5rem;
+  max-width: 69.9rem;
+  margin-right: auto;
+  width: 100%;
+  background-color: white;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+
+  margin: 1.5rem;
+}
+
+.card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+}
+
+.overlay h3 {
+  max-width: 150px;
+  color: white;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 1rem;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-box {
+    margin-top: 1rem;
+  }
+}

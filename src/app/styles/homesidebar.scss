@@ -1,0 +1,79 @@
+.home-side-bar-box {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 3.611em;
+
+  .home-side-bar {
+    position: relative;
+    h2 {
+      font-size: 4.444rem;
+      text-transform: uppercase;
+      line-height: 0.938;
+      margin-bottom: 2rem;
+    }
+  }
+
+  /* left border */
+  .w2::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 95.1%;
+    transform: translate(0, 4px) skew(0, 55deg);
+    top: -0.8em;
+    right: 0;
+    position: absolute;
+  }
+
+  /* bottom border */
+  .w3::before {
+    content: "";
+    display: block;
+    width: 90.55%;
+    height: 14px;
+    right: 0.6em;
+    position: absolute;
+  }
+
+  /* right border */
+  .w4::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 100%;
+    transform: translate(7px, 4px) skew(0, 55deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Why Choose Us Items */
+  .why-item {
+    p {
+      margin: 0;
+    }
+    margin-bottom: 1rem;
+  }
+
+  .icon-box {
+    background-color: rgb(255, 234, 59); /* Replace with var(--primary) */
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .icon-box svg {
+    width: 2rem;
+    height: 2rem;
+    fill: black;
+  }
+
+  .why-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,79 @@
+/* RESET BASELINE */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SCROLLING NICE THINGS */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+/* BODY BASICS */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #111;
+  min-height: 100vh;
+}
+
+/* MEDIA TAGS */
+img,
+video,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* FORM ELEMENTS */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* LINKS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* BUTTONS */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* LISTS */
+ul,
+ol {
+  list-style: none;
+}
+
+/* TABLES */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* DEFAULT SELECTION STYLING */
+::selection {
+  background-color: #111;
+  color: #fff;
+}

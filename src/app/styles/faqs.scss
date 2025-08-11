@@ -1,0 +1,39 @@
+.faq-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faq-box {
+  background: black;
+  padding: 2.722em 2em;
+  color: white;
+
+  h2 {
+    margin: 0 0 1em;
+    font-weight: 700;
+    font-size: 1.889rem;
+    margin-bottom: 0;
+  }
+
+  .arrow-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .arrow-line {
+    flex-grow: 1;
+    height: 0.611em;
+    background-color: $primary;
+    clip-path: polygon(0 0, 99% 0, 100% 50%, 99% 100%, 0 100%);
+  }
+
+  .btn {
+    background: $primary;
+    color: black;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,283 @@
+@import "styles/reset.scss";
+@import "styles/variables.scss";
+@import "styles/footer.scss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "styles/home.scss";
+@import "styles/dropdown.scss";
+@import "styles/page.scss";
+@import "styles/contactpage.scss";
+@import "styles/restorepeace.scss";
+@import "styles/uncertaintyto.scss";
+@import "styles/testimonials.scss";
+@import "styles/meettheteam.scss";
+@import "styles/sidebarbox.scss";
+@import "styles/gethelpnow.scss";
+@import "styles/faqs.scss";
+@import "styles/homegrid.scss";
+@import "styles/map.scss";
+@import "styles/acredcarousel.scss";
+@import "styles/homesidebar.scss";
+@import "styles/hero.scss";
+
+// html {
+//   font-size: 0.9375vw;
+//   text-size-adjust: 100%;
+//   -webkit-text-size-adjust: 100%;
+// }
+
+/* Root stays readable everywhere */
+html {
+  font-size: clamp(15px, 0.9vw + 0.25rem, 18px);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Remove ALL other html { font-size: … } media-query rules */
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.underline-link {
+  text-decoration: underline;
+  transition: color 0.4s ease 0s;
+}
+
+.underline-link:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  font-size: 4.44rem;
+  line-height: 0.9938;
+  font-weight: 400;
+  display: block;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1.222rem 0;
+}
+
+h3 {
+  margin: 1.222rem 0;
+}
+
+h4 {
+  font-family: $secondary-font;
+}
+
+p {
+  margin: 1.222rem 0;
+  line-height: 1.6;
+}
+
+.home-container {
+  h1 {
+    font-size: 2.222em;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-radius: 0;
+  line-height: 1;
+  z-index: 1;
+  font-size: 1.222rem;
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  text-decoration: none !important;
+  background-color: $primary;
+  color: black;
+  padding: 0.7em 1.25em;
+  border: 3px solid black;
+  transition: color 0.4s ease;
+}
+
+.btn:hover {
+  transition: all 0.5s ease-Out;
+  background-color: white;
+}
+
+.max-width {
+  padding: 0px 30px;
+  max-width: 66.556rem;
+  margin: 0 auto;
+}
+
+ol {
+  list-style: decimal;
+  margin: 1.222rem 0;
+  padding-left: 1.611em;
+}
+
+ul {
+  margin: 1.222rem 0;
+  padding-left: 1.611em;
+}
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 1.2em;
+  height: 0.6em;
+  background-color: #fdf056;
+  border: 2px solid black;
+  clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%, 10% 50%);
+}
+
+.outline-box {
+  text-align: center;
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1.7rem 6%;
+  line-height: 1.3;
+  border: 1rem solid $primary;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.yellow-box {
+  padding: 1.7rem 6%;
+  text-align: center;
+  margin: 1.5rem 0;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  font-family: $secondary-font;
+  text-transform: uppercase3;
+}
+
+.black-box {
+  text-align: center;
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1.7rem 6%;
+  line-height: 1.3;
+  color: white;
+  background-color: black;
+  font-size: 1.2rem;
+}
+
+.black-box a {
+  color: $primary;
+  text-decoration: underline;
+}
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: auto !important;
+}
+
+.arrow-list {
+  position: relative;
+  padding-left: 1.3em;
+}
+
+.arrow-list::before {
+  content: "";
+  background-color: $primary;
+  display: inline-block;
+  background-image: url("/yellow-arrow.png");
+  background-size: contain;
+  left: -1.6em;
+  top: 0.55em;
+  background-repeat: no-repeat;
+  border-width: 2px;
+  width: 1.267rem;
+  height: 0.7rem;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  border-radius: 0;
+  line-height: 1;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 1.222rem;
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-align: center;
+  background-color: $primary;
+  color: black;
+  padding: 0.7em 1.25em;
+  transition: color 0.4s ease;
+  border: 3px solid black;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  text-decoration: none !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic-highlight {
+  margin-top: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+// @media screen and (max-width: 1200px) {
+//   html {
+//     font-size: 1.24875vw;
+//   }
+// }
+
+// @media screen and (max-width: 1440px) {
+//   html {
+//     font-size: 1.0408vw;
+//   }
+// }

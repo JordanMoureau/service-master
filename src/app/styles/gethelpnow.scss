@@ -1,0 +1,91 @@
+.side-arrow-box::before {
+  content: "";
+  height: 14px;
+  width: 200%;
+  right: 0;
+  top: 0;
+  background-color: $primary;
+  position: absolute;
+}
+
+.side-arrow-box {
+  margin-top: 3.3em;
+
+  padding-top: 3.667rem;
+
+  padding-left: 0;
+  position: relative;
+
+  p {
+    margin-bottom: 1.22rem;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 1.95rem;
+    font-weight: 800;
+    margin-bottom: 1.22rem;
+    line-height: 1.25;
+  }
+
+  h1::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 100%;
+    transform: skewY(55deg);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: $primary;
+  }
+
+  h1::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 100%;
+    transform: skewY(-55deg);
+    position: absolute;
+    left: calc(100% + 7px);
+    top: 0;
+    background-color: $primary;
+  }
+
+  .bottom-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .btn {
+      margin: 2px 1rem 2px 2px;
+    }
+  }
+
+  .line {
+    flex: 1 1 auto;
+    position: relative;
+  }
+
+  .line::before,
+  .line::after {
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: $primary;
+    content: "";
+  }
+
+  .line::before {
+    transform: skewX(-55deg);
+    bottom: 0;
+  }
+
+  .line::after {
+    transform: skewX(55deg);
+    bottom: -7px; // or adjust to meet flush
+  }
+}
