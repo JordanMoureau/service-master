@@ -12,45 +12,67 @@
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem 0;
-
-  margin: 1.5rem;
+  display: flex;
+  overflow: hidden;
+  min-height: 25.38rem;
+  padding: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
   position: relative;
-  aspect-ratio: 4 / 3;
+  max-width: calc(33.33% - 2.5rem / 2);
+  width: 33.33%;
+  margin-bottom: 1rem;
+  flex: 0 1 auto;
+  background: black;
   overflow: hidden;
-  text-decoration: none;
 }
 
-.card img {
-  transition: transform 0.4s ease;
-}
-
-.card:hover img {
-  transform: scale(1.05);
-}
-
-.overlay {
-  position: absolute;
+.card-img {
+  position: absolute !important; /* Next/Image wrapper puts positioning; this keeps it pinned */
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.25s ease;
+  z-index: 0;
+  opacity: 0.5;
 }
 
-.overlay h3 {
-  max-width: 150px;
-  color: white;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 0 1rem;
-  line-height: 1;
+.inner-box {
+  min-height: 16.83rem;
+  position: relative;
+  padding: 2.44rem 2.11rem 2.11rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    max-width: 150px;
+    color: white;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1rem;
+    line-height: 1;
+  }
+}
+
+.grid-hover {
+  height: 0;
+  transition: height 1s ease 0s;
+  overflow: hidden;
+  position: relative;
+  padding-right: 1.2em;
+  padding-top: 2em;
+  margin-top: 1em;
+}
+
+.card:hover .grid-hover {
+  display: block;
+  height: 13.5em;
 }
 
 @media screen and (max-width: 1000px) {

@@ -5,28 +5,38 @@ const services = [
   {
     title: "Water Damage",
     image: "/gridone.jpg",
-    link: "/residential/water-damage",
+    reslink: "/residential/specialty-services",
+    comlink: "/commercial/specialty-services",
   },
   {
     title: "Fire and Smoke Damage",
     image: "/gridtwo.jpg",
-    link: "/residential/fire-and-smoke",
+    reslink: "/residential/specialty-services",
+    comlink: "/commercial/specialty-services",
   },
-  { title: "Mold", image: "/gridthree.jpg", link: "/residential/mold" },
+  {
+    title: "Mold",
+    image: "/gridthree.jpg",
+    reslink: "/residential/specialty-services",
+    comlink: "/commercial/specialty-services",
+  },
   {
     title: "Weather Damage",
     image: "/gridfour.jpg",
-    link: "/residential/weather-damage",
+    reslink: "/residential/specialty-services",
+    comlink: "/commercial/specialty-services",
   },
   {
     title: "Odor Damage",
     image: "/gridfive.jpg",
-    link: "/residential/odor-damage",
+    reslink: "/residential/specialty-services",
+    comlink: "/commercial/specialty-services",
   },
   {
     title: "Specialty Services",
     image: "/gridsix.jpg",
-    link: "/residential/specialty-services",
+    reslink: "/residential/specialty-services",
+    comlink: "/commercial/specialty-services",
   },
 ];
 
@@ -34,19 +44,33 @@ export default function HomeGrid() {
   return (
     <div className="gridContainer">
       {services.map((service, index) => (
-        <a href={service.link} key={index} className="card">
+        <div className="card" key={index}>
           <Image
             src={service.image}
             alt={service.title}
-            layout="fill"
-            objectFit="cover"
-            quality={80}
-            priority={index === 0} // prioritize first image load
+            fill
+            priority={index === 0}
+            className="card-img"
           />
-          <div className="overlay">
-            <h3>{service.title}</h3>
+          <div className="inner-box">
+            <div className="title">
+              <h3>{service.title}</h3>
+            </div>
+
+            <div className="grid-hover">
+              {service.reslink && (
+                <a className="btn" href={service.reslink}>
+                  Residential
+                </a>
+              )}
+              {service.comlink && (
+                <a className="btn" href={service.comlink}>
+                  Commercial
+                </a>
+              )}
+            </div>
           </div>
-        </a>
+        </div>
       ))}
     </div>
   );
