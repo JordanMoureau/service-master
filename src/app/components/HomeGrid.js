@@ -18,7 +18,6 @@ const services = [
     title: "Mold",
     image: "/gridthree.jpg",
     reslink: "/residential/specialty-services",
-    comlink: "/commercial/specialty-services",
   },
   {
     title: "Weather Damage",
@@ -42,7 +41,7 @@ const services = [
 
 export default function HomeGrid() {
   return (
-    <div className="gridContainer">
+    <div className="grid-box">
       {services.map((service, index) => (
         <div className="card" key={index}>
           <Image
@@ -58,16 +57,22 @@ export default function HomeGrid() {
             </div>
 
             <div className="grid-hover">
-              {service.reslink && (
-                <a className="btn" href={service.reslink}>
-                  Residential
-                </a>
-              )}
-              {service.comlink && (
-                <a className="btn" href={service.comlink}>
-                  Commercial
-                </a>
-              )}
+              <button className="grid-link">
+                {service.reslink && (
+                  <a className="btn" href={service.reslink}>
+                    Residential
+                  </a>
+                )}
+              </button>
+              <button className="grid-link">
+                {service.comlink && (
+                  <a className="btn" href={service.comlink}>
+                    Commercial
+                  </a>
+                )}
+              </button>
+
+              <div className="grid-line"></div>
             </div>
           </div>
         </div>

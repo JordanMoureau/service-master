@@ -27,13 +27,15 @@ const data = [
 
 export default function HomeSideBar() {
   return (
-    <div className="home-side-bar-box">
-      <div className="home-side-bar">
-        <h2 className="heading">
+    <>
+      <div className="side-bar-header">
+        <h2>
           WHY CHOOSE <br /> US?
         </h2>
+      </div>
 
-        <ul className="why-list">
+      <div className="arrows-aside">
+        <ul>
           {data.map((item, index) => (
             <li className="why-item" key={index}>
               <div className="icon-box">{item.icon}</div>
@@ -41,10 +43,10 @@ export default function HomeSideBar() {
             </li>
           ))}
         </ul>
-        <div className="line w2"></div>
-        <div className="line w3"></div>
-        <div className="line w4"></div>
+        <div className="side2"></div>
+        <div className="side3"></div>
+        <div className="side4"></div>
       </div>
-    </div>
+    </>
   );
 }

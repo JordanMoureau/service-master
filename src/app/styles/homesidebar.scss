@@ -1,20 +1,111 @@
-.home-side-bar-box {
-  padding: 0;
-  overflow: hidden;
-  margin-bottom: 3.611em;
-
-  .home-side-bar {
+.aside {
+  width: 37.6%;
+  img {
+    width: 100%;
     position: relative;
-    h2 {
-      font-size: 4.444rem;
-      text-transform: uppercase;
-      line-height: 0.938;
-      margin-bottom: 2rem;
+  }
+}
+
+.side-bar-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+
+  h2 {
+    margin: 0 1rem 0 0;
+    font-size: 4.444rem;
+    text-transform: uppercase;
+    line-height: 0.938;
+    font-family: $secondary-font;
+    font-weight: 400;
+    color: black;
+    display: block;
+  }
+
+  .sideline1-box {
+    flex: 1 1 auto;
+    position: relative;
+
+    .side1 {
+      width: 120%;
+      height: 0;
+      left: 0;
+      transition: width 0.7s ease 0s;
+      display: block;
+      position: absolute;
+      background-color: $primary;
+    }
+
+    .side1::before {
+      content: "";
+      display: block;
+      width: 98.5%;
+      height: 7px;
+      transform: translate(-5px, -7px) skew(55deg);
+      right: 0;
+      position: absolute;
+      background-color: $primary;
+    }
+
+    .side1::after {
+      content: "";
+      display: block;
+      width: 98.5%;
+      height: 7px;
+      transform: translate(-5px, 0px) skew(-55deg);
+      right: 0;
+      position: absolute;
+      top: 0;
+      background-color: $primary;
+    }
+  }
+}
+
+.arrows-aside {
+  position: relative;
+
+  ul {
+    padding: 2.222em 3.5em 3.2em 3.167em;
+    list-style: none;
+  }
+
+  .why-item {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.167em;
+    line-height: 1.143;
+    font-weight: 600;
+
+    .icon-box {
+      padding: 0.889em 0.778em;
+      background-color: $primary;
+      margin-right: 1.667rem;
+      line-height: 1;
+      flex: 0 1 auto;
+      width: fit-content;
+
+      svg {
+        height: 1em;
+        width: 1em;
+        fill: black;
+      }
     }
   }
 
-  /* left border */
-  .w2::before {
+  .side2 {
+    height: 108%;
+    width: 0;
+    top: -10px;
+    right: 7px;
+    background-color: $primary;
+    position: absolute;
+    display: block;
+  }
+
+  .side2::before {
     content: "";
     display: block;
     width: 7px;
@@ -23,57 +114,83 @@
     top: -0.8em;
     right: 0;
     position: absolute;
+    background-color: $primary;
   }
 
-  /* bottom border */
-  .w3::before {
+  .side2::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 95.1%;
+    transform: translate(7px, 4px) skew(0, -55deg);
+    top: -0.8em;
+    right: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .side3 {
+    height: 0;
+    width: 110%;
+    bottom: 7px;
+    right: -10px;
+    background-color: $primary;
+    position: absolute;
+    display: block;
+  }
+
+  .side3::before {
     content: "";
     display: block;
     width: 90.55%;
     height: 14px;
     right: 0.6em;
     position: absolute;
+    background-color: $primary;
   }
 
-  /* right border */
-  .w4::after {
+  .side3::after {
+    content: "";
+    display: block;
+    width: 90.55%;
+    height: 7px;
+    right: 0.6em;
+    top: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .side4 {
+    height: 97%;
+    width: 0;
+    bottom: 0.2em;
+    left: 7px;
+    background-color: $primary;
+    position: absolute;
+    display: block;
+  }
+
+  .side4::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 100%;
+    transform: translate(0, 4px) skew(0, -55deg);
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: $primary;
+  }
+
+  .side4::after {
     content: "";
     display: block;
     width: 7px;
     height: 100%;
     transform: translate(7px, 4px) skew(0, 55deg);
     right: 0;
-    position: absolute;
     top: 0;
-  }
-
-  /* Why Choose Us Items */
-  .why-item {
-    p {
-      margin: 0;
-    }
-    margin-bottom: 1rem;
-  }
-
-  .icon-box {
-    background-color: rgb(255, 234, 59); /* Replace with var(--primary) */
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-  }
-
-  .icon-box svg {
-    width: 2rem;
-    height: 2rem;
-    fill: black;
-  }
-
-  .why-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.5;
+    position: absolute;
+    background-color: $primary;
   }
 }

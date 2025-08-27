@@ -1,22 +1,17 @@
 .lower-hero {
-  max-width: 71.9rem;
+  max-width: 69.9rem;
   margin: 0 auto;
+  width: 100%;
 }
 
 .grid-box {
   margin-top: -6.5rem;
-  max-width: 69.9rem;
-  margin-right: auto;
-  width: 100%;
   background-color: white;
-}
-
-.gridContainer {
-  display: flex;
   overflow: hidden;
   min-height: 25.38rem;
   padding: 1.6rem;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -26,9 +21,9 @@
   max-width: calc(33.33% - 2.5rem / 2);
   width: 33.33%;
   margin-bottom: 1rem;
-  flex: 0 1 auto;
   background: black;
-  overflow: hidden;
+  opacity: 1;
+  transform: none;
 }
 
 .card-img {
@@ -49,18 +44,24 @@
   align-items: center;
   justify-content: space-between;
 
+  .title {
+    width: 100%;
+  }
+
   h3 {
+    display: block;
     max-width: 150px;
     color: white;
     font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0 1rem;
+    padding-left: 1.5rem;
     line-height: 1;
   }
 }
 
 .grid-hover {
+  flex: 0 1 auto;
   height: 0;
   transition: height 1s ease 0s;
   overflow: hidden;
@@ -68,11 +69,66 @@
   padding-right: 1.2em;
   padding-top: 2em;
   margin-top: 1em;
+
+  .grid-link {
+    margin-left: 2em;
+    padding: 2.444rem 2.111rem 0rem 0;
+    position: relative;
+  }
+}
+
+.grid-line {
+  opacity: 0;
+  height: 0.556em;
+  width: 32%;
+  right: 0;
+  bottom: 8%;
+  background-color: $primary;
+  position: absolute;
+  transition: opacity 0.35s ease 0s;
+  margin-left: 2em;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+  -webkit-clip-path: polygon(8% 0, 100% 0, 100% 100%, 8% 100%, 0 50%);
+}
+
+.grid-hover::before {
+  content: "";
+  background-color: $primary;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.35s ease 0s;
+  height: 0.5556em;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.grid-hover::after {
+  content: "";
+  background-color: $primary;
+  position: absolute;
+  transition: opacity 0.35s ease 0s;
+  width: 0.556em;
+  height: 90%;
+  right: 0;
+  top: 0;
+  opacity: 0;
 }
 
 .card:hover .grid-hover {
   display: block;
   height: 13.5em;
+}
+
+.card:hover .grid-hover::before {
+  opacity: 1;
+}
+.card:hover .grid-hover::after {
+  opacity: 1;
+}
+
+.card:hover .grid-line {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1000px) {

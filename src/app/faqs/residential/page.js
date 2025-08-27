@@ -5,34 +5,47 @@ import SideBarBox from "@/app/components/SideBarBox";
 import GetHelpNow from "@/app/components/GetHelpNow";
 import UncertainTo from "@/app/components/UncertaintyTo";
 
-const Links = ["/faqs/residential", "/faqs/commercial"];
+const Links = [
+  "/faqs/residential/water-damage-faq",
+  "/faqs/residential/mold-remediation-faq",
+  "/faqs/residential/reconstruction-services-faq",
+  "/faqs/residential/hoarding-faq",
+  "/faqs/residential/fire-damage-faq",
+  "/faqs/residential/air-duct-cleaning-faq",
+];
 
-const List = ["FAQs - Residential", "FAQs - Commercial"];
-
+const List = [
+  "Water Damage FAQ",
+  "Mold Remediation FAQ",
+  "Reconstruction Services FAQ",
+  "Hoarding FAQ",
+  "Fire Damage FAQ",
+  "Air Duct Cleaning FAQ",
+];
 const faqList = [
   {
     title: "water damage FAQ",
-    link: "/faqs/residential/water-damage",
+    link: "/faqs/residential/water-damage-faq",
   },
   {
     title: "mold remediation faq",
-    link: "/faqs/residential/mold",
+    link: "/faqs/residential/mold-remediation-faq",
   },
   {
     title: "hoarding faq",
-    link: "/faqs/residential/hoarding",
+    link: "/faqs/residential/hoarding-faq",
   },
   {
     title: "reconstruction services faq",
-    link: "/faqs/residential/reconstruction",
+    link: "/faqs/residential/reconstruction-services-faq",
   },
   {
     title: "air duct cleaning faq",
-    link: "faqs/residential/air-ducts",
+    link: "faqs/residential/air-ducts-cleaning-faq",
   },
   {
     title: "fire damage & content management faq",
-    link: "/faqs/residential/reconstruction",
+    link: "/faqs/residential/fire-damage-faq",
   },
 ];
 
@@ -92,7 +105,7 @@ export default function ResidentialFaqs() {
           </div>
 
           <div className="column-two">
-            <SideBarBox title={"FAQS"} links={Links} list={List} />
+            <SideBarBox title={"RESIDENTIAL FAQS"} links={Links} list={List} />
             <UncertainTo />
           </div>
         </div>

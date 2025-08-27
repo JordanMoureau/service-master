@@ -9,6 +9,7 @@ import HomeContact from "./components/HomeContact";
 import AccredCarousel from "./components/AcredCarousel";
 import HomeSideBar from "./components/HomeSideBar";
 import Hero from "./components/Hero";
+import GetHelpNow from "./components/GetHelpNow";
 
 export default function Home() {
   return (
@@ -18,9 +19,7 @@ export default function Home() {
       <Hero />
 
       <section className="lower-hero">
-        <div className="grid-box">
-          <HomeGrid />
-        </div>
+        <HomeGrid />
       </section>
 
       <div className="home-container">
@@ -222,17 +221,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="side-arrow-box">
-              <h1>We’re committed to customer satisfaction.</h1>
-
-              <div className="bottom-flex">
-                <a href="/why-us/testimonials" className="btn">
-                  Read our reviews
-                </a>
-
-                <div className="line"></div>
-              </div>
-            </div>
+            <GetHelpNow text={"We're Committed to customer satisfaction"} />
           </div>
 
           <div className="aside">
