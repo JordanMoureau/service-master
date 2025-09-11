@@ -67,7 +67,7 @@ export default function MoldRemediationFAQ() {
   return (
     <div>
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img src="/mold-damage.jpg" />
       </div>
       <div className="home-container">
         <div className="home-section">

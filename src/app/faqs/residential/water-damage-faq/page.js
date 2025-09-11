@@ -4,6 +4,7 @@ import FAQAccordion from "@/app/components/FAQAccordion";
 import RestorePeace from "@/app/components/RestoringPeace";
 import SideBarBox from "@/app/components/SideBarBox";
 import UncertainTo from "@/app/components/UncertaintyTo";
+import GetHelpNow from "@/app/components/GetHelpNow";
 
 const Links = [
   "/faqs/residential/water-damage-faq",
@@ -137,7 +138,7 @@ export default function WaterDamageFAQS() {
   return (
     <div>
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img src="/residential-water-damage.jpg" />
       </div>
       <div className="home-container">
         <div className="home-section">
@@ -146,6 +147,11 @@ export default function WaterDamageFAQS() {
             <p>THE SERVICEMASTER RESTORE EXPERTS HAVE ALL THE ANSWERS</p>
 
             <FAQAccordion items={faqItems} />
+            <GetHelpNow
+              text={
+                "If you still have lingering questions about our residential water restoration services, don’t hesitate to call us at"
+              }
+            />
           </div>
 
           <div className="column-two">

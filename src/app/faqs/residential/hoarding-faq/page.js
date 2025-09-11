@@ -4,6 +4,7 @@ import FAQAccordion from "@/app/components/FAQAccordion";
 import RestorePeace from "@/app/components/RestoringPeace";
 import SideBarBox from "@/app/components/SideBarBox";
 import UncertainTo from "@/app/components/UncertaintyTo";
+import GetHelpNow from "@/app/components/GetHelpNow";
 
 const Links = [
   "/faqs/residential/water-damage-faq",
@@ -123,7 +124,7 @@ export default function HoardingFAQ() {
   return (
     <div>
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img src="/calloutreslong.jpg" />
       </div>
       <div className="home-container">
         <div className="home-section">
@@ -132,6 +133,11 @@ export default function HoardingFAQ() {
             <p>ANSWERS TO YOUR MOST COMMON QUESTIONS</p>
 
             <FAQAccordion items={faqItems} />
+            <GetHelpNow
+              text={
+                "Reach out to us today to schedule a hoarding clean-up service"
+              }
+            />
           </div>
 
           <div className="column-two">

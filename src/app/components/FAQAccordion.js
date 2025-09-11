@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+<IoIosArrowDown />;
 
 export default function FAQAccordion({ items }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -20,7 +22,9 @@ export default function FAQAccordion({ items }) {
             >
               <span className="acc-dot" />
               <span className="acc-question">{item.question}</span>
-              <span className={`acc-chevron ${isOpen ? "open" : ""}`}>⌄</span>
+              <span className={`acc-chevron ${isOpen ? "open" : ""}`}>
+                <IoIosArrowDown size={30} />
+              </span>
             </button>
             <div className={`acc-panel ${isOpen ? "open" : ""}`}>
               <div className="acc-panel-inner">{item.answer}</div>

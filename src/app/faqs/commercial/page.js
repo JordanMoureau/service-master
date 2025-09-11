@@ -5,30 +5,36 @@ import SideBarBox from "@/app/components/SideBarBox";
 import GetHelpNow from "@/app/components/GetHelpNow";
 import UncertainTo from "@/app/components/UncertaintyTo";
 
-const Links = ["/faqs/residential", "/faqs/commercial"];
+const Links = [
+  "/faqs/commercial/water-restoration-faq",
+  "/faqs/commercial/mold-remediation-faq",
+  "/faqs/commercial/fire-restoration-faq",
+  "/faqs/commercial/air-duct-faq",
+];
 
-const List = ["FAQs - Residential", "FAQs - Commercial"];
+const List = [
+  "Water Damage FAQ",
+  "Mold Remediation FAQ",
+  "Fire Damage FAQ",
+  "Air Duct Cleaning FAQ",
+];
 
 const faqList = [
   {
     title: "mold remediation faq",
-    link: "/faqs/commercial/mold",
+    link: "/faqs/commercial/mold-remediation-faq",
   },
   {
     title: "water damage FAQ",
-    link: "/faqs/commercial/water-damage",
-  },
-  {
-    title: "reconstruction services faq",
-    link: "/faqs/commercial/reconstruction",
+    link: "/faqs/commercial/water-restoration-faq",
   },
   {
     title: "air duct cleaning faq",
-    link: "faqs/commercial/air-ducts",
+    link: "faqs/commercial/air-duct-faq",
   },
   {
     title: "fire restoration faq",
-    link: "/faqs/commercial/fire-restoration",
+    link: "/faqs/commercial/fire-restoration-faq",
   },
 ];
 
@@ -36,7 +42,7 @@ export default function CommercialFaqs() {
   return (
     <div>
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img src="/commercialfaqs.jpg" />
       </div>
       <div className="home-container">
         <div className="home-section">
@@ -113,7 +119,7 @@ export default function CommercialFaqs() {
           </div>
 
           <div className="column-two">
-            <SideBarBox title={"FAQS"} links={Links} list={List} />
+            <SideBarBox title={"Commercial FAQs"} links={Links} list={List} />
             <UncertainTo />
           </div>
         </div>

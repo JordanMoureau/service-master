@@ -4,6 +4,7 @@ import FAQAccordion from "@/app/components/FAQAccordion";
 import RestorePeace from "@/app/components/RestoringPeace";
 import SideBarBox from "@/app/components/SideBarBox";
 import UncertainTo from "@/app/components/UncertaintyTo";
+import GetHelpNow from "@/app/components/GetHelpNow";
 
 const Links = [
   "/faqs/residential/water-damage-faq",
@@ -66,15 +67,19 @@ export default function AirDuctCleaningFAQ() {
   return (
     <div>
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img src="/air-duct.jpg" />
       </div>
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
             <h1>RESIDENTIAL AIR DUCT CLEANING FAQ</h1>
             <p>TURN TO OUR RESTORATION EXPERTS FOR ALL THE ANSWERS</p>
-
             <FAQAccordion items={faqItems} />
+            <GetHelpNow
+              text={
+                "If you still have lingering questions about our air duct cleaning services, don’t hesitate to call us at"
+              }
+            />
           </div>
 
           <div className="column-two">

@@ -4,6 +4,7 @@ import FAQAccordion from "@/app/components/FAQAccordion";
 import RestorePeace from "@/app/components/RestoringPeace";
 import SideBarBox from "@/app/components/SideBarBox";
 import UncertainTo from "@/app/components/UncertaintyTo";
+import GetHelpNow from "@/app/components/GetHelpNow";
 
 const Links = [
   "/faqs/residential/water-damage-faq",
@@ -91,7 +92,7 @@ export default function FireDamageFAQ() {
   return (
     <div>
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img src="/firedamagefaq.jpg" />
       </div>
       <div className="home-container">
         <div className="home-section">
@@ -102,6 +103,11 @@ export default function FireDamageFAQ() {
             <p>OUR EXPERTS ARE HERE TO ANSWER ALL OF YOUR QUESTIONS</p>
 
             <FAQAccordion items={faqItems} />
+            <GetHelpNow
+              text={
+                "If you still have lingering questions about our residential fire restoration services, don’t hesitate to call us at"
+              }
+            />
           </div>
 
           <div className="column-two">
