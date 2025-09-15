@@ -6,16 +6,23 @@ import Image from "next/image";
 export default function AreasWeServe() {
   return (
     <div className="areas-section">
-      <div className="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.0401430917155!2d-117.42604868444328!3d47.65878057918857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549e18531e34f2ff%3A0x7c2c6cfa84b9b1ba!2sServiceMaster%20by%20Compass!5e0!3m2!1sen!2sus!4v1699484845765!5m2!1sen!2sus"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div
+        className="map-wrapper"
+        style={{
+          backgroundImage: "url('/service-area-map.png')",
+          // or 'url("/service-area-map.png")' if you prefer
+        }}
+      >
+        <a
+          href="https://maps.google.com/?q=ServiceMaster+by+Compass"
+          target="_blank"
+          rel="noopener"
+          /* set the background image here */
+
+          aria-label="Open ServiceMaster by Compass on Google Maps"
+        >
+          <span className="map-cta underline-link">View on Google Maps →</span>
+        </a>
       </div>
 
       <div className="content-wrapper">
