@@ -1,8 +1,8 @@
 "use client";
 
-import RestorePeace from "@/app/components/RestoringPeace";
-import SideBarBox from "@/app/components/SideBarBox";
-import UncertainTo from "@/app/components/UncertaintyTo";
+import RestorePeace from "./components/RestoringPeace";
+import SideBarBox from "./components/SideBarBox";
+import UncertainTo from "./components/UncertaintyTo";
 
 const Links = [
   "/commercial/fire-and-smoke",
