@@ -3,7 +3,7 @@
 import { FaStar } from "react-icons/fa";
 // imports
 import { NextSeo } from "next-seo";
-import JsonLd from "../components/JsonLd";
+import JsonLd from "../../components/JsonLd";
 
 // --- SEO + JSON-LD ---
 const canonical = "https://smcfireandwater.com/why-us/testimonials";

@@ -1,10 +1,10 @@
 "use client";
 
-import UncertainTo from "@/app/components/UncertaintyTo";
-import GetHelpNow from "@/app/components/GetHelpNow";
+import UncertainTo from "../../components/UncertaintyTo";
+import GetHelpNow from "../../components/GetHelpNow";
 // imports
 import { NextSeo } from "next-seo";
-import JsonLd from "../components/JsonLd";
+import JsonLd from "../../components/JsonLd";
 
 // --- SEO + JSON-LD ---
 const canonical = "https://smcfireandwater.com/why-us/about-us";

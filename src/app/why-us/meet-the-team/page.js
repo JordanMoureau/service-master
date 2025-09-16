@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 // imports
 import { NextSeo } from "next-seo";
-import JsonLd from "../components/JsonLd";
+import JsonLd from "../../components/JsonLd";
 
 // --- SEO + JSON-LD ---
 const canonical = "https://smcfireandwater.com/why-us/meet-the-team";

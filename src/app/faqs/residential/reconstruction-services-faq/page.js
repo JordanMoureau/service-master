@@ -3,8 +3,9 @@
 import FAQAccordion from "../../../components/FAQAccordion";
 import RestorePeace from "../../../components/RestoringPeace";
 import SideBarBox from "../../../components/SideBarBox";
-import UncertainTo from "../../components/UncertaintyTo";
 import GetHelpNow from "../../../components/GetHelpNow";
+
+import UncertainTo from "../../../components/UncertaintyTo";
 
 const Links = [
   "/faqs/residential/water-damage-faq",
