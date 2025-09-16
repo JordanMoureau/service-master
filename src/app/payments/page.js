@@ -1,11 +1,11 @@
 "use client";
 
-import RestorePeace from "@/app/components/RestoringPeace";
-import SideBarBox from "@/app/components/SideBarBox";
-import UncertainTo from "@/app/components/UncertaintyTo";
+import RestorePeace from "../components/RestoringPeace";
+import SideBarBox from "../components/SideBarBox";
+import UncertainTo from "../components/UncertaintyTo";
 // imports
 import { NextSeo } from "next-seo";
-import JsonLd from "@/app/components/JsonLd";
+import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
 const canonical = "https://smcfireandwater.com/payment-financing-options";

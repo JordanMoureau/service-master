@@ -1,9 +1,9 @@
 "use client";
 
-import SideBarBox from "../../components/SideBarBox";
-import UncertainTo from "../../components/UncertaintyTo";
+import SideBarBox from "../components/SideBarBox";
+import UncertainTo from "../components/UncertaintyTo";
 
-import RestorePeace from "../../components/RestoringPeace";
+import RestorePeace from "../components/RestoringPeace";
 // imports
 import { NextSeo } from "next-seo";
 import JsonLd from "../components/JsonLd";
