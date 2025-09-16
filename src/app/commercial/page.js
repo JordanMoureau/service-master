@@ -248,7 +248,7 @@ const List = [
 export default function Commerical() {
   return (
     <div>
-      <NextSeo {...seo} />
+      {/* <NextSeo {...seo} /> */}
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/sub-banner.jpg" />
