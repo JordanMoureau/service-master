@@ -3,6 +3,155 @@
 import RestorePeace from "@/app/components/RestoringPeace";
 import SideBarBox from "@/app/components/SideBarBox";
 import UncertainTo from "@/app/components/UncertaintyTo";
+// imports
+import { NextSeo } from "next-seo";
+import JsonLd from "@/app/components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical = "https://smcfireandwater.com/payment-financing-options";
+const title =
+  "Payment & Financing Options | ServiceMaster by Compass Spokane & Coeur d’Alene";
+const description =
+  "ServiceMaster by Compass offers flexible payment & financing for water damage, fire restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. We also work with all major insurance providers.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, fire damage restoration Spokane WA, mold abatement service Coeur d’Alene ID, water damage clean up Spokane Valley WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, fire damage restoration companies Spokane WA, emergency flood cleanup Coeur d’Alene ID, restoration financing Spokane, payment options ServiceMaster Spokane",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title:
+      "Payment & Financing Options — ServiceMaster by Compass Spokane & Coeur d’Alene",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Payment & Financing Options - ServiceMaster by Compass",
+      },
+    ],
+  },
+  twitter: { cardType: "summary_large_image" },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+    knowsAbout: [
+      "restoration financing Spokane",
+      "insurance claims support restoration Spokane",
+      "water damage clean up Spokane Valley WA",
+      "fire damage restoration Spokane WA",
+      "mold remediation and removal Spokane WA",
+      "mold removal services Coeur d’Alene ID",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://smcfireandwater.com/payment-financing-options#webpage",
+    url: canonical,
+    name: "Payment & Financing Options",
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    description: description,
+    breadcrumb: {
+      "@id": "https://smcfireandwater.com/payment-financing-options#breadcrumb",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://smcfireandwater.com/payment-financing-options#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Payment & Financing",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Payment & Financing Options for Restoration",
+    provider: { "@id": "https://smcfireandwater.com/#organization" },
+    areaServed: ["Spokane WA", "Spokane Valley WA", "Coeur d’Alene ID"],
+    description:
+      "Flexible payment plans, financing options, and insurance support for residential and commercial restoration services.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What payment methods do you accept?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We accept credit cards, checks, in-house financing at select locations, and third-party financing options.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you work with insurance providers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. We coordinate with all major insurance carriers to help streamline the claims process and reduce delays.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I finance restoration costs if insurance doesn’t cover everything?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Flexible financing solutions are available if insurance doesn’t cover the full cost or if you prefer not to go through insurance. Options vary by location.",
+        },
+      },
+    ],
+  },
+];
 
 const Links = [
   "/commercial/services",
@@ -13,6 +162,8 @@ const Links = [
 export default function PaymentFinancingOptions() {
   return (
     <div>
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img
           src="/sub-banner.jpg"

@@ -3,6 +3,180 @@
 import { useEffect, useRef, useState } from "react";
 
 import { IoIosArrowForward } from "react-icons/io";
+// imports
+import { NextSeo } from "next-seo";
+import JsonLd from "../components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical = "https://smcfireandwater.com/why-us/meet-the-team";
+const title =
+  "Meet the Team | ServiceMaster by Compass | Spokane & Coeur d’Alene";
+const description =
+  "Get to know the ServiceMaster by Compass leadership and restoration pros serving Spokane, Spokane Valley & Coeur d’Alene. Experienced, IICRC-trained teams for water, fire & mold.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "fire damage restoration companies Spokane WA, water damage clean up Spokane Valley WA, mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, mold abatement service Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, servicemaster team Spokane",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title: "Meet the Team — ServiceMaster by Compass | Spokane & Coeur d’Alene",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/sandra.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "ServiceMaster by Compass team",
+      },
+    ],
+  },
+  twitter: { cardType: "summary_large_image" },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD (WebPage + Breadcrumbs + Organization + People)
+const jsonLd = [
+  // WebPage
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: "Meet the Team",
+    description,
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/sandra.jpeg",
+      width: 1200,
+      height: 630,
+    },
+    breadcrumb: { "@id": `${canonical}#breadcrumb` },
+  },
+  // Breadcrumbs
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Why Us",
+        item: "https://smcfireandwater.com/why-us",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Meet the Team",
+        item: canonical,
+      },
+    ],
+  },
+  // Organization (anchor for worksFor)
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+  },
+  // People (Persons) + an ItemList wrapper for topical discovery
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Team Members",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        item: {
+          "@type": "Person",
+          name: "Sandra Teal",
+          jobTitle: "Business Development Manager",
+          image: "https://smcfireandwater.com/sandra.jpeg",
+          worksFor: { "@id": "https://smcfireandwater.com/#organization" },
+          description:
+            "Business Development Manager serving Spokane & Coeur d’Alene; passionate about guiding clients through restoration.",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        item: {
+          "@type": "Person",
+          name: "Doug Paul",
+          jobTitle: "General Manager",
+          image: "https://smcfireandwater.com/doug.jpeg",
+          worksFor: { "@id": "https://smcfireandwater.com/#organization" },
+          description:
+            "General Manager with deep expertise in water mitigation and mold remediation.",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        item: {
+          "@type": "Person",
+          name: "Jamie Streeter",
+          jobTitle: "Fire Cleaning/Contents Department Manager",
+          image: "https://smcfireandwater.com/jamie.jpeg",
+          worksFor: { "@id": "https://smcfireandwater.com/#organization" },
+          description:
+            "Leads fire cleaning & contents; supports clients through difficult post-fire recoveries.",
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        item: {
+          "@type": "Person",
+          name: "Fred Anderson",
+          jobTitle: "President",
+          image: "https://smcfireandwater.com/fred.jpeg",
+          worksFor: { "@id": "https://smcfireandwater.com/#organization" },
+          description:
+            "President focused on community partnerships and outcomes for policyholders and businesses.",
+        },
+      },
+    ],
+  },
+];
 
 const meettheteam = [
   {
@@ -80,6 +254,8 @@ export default function MeetTheTeam() {
 
   return (
     <div className="home-container">
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="home-section">
         <div className="column">
           <h1>Meet Our Spokane & Coeur d'Alene Team</h1>

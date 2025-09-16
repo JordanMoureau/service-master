@@ -3,6 +3,226 @@
 import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
+// imports
+import { NextSeo } from "next-seo";
+import JsonLd from "../components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical = "https://smcfireandwater.com/commercial";
+const title = "Commercial Restoration Services | Spokane WA & Coeur d’Alene ID";
+const description =
+  "24/7 commercial restoration for water, fire & smoke, mold, storm damage, odor removal, and pre-loss planning. Serving Spokane, Spokane Valley & Coeur d’Alene with IICRC-certified teams and rapid response.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "fire damage restoration companies Spokane WA, water damage clean up Spokane Valley WA, mold remediation and removal Spokane WA, mold abatement service Coeur d’Alene ID, mold removal services Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, commercial restoration Spokane",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title:
+      "Commercial Restoration — Water, Fire, Mold & Storm | Spokane WA & Coeur d’Alene ID",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Commercial Restoration Services — ServiceMaster by Compass",
+      },
+    ],
+  },
+  twitter: { cardType: "summary_large_image" },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+    knowsAbout: [
+      "commercial water damage restoration",
+      "commercial fire damage restoration",
+      "commercial mold remediation",
+      "pre-loss planning",
+      "odor removal services",
+      "storm and weather damage restoration",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://smcfireandwater.com/commercial#webpage",
+    url: canonical,
+    name: "Commercial Restoration Services",
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    description: description,
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/sub-banner.jpg",
+      width: 1200,
+      height: 630,
+    },
+    breadcrumb: { "@id": "https://smcfireandwater.com/commercial#breadcrumb" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://smcfireandwater.com/commercial#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      { "@type": "ListItem", position: 2, name: "Commercial", item: canonical },
+    ],
+  },
+  // Directory of commercial sub-services (helps topical discovery)
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Commercial Services",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        url: "https://smcfireandwater.com/commercial/fire-and-smoke",
+        name: "Fire & Smoke",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        url: "https://smcfireandwater.com/commercial/water-damage",
+        name: "Water Damage",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        url: "https://smcfireandwater.com/commercial/mold",
+        name: "Mold Damage",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        url: "https://smcfireandwater.com/commercial/weather",
+        name: "Weather / Storm",
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        url: "https://smcfireandwater.com/commercial/odor",
+        name: "Odor Removal",
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
+        url: "https://smcfireandwater.com/commercial/specialty-services",
+        name: "Specialty Services",
+      },
+      {
+        "@type": "ListItem",
+        position: 7,
+        url: "https://smcfireandwater.com/commercial/pre-loss-planning",
+        name: "Pre-Loss Planning",
+      },
+    ],
+  },
+  // Service entity with offers
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Commercial Restoration",
+    provider: { "@id": "https://smcfireandwater.com/#organization" },
+    areaServed: ["Spokane WA", "Spokane Valley WA", "Coeur d’Alene ID"],
+    description:
+      "24/7 commercial mitigation and restoration for water, fire & smoke, mold, storm, odor, specialty needs, and pre-loss planning.",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Commercial Restoration Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Water Damage Mitigation & Drying",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Fire & Smoke Damage Restoration",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mold Remediation & Removal",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Storm / Weather Damage Cleanup",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Odor Removal & Deodorization",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Specialty / Contents Restoration",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Pre-Loss Planning" },
+        },
+      ],
+    },
+  },
+];
 
 const Links = [
   "/commercial/fire-and-smoke",
@@ -27,6 +247,8 @@ const List = [
 export default function Commerical() {
   return (
     <div>
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/sub-banner.jpg" />
       </div>

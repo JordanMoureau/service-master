@@ -3,6 +3,8 @@
 import GetHelpNow from "../components/GetHelpNow";
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
+import { NextSeo } from "next-seo";
+import JsonLd from "../components/JsonLd";
 
 const Links = [
   "/why-us/about-us",
@@ -13,9 +15,120 @@ const Links = [
 
 const List = ["About Us", "Meet The Team", "Testimonials", "Contact Corporate"];
 
+const canonical = "https://smcfireandwater.com/why-us";
+const title =
+  "Why ServiceMaster by Compass | Trusted Restoration in Spokane & Coeur d’Alene";
+const description =
+  "65+ years of integrity-driven restoration. 24/7/365 response for water, fire, and mold. Serving Spokane, Spokane Valley & Coeur d’Alene. We guide you from crisis to resolution.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, fire damage restoration Spokane WA, mold abatement service Coeur d’Alene ID, water damage clean up Spokane Valley WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, fire damage restoration companies Spokane WA, emergency flood cleanup Coeur d’Alene ID",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title:
+      "Why ServiceMaster by Compass — 24/7 Water, Fire & Mold Restoration | Spokane WA & Coeur d’Alene ID",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/why-us.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ServiceMaster by Compass — Why Us",
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+  },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    knowsAbout: [
+      "mold remediation and removal Spokane WA",
+      "mold removal services Coeur d’Alene ID",
+      "fire damage restoration Spokane WA",
+      "mold abatement service Coeur d’Alene ID",
+      "water damage clean up Spokane Valley WA",
+      "fire damage restoration service near me Spokane",
+      "restoration mold removal CDA Idaho",
+      "fire damage restoration companies Spokane WA",
+      "emergency flood cleanup Coeur d’Alene ID",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://smcfireandwater.com/why-us#webpage",
+    url: canonical,
+    name: "Why ServiceMaster by Compass",
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    description: description,
+    breadcrumb: { "@id": "https://smcfireandwater.com/why-us#breadcrumb" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://smcfireandwater.com/why-us#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Why Us",
+        item: canonical,
+      },
+    ],
+  },
+];
+
 export default function WhyUs() {
   return (
     <div>
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/why-us.jpg" />
       </div>

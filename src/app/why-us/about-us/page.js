@@ -2,10 +2,185 @@
 
 import UncertainTo from "@/app/components/UncertaintyTo";
 import GetHelpNow from "@/app/components/GetHelpNow";
+// imports
+import { NextSeo } from "next-seo";
+import JsonLd from "../components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical = "https://smcfireandwater.com/why-us/about-us";
+const title =
+  "About ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration";
+const description =
+  "Locally owned, nationally backed. ServiceMaster by Compass provides 24/7 water damage cleanup, fire & smoke restoration, and mold remediation across Spokane, Spokane Valley & Coeur d’Alene.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, fire damage restoration Spokane WA, mold abatement service Coeur d’Alene ID, water damage clean up Spokane Valley WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, fire damage restoration companies Spokane WA, emergency flood cleanup Coeur d’Alene ID, about ServiceMaster by Compass",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title:
+      "About ServiceMaster by Compass — Local Restoration Experts | Spokane & Coeur d’Alene",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/aboutus.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About ServiceMaster by Compass",
+      },
+    ],
+  },
+  twitter: { cardType: "summary_large_image" },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  // AboutPage
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: "About ServiceMaster by Compass",
+    description,
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/aboutus.jpg",
+      width: 1200,
+      height: 630,
+    },
+    breadcrumb: { "@id": `${canonical}#breadcrumb` },
+    about: { "@id": "https://smcfireandwater.com/#organization" },
+  },
+  // Breadcrumbs
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Why Us",
+        item: "https://smcfireandwater.com/why-us",
+      },
+      { "@type": "ListItem", position: 3, name: "About Us", item: canonical },
+    ],
+  },
+  // Organization (entity hub)
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+    knowsAbout: [
+      "water damage clean up Spokane Valley WA",
+      "fire damage restoration Spokane WA",
+      "mold remediation and removal Spokane WA",
+      "mold removal services Coeur d’Alene ID",
+      "mold abatement service Coeur d’Alene ID",
+      "emergency flood cleanup Coeur d’Alene ID",
+    ],
+  },
+  // Service entity + catalog (maps to bullets on page)
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Residential & Commercial Restoration",
+    provider: { "@id": "https://smcfireandwater.com/#organization" },
+    areaServed: ["Spokane WA", "Spokane Valley WA", "Coeur d’Alene ID"],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Restoration Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Water Damage Restoration" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Fire & Smoke Damage Restoration",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mold Remediation & Removal",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Weather / Storm Damage" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Odor Removal" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Specialty & Contents Restoration",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Pre-Loss Planning (Commercial)",
+          },
+        },
+      ],
+    },
+  },
+];
 
 export default function AboutUs() {
   return (
     <div>
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/aboutus.jpg" />
       </div>

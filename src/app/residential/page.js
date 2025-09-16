@@ -3,6 +3,227 @@
 import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
+// imports
+import { NextSeo } from "next-seo";
+import JsonLd from "../components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical = "https://smcfireandwater.com/residential";
+const title =
+  "Residential Restoration Services | Spokane WA & Coeur d’Alene ID | Water, Fire & Mold";
+const description =
+  "Top-rated residential restoration in Spokane, Spokane Valley & Coeur d’Alene: water damage cleanup, fire & smoke restoration, mold remediation, odor removal, storm damage & specialty services. 24/7 response.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, fire damage restoration Spokane WA, mold abatement service Coeur d’Alene ID, water damage clean up Spokane Valley WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, fire damage restoration companies Spokane WA, emergency flood cleanup Coeur d’Alene ID",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title:
+      "Residential Restoration — Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Residential Restoration Services — ServiceMaster by Compass",
+      },
+    ],
+  },
+  twitter: { cardType: "summary_large_image" },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+    knowsAbout: [
+      "water damage clean up Spokane Valley WA",
+      "fire damage restoration Spokane WA",
+      "mold remediation and removal Spokane WA",
+      "mold removal services Coeur d’Alene ID",
+      "mold abatement service Coeur d’Alene ID",
+      "emergency flood cleanup Coeur d’Alene ID",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://smcfireandwater.com/residential#webpage",
+    url: canonical,
+    name: "Residential Restoration Services",
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    description: description,
+    breadcrumb: { "@id": "https://smcfireandwater.com/residential#breadcrumb" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://smcfireandwater.com/residential#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Residential",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        url: "https://smcfireandwater.com/residential/water-damage",
+        name: "Water Damage Mitigation",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        url: "https://smcfireandwater.com/residential/fire-and-smoke",
+        name: "Fire & Smoke Damage Restoration",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        url: "https://smcfireandwater.com/residential/mold",
+        name: "Mold Remediation Services",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        url: "https://smcfireandwater.com/residential/odor",
+        name: "Odor Removal Services",
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        url: "https://smcfireandwater.com/residential/weather",
+        name: "Weather / Storm Damage Restoration",
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
+        url: "https://smcfireandwater.com/residential/specialty-services",
+        name: "Specialty Restoration Services",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Residential Restoration",
+    provider: { "@id": "https://smcfireandwater.com/#organization" },
+    areaServed: ["Spokane WA", "Spokane Valley WA", "Coeur d’Alene ID"],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Residential Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Water Damage Clean Up" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Fire Damage Restoration" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mold Remediation & Removal",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Odor Removal" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Storm / Weather Damage" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Specialty Restoration" },
+        },
+      ],
+    },
+  },
+  // FAQ schema mirrors the on-page Q&A
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How do you ensure the quality of your restoration services?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We employ trained professionals, follow industry standards, price transparently, and maintain a customer-first approach to ensure accurate, on-time project completion.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you handle multiple types of damage at once?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. We can combine services—such as fire, water, and mold—to deliver a comprehensive plan that restores your home efficiently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How quickly can you respond to a restoration emergency in Spokane & Coeur d’Alene?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We offer 24/7/365 emergency response for Spokane, Spokane Valley, and Coeur d’Alene to help you recover as quickly as possible.",
+        },
+      },
+    ],
+  },
+];
 
 const Links = [
   "/residential/fire-and-smoke",
@@ -25,6 +246,8 @@ const List = [
 export default function Residential() {
   return (
     <div>
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/sub-banner.jpg" />
       </div>

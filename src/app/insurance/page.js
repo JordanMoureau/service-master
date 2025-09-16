@@ -2,6 +2,217 @@
 import RestorePeace from "../components/RestoringPeace";
 import UncertainTo from "../components/UncertaintyTo";
 import SideBarBox from "../components/SideBarBox";
+// imports
+import { NextSeo } from "next-seo";
+import JsonLd from "../components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical = "https://smcfireandwater.com/insurance";
+const title =
+  "Insurance Professional Benefits | ServiceMaster by Compass | Spokane & Coeur d’Alene";
+const description =
+  "Partner with ServiceMaster by Compass for faster, higher-satisfaction claims: 24/7 mitigation, IICRC-certified teams, clear policyholder communication, and proven water, fire & mold restoration in Spokane, Spokane Valley & Coeur d’Alene.";
+
+const seo = {
+  title,
+  description,
+  canonical,
+  additionalMetaTags: [
+    {
+      name: "keywords",
+      content:
+        "fire damage restoration companies Spokane WA, water damage clean up Spokane Valley WA, mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, mold abatement service Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, insurance claims restoration Spokane",
+    },
+  ],
+  openGraph: {
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    type: "article",
+    title:
+      "Insurance Professional Benefits — Faster, Higher-Satisfaction Claims | Spokane & Coeur d’Alene",
+    description,
+    images: [
+      {
+        url: "https://smcfireandwater.com/insurance.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Insurance professional restoration partnership — ServiceMaster by Compass",
+      },
+    ],
+  },
+  twitter: { cardType: "summary_large_image" },
+  robotsProps: {
+    nosnippet: false,
+    maxSnippet: -1,
+    maxImagePreview: "large",
+    maxVideoPreview: -1,
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: "https://smcfireandwater.com/logo.png",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+    ],
+    knowsAbout: [
+      "insurance claims restoration Spokane",
+      "water damage clean up Spokane Valley WA",
+      "fire damage restoration Spokane WA",
+      "mold remediation and removal Spokane WA",
+      "mold removal services Coeur d’Alene ID",
+      "emergency flood cleanup Coeur d’Alene ID",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://smcfireandwater.com/insurance#webpage",
+    url: canonical,
+    name: "Insurance Professional Benefits",
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    description: description,
+    breadcrumb: { "@id": "https://smcfireandwater.com/insurance#breadcrumb" },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/insurance.jpg",
+      width: 1200,
+      height: 630,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://smcfireandwater.com/insurance#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Insurance Professional Benefits",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Insurance Resources",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        url: "https://smcfireandwater.com/insurance/residential-benefits-and-services",
+        name: "Residential Benefits & Services",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        url: "https://smcfireandwater.com/insurance/commercial-benefits-and-services",
+        name: "Commercial Benefits & Services",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        url: "https://smcfireandwater.com/insurance/education",
+        name: "Continuing Education (CE) Classes",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Insurance Carrier Partnership — Disaster Restoration",
+    provider: { "@id": "https://smcfireandwater.com/#organization" },
+    areaServed: ["Spokane WA", "Spokane Valley WA", "Coeur d’Alene ID"],
+    description:
+      "24/7 mitigation and restoration for policyholders with clear claims communication, IICRC-certified teams, and rapid on-site response.",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Restoration for Policyholders",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Water Damage Clean Up" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Fire & Smoke Damage Restoration",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mold Remediation & Removal",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Storm / Weather Damage" },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Contents & Documents" },
+        },
+      ],
+    },
+  },
+  // Optional FAQ schema mapped to on-page content
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How fast can your team respond for a policyholder?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We provide 24/7/365 emergency response and mobilize quickly to be on-site to begin mitigation and protect contents and structure.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What benefits do insurance professionals get by partnering with ServiceMaster by Compass?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Consistent communication, clear next steps for policyholders, IICRC-certified crews, and a streamlined claims experience designed to improve customer satisfaction.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer continuing education (CE) for agents and adjusters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. We provide CE classes and resources to help insurance professionals stay current on mitigation and restoration best practices.",
+        },
+      },
+    ],
+  },
+];
 
 const Links = [
   "/insurance/residential",
@@ -18,6 +229,8 @@ const List = [
 export default function Insurance() {
   return (
     <div>
+      <NextSeo {...seo} />
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/insurance.jpg" />
       </div>

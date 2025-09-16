@@ -1,9 +1,15 @@
 // pages/areas-we-serve.jsx
 "use client";
+import { useState } from "react";
 
 import Image from "next/image";
 
 export default function AreasWeServe() {
+  const [showRegions, setShowRegions] = useState(false);
+
+  function toggleRegions() {
+    setShowRegions((prev) => !prev);
+  }
   return (
     <div className="areas-section">
       <div
@@ -30,13 +36,22 @@ export default function AreasWeServe() {
         <a className="phone" href="tel:(509)646-7488">
           (509) 646-7488
         </a>
+        <strong>Proudly serving:</strong>
         <p>
-          <strong>Proudly serving:</strong>
-          <br />
-          Airway Heights, Athol, Bayview, Cataldo, Chattaroy, Cheney, Coeur D
-          Alene, Colbert, Deer Park, Fairchild Air Force Base...
+          <span>
+            Airway Heights, Athol, Bayview, Cataldo, Chattaroy, Cheney, Coeur D
+            Alene, Colbert, Deer Park, Fairchild Air Force Base...
+          </span>
+          {/* <span className={`regions-more ${showRegions ? "expanded" : ""}`}>
+            Airway Heights, Athol, Bayview, Cataldo, Chattaroy, Cheney, Coeur D
+            Alene, Colbert, Deer Park, Fairchild Air Force Base, Greenacres,
+            Harrison, Hayden, Liberty Lake, Mead, Medical Lake, Medimont, Newman
+            Lake, Nine Mile Falls, Otis Orchards, Post Falls, Rathdrum, Spirit
+            Lake, Spokane, Veradale, Worley
+          </span> */}
         </p>
-        <a className="see-all underline-link" href="#">
+
+        <a className="see-all underline-link" onClick={toggleRegions}>
           SEE ALL.
         </a>
 
