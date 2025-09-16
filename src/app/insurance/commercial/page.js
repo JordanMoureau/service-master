@@ -1,8 +1,8 @@
 "use client";
-import RestorePeace from "@/app/components/RestoringPeace";
-import UncertainTo from "@/app/components/UncertaintyTo";
-import SideBarBox from "@/app/components/SideBarBox";
-import GetHelpNow from "@/app/components/GetHelpNow";
+import RestorePeace from "../../components/RestoringPeace";
+import UncertainTo from "../../components/UncertaintyTo";
+import SideBarBox from "../../components/SideBarBox";
+import GetHelpNow from "../../components/GetHelpNow";
 
 const Links = [
   "/insurance/residential",

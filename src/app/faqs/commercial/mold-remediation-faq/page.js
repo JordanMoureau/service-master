@@ -1,10 +1,10 @@
 "use client";
 
-import FAQAccordion from "@/app/components/FAQAccordion";
-import GetHelpNow from "@/app/components/GetHelpNow";
-import RestorePeace from "@/app/components/RestoringPeace";
-import SideBarBox from "@/app/components/SideBarBox";
-import UncertainTo from "@/app/components/UncertaintyTo";
+import FAQAccordion from "../../../components/FAQAccordion";
+import GetHelpNow from "../../../components/GetHelpNow";
+import RestorePeace from "../../../components/RestoringPeace";
+import SideBarBox from "../../../components/SideBarBox";
+import UncertainTo from "../../../components/UncertaintyTo";
 
 const Links = [
   "/faqs/commercial/water-restoration-faq",
