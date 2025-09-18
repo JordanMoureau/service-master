@@ -3,7 +3,7 @@ import RestorePeace from "../components/RestoringPeace";
 import UncertainTo from "../components/UncertaintyTo";
 import SideBarBox from "../components/SideBarBox";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -229,7 +229,6 @@ const List = [
 export default function Insurance() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/insurance.jpg" />

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { IoIosArrowForward } from "react-icons/io";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -254,7 +254,6 @@ export default function MeetTheTeam() {
 
   return (
     <div className="home-container">
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="home-section">
         <div className="column">

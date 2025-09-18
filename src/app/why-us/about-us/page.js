@@ -3,7 +3,7 @@
 import UncertainTo from "../../components/UncertaintyTo";
 import GetHelpNow from "../../components/GetHelpNow";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -179,7 +179,6 @@ const jsonLd = [
 export default function AboutUs() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/aboutus.jpg" />

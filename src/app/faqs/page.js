@@ -3,8 +3,7 @@
 import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import GetHelpNow from "../components/GetHelpNow";
-// imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -132,7 +131,6 @@ const List = ["FAQs - Residential", "FAQs - Commercial"];
 export default function Faqs() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/sub-banner.jpg" />

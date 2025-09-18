@@ -2,7 +2,7 @@
 
 import ServiceAreaMap from "../components/ServiceAreaMap";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -148,7 +148,6 @@ const jsonLd = [
 export default function Contact() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <section className="contact-page">
         <div className="inner">

@@ -3,7 +3,7 @@
 import GetHelpNow from "../components/GetHelpNow";
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../components/JsonLd";
 
 const Links = [
@@ -127,7 +127,6 @@ const jsonLd = [
 export default function WhyUs() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/why-us.jpg" />

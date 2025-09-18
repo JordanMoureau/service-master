@@ -2,7 +2,7 @@
 
 import { FaStar } from "react-icons/fa";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -188,7 +188,6 @@ const reviews = [
 export default function Testimonials() {
   return (
     <div className="home-container">
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="home-section">
         <div className="column">

@@ -5,7 +5,7 @@ import UncertainTo from "../components/UncertaintyTo";
 
 import RestorePeace from "../components/RestoringPeace";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -247,7 +247,6 @@ const List = [
 export default function Residential() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img src="/sub-banner.jpg" />

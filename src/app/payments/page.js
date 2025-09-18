@@ -4,7 +4,7 @@ import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
 // imports
-import { NextSeo } from "next-seo";
+
 import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
@@ -162,7 +162,6 @@ const Links = [
 export default function PaymentFinancingOptions() {
   return (
     <div>
-      <NextSeo {...seo} />
       <JsonLd data={jsonLd} />
       <div className="top-image">
         <img
