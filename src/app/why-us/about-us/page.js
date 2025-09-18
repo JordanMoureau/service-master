@@ -15,61 +15,61 @@ const description =
 
 // app/why-us/about-us/page.tsx
 
-export const metadata = {
-  title: "About ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
-  description:
-    "Locally owned, nationally backed. ServiceMaster by Compass provides 24/7 water damage cleanup, fire & smoke restoration, and mold remediation across Spokane, Spokane Valley & Coeur d’Alene.",
-  keywords: [
-    "mold remediation and removal Spokane WA",
-    "mold removal services Coeur d’Alene ID",
-    "fire damage restoration Spokane WA",
-    "mold abatement service Coeur d’Alene ID",
-    "water damage clean up Spokane Valley WA",
-    "fire damage restoration service near me Spokane",
-    "restoration mold removal CDA Idaho",
-    "fire damage restoration companies Spokane WA",
-    "emergency flood cleanup Coeur d’Alene ID",
-  ],
-  alternates: {
-    canonical: "https://smcfireandwater.com/why-us/about-us",
-  },
-  openGraph: {
-    title: "About ServiceMaster by Compass — Local Experts, National Support",
-    description:
-      "24/7 restoration for water, fire & smoke, and mold in Spokane, Spokane Valley & Coeur d’Alene.",
-    url: "https://smcfireandwater.com/why-us/about-us",
-    siteName: "ServiceMaster by Compass",
-    images: [
-      {
-        url: "https://smcfireandwater.com/aboutus.jpg",
-        width: 1200,
-        height: 630,
-        alt: "About ServiceMaster by Compass Spokane & Coeur D'Alene",
-      },
-    ],
-    locale: "en_US",
-    type: "article",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
-    },
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "About ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
-    description:
-      "Locally owned, nationally backed restoration pros. 24/7 water, fire & mold services.",
-    images: ["https://smcfireandwater.com/aboutus.jpg"],
-  },
-};
+// export const metadata = {
+//   title: "About ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
+//   description:
+//     "Locally owned, nationally backed. ServiceMaster by Compass provides 24/7 water damage cleanup, fire & smoke restoration, and mold remediation across Spokane, Spokane Valley & Coeur d’Alene.",
+//   keywords: [
+//     "mold remediation and removal Spokane WA",
+//     "mold removal services Coeur d’Alene ID",
+//     "fire damage restoration Spokane WA",
+//     "mold abatement service Coeur d’Alene ID",
+//     "water damage clean up Spokane Valley WA",
+//     "fire damage restoration service near me Spokane",
+//     "restoration mold removal CDA Idaho",
+//     "fire damage restoration companies Spokane WA",
+//     "emergency flood cleanup Coeur d’Alene ID",
+//   ],
+//   alternates: {
+//     canonical: "https://smcfireandwater.com/why-us/about-us",
+//   },
+//   openGraph: {
+//     title: "About ServiceMaster by Compass — Local Experts, National Support",
+//     description:
+//       "24/7 restoration for water, fire & smoke, and mold in Spokane, Spokane Valley & Coeur d’Alene.",
+//     url: "https://smcfireandwater.com/why-us/about-us",
+//     siteName: "ServiceMaster by Compass",
+//     images: [
+//       {
+//         url: "https://smcfireandwater.com/aboutus.jpg",
+//         width: 1200,
+//         height: 630,
+//         alt: "About ServiceMaster by Compass Spokane & Coeur D'Alene",
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "article",
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       maxSnippet: -1,
+//       maxImagePreview: "large",
+//       maxVideoPreview: -1,
+//     },
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title:
+//       "About ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
+//     description:
+//       "Locally owned, nationally backed restoration pros. 24/7 water, fire & mold services.",
+//     images: ["https://smcfireandwater.com/aboutus.jpg"],
+//   },
+// };
 
 // JSON-LD
 const jsonLd = [
