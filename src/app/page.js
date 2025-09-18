@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import KnowUsPanel from "./components/KnowUsPanel";
@@ -10,6 +8,66 @@ import AccredCarousel from "./components/AcredCarousel";
 import HomeSideBar from "./components/HomeSideBar";
 import Hero from "./components/Hero";
 import GetHelpNow from "./components/GetHelpNow";
+
+// app/page.tsx (Home)
+
+export const metadata = {
+  title:
+    "Disaster Restoration Spokane WA | Water, Fire & Mold | ServiceMaster by Compass",
+  description:
+    "Top-rated restoration in Spokane, Spokane Valley & Coeur d’Alene. 24/7 water damage cleanup, fire & smoke restoration, and mold remediation by ServiceMaster by Compass.",
+  keywords: [
+    "mold remediation and removal Spokane WA",
+    "mold removal services Coeur d’Alene ID",
+    "fire damage restoration Spokane WA",
+    "mold abatement service Coeur d’Alene ID",
+    "water damage clean up Spokane Valley WA",
+    "fire damage restoration service near me Spokane",
+    "restoration mold removal CDA Idaho",
+    "fire damage restoration companies Spokane WA",
+    "emergency flood cleanup Coeur d’Alene ID",
+  ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/",
+  },
+  openGraph: {
+    title:
+      "Disaster Restoration in Spokane — Water, Fire & Mold | ServiceMaster by Compass",
+    description:
+      "24/7 emergency restoration for homes & businesses in Spokane, Spokane Valley & Coeur d’Alene. Water removal & drying, fire & smoke cleanup, mold remediation.",
+    url: "https://smcfireandwater.com/",
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: "https://smcfireandwater.com/homebodyimage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ServiceMaster by Compass — Spokane disaster restoration",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Disaster Restoration Spokane WA | Water, Fire & Mold | ServiceMaster by Compass",
+    description:
+      "24/7 water, fire & mold restoration in Spokane, Spokane Valley & Coeur d’Alene.",
+    images: ["https://smcfireandwater.com/homebodyimage.jpg"],
+  },
+};
 
 export default function Home() {
   return (
