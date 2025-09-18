@@ -12,19 +12,19 @@ export default function HomeContact() {
             </header>
 
             <div className="form">
-              <form>
+              <form action="https://formspree.io/f/xzzanzav" method="POST">
                 <ul className="form-list">
                   <li className="half">
                     <div className="input-text">
                       <label>First Name*</label>
-                      <input type="text" required />
+                      <input type="text" name="firstName" required />
                     </div>
                   </li>
 
                   <li className="half">
                     <div className="input-text">
                       <label>Last Name*</label>
-                      <input type="text" required />
+                      <input type="text" name="lastName" required />
                     </div>
                   </li>
 
@@ -33,6 +33,7 @@ export default function HomeContact() {
                       <label>Phone*</label>
                       <input
                         type="tel"
+                        name="phone"
                         required
                         pattern="[(]\d{3}[)]\s\d{3}-\d{4}"
                       />
@@ -42,42 +43,47 @@ export default function HomeContact() {
                   <li className="half">
                     <div className="input-text">
                       <label>Email*</label>
-                      <input type="email" required />
+                      <input type="email" name="email" required />
                     </div>
                   </li>
 
                   <li className="full">
                     <div className="input-text">
                       <label>Company Name</label>
-                      <input type="text" />
+                      <input type="text" name="company" />
                     </div>
                   </li>
 
                   <li className="half">
                     <div className="input-text">
                       <label>Street Address*</label>
-                      <input type="text" required />
+                      <input type="text" name="streetAddress" required />
                     </div>
                   </li>
 
                   <li className="fourth">
                     <div className="input-text">
                       <label>Apt/Unit Number</label>
-                      <input type="text" />
+                      <input type="text" name="unit" />
                     </div>
                   </li>
 
                   <li className="fourth">
                     <div className="input-text">
                       <label>Zip Code*</label>
-                      <input type="text" required />
+                      <input type="text" name="zip" required />
                     </div>
                   </li>
 
                   <li className="third">
                     <div className="input-text">
                       <label htmlFor="ServiceNeeded">Service Needed*</label>
-                      <select id="ServiceNeeded" required className="">
+                      <select
+                        id="ServiceNeeded"
+                        name="serviceNeeded"
+                        required
+                        className=""
+                      >
                         <option value=""></option>
                         <option value="Water">Water</option>
                         <option value="Fire">Fire</option>
@@ -87,17 +93,22 @@ export default function HomeContact() {
                       </select>
                     </div>
                   </li>
+
                   <li className="third">
                     <div className="input-text">
                       <label>Square Footage Affected*</label>
-                      <input type="number" required />
+                      <input type="number" name="squareFootage" required />
                     </div>
                   </li>
 
                   <li className="third select">
                     <div className="input-text">
                       <label>Have you contacted an insurer?*</label>
-                      <select required className="ui-cms-select ui-cms-input">
+                      <select
+                        name="insurerContacted"
+                        required
+                        className="ui-cms-select ui-cms-input"
+                      >
                         <option value=""></option>
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
@@ -112,11 +123,12 @@ export default function HomeContact() {
                         id="Message"
                         required
                         className="ui-cms-input"
-                        name="LocalContactSystemV1Form$ITM0$Message"
+                        name="message"
                       ></textarea>
                     </div>
                   </li>
                 </ul>
+
                 <p className="contact-disclaimer">
                   By clicking 'Submit', I give ServiceMaster Restore &amp; its
                   franchisees consent to call/text me at my phone number above
@@ -134,8 +146,13 @@ export default function HomeContact() {
                   </a>{" "}
                   for your other rights.
                 </p>
+
                 <div className="req">*required field</div>
-                <input type="hidden" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="SMC Website Contact"
+                />
                 <div className="button-contact">
                   <button className="btn" type="submit">
                     Get Started
