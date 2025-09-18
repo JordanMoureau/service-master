@@ -1,4 +1,3 @@
-"use client";
 import RestorePeace from "../components/RestoringPeace";
 import UncertainTo from "../components/UncertaintyTo";
 import SideBarBox from "../components/SideBarBox";
@@ -13,39 +12,60 @@ const title =
 const description =
   "Partner with ServiceMaster by Compass for faster, higher-satisfaction claims: 24/7 mitigation, IICRC-certified teams, clear policyholder communication, and proven water, fire & mold restoration in Spokane, Spokane Valley & Coeur d’Alene.";
 
-const seo = {
-  title,
-  description,
-  canonical,
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content:
-        "fire damage restoration companies Spokane WA, water damage clean up Spokane Valley WA, mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, mold abatement service Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, insurance claims restoration Spokane",
-    },
+// app/insurance/page.tsx
+
+export const metadata = {
+  title:
+    "Insurance Professional Benefits | ServiceMaster by Compass | Spokane & Coeur d’Alene",
+  description:
+    "Partner with ServiceMaster by Compass for faster, higher-satisfaction claims: 24/7 mitigation, IICRC-certified teams, clear policyholder communication, and proven water, fire & mold restoration in Spokane, Spokane Valley & Coeur d’Alene.",
+  keywords: [
+    "insurance claims restoration Spokane",
+    "water damage clean up Spokane Valley WA",
+    "fire damage restoration Spokane WA",
+    "mold remediation and removal Spokane WA",
+    "mold removal services Coeur d’Alene ID",
+    "emergency flood cleanup Coeur d’Alene ID",
+    "fire damage restoration service near me Spokane",
+    "restoration mold removal CDA Idaho",
   ],
+  alternates: { canonical: "https://smcfireandwater.com/insurance" },
   openGraph: {
-    url: canonical,
-    siteName: "ServiceMaster by Compass",
-    type: "article",
     title:
-      "Insurance Professional Benefits — Faster, Higher-Satisfaction Claims | Spokane & Coeur d’Alene",
-    description,
+      "Insurance Professional Benefits — ServiceMaster by Compass | Spokane & CDA",
+    description:
+      "24/7 mitigation, streamlined claims communication, and IICRC-certified restoration for policyholders.",
+    url: "https://smcfireandwater.com/insurance",
+    siteName: "ServiceMaster by Compass",
     images: [
       {
         url: "https://smcfireandwater.com/insurance.jpg",
         width: 1200,
         height: 630,
-        alt: "Insurance professional restoration partnership — ServiceMaster by Compass",
+        alt: "Insurance partner benefits with ServiceMaster by Compass",
       },
     ],
+    locale: "en_US",
+    type: "article",
   },
-  twitter: { cardType: "summary_large_image" },
-  robotsProps: {
-    nosnippet: false,
-    maxSnippet: -1,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Insurance Professional Benefits | ServiceMaster by Compass | Spokane & Coeur d’Alene",
+    description:
+      "Faster claims, happier policyholders. 24/7 mitigation & restoration with certified teams.",
+    images: ["https://smcfireandwater.com/insurance.jpg"],
   },
 };
 

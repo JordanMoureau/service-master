@@ -1,10 +1,62 @@
-"use client";
-
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
 
 import RestorePeace from "../components/RestoringPeace";
 // imports
+
+// app/commercial/page.tsx
+
+export const metadata = {
+  title: "Commercial Restoration Services | Spokane WA & Coeur d’Alene ID",
+  description:
+    "24/7 commercial restoration for water, fire & smoke, mold, storm damage, odor removal, and pre-loss planning. Serving Spokane, Spokane Valley & Coeur d’Alene with IICRC-certified teams and rapid response.",
+  keywords: [
+    "commercial water damage restoration",
+    "commercial fire damage restoration",
+    "commercial mold remediation",
+    "pre-loss planning",
+    "odor removal services",
+    "storm and weather damage restoration",
+    "Spokane",
+    "Coeur d’Alene",
+  ],
+  alternates: { canonical: "https://smcfireandwater.com/commercial" },
+  openGraph: {
+    title: "Commercial Restoration Services | Spokane WA & Coeur d’Alene ID",
+    description:
+      "24/7 commercial mitigation and restoration for water, fire/smoke, mold, storm, odor, specialty needs, and pre-loss planning.",
+    url: "https://smcfireandwater.com/commercial",
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ServiceMaster by Compass — Commercial Restoration",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Commercial Restoration Services | Spokane WA & Coeur d’Alene ID",
+    description:
+      "Rapid, 24/7 commercial restoration for water, fire/smoke & mold in Spokane & CDA.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+};
 
 import JsonLd from "../components/JsonLd";
 
@@ -13,42 +65,6 @@ const canonical = "https://smcfireandwater.com/commercial";
 const title = "Commercial Restoration Services | Spokane WA & Coeur d’Alene ID";
 const description =
   "24/7 commercial restoration for water, fire & smoke, mold, storm damage, odor removal, and pre-loss planning. Serving Spokane, Spokane Valley & Coeur d’Alene with IICRC-certified teams and rapid response.";
-
-const seo = {
-  title,
-  description,
-  canonical,
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content:
-        "fire damage restoration companies Spokane WA, water damage clean up Spokane Valley WA, mold remediation and removal Spokane WA, mold abatement service Coeur d’Alene ID, mold removal services Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, commercial restoration Spokane",
-    },
-  ],
-  openGraph: {
-    url: canonical,
-    siteName: "ServiceMaster by Compass",
-    type: "article",
-    title:
-      "Commercial Restoration — Water, Fire, Mold & Storm | Spokane WA & Coeur d’Alene ID",
-    description,
-    images: [
-      {
-        url: "https://smcfireandwater.com/sub-banner.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Commercial Restoration Services — ServiceMaster by Compass",
-      },
-    ],
-  },
-  twitter: { cardType: "summary_large_image" },
-  robotsProps: {
-    nosnippet: false,
-    maxSnippet: -1,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
-  },
-};
 
 // JSON-LD
 const jsonLd = [

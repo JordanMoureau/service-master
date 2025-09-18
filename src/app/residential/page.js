@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
 
@@ -15,39 +13,61 @@ const title =
 const description =
   "Top-rated residential restoration in Spokane, Spokane Valley & Coeur d’Alene: water damage cleanup, fire & smoke restoration, mold remediation, odor removal, storm damage & specialty services. 24/7 response.";
 
-const seo = {
-  title,
-  description,
-  canonical,
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content:
-        "mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, fire damage restoration Spokane WA, mold abatement service Coeur d’Alene ID, water damage clean up Spokane Valley WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, fire damage restoration companies Spokane WA, emergency flood cleanup Coeur d’Alene ID",
-    },
+// app/residential/page.tsx
+
+export const metadata = {
+  title:
+    "Residential Restoration Services | Spokane WA & Coeur d’Alene ID | Water, Fire & Mold",
+  description:
+    "Top-rated residential restoration in Spokane, Spokane Valley & Coeur d’Alene: water damage cleanup, fire & smoke restoration, mold remediation, odor removal, storm damage & specialty services. 24/7 response.",
+  keywords: [
+    "water damage clean up Spokane Valley WA",
+    "fire damage restoration Spokane WA",
+    "mold remediation and removal Spokane WA",
+    "mold removal services Coeur d’Alene ID",
+    "mold abatement service Coeur d’Alene ID",
+    "emergency flood cleanup Coeur d’Alene ID",
+    "fire damage restoration service near me Spokane",
+    "restoration mold removal CDA Idaho",
+    "fire damage restoration companies Spokane WA",
   ],
+  alternates: { canonical: "https://smcfireandwater.com/residential" },
   openGraph: {
-    url: canonical,
-    siteName: "ServiceMaster by Compass",
-    type: "article",
     title:
-      "Residential Restoration — Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
-    description,
+      "Residential Restoration — Water, Fire & Mold | Spokane & Coeur d’Alene",
+    description:
+      "24/7 residential restoration: water removal & drying, fire & smoke cleanup, mold remediation, odor & storm damage.",
+    url: "https://smcfireandwater.com/residential",
+    siteName: "ServiceMaster by Compass",
     images: [
       {
         url: "https://smcfireandwater.com/sub-banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Residential Restoration Services — ServiceMaster by Compass",
+        alt: "Residential restoration services in Spokane & Coeur d’Alene",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
-  twitter: { cardType: "summary_large_image" },
-  robotsProps: {
-    nosnippet: false,
-    maxSnippet: -1,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Residential Restoration Services | Spokane WA & Coeur d’Alene ID | Water, Fire & Mold",
+    description:
+      "Trusted 24/7 residential restoration for water, fire & mold in Spokane, Spokane Valley & Coeur d’Alene.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
   },
 };
 
@@ -254,7 +274,7 @@ export default function Residential() {
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
-            <h2>Top Residential Restoration Services in Spokane, WA</h2>
+            <h1>Top Residential Restoration Services in Spokane, WA</h1>
             <p>
               Your home is an investment that you’ve spent thousands, even
               millions, of dollars on making your own. So, when a fire,

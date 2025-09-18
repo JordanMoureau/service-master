@@ -1,5 +1,3 @@
-"use client";
-
 import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import GetHelpNow from "../components/GetHelpNow";
@@ -13,24 +11,33 @@ const title =
 const description =
   "Answers to common questions about water damage cleanup, fire & smoke restoration, and mold remediation. Explore residential & commercial FAQs for Spokane, Spokane Valley & Coeur d’Alene. 24/7 help.";
 
-const seo = {
-  title,
-  description,
-  canonical,
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content:
-        "mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, fire damage restoration Spokane WA, mold abatement service Coeur d’Alene ID, water damage clean up Spokane Valley WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, fire damage restoration companies Spokane WA, emergency flood cleanup Coeur d’Alene ID, restoration FAQs Spokane",
-    },
+// app/faqs/page.tsx
+
+export const metadata = {
+  title:
+    "Restoration FAQs | Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
+  description:
+    "Answers to common questions about water damage cleanup, fire & smoke restoration, and mold remediation. Explore residential & commercial FAQs for Spokane, Spokane Valley & Coeur d’Alene. 24/7 help.",
+  keywords: [
+    "mold remediation and removal Spokane WA",
+    "mold removal services Coeur d’Alene ID",
+    "fire damage restoration Spokane WA",
+    "mold abatement service Coeur d’Alene ID",
+    "water damage clean up Spokane Valley WA",
+    "fire damage restoration service near me Spokane",
+    "restoration mold removal CDA Idaho",
+    "fire damage restoration companies Spokane WA",
+    "emergency flood cleanup Coeur d’Alene ID",
+    "restoration FAQs Spokane",
   ],
+  alternates: { canonical: "https://smcfireandwater.com/faqs" },
   openGraph: {
-    url: canonical,
-    siteName: "ServiceMaster by Compass",
-    type: "article",
     title:
       "Restoration FAQs — Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
-    description,
+    description:
+      "Your restoration questions answered: water, fire/smoke, mold, and more. Spokane, Spokane Valley & Coeur d’Alene.",
+    url: "https://smcfireandwater.com/faqs",
+    siteName: "ServiceMaster by Compass",
     images: [
       {
         url: "https://smcfireandwater.com/sub-banner.jpg",
@@ -39,13 +46,27 @@ const seo = {
         alt: "ServiceMaster by Compass — FAQs",
       },
     ],
+    locale: "en_US",
+    type: "article",
   },
-  twitter: { cardType: "summary_large_image" },
-  robotsProps: {
-    nosnippet: false,
-    maxSnippet: -1,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Restoration FAQs | Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
+    description:
+      "Get answers to common restoration questions. 24/7 help in Spokane & CDA.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
   },
 };
 

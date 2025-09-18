@@ -1,5 +1,3 @@
-"use client";
-
 import ServiceAreaMap from "../components/ServiceAreaMap";
 // imports
 
@@ -12,24 +10,30 @@ const title =
 const description =
   "Contact our 24/7 restoration team for water damage cleanup, fire & smoke restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. Fast help starts here.";
 
-const seo = {
-  title,
-  description,
-  canonical,
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content:
-        "water damage clean up Spokane Valley WA, fire damage restoration Spokane WA, mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, mold abatement service Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration companies Spokane WA, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, contact ServiceMaster Spokane",
-    },
+// app/contact/page.tsx
+
+export const metadata = {
+  title:
+    "Contact ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
+  description:
+    "Contact our 24/7 restoration team for water damage cleanup, fire & smoke restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. Fast help starts here.",
+  keywords: [
+    "water damage clean up Spokane Valley WA",
+    "fire damage restoration Spokane WA",
+    "mold remediation and removal Spokane WA",
+    "mold removal services Coeur d’Alene ID",
+    "emergency flood cleanup Coeur d’Alene ID",
+    "restoration company Spokane",
+    "ServiceMaster by Compass contact",
   ],
+  alternates: { canonical: "https://smcfireandwater.com/contact" },
   openGraph: {
-    url: canonical,
-    siteName: "ServiceMaster by Compass",
-    type: "website",
     title:
-      "Contact ServiceMaster by Compass — 24/7 Water, Fire & Mold Help | Spokane & Coeur d’Alene",
-    description,
+      "Contact ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
+    description:
+      "24/7 help for water, fire/smoke, and mold. Fast, local restoration experts serving Spokane, Spokane Valley & Coeur d’Alene.",
+    url: "https://smcfireandwater.com/contact",
+    siteName: "ServiceMaster by Compass",
     images: [
       {
         url: "https://smcfireandwater.com/sub-banner.jpg",
@@ -38,13 +42,27 @@ const seo = {
         alt: "Contact ServiceMaster by Compass",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
-  twitter: { cardType: "summary_large_image" },
-  robotsProps: {
-    nosnippet: false,
-    maxSnippet: -1,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Contact ServiceMaster by Compass | Spokane & Coeur d’Alene Restoration",
+    description:
+      "24/7 local restoration help for water, fire/smoke & mold in Spokane & CDA.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
   },
 };
 

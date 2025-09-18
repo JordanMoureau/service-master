@@ -1,5 +1,3 @@
-"use client";
-
 import { FaStar } from "react-icons/fa";
 // imports
 
@@ -11,25 +9,34 @@ const title =
   "ServiceMaster by Compass Reviews | Spokane & Coeur d’Alene Restoration";
 const description =
   "Read real customer reviews for water damage cleanup, fire & smoke restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. 24/7 trusted service.";
+// app/why-us/testimonials/page.tsx
 
-const seo = {
-  title,
-  description,
-  canonical,
-  additionalMetaTags: [
-    {
-      name: "keywords",
-      content:
-        "fire damage restoration companies Spokane WA, water damage clean up Spokane Valley WA, mold remediation and removal Spokane WA, mold removal services Coeur d’Alene ID, mold abatement service Coeur d’Alene ID, emergency flood cleanup Coeur d’Alene ID, fire damage restoration service near me Spokane, restoration mold removal CDA Idaho, ServiceMaster reviews Spokane",
-    },
+export const metadata = {
+  title:
+    "ServiceMaster by Compass Reviews | Spokane & Coeur d’Alene Restoration",
+  description:
+    "Read real customer reviews for water damage cleanup, fire & smoke restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. 24/7 trusted service.",
+  keywords: [
+    "fire damage restoration companies Spokane WA",
+    "water damage clean up Spokane Valley WA",
+    "mold remediation and removal Spokane WA",
+    "mold removal services Coeur d’Alene ID",
+    "mold abatement service Coeur d’Alene ID",
+    "emergency flood cleanup Coeur d’Alene ID",
+    "fire damage restoration service near me Spokane",
+    "restoration mold removal CDA Idaho",
+    "ServiceMaster reviews Spokane",
   ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/why-us/testimonials",
+  },
   openGraph: {
-    url: canonical,
-    siteName: "ServiceMaster by Compass",
-    type: "article",
     title:
       "Customer Reviews — ServiceMaster by Compass | Spokane & Coeur d’Alene",
-    description,
+    description:
+      "Read real customer reviews for water damage cleanup, fire & smoke restoration, and mold removal. 24/7 trusted service in Spokane & CDA.",
+    url: "https://smcfireandwater.com/why-us/testimonials",
+    siteName: "ServiceMaster by Compass",
     images: [
       {
         url: "https://smcfireandwater.com/sub-banner.jpg",
@@ -38,13 +45,27 @@ const seo = {
         alt: "ServiceMaster by Compass — Reviews",
       },
     ],
+    type: "article",
+    locale: "en_US",
   },
-  twitter: { cardType: "summary_large_image" },
-  robotsProps: {
-    nosnippet: false,
-    maxSnippet: -1,
-    maxImagePreview: "large",
-    maxVideoPreview: -1,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "ServiceMaster by Compass Reviews | Spokane & Coeur d’Alene Restoration",
+    description:
+      "Real customer feedback on water, fire & mold restoration. 24/7 trusted service.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
   },
 };
 
