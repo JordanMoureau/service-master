@@ -1,6 +1,29 @@
 "use client";
+import { useState } from "react";
 
 export default function HomeContact() {
+  const [status, setStatus] = useState("idle");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    const res = await fetch("https://formspree.io/f/xzzanzav", {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (res.ok) {
+      form.reset();
+      setStatus("success");
+    } else {
+      setStatus("error");
+    }
+  }
   return (
     <div>
       <section className="home-contact-page">
@@ -12,7 +35,7 @@ export default function HomeContact() {
             </header>
 
             <div className="form">
-              <form action="https://formspree.io/f/xzzanzav" method="POST">
+              <form onSubmit={handleSubmit}>
                 <ul className="form-list">
                   <li className="half">
                     <div className="input-text">
