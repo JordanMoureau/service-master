@@ -104,7 +104,13 @@
   }
 
   .column-two {
-    width: 50%;
+    width: 100%;
     margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  .black-box-home {
+    flex-direction: column;
+    align-items: start;
   }
 }

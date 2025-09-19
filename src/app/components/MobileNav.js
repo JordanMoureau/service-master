@@ -9,6 +9,7 @@ export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <>
@@ -28,20 +29,34 @@ export default function MobileNav() {
       <div className={`mobile-menu-overlay ${isOpen ? "show" : ""}`}>
         <div className="mobile-menu-inner">
           <nav className="mobile-links">
-            <Link href="#">Commercial</Link>
-            <Link href="#">Residential</Link>
-            <Link href="#">FAQs</Link>
-            <Link href="#">Insurance</Link>
-            <Link href="#">Why Us</Link>
-            <Link href="#">Payments</Link>
-            <Link href="#">Franchise Opportunities</Link>
+            <Link href="/commercial" onClick={closeMenu}>
+              Commercial
+            </Link>
+            <Link href="/residential" onClick={closeMenu}>
+              Residential
+            </Link>
+            <Link href="/faqs" onClick={closeMenu}>
+              FAQs
+            </Link>
+            <Link href="/insurance" onClick={closeMenu}>
+              Insurance
+            </Link>
+            <Link href="/why-us" onClick={closeMenu}>
+              Why Us
+            </Link>
+            <Link href="/payments" onClick={closeMenu}>
+              Payments
+            </Link>
+            <Link href="#" onClick={closeMenu}>
+              Franchise Opportunities
+            </Link>
           </nav>
 
           <div className="mobile-contact">
             <a href="tel:5096467488" className="phone-line">
               <FaPhoneAlt /> (509) 646-7488
             </a>
-            <Link href="/contact" className="mobile-cta">
+            <Link href="/contact" className="mobile-cta" onClick={closeMenu}>
               Contact Us Now
             </Link>
             <div className="emergency-text">
