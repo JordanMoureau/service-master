@@ -8,14 +8,15 @@
   z-index: 1000;
   padding-right: 5%;
   overflow: hidden;
-
   background-color: white;
 
-  img {
+  .a-home {
     width: 38%;
     max-width: 100%;
-    height: auto;
-    padding-right: 3rem;
+    img {
+      height: auto;
+      padding-right: 3rem;
+    }
   }
 }
 

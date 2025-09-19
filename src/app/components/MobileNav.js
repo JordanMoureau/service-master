@@ -22,8 +22,12 @@ export default function MobileNav() {
         <div className="mobile-chevron">
           <div className={`bar ${isOpen ? "open" : ""}`}></div>{" "}
         </div>
-        <img src="/logo.png" alt="ServiceMaster" className="mobile-logo" />
-        <FaPhoneAlt style={{ fontSize: "2em" }} />
+        <a className="a-home" href="/">
+          <img src="/logo.png" alt="ServiceMaster" className="mobile-logo" />
+        </a>
+        <a href="tel:5096467488">
+          <FaPhoneAlt style={{ fontSize: "2em" }} />
+        </a>
       </div>
 
       <div className={`mobile-menu-overlay ${isOpen ? "show" : ""}`}>
