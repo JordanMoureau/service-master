@@ -302,3 +302,33 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .box-animation .inner-box {
+    display: none;
+  }
+
+  .box-animation .a5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-section {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.85) 5%,
+        rgba(0, 0, 0, 0.4) 10%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(/headermain.jpg);
+
+    background-position: 70% center; /* 👈 shifts image focus 20% from the left */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-lower h3 {
+    width: 80%;
+  }
+}
