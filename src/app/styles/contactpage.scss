@@ -260,7 +260,7 @@
     -webkit-appearance: none;
     border-bottom: 3px solid black;
   }
-  header {
+  .contact-header {
     width: 24.75%;
     position: relative;
 
@@ -303,5 +303,24 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inner .row {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .home-contact-page {
+    padding-top: 2rem;
+  }
+
+  .home-contact-page .contact-header {
+    width: 100%;
+  }
+
+  .home-contact-page .form {
+    width: 100%;
   }
 }

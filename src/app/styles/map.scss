@@ -151,7 +151,7 @@
 // Mobile responsive
 @media (max-width: 768px) {
   .areas-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     .map-wrapper,
     .content-wrapper {
@@ -162,5 +162,9 @@
     .content-wrapper {
       padding: 2rem 1rem;
     }
+  }
+
+  .areas-section::before {
+    display: none;
   }
 }

@@ -29,10 +29,10 @@ export default function HomeContact() {
       <section className="home-contact-page">
         <div className="inner">
           <div className="row">
-            <header>
+            <div className="contact-header">
               <h2>Find out how we can help</h2>
               <h3>We're Ready To Answer Your Questions.</h3>
-            </header>
+            </div>
 
             <div className="form">
               <form onSubmit={handleSubmit}>

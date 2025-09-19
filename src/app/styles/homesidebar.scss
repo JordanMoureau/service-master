@@ -194,3 +194,10 @@
     background-color: $primary;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .aside {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
