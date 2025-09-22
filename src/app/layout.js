@@ -1,5 +1,6 @@
 // src/app/layout.js
 import "./styles.scss";
+import Script from "next/script";
 
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
@@ -158,6 +159,15 @@ export default function RootLayout({ children }) {
             // },
           }}
         />
+
+        <Script
+          nowprocket
+          nitro-exclude
+          type="text/javascript"
+          id="sa-dynamic-optimization"
+          data-uuid="48e396d4-46ac-42ac-bfbc-5bf53a250f54"
+          src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gIjQ4ZTM5NmQ0LTQ2YWMtNDJhYy1iZmJjLTViZjUzYTI1MGY1NCI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="
+        ></Script>
 
         <Nav />
         <MobileNav />
