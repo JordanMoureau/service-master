@@ -1,0 +1,42 @@
+.we-can-help {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .inner {
+    max-width: 900px;
+  }
+  .button-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .arrow-list {
+    font-size: 1.2rem;
+  }
+
+  .underline {
+    text-decoration: underline;
+    color: #feee50;
+  }
+
+  .button-box:after {
+    content: "";
+    background-color: #feee50;
+    width: 60%;
+    height: 0.5rem;
+    margin-top: 20px;
+    left: 0;
+    position: absolute;
+    display: block;
+    -webkit-clip-path: polygon(0 0, 99% 0, 100% 50%, 99% 100%, 0 100%);
+    clip-path: polygon(0 0, 99% 0, 100% 50%, 99% 100%, 0 100%);
+  }
+}

@@ -33,8 +33,8 @@ export default function AreasWeServe() {
 
       <div className="content-wrapper">
         <h2>AREAS WE SERVE</h2>
-        <a className="phone" href="tel:(509)646-7488">
-          (509) 646-7488
+        <a className="phone" href="tel:(509) 535-5440">
+          (509) 535-5440
         </a>
         <strong>Proudly serving:</strong>
         <p>

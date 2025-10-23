@@ -57,9 +57,9 @@ export default function KnowUsPanel() {
         <h2>Get to know us</h2>
 
         <div className="box">
-          <a className="phone" href="tel:5096467488">
+          <a className="phone" href="tel:(509) 535-5440">
             <FaPhoneAlt style={{ marginRight: "6px" }} />
-            (509) 646-7488
+            (509) 535-5440
           </a>
           <a className="btn" href="/contact">
             Contact Us

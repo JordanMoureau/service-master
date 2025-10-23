@@ -57,8 +57,8 @@ export default function MobileNav() {
           </nav>
 
           <div className="mobile-contact">
-            <a href="tel:5096467488" className="phone-line">
-              <FaPhoneAlt /> (509) 646-7488
+            <a href="tel:(509) 535-5440" className="phone-line">
+              <FaPhoneAlt /> (509) 535-5440
             </a>
             <Link href="/contact" className="mobile-cta" onClick={closeMenu}>
               Contact Us Now

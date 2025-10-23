@@ -118,7 +118,7 @@ export default function Nav() {
 
           <div className="contact">
             <div className="call-us">
-              <a href="#" className="phone">
+              <a href="tel:(509) 535-5440" className="phone">
                 <Phone
                   style={{
                     width: "20px",
@@ -128,7 +128,7 @@ export default function Nav() {
                     color: "black",
                   }}
                 />
-                (509) 646-7488
+                (509) 535-5440
               </a>
             </div>
             <div className="cta-container">

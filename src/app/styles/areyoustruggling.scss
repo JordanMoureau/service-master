@@ -1,0 +1,28 @@
+.are-you-struggling {
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url("/residential-water-damage.jpg");
+  flex-direction: column;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+
+  .inner {
+    max-width: 850px;
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
+}

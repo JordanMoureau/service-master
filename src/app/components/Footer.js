@@ -41,7 +41,7 @@ const Footer = () => {
             LICENSE NUMBER: 8500
           </p>
           <p>
-            <i className="fas fa-phone"></i> (509) 646-7488
+            <i className="fas fa-phone"></i> (509) 535-5440
           </p>
         </div>
 

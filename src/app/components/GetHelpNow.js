@@ -7,8 +7,8 @@ export default function GetHelpNow({ text }) {
         <div className="get1"></div>
         <h1>
           {text}{" "}
-          <a href="tel:(509) 646-7488" className="underline-link">
-            (509) 646-7488
+          <a href="tel:(509) 535-5440" className="underline-link">
+            (509) 535-5440
           </a>
         </h1>
       </div>
