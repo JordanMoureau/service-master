@@ -2,8 +2,6 @@
 "use client";
 import { useState } from "react";
 
-import Image from "next/image";
-
 export default function AreasWeServe() {
   const [showRegions, setShowRegions] = useState(false);
 
@@ -16,7 +14,6 @@ export default function AreasWeServe() {
         className="map-wrapper"
         style={{
           backgroundImage: "url('/service-area-map.png')",
-          // or 'url("/service-area-map.png")' if you prefer
         }}
       >
         <a
