@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { gtmEvent } from "./gtm";
 
 export default function ContactForm() {
   const [status, setStatus] = useState("idle");
@@ -19,6 +20,8 @@ export default function ContactForm() {
 
     if (res.ok) {
       form.reset();
+      gtmEvent({ event: "lead_submit", form: "contact", status: "submitted" });
+
       setStatus("success");
     } else {
       setStatus("error");

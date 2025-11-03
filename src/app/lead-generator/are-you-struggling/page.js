@@ -1,6 +1,10 @@
 import Contact from "../../components/Contact";
+import { gtmEvent } from "../../components/gtm";
 
 export default function AreYouStruggling() {
+  const handleClick = () => {
+    gtmEvent({ event: "click_to_call", label: "header_phone" });
+  };
   return (
     <div className="are-you-struggling">
       <div className="inner">
@@ -21,6 +25,7 @@ export default function AreYouStruggling() {
           className="btn"
           href="tel:1(509) 646-7488"
           aria-label="Call now for emergency water damage help"
+          onClick={handleClick}
         >
           Call 24/7: (509) 646-7488
         </a>
