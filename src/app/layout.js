@@ -72,8 +72,25 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/rfq2kdc.css" />
         {/* Preload default OG image (helps first share) */}
         <link rel="preload" as="image" href="/og/default.jpg" />
+        <Script id="gtm-init" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T2JX7NCC');
+          `}
+        </Script>
       </head>
       <body>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2JX7NCC"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            `,
+          }}
+        />
         {/* Global business identity (safe site-wide) */}
         <JsonLd
           data={{
