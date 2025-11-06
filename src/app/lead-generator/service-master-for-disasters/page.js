@@ -1,3 +1,6 @@
+import LeadContactForm from "../../components/LeadContactForm";
+import TrustStrip from "../../components/TrustStrip";
+
 export default function WaterDamageV2() {
   return (
     <main className="for-disasters">
@@ -13,6 +16,8 @@ export default function WaterDamageV2() {
         </div>
         <a href="tel:15092608166">Call 24/7: (509) 260-8166</a>
       </header>
+
+      <TrustStrip />
 
       <section>
         <div>
@@ -56,6 +61,8 @@ export default function WaterDamageV2() {
           <div>— Mark S., Spokane Valley</div>
         </blockquote>
       </section>
+
+      <LeadContactForm />
 
       <section>
         <div aria-label="Request help form">{/* <ContactForm /> */}</div>

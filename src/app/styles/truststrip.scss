@@ -1,0 +1,28 @@
+.trust-strip {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 3rem 1rem;
+
+  svg {
+    font-size: 1.5rem;
+    color: #fdf056;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .trust-strip {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .trust-strip {
+    display: none;
+  }
+}
