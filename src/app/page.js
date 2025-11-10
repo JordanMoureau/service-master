@@ -106,7 +106,7 @@ export default function Home() {
 
             <div className="outline-box">
               Get in touch with the best restoration company near you today!
-              Give us a call at<a>(509) 646-7488</a> or <a>contact us</a>{" "}
+              Give us a call at<a>(509) 535-5440</a> or <a>contact us</a>{" "}
               online!
             </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="black-box">
               Need help from one of the most trusted restoration companies near
               you? We can help get your home back to normal - call{" "}
-              <a>(509) 646-7488</a> to get started!
+              <a href="tel:5095355440">(509) 535-5440</a> to get started!
             </div>
 
             <h2>Expert Fire Damage Repair in Spokane</h2>
@@ -175,8 +175,10 @@ export default function Home() {
             </p>
 
             <div className="outline-box">
-              If you've experienced a disaster, Call us at <a>(509) 646-7488</a>{" "}
-              or <a>contact our disaster restoration experts</a> online now!
+              If you've experienced a disaster, Call us at{" "}
+              <a href="tel:5095355440">(509) 535-5440</a> or{" "}
+              <a href="/contact">contact our disaster restoration experts</a>{" "}
+              online now!
             </div>
           </div>
 
@@ -204,16 +206,17 @@ export default function Home() {
             </p>
 
             <div className="yellow-box">
-              Give our team a call at <a>(509) 646-7488</a> or <a>contact us</a>{" "}
+              Give our team a call at{" "}
+              <a href="tel:5095355440">(509) 535-5440</a> or <a>contact us</a>{" "}
               online to schedule water removal & mitigation services today!
             </div>
 
             <p>
-              For Water and Fire Restoration near Spokane, WA call us today at
-              <a className="underline-link" href="tel:5096467488">
-                (509) 646-7488
+              For Water and Fire Restoration near Spokane, WA call us today at{" "}
+              <a className="underline-link" href="tel:5095355440">
+                (509) 535-5440
               </a>{" "}
-              or
+              or{" "}
               <a className="underline-link" href="/contact">
                 request a disaster restoration estimate online
               </a>
@@ -269,9 +272,9 @@ export default function Home() {
                 <strong>FOR 24/7 EMERGENCY RESTORATION SERVICES, DIAL</strong>
                 <br />
                 <a className="underline-link" href="tel:5096467488">
-                  (509) 646-7488
+                  (509) 535-5440
                 </a>{" "}
-                OR
+                OR{" "}
                 <a className="underline-link" href="/contact">
                   CONTACT OUR EXPERTS
                 </a>{" "}
