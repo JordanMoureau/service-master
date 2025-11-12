@@ -106,11 +106,16 @@ export default function Home() {
 
             <div className="outline-box">
               Get in touch with the best restoration company near you today!
-              Give us a call at<a>(509) 535-5440</a> or <a>contact us</a>{" "}
-              online!
+              Give us a call at{" "}
+              <a className="underline-link" href="tel:5096467488">
+                (509) 535-5440
+              </a>{" "}
+              or <a href="/contact">contact us</a> online!
             </div>
 
-            <h2>Comprehensive Restoration Services in Spokane</h2>
+            <h2>
+              Comprehensive Restoration Services in Spokane & Coeur D'Alene
+            </h2>
 
             <strong>Our residential restoration services include:</strong>
 
@@ -136,7 +141,7 @@ export default function Home() {
               <li className="arrow-list">Specialty services</li>
             </ul>
 
-            <h2>Emergency Water Damage Solutions in Spokane</h2>
+            <h2>Emergency Water Damage Solutions in Spokane & Coeur D'Alene</h2>
             <p>
               Addressing water damage fast is critical to securing the structure
               of your building.

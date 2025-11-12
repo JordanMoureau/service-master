@@ -259,9 +259,11 @@ export default function PaymentFinancingOptions() {
 
             <div className="outline-box">
               <p>
-                <a className="underline-link">Call now</a> or{" "}
-                <a className="underline-link">find your nearest location</a> to
-                get started. We’re here 24/7 when you need us most.
+                <a className="underline-link" href="tel:5095355440">
+                  Call now
+                </a>{" "}
+                or <a className="underline-link">find your nearest location</a>{" "}
+                to get started. We’re here 24/7 when you need us most.
               </p>
             </div>
           </div>

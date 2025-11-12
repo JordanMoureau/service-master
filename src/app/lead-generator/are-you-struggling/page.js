@@ -4,6 +4,42 @@ import Contact from "../../components/Contact";
 import LeadContactForm from "../../components/LeadContactForm";
 import TrustStrip from "../../components/TrustStrip";
 import { gtmEvent } from "../../components/gtm";
+import LeadReviews from "../../components/LeadReviews";
+import FAQAccordion from "../../components/FAQAccordion";
+
+// water-damage-faq-items.js
+export const waterDamageLeadFAQs = [
+  {
+    question: "How fast can you get here?",
+    answer:
+      "Usually same day—often within 60–90 minutes in Spokane, Spokane Valley, and Coeur d’Alene.",
+  },
+  {
+    question: "How long does drying take?",
+    answer:
+      "Most homes dry in ~3–5 days depending on materials, moisture levels, and airflow. We meter everything daily until it’s truly dry.",
+  },
+  {
+    question: "Do I call insurance first or you?",
+    answer:
+      "Call us first so we can stop active damage. We document everything and work with your adjuster. You’re only responsible for your deductible in most covered losses.",
+  },
+  {
+    question: "Will you handle the demo and rebuild?",
+    answer:
+      "Yes. We handle mitigation (drying, demo if needed) and coordinate reconstruction so you’re not juggling vendors.",
+  },
+  {
+    question: "Is it safe to stay in the house?",
+    answer:
+      "Often yes, but it depends on the area affected, power availability, and contamination. We’ll advise on day one and set equipment safely.",
+  },
+  {
+    question: "What about odors and mold?",
+    answer:
+      "Elevated moisture can cause odors. We control humidity, remove wet materials when needed, and apply antimicrobials to prevent growth.",
+  },
+];
 
 export default function AreYouStruggling() {
   const handleClick = () => {
@@ -47,121 +83,27 @@ export default function AreYouStruggling() {
       <TrustStrip />
 
       <LeadContactForm />
+
+      <LeadReviews />
+      <div className="faq-container">
+        <FAQAccordion items={waterDamageLeadFAQs} />
+      </div>
+
+      <div className="final-cta">
+        <h1>Ready to stop the damage?</h1>
+        <p>
+          Our certified restoration team is on call 24/7 and can be at your door
+          within hours. Don’t wait—every minute counts.
+        </p>
+        <div className="button-box">
+          <a className="btn" href="tel:+15096467488">
+            Call Now — (509) 646-7488
+          </a>
+          <a className="btn secondary" href="#lead-form">
+            Request Immediate Help
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
-
-// {/* <div className="inner">
-// {/* === HERO / URGENCY === */}
-// <section aria-labelledby="critical-heading">
-//   <h1 id="critical-heading">
-//     Water damage in your home? The next few hours are critical.
-//   </h1>
-//   <h2>Every moment wasted after water damage matters.</h2>
-
-//   <ul>
-//     <li className="arrow-list">Within 24 hours, mold begins forming</li>
-//     <li className="arrow-list">
-//       By 48 hours, structural materials weaken
-//     </li>
-//     <li className="arrow-list">
-//       After 72 hours, the cleanup cost can <em>triple</em>
-//     </li>
-//   </ul>
-
-//   <p>
-//     <strong>Call now</strong> to speak with a disaster-response pro.
-//     We’ll tell you exactly what to do next and dispatch a{" "}
-//     <strong>tech ASAP</strong>.
-//   </p>
-
-//   <a
-//     className="btn"
-//     href="tel:+15096467488"
-//     aria-label="Call now for emergency water damage help"
-//     onClick={handleClick}
-//   >
-//     Call 24/7: (509) 646-7488
-//   </a>
-// </section>
-
-// <TrustStrip />
-
-// {/* === WHY ACT FAST === */}
-// <section className="why-fast" aria-labelledby="why-fast-heading">
-//   <h2 id="why-fast-heading">Why fast action matters</h2>
-//   <ul>
-//     <li>Stops mold growth before it spreads</li>
-//     <li>Protects floors, drywall, and electrical systems</li>
-//     <li>Reduces insurance claim costs</li>
-//     <li>Preserves valuables and prevents secondary damage</li>
-//   </ul>
-// </section>
-
-// {/* === WHAT TO EXPECT === */}
-// <section className="what-to-expect" aria-labelledby="expect-heading">
-//   <h2 id="expect-heading">What to expect when you call</h2>
-//   <ol>
-//     <li>
-//       <strong>1. Immediate dispatch:</strong> A restoration tech is
-//       assigned within minutes.
-//     </li>
-//     <li>
-//       <strong>2. On-site assessment:</strong> We identify source, damage
-//       level, and risks.
-//     </li>
-//     <li>
-//       <strong>3. Extraction & drying:</strong> Industrial-grade drying
-//       starts immediately.
-//     </li>
-//     <li>
-//       <strong>4. Insurance coordination:</strong> We handle
-//       documentation and billing.
-//     </li>
-//   </ol>
-// </section>
-
-// <LeadContactForm />
-
-// {/* === FAQ === */}
-// <section className="faq" aria-labelledby="faq-heading">
-//   <h2 id="faq-heading">FAQs</h2>
-//   <details>
-//     <summary>Do you handle insurance claims?</summary>
-//     <p>
-//       Yes. We document all damage, provide photo reports, and bill
-//       directly to your insurance carrier.
-//     </p>
-//   </details>
-
-//   <details>
-//     <summary>How quickly can someone arrive?</summary>
-//     <p>
-//       We have 24/7 crews on call and can usually arrive within 60–90
-//       minutes of your call.
-//     </p>
-//   </details>
-
-//   <details>
-//     <summary>What if I’m not sure how bad the damage is?</summary>
-//     <p>
-//       We offer free moisture inspections — our techs will assess and
-//       advise on next steps before work begins.
-//     </p>
-//   </details>
-// </section>
-
-// {/* === FINAL CTA === */}
-// <section className="final-cta" aria-label="final call to action">
-//   <a
-//     className="btn btn-primary"
-//     href="tel:+15096467488"
-//     onClick={handleClick}
-//   >
-//     Call Now: (509) 646-7488
-//   </a>
-//   <a className="btn btn-secondary" href="#contact-form-heading">
-//     Request Help Online
-//   </a>
-// </section>
-// </div> */}

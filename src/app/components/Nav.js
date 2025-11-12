@@ -1,9 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import "../styles/nav.scss";
 import { Phone, Search } from "lucide-react";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
+import { use, useState } from "react";
 import Dropdown from "../components/Dropdown";
 
 const commercialItems = [
@@ -49,6 +51,9 @@ const whyUsItems = [
 ];
 
 export default function Nav() {
+  const [phone, setPhone] = useState("(509) 535-5440");
+  const [hover, setHover] = useState(false);
+
   return (
     <header className="header">
       <div className="header-left">
@@ -64,7 +69,10 @@ export default function Nav() {
       <div className="header-right">
         {/* TOP BAR SECTION */}
         <div className="top-bar">
-          <a href="#" className="search">
+          <a
+            href="https://www.servicemasterrestore.com/site-search/"
+            className="search"
+          >
             <Search
               style={{
                 width: "13px",
@@ -73,21 +81,28 @@ export default function Nav() {
             />{" "}
             Search
           </a>
-          <FaMapMarkerAlt style={{ color: "black" }} />
-          <Link href="#" className="serve">
-            ServiceMaster by Compass
-          </Link>
-          <Link
-            href="https://servicemaster-restore-usa-careers.careerplug.com/jobs"
-            target="_blank"
+          <div
+            className="hover-location"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
           >
-            Careers
+            <FaMapMarkerAlt style={{ color: "black" }} />
+            <a onClick={() => setPhone("(509) 535-5440")} className="serve">
+              Spokane, WA
+            </a>
+
+            <div className={`location-drop${hover ? " location-hover" : ""}`}>
+              <a className="serve" onClick={() => setPhone("(208) 277-4329")}>
+                Coeur D'Alene, ID
+              </a>
+            </div>
+          </div>
+
+          <Link href="https://share.google/ZDhbY0puAXNduv9yp" target="_blank">
+            ServiceMaster
           </Link>
-          <Link
-            href="https://www.servicemasterrestore.com/national-accounts/"
-            target="_blank"
-          >
-            National Accounts
+          <Link href="https://share.google/ZDhbY0puAXNduv9yp" target="_blank">
+            Inland Northwest
           </Link>
         </div>
 
@@ -118,7 +133,7 @@ export default function Nav() {
 
           <div className="contact">
             <div className="call-us">
-              <a href="tel:(509) 535-5440" className="phone">
+              <a href={`tel:${phone}`} className="phone">
                 <Phone
                   style={{
                     width: "20px",
@@ -128,7 +143,7 @@ export default function Nav() {
                     color: "black",
                   }}
                 />
-                (509) 535-5440
+                {phone}
               </a>
             </div>
             <div className="cta-container">

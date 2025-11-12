@@ -1,85 +1,118 @@
+import { FaTimes } from "react-icons/fa";
 import LeadContactForm from "../../components/LeadContactForm";
+import LeadReviews from "../../components/LeadReviews";
 import TrustStrip from "../../components/TrustStrip";
+import Image from "next/image";
+import { IoMdTime } from "react-icons/io";
+import { FaCircleCheck } from "react-icons/fa6";
+import { IoShieldCheckmark } from "react-icons/io5";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 export default function WaterDamageV2() {
   return (
-    <main className="for-disasters">
-      <header>
-        <h1>
-          Spokane’s trusted water-damage team — on-site in just a few hours
-        </h1>
-        <p>Stop damage, prevent mold, and get your life back tonight.</p>
-        <div>
-          {/* Swap for real review widget */}
-          <div aria-label="Rating">★★★★★ 4.9/5 (182 local reviews)</div>
-          <div>Insurance-friendly · Licensed & Insured</div>
-        </div>
-        <a href="tel:15092608166">Call 24/7: (509) 260-8166</a>
-      </header>
+    <div className="lead-container">
+      <main className="for-disasters">
+        <header>
+          <h1>
+            Spokane’s trusted water-damage team — on-site in just a few hours
+          </h1>
+          <p>Stop damage, prevent mold, and get your life back tonight.</p>
+          <div>
+            {/* Swap for real review widget */}
+            <div aria-label="Rating">★★★★★ 4.9/5 (100+ local reviews)</div>
+            <div>Insurance-friendly · Licensed & Insured</div>
+          </div>
+
+          <a href="tel:15092608166" className="btn">
+            Call 24/7: (509) 260-8166
+          </a>
+        </header>
+        <img
+          src="/homebodyimage.jpg"
+          alt="spokane couple dealing with water damage in their home"
+        />
+      </main>
 
       <TrustStrip />
 
-      <section>
-        <div>
-          <h2>Why homeowners choose us</h2>
+      <section className="why-homeowners">
+        <div className="why-inner">
+          <div>
+            <h1>Why homeowners choose us</h1>
+          </div>
           <ul>
             <li>
-              <strong>Rapid response:</strong> minimize repairs & cost
+              <IoMdTime />
+              <h2>Rapid response:</h2> <p>minimize repairs & cost</p>
+              <a className="btn" href="tel:+15096467488">
+                Call Now
+              </a>
             </li>
             <li>
-              <strong>Mold prevention:</strong> proper drying & dehumidification
+              <FaCircleCheck />
+              <h2>Mold prevention:</h2>
+              <p> proper drying & dehumidification</p>
+              <a className="btn" href="tel:+15096467488">
+                Call Now
+              </a>
             </li>
             <li>
-              <strong>We handle insurance:</strong> photos, documentation,
-              billing
+              <IoShieldCheckmark />
+              <h2>We handle insurance:</h2>
+              <p> photos, documentation, billing</p>
+              <a className="btn" href="tel:+15096467488">
+                Call Now
+              </a>
             </li>
             <li>
-              <strong>Full service:</strong> extraction, drying, cleanup,
-              repairs
+              <IoMdCheckmarkCircleOutline />
+              <h2>Full service:</h2> <p>extraction, drying, cleanup, repairs</p>
+              <a className="btn" href="tel:+15096467488">
+                Call Now
+              </a>
             </li>
           </ul>
         </div>
-        <div>
-          <h2>What we’ll do today</h2>
-          <ol>
-            <li>Immediate phone triage & safety checklist</li>
-            <li>On-site assessment + water extraction</li>
-            <li>Drying plan with clear timeline & costs</li>
-          </ol>
+        <div className="why-homeowners">
+          <div className="why-inner">
+            <h1>What we’ll do today</h1>
+            <ol>
+              <li>
+                <div className="number">#1</div>
+                <h2>Immediate phone triage & safety checklist</h2>
+              </li>
+              <li>
+                <div className="number">#2</div>
+                <h2>On-site assessment + water extraction</h2>
+              </li>
+              <li>
+                <div className="number">#3</div>
+                <h2>Drying plan with clear timeline & costs</h2>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Real Spokane results</h2>
-        <blockquote>
-          “They were at our door in under an hour and saved our basement carpet.
-          Handled insurance so we didn’t have to.”
-          <div>— Emily R., South Hill</div>
-        </blockquote>
-        <blockquote>
-          “Clear, fast, professional. The only call I’ll make for water issues.”
-          <div>— Mark S., Spokane Valley</div>
-        </blockquote>
-      </section>
+      <LeadReviews />
 
       <LeadContactForm />
 
-      <section>
-        <div aria-label="Request help form">{/* <ContactForm /> */}</div>
-        <aside>
-          <h3>Service area</h3>
-          <p>Spokane • Spokane Valley • Liberty Lake • Airway Heights • CDA</p>
-          <h3>Questions</h3>
-          <details>
-            <summary>Do you work with my insurance?</summary>
-            <p>Yes, we coordinate directly and provide full documentation.</p>
-          </details>
-          <details>
-            <summary>How fast can you get here?</summary>
-            <p>Typically within 45–90 minutes depending on location.</p>
-          </details>
-        </aside>
-      </section>
-    </main>
+      <div className="final-cta">
+        <h1>Ready to stop the damage?</h1>
+        <p>
+          Our certified restoration team is on call 24/7 and can be at your door
+          within hours. Don’t wait—every minute counts.
+        </p>
+        <div className="button-box">
+          <a className="btn" href="tel:+15096467488">
+            Call Now — (509) 646-7488
+          </a>
+          <a className="btn secondary" href="#lead-form">
+            Request Immediate Help
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -2,7 +2,7 @@
   background-color: black;
   width: 100%;
   color: white;
-  padding: 12rem;
+  padding: 4rem 3rem 0rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,5 +38,47 @@
     display: block;
     -webkit-clip-path: polygon(0 0, 99% 0, 100% 50%, 99% 100%, 0 100%);
     clip-path: polygon(0 0, 99% 0, 100% 50%, 99% 100%, 0 100%);
+  }
+}
+
+.final-cta {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1.5rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(254, 238, 80);
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .button-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    background: rgb(254, 238, 80);
+    color: #000;
+    font-weight: 700;
+    padding: 0.9rem 1.4rem;
+
+    text-decoration: none;
+  }
+
+  .btn.secondary {
+    background: transparent;
+    border: 2px solid rgb(254, 238, 80);
+    color: rgb(254, 238, 80);
   }
 }

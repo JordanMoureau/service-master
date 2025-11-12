@@ -58,11 +58,6 @@ const Footer = () => {
             <li>
               <a href="/insurance">INSURANCE</a>
             </li>
-            <li>
-              <a href="https://www.servicemasterrestore.com/national-accounts/">
-                NATIONAL ACCOUNTS
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -78,11 +73,6 @@ const Footer = () => {
             </li>
             <li>
               <a href="/contact">CONTACT US</a>
-            </li>
-            <li>
-              <a href="https://www.servicemasterrestore.com/locations/">
-                CHANGE LOCATION
-              </a>
             </li>
           </ul>
         </div>
@@ -128,7 +118,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="search">
-            <a href="/search">
+            <a href="https://www.servicemasterrestore.com/site-search/">
               <i className="fas fa-search"></i> SEARCH
             </a>
           </div>

@@ -307,8 +307,11 @@ export default function Commerical() {
               <a href="/contact" className="underline-link">
                 Reach out to us online
               </a>{" "}
-              or call <a className="underline-link">(509) 646-7488</a> to get
-              started.
+              or call{" "}
+              <a className="underline-link" href="tel:5096467488">
+                (509) 535-5440
+              </a>{" "}
+              to get started.
             </div>
 
             <h2>
@@ -509,8 +512,11 @@ export default function Commerical() {
             </p>
 
             <div className="black-box">
-              <a>Contact us online</a> or call <a>(509) 646-7488</a> today for
-              commercial restoration services in Spokane.
+              <a>Contact us online</a> or call{" "}
+              <a className="underline-link" href="tel:5096467488">
+                (509) 535-5440
+              </a>{" "}
+              today for commercial restoration services in Spokane.
             </div>
           </div>
 

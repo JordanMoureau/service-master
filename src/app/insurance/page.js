@@ -372,10 +372,10 @@ export default function Insurance() {
               >
                 ServiceMaster Restore
               </a>
-              . Give us a call today at
-              <a href="tel: (866) 867-3123" className="underline-link">
-                1-800-respond
-              </a>
+              . Give us a call today at{" "}
+              <a className="underline-link" href="tel:5095355440">
+                (509) 535-5440
+              </a>{" "}
               .
             </div>
 

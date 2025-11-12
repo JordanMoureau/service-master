@@ -1,6 +1,6 @@
 .are-you-struggling {
   display: flex;
-  padding: 5rem;
+  padding: 4rem 3rem;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
@@ -24,5 +24,16 @@
 
   .btn {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .are-you-struggling {
+    padding: 2rem 1rem;
+  }
+  .inner {
+    h1 {
+      font-size: 3.5rem;
+    }
   }
 }

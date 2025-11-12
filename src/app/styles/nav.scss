@@ -53,6 +53,34 @@
     line-height: 1;
   }
 
+  .serve:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+
+  .hover-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    z-index: 1;
+  }
+
+  .location-drop {
+    display: none;
+  }
+
+  .location-hover {
+    display: block;
+    position: absolute;
+    padding-top: 10px;
+    top: 18px;
+    left: 14px;
+    white-space: nowrap;
+    z-index: 0;
+  }
+
   a {
     margin-left: 1rem;
     color: black;
@@ -235,7 +263,7 @@
 
 @media screen and (min-width: 1200px) {
   .serve {
-    margin-right: 8em;
+    margin-right: 6em;
   }
 
   .bottom-bar {

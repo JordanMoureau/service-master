@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/rfq2kdc.css" />
         {/* Preload default OG image (helps first share) */}
         <link rel="preload" as="image" href="/og/default.jpg" />
-        <Script id="gtm-init" strategy="afterInteractive">
+        <Script id="gtm-init" strategy="beforeInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

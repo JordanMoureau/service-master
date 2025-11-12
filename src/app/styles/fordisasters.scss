@@ -1,4 +1,123 @@
 .for-disasters {
-  max-width: 900px;
-  padding: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  header {
+    max-width: 900px;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+}
+
+.why-homeowners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  .why-inner {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      padding-left: 0px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        background-color: rgb(254, 238, 80);
+        padding: 2rem 1rem;
+        border-radius: 5px;
+        width: 25%;
+        h2 {
+          margin: 0;
+        }
+        p {
+          margin: 0;
+        }
+
+        btn {
+          margin-top: 1rem;
+        }
+
+        svg {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    ol {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      padding-left: 0px;
+      list-style: none;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+        background-color: black;
+        color: rgb(254, 238, 80);
+        padding: 2rem 1rem;
+        border-radius: 5px;
+
+        .number {
+          padding: 0rem 1rem;
+          font-weight: 900;
+          font-size: 5rem;
+          border: 5px solid rgb(254, 238, 80);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .why-homeowners {
+    text-align: left;
+    .why-inner {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          width: 80%;
+        }
+      }
+
+      ol {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .for-disasters {
+    header {
+      h1 {
+        font-size: 3.2rem;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
 }

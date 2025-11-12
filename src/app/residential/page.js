@@ -296,7 +296,11 @@ export default function Residential() {
             </p>
 
             <div className="outline-box">
-              Call <a className="underline-link">(509) 646-7488</a> to{" "}
+              Call{" "}
+              <a className="underline-link" href="tel:5095355440">
+                (509) 535-5440
+              </a>{" "}
+              to{" "}
               <a href="/contact" className="underline-link">
                 get in touch
               </a>{" "}
@@ -464,7 +468,11 @@ export default function Residential() {
 
             <div className="black-box">
               For more information about residential restoration services in
-              Spokane & Coeur d'Alene, call <a>(509) 646-7488</a> or
+              Spokane & Coeur d'Alene, call{" "}
+              <a className="underline-link" href="tel:5095355440">
+                (509) 535-5440
+              </a>{" "}
+              or
               <a>contact us online</a>.
             </div>
 
