@@ -8,7 +8,7 @@ import LeadReviews from "../../components/LeadReviews";
 import FAQAccordion from "../../components/FAQAccordion";
 
 // water-damage-faq-items.js
-export const waterDamageLeadFAQs = [
+const waterDamageLeadFAQs = [
   {
     question: "How fast can you get here?",
     answer:
