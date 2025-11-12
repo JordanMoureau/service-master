@@ -26,15 +26,15 @@ export default function WeCan() {
             </ul>
 
             <div className="button-box">
-              <a className="btn" href="tel:+15096467488">
+              <a className="btn" href="tel:+(509) 535-5440">
                 We can help.
               </a>
             </div>
 
             <h2>
               Call us now at{" "}
-              <a className="underline" href="tel:+15096467488">
-                (509) 646-7488
+              <a className="underline" href="tel:+(509) 535-5440">
+                (509) 535-5440
               </a>{" "}
               to speak to a disaster-response professional. We’ll explain
               exactly what to do and dispatch a tech within a few hours.

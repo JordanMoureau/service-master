@@ -71,11 +71,11 @@ export default function AreYouStruggling() {
 
           <a
             className="btn"
-            href="tel:+15096467488"
+            href="tel:+(509) 535-5440"
             aria-label="Call now for emergency water damage help"
             onClick={handleClick}
           >
-            Call 24/7: (509) 646-7488
+            Call 24/7: (509) 535-5440
           </a>
         </div>
       </section>
@@ -96,8 +96,8 @@ export default function AreYouStruggling() {
           within hours. Don’t wait—every minute counts.
         </p>
         <div className="button-box">
-          <a className="btn" href="tel:+15096467488">
-            Call Now — (509) 646-7488
+          <a className="btn" href="tel:+(509) 535-5440">
+            Call Now — (509) 535-5440
           </a>
           <a className="btn secondary" href="#lead-form">
             Request Immediate Help

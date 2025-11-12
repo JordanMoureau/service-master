@@ -23,8 +23,8 @@ export default function WaterDamageV2() {
             <div>Insurance-friendly · Licensed & Insured</div>
           </div>
 
-          <a href="tel:15092608166" className="btn">
-            Call 24/7: (509) 260-8166
+          <a href="tel:(509) 535-5440" className="btn">
+            Call 24/7: (509) 535-5440
           </a>
         </header>
         <img
@@ -44,7 +44,7 @@ export default function WaterDamageV2() {
             <li>
               <IoMdTime />
               <h2>Rapid response:</h2> <p>minimize repairs & cost</p>
-              <a className="btn" href="tel:+15096467488">
+              <a className="btn" href="tel:+(509) 535-5440">
                 Call Now
               </a>
             </li>
@@ -52,7 +52,7 @@ export default function WaterDamageV2() {
               <FaCircleCheck />
               <h2>Mold prevention:</h2>
               <p> proper drying & dehumidification</p>
-              <a className="btn" href="tel:+15096467488">
+              <a className="btn" href="tel:+(509) 535-5440">
                 Call Now
               </a>
             </li>
@@ -60,14 +60,14 @@ export default function WaterDamageV2() {
               <IoShieldCheckmark />
               <h2>We handle insurance:</h2>
               <p> photos, documentation, billing</p>
-              <a className="btn" href="tel:+15096467488">
+              <a className="btn" href="tel:+(509) 535-5440">
                 Call Now
               </a>
             </li>
             <li>
               <IoMdCheckmarkCircleOutline />
               <h2>Full service:</h2> <p>extraction, drying, cleanup, repairs</p>
-              <a className="btn" href="tel:+15096467488">
+              <a className="btn" href="tel:+(509) 535-5440">
                 Call Now
               </a>
             </li>
@@ -105,8 +105,8 @@ export default function WaterDamageV2() {
           within hours. Don’t wait—every minute counts.
         </p>
         <div className="button-box">
-          <a className="btn" href="tel:+15096467488">
-            Call Now — (509) 646-7488
+          <a className="btn" href="tel:+(509) 535-5440">
+            Call Now — (509) 535-5440
           </a>
           <a className="btn secondary" href="#lead-form">
             Request Immediate Help
