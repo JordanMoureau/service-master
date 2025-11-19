@@ -51,9 +51,6 @@ export default function MobileNav() {
             <Link href="/payments" onClick={closeMenu}>
               Payments
             </Link>
-            <Link href="#" onClick={closeMenu}>
-              Franchise Opportunities
-            </Link>
           </nav>
 
           <div className="mobile-contact">

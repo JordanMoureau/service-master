@@ -55,8 +55,8 @@ export default function WeCan() {
           within hours. Don’t wait—every minute counts.
         </p>
         <div className="button-box">
-          <a className="btn" href="tel:+15096467488">
-            Call Now — (509) 646-7488
+          <a className="btn" href="tel:+(509) 535-5440">
+            Call Now — (509) 535-5440
           </a>
           <a className="btn secondary" href="#lead-form">
             Request Immediate Help

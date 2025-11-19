@@ -44,10 +44,6 @@ const whyUsItems = [
   { href: "/why-us/about-us", label: "About Us" },
   { href: "/why-us/testimonials", label: "Testimonials" },
   { href: "/why-us/meet-the-team", label: "Meet the Team" },
-  {
-    href: "https://www.servicemasterrestore.com/contact-corporate/",
-    label: "Contact Corporate",
-  },
 ];
 
 export default function Nav() {
