@@ -64,12 +64,16 @@ const Footer = () => {
         {/* Learn More */}
         <div className="footer-col">
           <h4>Learn More</h4>
+
           <ul>
             <li>
               <a href="/why-us">WHY US</a>
             </li>
             <li>
               <a href="/why-us/about-us">ABOUT US</a>
+            </li>
+            <li>
+              <a href="/safety-and-prevention">SAFETY AND PREVENTION</a>
             </li>
             <li>
               <a href="/contact">CONTACT US</a>
