@@ -38,7 +38,7 @@ const Footer = () => {
             <br />
             SPOKANE, WA 99202
             <br />
-            LICENSE NUMBER: 8500
+            L&I # 966769-02
           </p>
           <p>
             <i className="fas fa-phone"></i> (509) 535-5440
