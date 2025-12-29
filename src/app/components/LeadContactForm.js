@@ -1,35 +1,80 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+
+const SITE_KEY = "6LdthDosAAAAAMkxoKxRiIr1BSkLIfDhCowc4JTL"; // public is fine
 
 export default function LeadContactForm() {
   const [status, setStatus] = useState("idle");
+  const [captchaOpen, setCaptchaOpen] = useState(false);
+  const [pendingData, setPendingData] = useState(null);
+  const [captchaToken, setCaptchaToken] = useState(null);
 
-  async function handleSubmit(e) {
+  const formRef = useRef(null);
+  const recaptchaRef = useRef(null);
+
+  function handleSubmit(e) {
     e.preventDefault();
-    setStatus("sending");
+    if (status === "sending") return;
 
+    // Capture the form values now, but do NOT submit yet
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    setPendingData(data);
+    setCaptchaToken(null);
+    setCaptchaOpen(true);
+  }
+
+  async function submitToFormspree(token) {
+    if (!pendingData) return;
+
+    setStatus("sending");
+
+    // IMPORTANT: Formspree expects this exact field name
+    pendingData.set("g-recaptcha-response", token);
+
     const res = await fetch("https://formspree.io/f/manrpabl", {
       method: "POST",
-      body: data,
+      body: pendingData,
       headers: { Accept: "application/json" },
     });
 
     if (res.ok) {
-      form.reset();
+      formRef.current?.reset();
       setStatus("success");
     } else {
       setStatus("error");
     }
+
+    // Cleanup
+    setPendingData(null);
+    setCaptchaToken(null);
+    setCaptchaOpen(false);
+    recaptchaRef.current?.reset?.();
+  }
+
+  function onCaptchaChange(token) {
+    // token is the proof from Google
+    setCaptchaToken(token);
+  }
+
+  async function onCaptchaContinue() {
+    if (!captchaToken) return;
+    await submitToFormspree(captchaToken);
+  }
+
+  function onCaptchaCancel() {
+    setCaptchaOpen(false);
+    setPendingData(null);
+    setCaptchaToken(null);
+    recaptchaRef.current?.reset?.();
   }
 
   return (
     <div className="lead-contact">
-      <form onSubmit={handleSubmit}>
-        {/* subject line in the email you get */}
+      <form ref={formRef} onSubmit={handleSubmit}>
         <input
           type="hidden"
           name="_subject"
@@ -108,6 +153,35 @@ export default function LeadContactForm() {
           </p>
         )}
       </form>
+
+      {/* Full-page captcha gate */}
+      {captchaOpen && (
+        <div className="captchaOverlay" role="dialog" aria-modal="true">
+          <div className="captchaCard">
+            <h2>Quick verification</h2>
+            <p>Please confirm you’re not a robot before we submit.</p>
+
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={SITE_KEY}
+              onChange={onCaptchaChange}
+            />
+
+            <div className="captchaActions">
+              <button type="button" onClick={onCaptchaCancel}>
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={onCaptchaContinue}
+                disabled={!captchaToken || status === "sending"}
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
