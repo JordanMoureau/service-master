@@ -9,7 +9,11 @@ const Links = [
   "/safety-and-prevention/safe-sewer-backup-protocols",
   "/safety-and-prevention/protecting-your-home-from-weather-damage",
   "/safety-and-prevention/repairing-burst-pipes",
-  "/safety-and-prevention/weather-damage",
+  "/safety-and-prevention/first-24-after-water-damage",
+  "/safety-and-prevention/signs-of-hidden-water-damage",
+  "/safety-and-prevention/preparing-for-water-damage",
+  "/safety-and-prevention/how-to-turn-off-water",
+  "/safety-and-prevention/common-causes-of-water-damage",
 ];
 
 const List = [
@@ -17,6 +21,11 @@ const List = [
   "Safe Sewer Protocols",
   "Weather Damage Prevention",
   "Burst Pipes",
+  "First 24hrs After Water Damage",
+  "Signs of Water Damage",
+  "Preparing for Water Damage",
+  "How to Turn Off Main Water",
+  "Common Causes of Water Damage",
 ];
 export default function BurstPipeRepair() {
   return (
