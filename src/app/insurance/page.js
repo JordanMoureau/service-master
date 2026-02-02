@@ -272,10 +272,7 @@ export default function Insurance() {
               that offers a network of experienced Disaster Restoration
               professionals who are fully prepared to assist with damages caused
               by{" "}
-              <a
-                href="/residential/fire-and-smoke-damage/"
-                className="underline-link"
-              >
+              <a href="/residential/fire-and-smoke/" className="underline-link">
                 fire and smoke
               </a>
               ,{" "}
@@ -283,14 +280,8 @@ export default function Insurance() {
                 floods
               </a>
               , and other disasters. With over 65 years of industry experience,
-              you can count on us to provide your{" "}
-              <a
-                href="/insurance/policyholder-information/"
-                className="underline-link"
-              >
-                policyholder
-              </a>{" "}
-              with the peace of mind they need.
+              you can count on us to provide your policyholder with the peace of
+              mind they need.
             </p>
 
             <p>
@@ -309,18 +300,12 @@ export default function Insurance() {
                 </a>
               </li>
               <li className="arrow-list">
-                <a
-                  className="underline-link"
-                  href="/insurance/commercial-benefits-and-services/"
-                >
+                <a className="underline-link" href="/insurance/">
                   Commercial benefits and services
                 </a>
               </li>
               <li className="arrow-list">
-                <a
-                  className="underline-link"
-                  href="/insurance/residential-benefits-and-services/"
-                >
+                <a className="underline-link" href="/insurance">
                   Residential benefits and services
                 </a>
               </li>
@@ -337,11 +322,9 @@ export default function Insurance() {
               When we are contacted, we immediately take action to assist our
               clients. We are always on-site within two to four hours to help
               minimize the damages to your{" "}
-              <a href="/insurance/policyholder-information/">
-                policyholder’s property
-              </a>
-              , including protecting valuable electronics, furniture, documents,
-              and data from further damage.
+              <a href="/insurance">policyholder’s property</a>, including
+              protecting valuable electronics, furniture, documents, and data
+              from further damage.
             </p>
 
             <a className="btn">Industry Training media center</a>
@@ -350,11 +333,9 @@ export default function Insurance() {
               When we are contacted, we immediately take action to assist our
               clients. We are always on-site within two to four hours to help
               minimize the damages to your{" "}
-              <a href="/insurance/policyholder-information/">
-                policyholder’s property
-              </a>
-              , including protecting valuable electronics, furniture, documents,
-              and data from further damage.
+              <a href="/insurance">policyholder’s property</a>, including
+              protecting valuable electronics, furniture, documents, and data
+              from further damage.
             </p>
 
             <h2>
@@ -366,10 +347,7 @@ export default function Insurance() {
               How can you stay at the top of your game as an insurance agent?
               It’s simple – choose the right champion. Get a 1-up on your
               customer satisfaction scores when you recommend{" "}
-              <a
-                href="https://www.servicemasterrestore.com/contact-corporate/"
-                className="underline-link"
-              >
+              <a href="/" className="underline-link">
                 ServiceMaster Restore
               </a>
               . Give us a call today at{" "}
@@ -386,11 +364,9 @@ export default function Insurance() {
               <strong>It’s genuine partnership</strong>. As an insurance
               professional, you know your recommendations of restoration
               companies are critical to customer satisfaction. When you{" "}
-              <a href="https://www.servicemasterrestore.com/cyc/">
-                recommend ServiceMaster Restore
-              </a>{" "}
-              you can rest assured that you’ve recommended a company focused on
-              delivering the highest level of customer satisfaction.
+              <a href="/">recommend ServiceMaster Restore</a> you can rest
+              assured that you’ve recommended a company focused on delivering
+              the highest level of customer satisfaction.
             </p>
 
             <h4>BASED ON A RECENT J.D. POWER RESEARCH STUDY:</h4>
@@ -434,10 +410,7 @@ export default function Insurance() {
             <h2>WHY RECOMMEND SERVICEMASTER RESTORE?</h2>
             <p>
               We value and put great emphasis on the importance of{" "}
-              <a
-                href="/insurance/continuing-education-classes/"
-                className="underline-link"
-              >
+              <a href="/insurance/education/" className="underline-link">
                 Comprehensive Training &amp; Certification
               </a>{" "}
               for all our employees, as well as ongoing training for both

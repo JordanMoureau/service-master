@@ -30,7 +30,7 @@ const faqList = [
   },
   {
     title: "air duct cleaning faq",
-    link: "faqs/commercial/air-duct-faq",
+    link: "/faqs/commercial/air-duct-faq",
   },
   {
     title: "fire restoration faq",

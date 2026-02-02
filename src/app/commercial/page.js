@@ -157,12 +157,7 @@ const jsonLd = [
         url: "https://smcfireandwater.com/commercial/weather",
         name: "Weather / Storm",
       },
-      {
-        "@type": "ListItem",
-        position: 5,
-        url: "https://smcfireandwater.com/commercial/odor",
-        name: "Odor Removal",
-      },
+
       {
         "@type": "ListItem",
         position: 6,
@@ -244,7 +239,6 @@ const jsonLd = [
 const Links = [
   "/commercial/fire-and-smoke",
   "/commercial/mold",
-  "/commercial/odor",
   "/commercial/specialty-services",
   "/commercial/pre-loss-planning",
   "/commercial/water-damage",
@@ -254,7 +248,6 @@ const Links = [
 const List = [
   "Fire And Smoke",
   "Mold Damage",
-  "Odor Removal",
   "Specialty Services",
   "Pre-Loss Planning",
   "Water Damage",
@@ -351,7 +344,7 @@ export default function Commerical() {
             </p>
 
             <h2>
-              <a href="commercial/fire-damage" className="underline-link">
+              <a href="commercial/fire-and-smoke" className="underline-link">
                 {" "}
                 Expert Commercial Fire Damage Restoration in Spokane
               </a>

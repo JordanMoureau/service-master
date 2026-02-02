@@ -6,13 +6,13 @@ import UncertainTo from "../components/UncertaintyTo";
 import JsonLd from "../components/JsonLd";
 
 // --- SEO + JSON-LD ---
-const canonical = "https://smcfireandwater.com/payment-financing-options";
+const canonical = "https://smcfireandwater.com/payments";
 const title =
   "Payment & Financing Options | ServiceMaster by Compass Spokane & Coeur d’Alene";
 const description =
   "ServiceMaster by Compass offers flexible payment & financing for water damage, fire restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. We also work with all major insurance providers.";
 
-// app/payment-financing-options/page.tsx
+// app/payments/page.tsx
 
 export const metadata = {
   title:
@@ -29,14 +29,14 @@ export const metadata = {
     "mold abatement service Coeur d’Alene ID",
   ],
   alternates: {
-    canonical: "https://smcfireandwater.com/payment-financing-options",
+    canonical: "https://smcfireandwater.com/payments",
   },
   openGraph: {
     title:
       "Payment & Financing Options — ServiceMaster by Compass | Spokane & Coeur d’Alene",
     description:
       "Flexible payment plans, financing options, and insurance support for restoration services. Serving Spokane, Spokane Valley & Coeur d’Alene.",
-    url: "https://smcfireandwater.com/payment-financing-options",
+    url: "https://smcfireandwater.com/payments",
     siteName: "ServiceMaster by Compass",
     images: [
       {
@@ -104,19 +104,19 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://smcfireandwater.com/payment-financing-options#webpage",
+    "@id": "https://smcfireandwater.com/payments#webpage",
     url: canonical,
     name: "Payment & Financing Options",
     isPartOf: { "@id": "https://smcfireandwater.com/#website" },
     description: description,
     breadcrumb: {
-      "@id": "https://smcfireandwater.com/payment-financing-options#breadcrumb",
+      "@id": "https://smcfireandwater.com/payments#breadcrumb",
     },
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": "https://smcfireandwater.com/payment-financing-options#breadcrumb",
+    "@id": "https://smcfireandwater.com/payments#breadcrumb",
     itemListElement: [
       {
         "@type": "ListItem",

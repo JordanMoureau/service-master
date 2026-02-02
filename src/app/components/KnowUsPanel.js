@@ -81,7 +81,7 @@ export default function KnowUsPanel() {
             </div>
 
             <div className="see-all">
-              <a href="/testimonials">See all reviews</a>
+              <a href="/why-us/testimonials">See all reviews</a>
             </div>
           </div>
         </div>

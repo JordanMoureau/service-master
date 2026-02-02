@@ -41,7 +41,7 @@ const faqList = [
   },
   {
     title: "air duct cleaning faq",
-    link: "faqs/residential/air-ducts-cleaning-faq",
+    link: "/faqs/residential/air-duct-cleaning-faq",
   },
   {
     title: "fire damage & content management faq",
