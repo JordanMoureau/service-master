@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -9,6 +7,7 @@ const Links = [
   "/residential/water-damage",
   "/residential/fire-and-smoke",
   "/residential/mold",
+  "/residential/odor",
   "/residential/specialty-services",
 ];
 
@@ -16,8 +15,62 @@ const List = [
   "Water Damage",
   "Fire And Smoke",
   "Mold Damage",
+  "Odor",
   "Specialty Services",
 ];
+
+export const metadata = {
+  title: "Water Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "24/7 water damage restoration in Spokane, WA. Emergency water removal, drying, dehumidification, and repair after leaks or floods. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/residential/water-damage",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/residential/water-damage",
+    siteName: "ServiceMaster by Compass",
+    title: "Water Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Emergency water damage restoration in Spokane, WA. Fast water removal, structural drying, dehumidification, and repair services available 24/7.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/water-damage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Water damage restoration services in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Water Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "24/7 water damage restoration in Spokane, WA. Water extraction, drying, and repair after leaks or flooding. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/water-damage.jpg"],
+  },
+  keywords: [
+    "water damage restoration Spokane WA",
+    "water damage cleanup Spokane",
+    "emergency water removal Spokane",
+    "flood cleanup Spokane",
+    "water extraction Spokane",
+    "structural drying Spokane",
+    "ServiceMaster by Compass",
+  ],
+};
 
 export default function ResidentialWaterDamage() {
   return (

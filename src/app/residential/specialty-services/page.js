@@ -1,4 +1,3 @@
-"use client";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -8,6 +7,7 @@ const Links = [
   "/residential/water-damage",
   "/residential/fire-and-smoke",
   "/residential/mold",
+  "/residential/odor",
   "/residential/specialty-services",
 ];
 
@@ -15,8 +15,65 @@ const List = [
   "Water Damage",
   "Fire And Smoke",
   "Mold Damage",
+  "Odor",
   "Specialty Services",
 ];
+
+export const metadata = {
+  title:
+    "Specialty Restoration Services in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Specialty restoration services in Spokane, WA including biohazard cleanup, hoarding cleanup, trauma scene cleanup, and other specialized recovery needs. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/residential/specialty-services",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/residential/specialty-services",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Specialty Restoration Services in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Professional specialty restoration services in Spokane, WA. Discreet, certified cleanup for biohazards, hoarding, trauma scenes, and other sensitive situations.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/specialty-services.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Specialty restoration services in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Specialty Restoration Services in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Specialty cleanup and restoration services in Spokane, WA. Biohazard, hoarding, trauma scene cleanup, and more. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/specialty-services.jpg"],
+  },
+  keywords: [
+    "specialty restoration services Spokane WA",
+    "biohazard cleanup Spokane",
+    "hoarding cleanup Spokane",
+    "trauma scene cleanup Spokane",
+    "crime scene cleanup Spokane",
+    "disaster cleanup Spokane",
+    "ServiceMaster by Compass",
+  ],
+};
 
 export default function ResidentialSpecialtyServices() {
   return (

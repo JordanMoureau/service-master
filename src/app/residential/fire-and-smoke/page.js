@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -9,6 +7,7 @@ const Links = [
   "/residential/water-damage",
   "/residential/fire-and-smoke",
   "/residential/mold",
+  "/residential/odor",
   "/residential/specialty-services",
 ];
 
@@ -16,8 +15,71 @@ const List = [
   "Water Damage",
   "Fire And Smoke",
   "Mold Damage",
+  "Odor",
   "Specialty Services",
 ];
+
+export const metadata = {
+  title:
+    "Fire & Smoke Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "24/7 fire and smoke damage restoration in Spokane, WA. Fast response, smoke odor removal, content cleaning, and reconstruction support. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/residential/fire-and-smoke",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/residential/fire-and-smoke",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Fire & Smoke Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Emergency fire and smoke damage restoration in Spokane, WA. We handle cleanup, odor removal, content restoration, and rebuild support. Available 24/7/365.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/residential-fire-damage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Residential fire damage restoration Spokane",
+      },
+      {
+        url: "https://smcfireandwater.com/fire-kitchen.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Residential kitchen needing fire damage restoration",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Fire & Smoke Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "24/7 fire and smoke damage restoration in Spokane, WA. Cleanup, smoke odor removal, and reconstruction support. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/residential-fire-damage.jpg"],
+  },
+  keywords: [
+    "fire damage restoration Spokane WA",
+    "smoke damage restoration Spokane",
+    "fire restoration Spokane",
+    "smoke odor removal Spokane",
+    "soot cleanup Spokane",
+    "residential fire damage repair",
+    "ServiceMaster by Compass",
+  ],
+};
 
 export default function ResidentialFireAndSmoke() {
   return (

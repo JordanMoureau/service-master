@@ -132,7 +132,7 @@
 
 .nav-links {
   /* floor, slope, cap */
-  font-size: clamp(0.58rem, 0.24rem + 1.05vw, 1rem);
+  font-size: clamp(0.58rem, 0.24rem + 1.05vw, 0.9rem);
   /* tighten tracking on small screens */
   letter-spacing: clamp(0.01em, 0.06em - 0.25vw, 0.06em);
 }

@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -9,6 +7,7 @@ const Links = [
   "/residential/water-damage",
   "/residential/fire-and-smoke",
   "/residential/mold",
+  "/residential/odor",
   "/residential/specialty-services",
 ];
 
@@ -16,8 +15,64 @@ const List = [
   "Water Damage",
   "Fire And Smoke",
   "Mold Damage",
+  "Odor",
   "Specialty Services",
 ];
+
+export const metadata = {
+  title: "Weather Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Weather damage restoration in Spokane, WA for storms, wind, and rain. Fast response, water mitigation, board-up, cleanup, and repairs. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/residential/weather",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/residential/weather",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Weather Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Storm and weather damage restoration in Spokane, WA. We handle emergency response, water mitigation, cleanup, and reconstruction support.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/weather.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Weather damage restoration in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Weather Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Storm and weather damage restoration in Spokane, WA. Fast response for wind, rain, and storm cleanup. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/weather.jpg"],
+  },
+  keywords: [
+    "weather damage restoration Spokane WA",
+    "storm damage restoration Spokane",
+    "wind damage repair Spokane",
+    "rain damage cleanup Spokane",
+    "emergency board up Spokane",
+    "water mitigation Spokane",
+    "ServiceMaster by Compass",
+  ],
+};
 
 export default function ResidentialStormDamage() {
   return (

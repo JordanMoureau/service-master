@@ -14,6 +14,9 @@ const Links = [
   "/safety-and-prevention/preparing-for-water-damage",
   "/safety-and-prevention/how-to-turn-off-water",
   "/safety-and-prevention/common-causes-of-water-damage",
+  "/safety-and-prevention/before-damage-happens",
+  "/safety-and-prevention/seasonal-risks-spokane-coeur-dalene",
+  "/safety-and-prevention/when-it-becomes-an-emergency",
 ];
 
 const List = [
@@ -26,6 +29,9 @@ const List = [
   "Preparing for Water Damage",
   "How to Turn Off Main Water",
   "Common Causes of Water Damage",
+  "Before Damage Happens",
+  "Seasonal Risks in Spokane & CDA",
+  "When It Becomes an Emergency",
 ];
 
 export default function SewerBackupSafety() {

@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -9,6 +7,7 @@ const Links = [
   "/residential/water-damage",
   "/residential/fire-and-smoke",
   "/residential/mold",
+  "/residential/odor",
   "/residential/specialty-services",
 ];
 
@@ -16,8 +15,62 @@ const List = [
   "Water Damage",
   "Fire And Smoke",
   "Mold Damage",
+  "Odor",
   "Specialty Services",
 ];
+
+export const metadata = {
+  title: "Mold Remediation in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Professional mold remediation in Spokane, WA. Certified technicians provide safe mold removal, cleanup, and restoration after leaks or water damage. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/residential/mold",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/residential/mold",
+    siteName: "ServiceMaster by Compass",
+    title: "Mold Remediation in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Safe, professional mold remediation in Spokane, WA. We remove mold, clean and sanitize affected areas, and restore your home. 24/7/365 response.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/mold-damage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mold damage on walls in Spokane home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mold Remediation in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Professional mold removal and remediation in Spokane, WA. Certified cleanup, sanitization, and restoration. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/mold-damage.jpg"],
+  },
+  keywords: [
+    "mold remediation Spokane WA",
+    "mold removal Spokane",
+    "mold cleanup Spokane",
+    "residential mold remediation",
+    "black mold removal Spokane",
+    "mold damage repair",
+    "ServiceMaster by Compass",
+  ],
+};
 
 export default function ResidentialMoldDamage() {
   return (

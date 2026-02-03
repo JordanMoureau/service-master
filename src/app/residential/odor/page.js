@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -9,6 +7,7 @@ const Links = [
   "/residential/water-damage",
   "/residential/fire-and-smoke",
   "/residential/mold",
+  "/residential/odor",
   "/residential/specialty-services",
 ];
 
@@ -16,8 +15,62 @@ const List = [
   "Water Damage",
   "Fire And Smoke",
   "Mold Damage",
+  "Odor",
   "Specialty Services",
 ];
+
+export const metadata = {
+  title: "Odor Removal in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Professional odor removal in Spokane, WA. We eliminate smoke, pet, mold, and bio odors using proven deodorization methods. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/residential/odor",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/residential/odor",
+    siteName: "ServiceMaster by Compass",
+    title: "Odor Removal in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Odor removal services in Spokane, WA for smoke, pet, mold, and other stubborn odors. Professional deodorization to restore indoor air comfort.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/odor-removal.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional odor removal service in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Odor Removal in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Remove stubborn odors fast in Spokane, WA. Smoke, pet, mold, and more. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/odor-removal.jpg"],
+  },
+  keywords: [
+    "odor removal Spokane WA",
+    "smoke odor removal Spokane",
+    "pet odor removal Spokane",
+    "deodorization Spokane",
+    "ozone treatment Spokane",
+    "hydroxyl generator Spokane",
+    "ServiceMaster by Compass",
+  ],
+};
 
 export default function ResidentialOdorDamage() {
   return (
