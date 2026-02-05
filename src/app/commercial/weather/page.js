@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -23,6 +21,70 @@ const List = [
   "Water Damage",
   "Weather",
 ];
+
+export const metadata = {
+  title:
+    "Commercial Weather Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Commercial weather damage restoration in Spokane, WA for storms, wind, hail, and flooding. 24/7 emergency response, board-up, water extraction, drying, and repairs. Call (509) 646-7488.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/commercial/weather",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/commercial/weather",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Commercial Weather Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Storm, wind, hail, and flood damage restoration for Spokane-area businesses. Fast emergency response, mitigation, drying, cleanup, and repairs.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/weather-damage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Weather damage restoration for commercial buildings in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Weather Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "24/7 commercial storm and weather damage restoration in Spokane. Board-up, water extraction, drying, cleanup, and repairs.",
+    images: ["https://smcfireandwater.com/weather-damage.jpg"],
+  },
+  keywords: [
+    "commercial weather damage restoration",
+    "commercial storm damage restoration",
+    "commercial flood damage restoration",
+    "commercial wind damage repair",
+    "commercial hail damage restoration",
+    "commercial property storm repair",
+    "business weather damage restoration",
+    "emergency commercial storm cleanup",
+    "commercial water extraction Spokane",
+    "commercial board up services Spokane",
+    "commercial disaster restoration Spokane",
+    "commercial weather damage Spokane WA",
+    "Spokane commercial restoration services",
+    "Spokane storm damage repair",
+    "ServiceMaster commercial restoration Spokane",
+  ],
+};
 
 export default function CommercialWeatherDamage() {
   return (

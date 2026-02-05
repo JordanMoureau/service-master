@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -25,6 +23,70 @@ const List = [
   "Weather",
 ];
 
+export const metadata = {
+  title:
+    "Commercial Pre-Loss Planning in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Commercial pre-loss planning services in Spokane, WA. Risk assessments, emergency response planning, fire and water prevention strategies, and recovery protocols to reduce downtime and protect your business. Call (509) 646-7488.",
+  keywords: [
+    "commercial pre loss planning",
+    "commercial pre-loss planning Spokane",
+    "pre loss planning services Spokane",
+    "commercial emergency preparedness plan",
+    "business continuity planning Spokane",
+    "commercial risk assessment Spokane",
+    "property risk assessment Spokane",
+    "commercial disaster preparedness",
+    "commercial disaster recovery planning",
+    "fire prevention planning for businesses",
+    "water damage prevention for businesses",
+    "mold prevention planning commercial",
+    "emergency response training Spokane",
+    "Spokane commercial restoration planning",
+    "ServiceMaster pre loss planning",
+  ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/commercial/pre-loss-planning",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/commercial/pre-loss-planning",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Commercial Pre-Loss Planning in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Reduce risk and downtime with commercial pre-loss planning in Spokane. Property assessments, prevention strategies, and emergency response protocols.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/preloss.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Commercial pre-loss planning services in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Pre-Loss Planning in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Commercial pre-loss planning in Spokane to reduce damage, downtime, and business interruption. Risk assessments and emergency protocols.",
+    images: ["https://smcfireandwater.com/preloss.jpg"],
+  },
+};
+
 export default function CommercialPreLoss() {
   return (
     <div>
@@ -34,7 +96,7 @@ export default function CommercialPreLoss() {
       <div className="home-container bg-white">
         <div className="home-section">
           <div className="column-one">
-            <h2>Pre-Loss Planning Services in Spokane, WA</h2>
+            <h1>Pre-Loss Planning Services in Spokane, WA</h1>
             <h3>Planning Ahead is Essential for Your Business</h3>
             <p>
               As a business owner, you understand the importance of preparation.

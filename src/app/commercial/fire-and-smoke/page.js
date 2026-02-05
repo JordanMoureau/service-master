@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -24,6 +22,68 @@ const List = [
   "Water Damage",
   "Weather",
 ];
+
+export const metadata = {
+  title:
+    "Commercial Fire & Smoke Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Commercial fire and smoke damage restoration in Spokane, WA. 24/7 emergency fire cleanup, smoke and soot removal, odor elimination, reconstruction, and insurance claim assistance. Call (509) 646-7488.",
+  keywords: [
+    "commercial fire damage restoration",
+    "commercial smoke damage restoration",
+    "commercial fire restoration Spokane",
+    "commercial smoke cleanup Spokane",
+    "emergency fire damage repair commercial",
+    "commercial soot removal services",
+    "commercial smoke odor removal",
+    "fire and smoke cleanup for businesses",
+    "commercial fire damage repair Spokane",
+    "commercial fire insurance claim assistance",
+    "commercial reconstruction after fire",
+    "Spokane commercial restoration services",
+    "ServiceMaster fire damage Spokane",
+  ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/commercial/fire-and-smoke",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/commercial/fire-and-smoke",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Commercial Fire & Smoke Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "24/7 commercial fire and smoke damage restoration in Spokane. Emergency cleanup, soot removal, odor elimination, reconstruction, and insurance coordination.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/fire-and-smoke.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Commercial fire and smoke damage restoration in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Fire & Smoke Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Emergency commercial fire and smoke damage restoration in Spokane. Cleanup, odor removal, reconstruction, and insurance help.",
+    images: ["https://smcfireandwater.com/fire-and-smoke.jpg"],
+  },
+};
 
 export default function CommercialFireAndSmoke() {
   return (

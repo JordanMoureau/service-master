@@ -1,4 +1,3 @@
-"use client";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -23,6 +22,68 @@ const List = [
   "Water Damage",
   "Weather",
 ];
+
+export const metadata = {
+  title:
+    "Commercial Water Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Commercial water damage restoration in Spokane, WA. 24/7 emergency water extraction, drying, dehumidification, mold prevention, and repairs for businesses. Call (509) 646-7488.",
+  keywords: [
+    "commercial water damage restoration",
+    "commercial water damage Spokane",
+    "commercial water extraction Spokane",
+    "emergency commercial water removal",
+    "commercial flood damage restoration",
+    "commercial water damage repair",
+    "business water damage restoration",
+    "commercial basement flooding solutions",
+    "commercial drying and dehumidification",
+    "commercial mold prevention after water damage",
+    "Spokane commercial restoration services",
+    "commercial disaster restoration Spokane",
+    "ServiceMaster commercial water damage",
+  ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/commercial/water-damage",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/commercial/water-damage",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Commercial Water Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "24/7 commercial water damage restoration in Spokane. Emergency water extraction, drying, mold prevention, and full property restoration for businesses.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Commercial water damage restoration services in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Water Damage Restoration in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Emergency commercial water damage restoration in Spokane. Fast response, water extraction, drying, and repairs.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+};
 
 export default function CommercialWaterDamage() {
   return (

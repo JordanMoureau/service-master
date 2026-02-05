@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -24,6 +22,68 @@ const List = [
   "Water Damage",
   "Weather",
 ];
+
+export const metadata = {
+  title:
+    "Commercial Mold Remediation in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Commercial mold remediation in Spokane, WA. Fast inspection, containment, HEPA air filtration, mold removal, cleaning, and restoration for businesses. 24/7 response. Call (509) 646-7488.",
+  keywords: [
+    "commercial mold remediation",
+    "commercial mold removal Spokane",
+    "commercial mold damage restoration Spokane",
+    "mold inspection Spokane commercial",
+    "mold cleanup for businesses",
+    "mold containment commercial building",
+    "HEPA air filtration mold remediation",
+    "black mold remediation Spokane",
+    "mold removal services Spokane WA",
+    "commercial indoor air quality Spokane",
+    "mold prevention after water damage commercial",
+    "Spokane commercial restoration services",
+    "ServiceMaster mold remediation Spokane",
+  ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/commercial/mold",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/commercial/mold",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Commercial Mold Remediation in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Protect your business with professional mold remediation in Spokane. Inspection, containment, HEPA filtration, removal, cleanup, and restoration. 24/7 response.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/mold-damage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Commercial mold remediation and restoration in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Mold Remediation in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Commercial mold remediation in Spokane with containment, HEPA filtration, removal, cleanup, and restoration. Call (509) 646-7488.",
+    images: ["https://smcfireandwater.com/mold-damage.jpg"],
+  },
+};
 
 export default function CommercialMoldDamage() {
   return (

@@ -1,5 +1,3 @@
-"use client";
-
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
 
@@ -24,6 +22,68 @@ const List = [
   "Water Damage",
   "Weather",
 ];
+
+export const metadata = {
+  title:
+    "Commercial Specialty Restoration Services in Spokane, WA | ServiceMaster by Compass",
+  description:
+    "Commercial specialty restoration services in Spokane, WA including vandalism cleanup, board-up, tarping, reconstruction, packout, decontamination, and post-loss recovery. Available 24/7. Call (509) 646-7488.",
+  keywords: [
+    "commercial specialty services",
+    "commercial specialty restoration Spokane",
+    "commercial vandalism cleanup Spokane",
+    "commercial board up services Spokane",
+    "commercial tarping services Spokane",
+    "commercial reconstruction services",
+    "commercial packout services Spokane",
+    "commercial content management restoration",
+    "commercial decontamination services Spokane",
+    "commercial post loss recovery",
+    "commercial disaster recovery Spokane",
+    "Spokane commercial restoration services",
+    "ServiceMaster commercial specialty services",
+  ],
+  alternates: {
+    canonical: "https://smcfireandwater.com/commercial/specialty-services",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://smcfireandwater.com/commercial/specialty-services",
+    siteName: "ServiceMaster by Compass",
+    title:
+      "Commercial Specialty Restoration Services in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "Vandalism cleanup, board-up, reconstruction, packout, decontamination, and post-loss recovery for Spokane businesses. 24/7 response.",
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Commercial specialty restoration services in Spokane",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Specialty Restoration Services in Spokane, WA | ServiceMaster by Compass",
+    description:
+      "24/7 commercial specialty restoration services in Spokane including board-up, vandalism cleanup, reconstruction, and decontamination.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+};
 
 export default function CommercialSpecialtyServices() {
   return (
