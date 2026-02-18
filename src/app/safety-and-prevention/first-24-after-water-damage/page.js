@@ -33,8 +33,6 @@ const List = [
   "When It Becomes an Emergency",
 ];
 
-import JsonLd from "../../components/JsonLd";
-
 // --- SEO + JSON-LD ---
 const canonical =
   "https://smcfireandwater.com/safety-and-prevention/first-24-after-water-damage";

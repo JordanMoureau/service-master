@@ -5,7 +5,7 @@ import Link from "next/link";
 import "../styles/nav.scss";
 import { Phone, Search } from "lucide-react";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { use, useState } from "react";
+import { useState } from "react";
 import Dropdown from "../components/Dropdown";
 
 const commercialItems = [
@@ -47,7 +47,11 @@ const whyUsItems = [
 ];
 
 export default function Nav() {
-  const [phone, setPhone] = useState("(509) 535-5440");
+  const [phone, setPhone] = useState({
+    display: "(509) 535-5440",
+    tel: "+15095355440",
+  });
+
   const [hover, setHover] = useState(false);
 
   return (
@@ -62,33 +66,45 @@ export default function Nav() {
         </a>
         <div className="chevron" />
       </div>
+
       <div className="header-right">
-        {/* TOP BAR SECTION */}
         <div className="top-bar">
           <a
             href="https://www.servicemasterrestore.com/site-search/"
             className="search"
           >
-            <Search
-              style={{
-                width: "13px",
-                height: "13px",
-              }}
-            />{" "}
-            Search
+            <Search style={{ width: "13px", height: "13px" }} /> Search
           </a>
+
           <div
             className="hover-location"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
             <FaMapMarkerAlt style={{ color: "black" }} />
-            <a onClick={() => setPhone("(509) 535-5440")} className="serve">
+
+            <a
+              className="serve"
+              onClick={() =>
+                setPhone({
+                  display: "(509) 535-5440",
+                  tel: "+15095355440",
+                })
+              }
+            >
               Spokane, WA
             </a>
 
             <div className={`location-drop${hover ? " location-hover" : ""}`}>
-              <a className="serve" onClick={() => setPhone("(208) 277-4329")}>
+              <a
+                className="serve"
+                onClick={() =>
+                  setPhone({
+                    display: "(208) 277-4329",
+                    tel: "+12082774329",
+                  })
+                }
+              >
                 Coeur D'Alene, ID
               </a>
             </div>
@@ -121,7 +137,6 @@ export default function Nav() {
               items={insuranceItems}
             />
             <Dropdown label="Why Us" href="/why-us" items={whyUsItems} />
-
             <Link href="/payments" className="nav-links">
               Payments
             </Link>
@@ -129,7 +144,7 @@ export default function Nav() {
 
           <div className="contact">
             <div className="call-us">
-              <a href={`tel:${phone}`} className="phone">
+              <a href={`tel:${phone.tel}`} className="phone">
                 <Phone
                   style={{
                     width: "20px",
@@ -139,9 +154,10 @@ export default function Nav() {
                     color: "black",
                   }}
                 />
-                {phone}
+                {phone.display}
               </a>
             </div>
+
             <div className="cta-container">
               <Link href="/contact/direct-form" className="cta">
                 Contact Us Now
