@@ -1,8 +1,7 @@
-"use client";
-
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+import JsonLd from "../../components/JsonLd";
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -34,9 +33,196 @@ const List = [
   "When It Becomes an Emergency",
 ];
 
+// --- SEO + JSON-LD ---
+const canonical =
+  "https://smcfireandwater.com/safety-and-prevention/common-causes-of-water-damage";
+
+const title =
+  "Common Causes of Emergency Water Damage | Spokane & North Idaho Prevention Guide";
+
+const description =
+  "Learn the most common causes of emergency water damage—pipes, appliance leaks, roof/foundation intrusion, storms, and sewer backups—plus prevention tips for Spokane & North Idaho.";
+
+export const metadata = {
+  title,
+  description,
+  keywords: [
+    "common causes of water damage",
+    "emergency water damage causes",
+    "water damage prevention Spokane",
+    "water mitigation Spokane",
+    "burst pipe water damage Spokane",
+    "appliance leak water damage",
+    "roof leak water damage prevention",
+    "basement water intrusion Spokane",
+    "sump pump flooding prevention",
+    "sewer backup prevention",
+    "water damage restoration Spokane",
+    "water damage North Idaho",
+    "ServiceMaster by Compass water damage",
+  ],
+  alternates: { canonical },
+  openGraph: {
+    title,
+    description:
+      "Common causes of emergency water damage and practical prevention steps for Spokane & North Idaho homeowners and property managers.",
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Homeowner preventing emergency water damage in Spokane and North Idaho",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description:
+      "Common causes of emergency water damage + prevention tips for Spokane & North Idaho.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  // Webpage entity
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    about: { "@id": "https://smcfireandwater.com/#organization" },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/sub-banner.jpg",
+      width: 1200,
+      height: 630,
+    },
+    breadcrumb: { "@id": `${canonical}#breadcrumb` },
+  },
+
+  // Article entity
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${canonical}#article`,
+    headline: "Common Causes of Emergency Water Damage and How to Prevent Them",
+    description,
+    mainEntityOfPage: { "@id": `${canonical}#webpage` },
+    articleSection: "Safety & Prevention",
+    author: { "@type": "Organization", name: "ServiceMaster by Compass" },
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://smcfireandwater.com/#organization",
+      name: "ServiceMaster by Compass",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://smcfireandwater.com/logo.png",
+      },
+    },
+    image: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+
+  // Breadcrumbs
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Safety & Prevention",
+        item: "https://smcfireandwater.com/safety-and-prevention",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Common Causes of Water Damage",
+        item: canonical,
+      },
+    ],
+  },
+
+  // Business entity (shared)
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    image: "https://smcfireandwater.com/logo.png",
+    logo: "https://smcfireandwater.com/logo.png",
+    telephone: "+1-509-535-5440",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+      { "@type": "Place", name: "North Idaho" },
+    ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Water Damage Clean Up" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Water Damage Mitigation" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Sewer Backup Cleanup" },
+      },
+    ],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+1-509-535-5440",
+        contactType: "customer service",
+        areaServed: "US",
+        availableLanguage: ["English"],
+      },
+    ],
+  },
+];
+
 export default function CommonCausesEmergencyWaterDamage() {
   return (
     <div>
+      <JsonLd data={jsonLd} />
       <div className="top-image">
         <img
           src="/sub-banner.jpg"

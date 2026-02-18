@@ -143,7 +143,7 @@ export default function Nav() {
               </a>
             </div>
             <div className="cta-container">
-              <Link href="/contact" className="cta">
+              <Link href="/contact/direct-form" className="cta">
                 Contact Us Now
               </Link>
               <div className="emergency">24/7/365 Emergency Service</div>

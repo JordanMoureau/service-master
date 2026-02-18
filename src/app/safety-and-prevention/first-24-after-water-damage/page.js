@@ -1,8 +1,7 @@
-"use client";
-
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+import JsonLd from "../../components/JsonLd";
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -34,9 +33,193 @@ const List = [
   "When It Becomes an Emergency",
 ];
 
+import JsonLd from "../../components/JsonLd";
+
+// --- SEO + JSON-LD ---
+const canonical =
+  "https://smcfireandwater.com/safety-and-prevention/first-24-after-water-damage";
+
+const title =
+  "First 24 Hours After Water Damage | Steps for Spokane & North Idaho Homes";
+
+const description =
+  "What to do in the first 24 hours after water damage: safety steps, shutoffs, documentation for insurance, drying basics, and when to call restoration pros in Spokane & North Idaho.";
+
+export const metadata = {
+  title,
+  description,
+  keywords: [
+    "first 24 hours after water damage",
+    "what to do after water damage",
+    "water damage steps",
+    "water mitigation Spokane",
+    "emergency water damage Spokane",
+    "water damage North Idaho",
+    "how to shut off main water valve",
+    "drying after water leak",
+    "prevent mold after water damage",
+    "water damage insurance documentation",
+    "water damage restoration Spokane",
+    "ServiceMaster by Compass water damage",
+  ],
+  alternates: { canonical },
+  openGraph: {
+    title,
+    description:
+      "Immediate steps after water damage: safety, shutoffs, documentation, drying, and when to call pros (Spokane & North Idaho).",
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Water damage safety steps for Spokane and North Idaho homeowners",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description:
+      "First 24 hours after water damage: safety, shutoffs, documentation, drying, and when to call restoration pros.",
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+};
+
+// JSON-LD
+const jsonLd = [
+  // Page entity
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id":
+      "https://smcfireandwater.com/safety-and-prevention/first-24-after-water-damage#webpage",
+    url: canonical,
+    name: title,
+    description: description,
+    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
+    about: { "@id": "https://smcfireandwater.com/#organization" },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/sub-banner.jpg",
+      width: 1200,
+      height: 630,
+    },
+    breadcrumb: {
+      "@id":
+        "https://smcfireandwater.com/safety-and-prevention/first-24-after-water-damage#breadcrumb",
+    },
+    potentialAction: [
+      {
+        "@type": "ReadAction",
+        target: canonical,
+        name: "Read first 24 hour steps",
+      },
+      {
+        "@type": "CallAction",
+        target: "tel:+15095355440",
+        name: "Call for 24/7 water damage help",
+      },
+    ],
+  },
+
+  // Breadcrumbs
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id":
+      "https://smcfireandwater.com/safety-and-prevention/first-24-after-water-damage#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Safety & Prevention",
+        item: "https://smcfireandwater.com/safety-and-prevention",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "First 24 Hours After Water Damage",
+        item: canonical,
+      },
+    ],
+  },
+
+  // Business / service info for rich results
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    image: "https://smcfireandwater.com/logo.png",
+    logo: "https://smcfireandwater.com/logo.png",
+    telephone: "+1-509-535-5440",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      { "@type": "Place", name: "Spokane, WA" },
+      { "@type": "Place", name: "Spokane Valley, WA" },
+      { "@type": "Place", name: "Coeur d’Alene, ID" },
+      { "@type": "Place", name: "North Idaho" },
+    ],
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Water Damage Mitigation" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Water Damage Clean Up" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Structural Drying" },
+      },
+    ],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+1-509-535-5440",
+        contactType: "customer service",
+        areaServed: "US",
+        availableLanguage: ["English"],
+      },
+    ],
+  },
+];
+
 export default function First24HoursAfterWaterDamage() {
   return (
     <div>
+      <JsonLd data={jsonLd} />
+
       <div className="top-image">
         <img
           src="/sub-banner.jpg"
