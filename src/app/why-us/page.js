@@ -33,7 +33,7 @@ export const metadata = {
     "fire damage restoration companies Spokane WA",
     "emergency flood cleanup Coeur d’Alene ID",
   ],
-  alternates: { canonical: "https://smcfireandwater.com/why-us" },
+
   openGraph: {
     title:
       "Why ServiceMaster by Compass — Guiding You from Crisis to Resolution",

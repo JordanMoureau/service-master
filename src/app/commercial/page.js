@@ -367,7 +367,7 @@ export default function Commerical() {
             </p>
 
             <h2>
-              <a href="commercial/fire-damage" className="underline-link">
+              <a href="commercial/fire-and-smoke" className="underline-link">
                 {" "}
                 Reliable Commercial Water Damage Restoration Services
               </a>
@@ -392,7 +392,7 @@ export default function Commerical() {
             </p>
 
             <h2>
-              <a href="commercial/fire-damage" className="underline-link">
+              <a href="commercial/fire-and-smoke" className="underline-link">
                 {" "}
                 Comprehensive Severe Weather Damage Restoration
               </a>
@@ -427,7 +427,7 @@ export default function Commerical() {
             </p>
 
             <h2>
-              <a href="commercial/fire-damage" className="underline-link">
+              <a href="commercial/fire-and-smoke" className="underline-link">
                 {" "}
                 Proactive Pre-Loss Planning for Spokane Businesses
               </a>

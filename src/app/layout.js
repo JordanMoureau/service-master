@@ -16,7 +16,6 @@ export const metadata = {
   },
   description:
     "24/7 water damage clean up, fire damage restoration, and mold remediation in Spokane, Spokane Valley & Coeur d’Alene. Call (509) 646-7488.",
-  alternates: { canonical: "/" },
   robots: {
     index: true,
     follow: true,

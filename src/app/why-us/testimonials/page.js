@@ -28,9 +28,7 @@ export const metadata = {
     "restoration mold removal CDA Idaho",
     "ServiceMaster reviews Spokane",
   ],
-  alternates: {
-    canonical: "https://smcfireandwater.com/why-us/testimonials",
-  },
+
   openGraph: {
     title:
       "Customer Reviews — ServiceMaster by Compass | Spokane & Coeur d’Alene",
@@ -72,6 +70,14 @@ export const metadata = {
 
 // Build review entities from your array (static here for SSR/SEO)
 const reviewEntities = [
+  {
+    "@type": "Review",
+    reviewBody:
+      "Cody, Collin, Skyler and Cole were extremely helpful. Very professional and courteous. Cleanup completed in a timely manner. Very detail oriented. I would highly recommend this service to anyone.",
+    name: "Professional and Courteous",
+    reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+    author: { "@type": "Person", name: "Morning Star Baptist Church" },
+  },
   {
     "@type": "Review",
     reviewBody:

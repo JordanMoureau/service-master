@@ -6,7 +6,6 @@ import RestorePeace from "../../components/RestoringPeace";
 const Links = [
   "/commercial/fire-and-smoke",
   "/commercial/mold",
-  "/commercial/odor",
   "/commercial/specialty-services",
   "/commercial/pre-loss-planning",
   "/commercial/water-damage",

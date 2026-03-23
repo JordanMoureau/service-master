@@ -80,7 +80,7 @@ export default function WhenSituationBecomesEmergency() {
 
               <p>
                 Need immediate response? Visit{" "}
-                <a className="underline-link" href="/emergency-services">
+                <a className="underline-link" href="/contact-us">
                   Emergency Services
                 </a>{" "}
                 for fast dispatch and next steps.
@@ -172,11 +172,7 @@ export default function WhenSituationBecomesEmergency() {
                 Water Damage Restoration
               </a>{" "}
               to understand what proper extraction and drying should include. If
-              it’s active right now, visit{" "}
-              <a className="underline-link" href="/emergency-services">
-                Emergency Services
-              </a>{" "}
-              for rapid response.
+              it’s active right now.
             </p>
 
             <h2>FIRE AND SMOKE</h2>
@@ -218,8 +214,8 @@ export default function WhenSituationBecomesEmergency() {
               </a>
               . If the situation is fresh or you need immediate stabilization,
               start at{" "}
-              <a className="underline-link" href="/emergency-services">
-                Emergency Services
+              <a className="underline-link" href="/contact-us">
+                Contact Us
               </a>
               .
             </p>
@@ -259,8 +255,8 @@ export default function WhenSituationBecomesEmergency() {
                 Weather Damage Restoration
               </a>
               , and use{" "}
-              <a className="underline-link" href="/emergency-services">
-                Emergency Services
+              <a className="underline-link" href="/contact-us">
+                Contact Us
               </a>{" "}
               when conditions are urgent or actively worsening.
             </p>
@@ -308,7 +304,7 @@ export default function WhenSituationBecomesEmergency() {
                   contact us online
                 </a>
                 . For rapid response and urgent scenarios, go to{" "}
-                <a className="underline-link" href="/emergency-services">
+                <a className="underline-link" href="/contact-us">
                   Emergency Services
                 </a>
                 .

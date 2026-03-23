@@ -5,7 +5,6 @@ import RestorePeace from "../../components/RestoringPeace";
 const Links = [
   "/commercial/fire-and-smoke",
   "/commercial/mold",
-  "/commercial/odor",
   "/commercial/specialty-services",
   "/commercial/pre-loss-planning",
   "/commercial/water-damage",
@@ -98,7 +97,7 @@ export default function CommercialWeatherDamage() {
       <div className="home-container bg-white">
         <div className="home-section">
           <div className="column-one">
-            <h2>Weather Damage Restoration Services in Spokane</h2>
+            <h1>Weather Damage Restoration Services in Spokane</h1>
             <h3>
               Revive Your Property with ServiceMaster by Compass Expertise
             </h3>

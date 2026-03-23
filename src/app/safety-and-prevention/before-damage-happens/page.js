@@ -271,7 +271,7 @@ export default function BeforeDamageHappens() {
                 already be past “maintenance.” Learn the red flags on{" "}
                 <a
                   className="underline-link"
-                  href="/safety-and-prevention/when-a-situation-becomes-an-emergency"
+                  href="/safety-and-prevention/when-it-becomes-an-emergency"
                 >
                   When a Situation Becomes an Emergency
                 </a>
@@ -676,7 +676,7 @@ export default function BeforeDamageHappens() {
               territory? Go straight to{" "}
               <a
                 className="underline-link"
-                href="/safety-and-prevention/when-a-situation-becomes-an-emergency"
+                href="/safety-and-prevention/when-it-becomes-an-emergency"
               >
                 When a Situation Becomes an Emergency
               </a>

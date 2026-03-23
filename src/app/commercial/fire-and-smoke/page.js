@@ -6,7 +6,6 @@ import RestorePeace from "../../components/RestoringPeace";
 const Links = [
   "/commercial/fire-and-smoke",
   "/commercial/mold",
-  "/commercial/odor",
   "/commercial/specialty-services",
   "/commercial/pre-loss-planning",
   "/commercial/water-damage",
@@ -97,7 +96,7 @@ export default function CommercialFireAndSmoke() {
       <div className="home-container bg-white">
         <div className="home-section">
           <div className="column-one">
-            <h2>Commercial Fire and Smoke Damage Restoration in Spokane</h2>
+            <h1>Commercial Fire and Smoke Damage Restoration in Spokane</h1>
             <h3>
               Comprehensive Recovery Solutions for Residential and Commercial
               Properties

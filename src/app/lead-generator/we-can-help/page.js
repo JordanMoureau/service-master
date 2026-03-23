@@ -2,6 +2,11 @@ import LeadContactForm from "../../components/LeadContactForm";
 import LeadReviews from "../../components/LeadReviews";
 import TrustStrip from "../../components/TrustStrip";
 
+export const metadata = {
+  title: "We Can Help | ServiceMaster by Compass",
+  alternates: { canonical: "/lead-generator/we-can-help" }, // whatever the actual slug is
+};
+
 export default function WeCan() {
   return (
     <div className="lead-container">

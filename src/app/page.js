@@ -12,10 +12,9 @@ import GetHelpNow from "./components/GetHelpNow";
 // app/page.tsx (Home)
 
 export const metadata = {
-  title:
-    "Disaster Restoration Spokane WA | Water, Fire & Mold | ServiceMaster by Compass",
+  title: "Spokane Water Damage Restoration | ServiceMaster by Compass",
   description:
-    "Top-rated restoration in Spokane, Spokane Valley & Coeur d’Alene. 24/7 water damage cleanup, fire & smoke restoration, and mold remediation by ServiceMaster by Compass.",
+    "Spokane and Coeur d'Alene's trusted restoration team. 24/7 water, fire & mold response — certified techs on-site within hours. Call (509) 535-5440.",
   keywords: [
     "mold remediation and removal Spokane WA",
     "mold removal services Coeur d’Alene ID",
@@ -27,9 +26,7 @@ export const metadata = {
     "fire damage restoration companies Spokane WA",
     "emergency flood cleanup Coeur d’Alene ID",
   ],
-  alternates: {
-    canonical: "https://smcfireandwater.com/",
-  },
+
   openGraph: {
     title:
       "Disaster Restoration in Spokane — Water, Fire & Mold | ServiceMaster by Compass",

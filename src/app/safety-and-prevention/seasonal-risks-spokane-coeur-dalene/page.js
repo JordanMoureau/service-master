@@ -237,7 +237,7 @@ export default function SeasonalRisksSpokaneCDA() {
               on our{" "}
               <a
                 className="underline-link"
-                href="/safety-and-prevention/what-to-do-before-damage-happens"
+                href="/safety-and-prevention/before-damage-happens"
               >
                 What to Do Before Damage Happens
               </a>{" "}
@@ -425,7 +425,7 @@ export default function SeasonalRisksSpokaneCDA() {
               Want the proactive playbook? Start here:{" "}
               <a
                 className="underline-link"
-                href="/safety-and-prevention/what-to-do-before-damage-happens"
+                href="/safety-and-prevention/before-damage-happens"
               >
                 What to Do Before Damage Happens
               </a>
