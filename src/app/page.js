@@ -12,9 +12,9 @@ import GetHelpNow from "./components/GetHelpNow";
 // app/page.tsx (Home)
 
 export const metadata = {
-  title: "Spokane Water Damage Restoration | ServiceMaster by Compass",
+  title: "Comprehensive Restoration Services | ServiceMaster by Compass",
   description:
-    "Spokane and Coeur d'Alene's trusted restoration team. 24/7 water, fire & mold response — certified techs on-site within hours. Call (509) 535-5440.",
+    "Emergency water damage & restoration in Spokane & Coeur d’Alene. Fast response, certified technicians, and clear guidance from first call to full recovery.",
   keywords: [
     "mold remediation and removal Spokane WA",
     "mold removal services Coeur d’Alene ID",
