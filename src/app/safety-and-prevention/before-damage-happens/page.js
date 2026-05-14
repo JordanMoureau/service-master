@@ -16,6 +16,9 @@ const Links = [
   "/safety-and-prevention/before-damage-happens",
   "/safety-and-prevention/seasonal-risks-spokane-coeur-dalene",
   "/safety-and-prevention/when-it-becomes-an-emergency",
+  "/safety-and-prevention/does-homeowners-insurance-cover-water-damage-cda",
+  "/safety-and-prevention/does-homeowners-insurance-cover-water-damage-spokane",
+  "/safety-and-prevention/water-damage-repair",
 ];
 
 const List = [
@@ -31,6 +34,9 @@ const List = [
   "Before Damage Happens",
   "Seasonal Risks in Spokane & CDA",
   "When It Becomes an Emergency",
+  "Water Damage & Insurance, CDA",
+  "Water Damage & Insurance, Spokane",
+  "Repair vs. Restoration",
 ];
 
 // --- SEO + JSON-LD ---
