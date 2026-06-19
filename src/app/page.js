@@ -8,6 +8,7 @@ import AccredCarousel from "./components/AcredCarousel";
 import HomeSideBar from "./components/HomeSideBar";
 import Hero from "./components/Hero";
 import GetHelpNow from "./components/GetHelpNow";
+import SMCPopup from "./components/HomePopUp";
 
 // app/page.tsx (Home)
 
@@ -69,6 +70,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
+      <SMCPopup />
       <KnowUsPanel />
 
       <Hero />

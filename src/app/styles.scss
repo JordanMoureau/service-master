@@ -1,5 +1,5 @@
 @import "styles/reset.scss";
-@import "styles/variables.scss";
+@import "./styles/variables.scss";
 @import "styles/footer.scss";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @import "styles/home.scss";
@@ -25,6 +25,7 @@
 @import "styles/truststrip.scss";
 @import "styles/leadcontactform.scss";
 @import "styles/leadreviews.scss";
+@import "./styles/homepopup.scss";
 
 // html {
 //   font-size: 0.9375vw;
