@@ -19,6 +19,9 @@ const Links = [
   "/safety-and-prevention/does-homeowners-insurance-cover-water-damage-cda",
   "/safety-and-prevention/does-homeowners-insurance-cover-water-damage-spokane",
   "/safety-and-prevention/water-damage-repair",
+  "/safety-and-prevention/basement-water-damage-spokane",
+  "/safety-and-prevention/burst-pipe-water-damage-spokane",
+  "/safety-and-prevention/reduce-downtime-after-water-damage",
 ];
 
 const List = [
@@ -37,6 +40,9 @@ const List = [
   "Water Damage & Insurance, CDA",
   "Water Damage & Insurance, Spokane",
   "Repair vs. Restoration",
+  "Basement Water Damage",
+  "Burst Pipe Water Damage",
+  "Commercial Water Damage Downtime",
 ];
 
 // --- SEO + JSON-LD ---
