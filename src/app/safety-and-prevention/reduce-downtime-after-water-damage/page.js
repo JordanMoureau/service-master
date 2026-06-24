@@ -1,7 +1,7 @@
-import RestorePeace from "../../../components/RestoringPeace";
-import SideBarBox from "../../../components/SideBarBox";
-import UncertainTo from "../../../components/UncertaintyTo";
-import JsonLd from "../../../components/JsonLd";
+import RestorePeace from "../../components/RestoringPeace";
+import SideBarBox from "../../components/SideBarBox";
+import UncertainTo from "../../components/UncertaintyTo";
+import JsonLd from "../../components/JsonLd";
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
