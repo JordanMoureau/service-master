@@ -1,7 +1,6 @@
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
-import JsonLd from "../../components/JsonLd";
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -102,129 +101,6 @@ export const metadata = {
     images: ["https://smcfireandwater.com/sub-banner.jpg"],
   },
 };
-
-// JSON-LD
-export const jsonLd = [
-  // Webpage entity (article-style resource)
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": `${canonical}#webpage`,
-    url: canonical,
-    name: title,
-    description,
-    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
-    about: { "@id": "https://smcfireandwater.com/#organization" },
-    primaryImageOfPage: {
-      "@type": "ImageObject",
-      url: "https://smcfireandwater.com/sub-banner.jpg",
-      width: 1200,
-      height: 630,
-    },
-    breadcrumb: { "@id": `${canonical}#breadcrumb` },
-  },
-
-  // Main article (optional but helpful for “article” OG type)
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": `${canonical}#article`,
-    headline: "What to Do Before Damage Happens",
-    description,
-    mainEntityOfPage: { "@id": `${canonical}#webpage` },
-    author: { "@type": "Organization", name: "ServiceMaster by Compass" },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://smcfireandwater.com/#organization",
-      name: "ServiceMaster by Compass",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://smcfireandwater.com/logo.png",
-      },
-    },
-    image: ["https://smcfireandwater.com/sub-banner.jpg"],
-    articleSection: "Safety & Prevention",
-  },
-
-  // Breadcrumbs
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "@id": `${canonical}#breadcrumb`,
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://smcfireandwater.com/",
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Safety & Prevention",
-        item: "https://smcfireandwater.com/safety-and-prevention",
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: "Before Damage Happens",
-        item: canonical,
-      },
-    ],
-  },
-
-  // Business entity (shared sitewide)
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://smcfireandwater.com/#organization",
-    name: "ServiceMaster by Compass",
-    url: "https://smcfireandwater.com",
-    image: "https://smcfireandwater.com/logo.png",
-    logo: "https://smcfireandwater.com/logo.png",
-    telephone: "+1-509-646-7488",
-    sameAs: [
-      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
-      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
-      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
-      "https://www.instagram.com/servicemaster_by_compass",
-      "https://g.co/kgs/PCuFHgp",
-      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
-    ],
-    areaServed: [
-      { "@type": "Place", name: "Spokane, WA" },
-      { "@type": "Place", name: "Spokane Valley, WA" },
-      { "@type": "Place", name: "Coeur d’Alene, ID" },
-    ],
-    makesOffer: [
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Water Damage Clean Up" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Fire Damage Restoration" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Mold Remediation & Removal" },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Weather Damage Restoration" },
-      },
-    ],
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        telephone: "+1-509-646-7488",
-        contactType: "customer service",
-        areaServed: "US",
-        availableLanguage: ["English"],
-      },
-    ],
-  },
-];
 
 export default function BeforeDamageHappens() {
   return (
