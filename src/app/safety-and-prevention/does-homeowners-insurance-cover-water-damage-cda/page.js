@@ -47,7 +47,7 @@ const List = [
 
 // --- SEO + JSON-LD ---
 const canonical =
-  "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-coeur-dalene";
+  "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-cda";
 
 const title =
   "Does Homeowners Insurance Cover Water Damage in Coeur d'Alene? What You Need to Know";
@@ -118,7 +118,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id":
-      "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-coeur-dalene#webpage",
+      "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-cda#webpage",
     url: canonical,
     name: title,
     description: description,
@@ -132,7 +132,7 @@ const jsonLd = [
     },
     breadcrumb: {
       "@id":
-        "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-coeur-dalene#breadcrumb",
+        "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-cda#breadcrumb",
     },
     potentialAction: [
       {
@@ -153,7 +153,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "@id":
-      "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-coeur-dalene#breadcrumb",
+      "https://smcfireandwater.com/safety-and-prevention/does-homeowners-insurance-cover-water-damage-cda#breadcrumb",
     itemListElement: [
       {
         "@type": "ListItem",

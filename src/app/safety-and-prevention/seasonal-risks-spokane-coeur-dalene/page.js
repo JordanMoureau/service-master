@@ -397,7 +397,7 @@ export default function SeasonalRisksSpokaneCDA() {
               emergency, use our guide on{" "}
               <a
                 className="underline-link"
-                href="/safety-and-prevention/when-a-situation-becomes-an-emergency"
+                href="/safety-and-prevention/when-it-becomes-an-emergency"
               >
                 When a Situation Becomes an Emergency
               </a>{" "}

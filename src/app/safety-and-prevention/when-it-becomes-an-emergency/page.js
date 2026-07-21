@@ -92,7 +92,7 @@ export default function WhenSituationBecomesEmergency() {
 
               <p>
                 Need immediate response? Visit{" "}
-                <a className="underline-link" href="/contact-us">
+                <a className="underline-link" href="/contact">
                   Emergency Services
                 </a>{" "}
                 for fast dispatch and next steps.
@@ -226,7 +226,7 @@ export default function WhenSituationBecomesEmergency() {
               </a>
               . If the situation is fresh or you need immediate stabilization,
               start at{" "}
-              <a className="underline-link" href="/contact-us">
+              <a className="underline-link" href="/contact">
                 Contact Us
               </a>
               .
@@ -267,7 +267,7 @@ export default function WhenSituationBecomesEmergency() {
                 Weather Damage Restoration
               </a>
               , and use{" "}
-              <a className="underline-link" href="/contact-us">
+              <a className="underline-link" href="/contact">
                 Contact Us
               </a>{" "}
               when conditions are urgent or actively worsening.
@@ -316,7 +316,7 @@ export default function WhenSituationBecomesEmergency() {
                   contact us online
                 </a>
                 . For rapid response and urgent scenarios, go to{" "}
-                <a className="underline-link" href="/contact-us">
+                <a className="underline-link" href="/contact">
                   Emergency Services
                 </a>
                 .

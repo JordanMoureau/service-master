@@ -1,8 +1,204 @@
-"use client";
-
 import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import UncertainTo from "../components/UncertaintyTo";
+
+const canonical = "https://smcfireandwater.com/safety-and-prevention";
+
+const title = "Home Safety & Damage Prevention | Spokane & Coeur d’Alene";
+
+const description =
+  "Protect your home from water, fire, frozen pipes, mold, and seasonal damage with practical safety and prevention guidance for Spokane and North Idaho homeowners.";
+
+export const metadata = {
+  title,
+  description,
+
+  keywords: [
+    "home safety Spokane WA",
+    "water damage prevention Spokane",
+    "fire safety Spokane WA",
+    "home damage prevention Coeur d’Alene",
+    "frozen pipe prevention Spokane",
+    "water leak prevention North Idaho",
+    "home fire prevention Coeur d’Alene",
+    "mold prevention after water damage",
+    "seasonal home safety Spokane",
+    "ServiceMaster by Compass safety prevention",
+  ],
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: "https://smcfireandwater.com/sub-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Home safety and property damage prevention",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+  },
+};
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    isPartOf: {
+      "@id": "https://smcfireandwater.com/#website",
+    },
+    about: [
+      {
+        "@type": "Thing",
+        name: "Water damage prevention",
+      },
+      {
+        "@type": "Thing",
+        name: "Residential fire safety",
+      },
+      {
+        "@type": "Thing",
+        name: "Frozen pipe prevention",
+      },
+      {
+        "@type": "Thing",
+        name: "Home disaster preparedness",
+      },
+    ],
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/sub-banner.jpg",
+      width: 1200,
+      height: 630,
+    },
+    breadcrumb: {
+      "@id": `${canonical}#breadcrumb`,
+    },
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://smcfireandwater.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Safety and Prevention",
+        item: canonical,
+      },
+    ],
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${canonical}#faq`,
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How often should I test smoke detectors?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Test smoke detectors once a month. Replace their batteries at least once a year unless they use sealed long-life batteries, and replace the alarm units according to the manufacturer’s guidelines.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How quickly can mold start after water damage?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Under the right conditions, mold can begin growing within 24 to 48 hours after water intrusion. Drying and dehumidification should begin as quickly as possible.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When should I call a professional instead of handling damage myself?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Call a professional when water affects multiple rooms or levels, sewage or contaminated water is involved, smoke travels beyond the original fire area, visible mold growth is present, or the full extent of the damage is unknown.",
+        },
+      },
+    ],
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://smcfireandwater.com/#organization",
+    name: "ServiceMaster by Compass",
+    url: "https://smcfireandwater.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://smcfireandwater.com/logo.png",
+    },
+    telephone: "+1-509-535-5440",
+    sameAs: [
+      "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
+      "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
+      "https://www.linkedin.com/company/servicemaster-fire-water-restoration-by-compass",
+      "https://www.instagram.com/servicemaster_by_compass",
+      "https://g.co/kgs/PCuFHgp",
+      "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
+    ],
+    areaServed: [
+      {
+        "@type": "Place",
+        name: "Spokane, WA",
+      },
+      {
+        "@type": "Place",
+        name: "Spokane Valley, WA",
+      },
+      {
+        "@type": "Place",
+        name: "Coeur d’Alene, ID",
+      },
+      {
+        "@type": "Place",
+        name: "Post Falls, ID",
+      },
+    ],
+  },
+];
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -49,14 +245,27 @@ const List = [
 export default function SafetyAndPrevention() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <img
+          src="/sub-banner.jpg"
+          alt="Home safety and property damage prevention"
+        />
       </div>
+
       <div className="home-container bg-white">
         <div className="home-section">
           <div className="column-one">
             <h1>Safety &amp; Prevention for Your Home</h1>
+
             <h2>WATER DAMAGE PREVENTION &amp; FIRE SAFETY IN SPOKANE</h2>
+
             <h3>
               Practical Steps to Protect Your Home Before Disaster Strikes
             </h3>
@@ -99,6 +308,7 @@ export default function SafetyAndPrevention() {
             </div>
 
             <h2>UNDERSTANDING WATER DAMAGE RISKS AT HOME</h2>
+
             <h3>Why Water Damage Is So Common in Spokane Homes</h3>
 
             <p>
@@ -117,17 +327,21 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 Burst or frozen pipes during cold snaps
               </li>
+
               <li className="arrow-list">
                 Leaking water heaters, washing machines, dishwashers, or ice
                 maker lines
               </li>
+
               <li className="arrow-list">
                 Basement or crawlspace seepage after heavy rain or snowmelt
               </li>
+
               <li className="arrow-list">
                 Clogged or damaged gutters that send water straight to your
                 foundation
               </li>
+
               <li className="arrow-list">
                 Slow, hidden leaks in walls, under sinks, or around showers and
                 tubs
@@ -146,17 +360,21 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 New stains on ceilings or walls that seem to grow or darken
               </li>
+
               <li className="arrow-list">
                 Soft, spongy, or warped areas in flooring near sinks,
                 dishwashers, or tubs
               </li>
+
               <li className="arrow-list">
                 A musty or &quot;damp basement&quot; smell that doesn&apos;t go
                 away
               </li>
+
               <li className="arrow-list">
                 Efflorescence (white, chalky residue) on foundation walls
               </li>
+
               <li className="arrow-list">
                 Unexpected increases in your water bill with no obvious reason
               </li>
@@ -169,6 +387,7 @@ export default function SafetyAndPrevention() {
             </p>
 
             <h2>PREVENTING WATER DAMAGE BEFORE IT STARTS</h2>
+
             <h3>High-Impact Maintenance Tasks for Homeowners</h3>
 
             <p>
@@ -184,21 +403,25 @@ export default function SafetyAndPrevention() {
                 sure everyone in the home knows where it is and how to turn it
                 off in an emergency.
               </li>
+
               <li className="arrow-list">
                 <strong>Inspect visible plumbing twice a year.</strong> Check
                 under sinks, behind toilets, and around appliances for drips,
                 corrosion, and swollen or cracked supply lines.
               </li>
+
               <li className="arrow-list">
                 <strong>Clean gutters and downspouts seasonally.</strong> Keep
                 water flowing away from your roof and foundation, not into your
                 basement.
               </li>
+
               <li className="arrow-list">
                 <strong>Test your sump pump.</strong> Pour water into the pit to
                 confirm it turns on and pumps out correctly—especially before
                 spring thaw.
               </li>
+
               <li className="arrow-list">
                 <strong>Replace old rubber hoses.</strong> Upgrade washing
                 machine and dishwasher supply lines to braided stainless-steel
@@ -220,13 +443,15 @@ export default function SafetyAndPrevention() {
                 Place leak sensors under sinks, near the water heater, behind
                 the washing machine, and under refrigerator or dishwasher lines.
               </li>
+
               <li className="arrow-list">
                 Consider an automatic shutoff valve on your main line that can
                 close when a major leak is detected.
               </li>
+
               <li className="arrow-list">
-                Test batteries and Wi-Fi connectivity on a set schedule (for
-                example, at the start of each season).
+                Test batteries and Wi-Fi connectivity on a set schedule, such as
+                at the start of each season.
               </li>
             </ul>
 
@@ -242,6 +467,7 @@ export default function SafetyAndPrevention() {
             </div>
 
             <h2>PROTECTING PIPES DURING SPOKANE WINTERS</h2>
+
             <h3>How to Reduce the Risk of Frozen or Burst Pipes</h3>
 
             <p>
@@ -258,17 +484,21 @@ export default function SafetyAndPrevention() {
                 Identify pipes that run through unheated or poorly insulated
                 areas.
               </li>
+
               <li className="arrow-list">
                 Add foam pipe insulation or heat tape where recommended.
               </li>
+
               <li className="arrow-list">
                 Disconnect and drain outdoor hoses and shut off exterior hose
                 bibs if possible.
               </li>
+
               <li className="arrow-list">
                 Keep cabinet doors under sinks slightly open on very cold nights
                 to let warm air circulate.
               </li>
+
               <li className="arrow-list">
                 During extreme cold, allow faucets on vulnerable runs to drip
                 slightly to keep water moving.
@@ -283,6 +513,7 @@ export default function SafetyAndPrevention() {
             </p>
 
             <h2>FIRE SAFETY BASICS EVERY HOME NEEDS</h2>
+
             <h3>
               Three Layers of Defense: Detection, Suppression &amp; Escape
             </h3>
@@ -297,10 +528,12 @@ export default function SafetyAndPrevention() {
                 <strong>Detection:</strong> Smoke alarms that wake you up and
                 give you time to react.
               </li>
+
               <li className="arrow-list">
                 <strong>Suppression:</strong> The right fire extinguishers in
                 the right locations for small, controllable fires.
               </li>
+
               <li className="arrow-list">
                 <strong>Escape:</strong> A simple, practiced plan so everyone
                 knows how to get out quickly and safely.
@@ -318,16 +551,19 @@ export default function SafetyAndPrevention() {
             <ul>
               <li className="arrow-list">
                 Install alarms inside every bedroom, outside each sleeping area,
-                and on every level of your home (including the basement).
+                and on every level of your home, including the basement.
               </li>
+
               <li className="arrow-list">
                 Test alarms monthly using the test button, and replace batteries
                 at least once a year unless using sealed 10-year models.
               </li>
+
               <li className="arrow-list">
                 Replace the alarm units themselves according to manufacturer
                 guidelines—typically every 8–10 years.
               </li>
+
               <li className="arrow-list">
                 Consider interconnected alarms so when one sounds, they all do.
               </li>
@@ -346,15 +582,18 @@ export default function SafetyAndPrevention() {
                 Choose a multi-purpose class ABC extinguisher for general home
                 use.
               </li>
+
               <li className="arrow-list">
                 Mount extinguishers where they are visible and easy to reach:
                 the kitchen, near the garage or mechanical room, and close to an
                 exit.
               </li>
+
               <li className="arrow-list">
                 Check the pressure gauge monthly and ensure the pin and tamper
                 seal are intact.
               </li>
+
               <li className="arrow-list">
                 Learn and teach the PASS method: Pull, Aim, Squeeze, Sweep.
               </li>
@@ -367,6 +606,7 @@ export default function SafetyAndPrevention() {
             </p>
 
             <h2>PREVENTING KITCHEN, ELECTRICAL &amp; WILDFIRE-RELATED FIRES</h2>
+
             <h3>Staying Safe in the Kitchen</h3>
 
             <p>
@@ -378,13 +618,16 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 Stay in the kitchen when frying, grilling, or broiling food.
               </li>
+
               <li className="arrow-list">
                 Keep flammable items like towels, paper products, and curtains
                 away from the stovetop.
               </li>
+
               <li className="arrow-list">
                 Clean grease from stovetops, ovens, and range hoods regularly.
               </li>
+
               <li className="arrow-list">
                 Keep a lid nearby to smother small pan fires—slide it on and
                 turn off the burner. Never throw water on a grease fire.
@@ -402,13 +645,16 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 Avoid daisy-chaining power strips or overloading outlets.
               </li>
+
               <li className="arrow-list">
                 Replace damaged or frayed cords immediately.
               </li>
+
               <li className="arrow-list">
                 Keep space heaters at least three feet away from anything that
                 can burn, and never run them unattended or while you sleep.
               </li>
+
               <li className="arrow-list">
                 Have an electrician evaluate frequent breaker trips, flickering
                 lights, or warm outlets.
@@ -427,13 +673,16 @@ export default function SafetyAndPrevention() {
                 Create defensible space by clearing dry vegetation and debris
                 away from structures.
               </li>
+
               <li className="arrow-list">
                 Clean roofs and gutters of dry leaves and pine needles.
               </li>
+
               <li className="arrow-list">
                 Screen exterior vents with appropriate mesh to reduce ember
                 intrusion.
               </li>
+
               <li className="arrow-list">
                 Prepare a simple &quot;go bag&quot; and know local evacuation
                 routes and alert systems.
@@ -443,6 +692,7 @@ export default function SafetyAndPrevention() {
             <h2>
               HOW SERVICEMASTER BY COMPASS SUPPORTS PREVENTION &amp; SAFETY
             </h2>
+
             <h3>Prevention-Focused Inspections &amp; Consultations</h3>
 
             <p>
@@ -456,13 +706,16 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 Plumbing and appliance setups that are more likely to fail
               </li>
+
               <li className="arrow-list">
                 Basement, crawlspace, and drainage issues that increase flood
                 risk
               </li>
+
               <li className="arrow-list">
                 Fire safety gaps, from missing alarms to extinguisher placement
               </li>
+
               <li className="arrow-list">
                 Seasonal vulnerabilities related to winter freezes or wildfire
                 conditions
@@ -488,13 +741,16 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 Rapid response for water extraction and structural drying
               </li>
+
               <li className="arrow-list">
                 Smoke and soot cleanup to protect surfaces and indoor air
                 quality
               </li>
+
               <li className="arrow-list">
                 Mold remediation when moisture has been present too long
               </li>
+
               <li className="arrow-list">
                 Coordination through the restoration and reconstruction phases
               </li>
@@ -538,6 +794,7 @@ export default function SafetyAndPrevention() {
             </div>
 
             <h2>SAFETY &amp; PREVENTION FAQ</h2>
+
             <h3>How Often Should I Test Smoke Detectors?</h3>
 
             <p>
@@ -573,16 +830,20 @@ export default function SafetyAndPrevention() {
               <li className="arrow-list">
                 Water has affected multiple rooms, levels, or your basement.
               </li>
+
               <li className="arrow-list">
                 You&apos;re dealing with sewage, contaminated water, or strong
                 odors.
               </li>
+
               <li className="arrow-list">
                 Smoke has traveled beyond the original fire area.
               </li>
+
               <li className="arrow-list">
                 You see visible mold growth larger than a minor patch.
               </li>
+
               <li className="arrow-list">
                 You&apos;re unsure what building materials are wet or how far
                 the damage extends.
@@ -605,16 +866,13 @@ export default function SafetyAndPrevention() {
           </div>
 
           <div className="column-two">
-            <SideBarBox
-              title={"Safety & Prevention"}
-              links={Links}
-              list={List}
-            />
+            <SideBarBox title="Safety & Prevention" links={Links} list={List} />
 
             <UncertainTo />
           </div>
         </div>
       </div>
+
       <RestorePeace />
     </div>
   );

@@ -47,7 +47,7 @@ const List = [
 
 // --- SEO + JSON-LD ---
 const canonical =
-  "https://smcfireandwater.com/commercial/water-damage/reduce-downtime-after-water-damage";
+  "https://smcfireandwater.com/safety-and-prevention/reduce-downtime-after-water-damage";
 
 const title = "Commercial Water Damage in Spokane | Reduce Downtime";
 
