@@ -1,21 +1,75 @@
-"use client";
+import Image from "next/image";
 
 import FAQAccordion from "../../../components/FAQAccordion";
 import RestorePeace from "../../../components/RestoringPeace";
 import SideBarBox from "../../../components/SideBarBox";
 import UncertainTo from "../../../components/UncertaintyTo";
 import GetHelpNow from "../../../components/GetHelpNow";
+import JsonLd from "../../../components/JsonLd";
 
-const Links = [
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/faqs/residential/hoarding-faq`;
+
+const title = "Hoarding Cleanup FAQs | Spokane & Coeur d’Alene";
+
+const description =
+  "Find answers about compassionate hoarding cleanup, costs, timelines, privacy, donations, storage, hazardous materials, and home recovery.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/calloutreslong.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Compassionate residential hoarding cleanup services",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/calloutreslong.jpg`],
+  },
+};
+
+const links = [
   "/faqs/residential/water-damage-faq",
   "/faqs/residential/mold-remediation-faq",
   "/faqs/residential/reconstruction-services-faq",
   "/faqs/residential/hoarding-faq",
-  "/faqs/residential/air-duct-cleaning-faq",
   "/faqs/residential/fire-damage-faq",
+  "/faqs/residential/air-duct-cleaning-faq",
 ];
 
-const List = [
+const list = [
   "Water Damage FAQ",
   "Mold Remediation FAQ",
   "Reconstruction Services FAQ",
@@ -28,127 +82,214 @@ const faqItems = [
   {
     question: "Will you clean the home without the customer being present?",
     answer:
-      "We prefer to work with the customer in the home, but under specific medical situations, we can do so with their input, even if they’re not present. We will never clean out a home without the customer’s knowledge, approval, and understanding.",
+      "We prefer to work with the customer in the home. However, in certain medical or accessibility-related situations, we may be able to complete the work with the customer’s ongoing input even if they are not physically present.<br><br>We will not clean out a home without the customer’s knowledge, approval, and understanding of the cleanup plan.",
   },
   {
-    question: "How involved must the customer be in the cleaning process?",
+    question: "How involved must the customer be in the cleanup process?",
     answer:
-      "While we do not ask the customer to physically move items, we do ask for their guidance when it comes to making decisions. After all, the more involved in the cleanup the customer is, the greater chance they’ll have a positive experience and outcome.",
+      "We do not ask the customer to physically move items, but we do rely on their guidance when decisions need to be made.<br><br>Customer involvement helps ensure that important, sentimental, or valuable belongings are handled appropriately and that the cleanup reflects the customer’s priorities.",
   },
   {
-    question: "How do you handle a resistant customer?",
+    question: "How do you work with a customer who feels resistant or unsure?",
     answer:
-      "Our job is to help the customers clean up their homes. We focus on building trust first and teaching skill sets second. While the customer may get pushed beyond their original comfort zone as the cleaning advances, our teams are trained to identify and communicate with the customer when the cleanup becomes challenging.",
+      "Our first priority is building trust and helping the customer understand the cleanup process. We move through the project carefully and communicate whenever decisions or changes become challenging.<br><br>The customer may be encouraged to move beyond their original comfort zone as progress is made, but our team remains focused on respect, consent, and clear communication.",
   },
   {
-    question: "Can friends, neighbors, and church groups help?",
+    question: "Can friends, neighbors, or church groups help?",
     answer:
-      "Because homes are filled with highly emotional situations, our experience has shown that friends, neighbors, and church groups are best suited as post-cleanup support groups after the process has been completed.",
+      "Friends, neighbors, and community groups can provide valuable emotional and practical support. However, because hoarding cleanup can involve sensitive decisions, privacy concerns, and potential hazards, informal helpers may be better suited to supporting the customer before or after professional cleanup.<br><br>Your project manager can help determine when outside support may be appropriate.",
   },
   {
-    question:
-      "Can you help family members educate another family member on the cleaning process?",
+    question: "Can you help family members understand the cleanup process?",
     answer:
-      "Absolutely. Our team will work with the customer and their family members to help them better understand the cleaning plan. We’ll invest the time to make sure all parties are fully informed.",
+      "Yes. Our team can work with the customer and their family members to explain the cleanup plan, answer questions, and clarify how decisions will be handled.<br><br>We take the time to help everyone understand the process while respecting the customer’s privacy and authority over their belongings.",
   },
   {
-    question: "What does a hoarding cleanup cost?",
+    question: "What does hoarding cleanup cost?",
     answer:
-      "Every job is unique, and pricing will vary in many situations, including the size of the home, type of items kept, ability to make decisions, and hazards found in the home.",
+      "Every project is different. Pricing may depend on the size and condition of the home, the volume and type of belongings, access to the property, disposal requirements, decision-making time, and any hazards discovered during the evaluation.<br><br>We will review the expected scope of work and pricing before the cleanup begins.",
   },
   {
-    question: "How long does the cleaning take?",
+    question: "How long does hoarding cleanup take?",
     answer:
-      "Timing differs for each home depending upon volume, hazards, and more. An average home takes between 3 and 5 days. Preparing for the cleanup can take weeks, but the actual cleanup is usually less than a week.",
+      "The timeline varies depending on the size of the property, the volume of belongings, safety concerns, the customer’s decision-making pace, and the services required.<br><br>Some cleanups may take three to five days, while larger or more complex projects may require additional time. Preparation and planning may also take place before the physical cleanup begins.",
   },
   {
-    question: "Does the customer get breaks during the cleanup?",
+    question: "Does the customer receive breaks during the cleanup?",
     answer:
-      "Each job will be tailored to the customer’s ability to focus and make decisions. Whether that means we work half days or full days, we prioritize the customer’s well-being and encourage breaks as needed.",
+      "Yes. Each project is adjusted to the customer’s ability to focus, make decisions, and participate comfortably.<br><br>The team may work half days or full days depending on the customer’s needs, and breaks are encouraged whenever they are necessary.",
   },
   {
-    question: "What do you do with valuables found in the house?",
+    question: "What happens to valuables found in the home?",
     answer:
-      "Any valuables found in the home are the property of the customer. During a cleanup, finding valuables is an exciting event that we use to build confidence and momentum. Something of value (emotional or monetary) is brought to the customer immediately, and the story of the item is shared with the crew. Taking the time to acknowledge and appreciate these stories is an important part of the process.",
+      "Any valuables found in the home remain the property of the customer. Items with financial, sentimental, or personal importance will be brought to the customer’s attention as soon as they are discovered.<br><br>Our team will follow the agreed-upon process for documenting, protecting, and returning valuable items.",
   },
   {
     question: "Can you help donate items?",
     answer:
-      "Yes, our team will help assist with the details of donated items. Once the customer selects a preferred donation organization, our team will sort and document all items and can take them to the donation center. We will take a detailed inventory, fill out the donation receipt, and return it to the customer for tax purposes.",
+      "Yes. Once the customer chooses a donation organization, our team may be able to sort, document, and transport approved items to the donation center.<br><br>When available, donation receipts and inventories will be returned to the customer for their records. Customers should consult a tax professional regarding any potential tax deductions.",
   },
   {
     question: "Can you help sell items?",
     answer:
-      "While we can connect the customer to partners specialized in selling specific items, our team does not personally sell the items. The sales partners will typically take a commission for selling the items, but our team does not share in any profits of sold items.",
+      "Our team does not sell the customer’s belongings directly. However, we may be able to connect the customer with third-party professionals who specialize in selling certain items.<br><br>Those businesses may charge commissions or other fees. ServiceMaster Restore does not share in the proceeds from sold belongings.",
   },
   {
     question: "Can you store items?",
     answer:
-      "Many of our locations do have the ability to store items in their warehouses for an additional fee. If our location does not have internal storage, we have partners nationwide that can affordably store items. In all cases, our team will handle the logistics of getting the items to storage locations. However, long-term storage after a clean-out should only be used in special situations.",
+      "Storage options vary by location. Some ServiceMaster Restore locations may offer warehouse storage for an additional fee, while others may coordinate with third-party storage providers.<br><br>Our team can explain available options and help coordinate transportation. Long-term storage should be considered carefully so it does not simply postpone necessary decisions.",
   },
   {
     question: "Do you remove animals from hoarding situations?",
     answer:
-      "Animal hoarding is a reality of our business, and we understand that our customers have the best intentions for their pets. Depending upon the severity of the situation, we will partner with local animal control, veterinarians, adoption agencies, shelters, and rescue teams to gain the healthiest and safest location for the animals. Please call with questions about your specific situation and know that all calls are confidential.",
+      "When animals are involved, our priority is helping create a safer environment for both the customer and the animals.<br><br>Depending on the conditions, we may coordinate with veterinarians, animal-control agencies, shelters, rescue organizations, or adoption groups. Contact us to discuss the specific circumstances. We will handle the conversation as privately and respectfully as possible.",
   },
   {
-    question: "Are you bonded/licensed/insured?",
+    question: "Are you licensed, bonded, and insured?",
     answer:
-      "All of our teams nationwide are licensed, bonded, and insured. You can trust that anyone entering your home from our team will be trained, trustworthy, courteous, and compassionate.",
+      "Licensing, bonding, and insurance requirements can vary by location and by the type of work being performed. Contact ServiceMaster by Compass directly to confirm the credentials and coverage applicable to your project.<br><br>Our team members are trained to work respectfully, carefully, and professionally inside customers’ homes.",
   },
   {
-    question:
-      "What if mold or other hazardous materials (feces, asbestos, etc.) are found in the house?",
+    question: "What happens if mold or other hazardous materials are found?",
     answer:
-      "ServiceMaster Restore offers a full suite of services to clean and repair mold, water, fire, and smoke damage, as well as odor and hazardous materials. The services are an additional cost and will be discussed during the cleaning evaluation and again at the end of the cleanup.",
+      "If mold, sewage, animal waste, asbestos-containing materials, or other hazards are discovered, the team will stop and evaluate the affected area before continuing.<br><br>Additional remediation, testing, containment, disposal, or specialized contractors may be required. Any additional services and costs will be discussed with the customer before that work begins.",
   },
   {
-    question: "What if you find a dangerous situation in the house?",
+    question: "What happens if you find a dangerous condition in the home?",
     answer:
-      "Our teams are highly trained to recognize any dangerous situations, from structural issues to mold and fecal matter and everything in between. After walking through the home, we will let the customer know if there are any dangerous situations and will discuss how it can best be handled.",
+      "Our team will identify and communicate visible safety concerns discovered during the initial walkthrough or cleanup process. These may include structural damage, mold, animal waste, unstable materials, blocked exits, or other hazards.<br><br>We will explain the concern, restrict access when necessary, and discuss the appropriate next steps with the customer.",
   },
   {
-    question:
-      "After the cleaning process, can you help the customer maintain the newly cleaned home?",
+    question: "Can you help the customer maintain the home after cleanup?",
     answer:
-      "We’ll help the customer and family create a plan to maintain a clean home. In addition, we’ll follow up by phone to see if the customer is doing well, or if help is necessary.",
+      "Yes. We can help the customer and their family develop a practical plan for maintaining the cleaned areas and managing belongings going forward.<br><br>Follow-up support may also be available to check progress and determine whether additional assistance is needed.",
   },
   {
-    question: "How discreet will this process be? Will neighbors find out?",
+    question: "How discreet is the cleanup process?",
     answer:
-      "We understand that privacy is of extreme importance. We will work with the customer to be as discreet as possible.",
+      "We understand that privacy is extremely important. Our team will work with the customer to make the process as discreet as reasonably possible.<br><br>Access, vehicles, scheduling, communication, and disposal arrangements can be discussed before work begins so privacy concerns are addressed in the cleanup plan.",
   },
 ];
 
-export default function HoardingFAQ() {
+const stripHtml = (value) =>
+  value
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    isPartOf: {
+      "@id": `${siteUrl}/#website`,
+    },
+    about: {
+      "@id": `${siteUrl}/#organization`,
+    },
+    breadcrumb: {
+      "@id": `${canonical}#breadcrumb`,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/calloutreslong.jpg`,
+      width: 1200,
+      height: 630,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Restoration FAQs",
+        item: `${siteUrl}/faqs`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Residential Restoration FAQs",
+        item: `${siteUrl}/faqs/residential`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Hoarding Cleanup FAQs",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${canonical}#faq`,
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHtml(item.answer),
+      },
+    })),
+  },
+];
+
+export default function ResidentialHoardingFaqPage() {
   return (
-    <div>
+    <main>
+      <JsonLd data={jsonLd} />
+
       <div className="top-image">
-        <img src="/calloutreslong.jpg" />
+        <Image
+          src="/calloutreslong.jpg"
+          alt="Compassionate residential hoarding cleanup and property recovery services"
+          width={1920}
+          height={600}
+          priority
+        />
       </div>
+
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
-            <h1>HOARDING CLEAN-UP FAQ</h1>
-            <p>ANSWERS TO YOUR MOST COMMON QUESTIONS</p>
+            <h1>Residential Hoarding Cleanup FAQs</h1>
+
+            <p>
+              Get answers about compassionate hoarding cleanup, privacy,
+              timelines, belongings, donations, storage, and safety.
+            </p>
 
             <FAQAccordion items={faqItems} />
-            <GetHelpNow
-              text={
-                "Reach out to us today to schedule a hoarding clean-up service"
-              }
-            />
+
+            <GetHelpNow text="Contact us today to discuss residential hoarding cleanup services." />
           </div>
 
-          <div className="column-two">
-            <SideBarBox title={"Residential"} links={Links} list={List} />
+          <aside
+            className="column-two"
+            aria-label="Residential restoration FAQ categories"
+          >
+            <SideBarBox title="Residential FAQs" links={links} list={list} />
 
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

@@ -1,19 +1,73 @@
-"use client";
+import Image from "next/image";
 
 import FAQAccordion from "../../../components/FAQAccordion";
 import GetHelpNow from "../../../components/GetHelpNow";
 import RestorePeace from "../../../components/RestoringPeace";
 import SideBarBox from "../../../components/SideBarBox";
 import UncertainTo from "../../../components/UncertaintyTo";
+import JsonLd from "../../../components/JsonLd";
 
-const Links = [
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/faqs/commercial/mold-remediation-faq`;
+
+const title = "Commercial Mold Remediation FAQs | Spokane & Coeur d’Alene";
+
+const description =
+  "Get answers about commercial mold growth, testing, health concerns, professional remediation, and mold removal in Spokane and Coeur d’Alene.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/commercialmold.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Commercial mold remediation services from ServiceMaster by Compass",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/commercialmold.jpg`],
+  },
+};
+
+const links = [
   "/faqs/commercial/water-restoration-faq",
   "/faqs/commercial/mold-remediation-faq",
   "/faqs/commercial/fire-restoration-faq",
   "/faqs/commercial/air-duct-faq",
 ];
 
-const List = [
+const list = [
   "Water Damage FAQ",
   "Mold Remediation FAQ",
   "Fire Damage FAQ",
@@ -24,67 +78,156 @@ const faqItems = [
   {
     question: "What is mold?",
     answer:
-      "Mold is a microscopic fungus that is part of the natural environment and necessary for our ecosystem. While it is necessary in the outdoor world, too much mold inside a structure can be dangerous and unsanitary. Mold produces spores as part of its lifecycle, and these spores float through the air both inside and outside.",
+      "Mold is a microscopic fungus that is part of the natural environment and plays an important role in breaking down organic matter. While mold is normal outdoors, excessive indoor mold growth can create unsanitary conditions and damage building materials.<br><br>Mold reproduces by releasing microscopic spores that travel through the air both indoors and outdoors.",
   },
   {
     question: "Why is mold a problem?",
     answer:
-      "Many people aren’t aware that mold can cause structural damage to homes and businesses, which, if left undetected, can cause a property to lose value and/or require significant repairs. And if you have ever suffered from allergies, exposure to molds can often cause nasal stuffiness, eye irritation, wheezing, skin irritation, or even more severe reactions.",
+      "Mold can damage building materials and furnishings if it is allowed to grow unchecked. Over time, untreated mold may contribute to costly repairs and reduce the value of a commercial property.<br><br>Mold exposure may also irritate the eyes, nose, skin, and respiratory system, particularly for people with allergies, asthma, or other sensitivities.",
   },
   {
     question: "What does mold need in order to grow?",
     answer:
-      "Mold needs a moist environment, temperatures above freezing, and a food source, which can be leaves, paper, dirt, wood, or other building materials. Mold is more likely to be found in damp, dusty spaces or areas with stagnant air.",
+      "Mold needs moisture, temperatures above freezing, and an organic food source. Common food sources include wood, paper, drywall, dust, dirt, and other building materials.<br><br>Mold is more likely to develop in damp areas, spaces with limited airflow, and locations affected by leaks, flooding, or persistent humidity.",
   },
   {
     question: "How can I tell if I have mold?",
     answer:
-      "If you see mold growth or water stains, a mold test can help identify related microbial activity. You can also look for areas where water leakage has occurred, such as roofs, pipes, ceilings, or walls. Musty smells may also indicate the presence of mold.",
+      "Visible growth, water stains, discoloration, and musty odors may indicate a mold problem. You should also inspect areas where leaks or moisture intrusion have occurred, including roofs, pipes, ceilings, walls, basements, and HVAC systems.<br><br>Professional testing may help evaluate suspected microbial growth when the source or extent of the problem is unclear.",
   },
   {
     question:
-      "When does mold need to be handled by a professional remediation company?",
+      "When should mold be handled by a professional remediation company?",
     answer:
-      "Most experts recommend a professional remediation company when elevated mold levels are detected. Remediation professionals are specially trained to isolate and treat mold-affected areas to avoid contaminating adjacent spaces.",
+      "Professional remediation is recommended when mold growth is extensive, hidden inside building materials, caused by contaminated water, or likely to spread during removal.<br><br>Trained remediation professionals use containment, filtration, removal, and cleaning procedures designed to reduce the risk of spreading mold spores into unaffected areas.",
   },
   {
     question:
-      "Some molds have the reputation of being more dangerous than others. Is identifying the mold important?",
+      "Some molds are considered more dangerous than others. Is identifying the mold important?",
     answer:
-      'Sometimes you will hear terms like “toxic mold” or “black mold” used to refer to molds. While identifying the type of fungus or mold may be interesting, it doesn’t affect the course of action. If mold is present, the CDC strongly recommends that it be removed, no matter the type. <br><br><em>Source:</em> <a class="underline-link" href="https://www.cdc.gov/mold/dampness_facts.htm" target="_blank" rel="noopener">CDC — Facts about Mold and Dampness (2012)</a>.',
+      'Terms such as “toxic mold” and “black mold” are often used to describe certain types of mold, but identifying the exact species does not usually change the immediate response. Visible mold and the moisture source supporting its growth should be addressed regardless of the mold type.<br><br><em>Source:</em> <a class="underline-link" href="https://www.cdc.gov/mold-health/about/index.html" target="_blank" rel="noopener noreferrer">CDC — Mold</a>.',
   },
 ];
 
-export default function CommericalMoldRemediationFAQ() {
+const stripHtml = (value) =>
+  value
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    isPartOf: {
+      "@id": `${siteUrl}/#website`,
+    },
+    about: {
+      "@id": `${siteUrl}/#organization`,
+    },
+    breadcrumb: {
+      "@id": `${canonical}#breadcrumb`,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/commercialmold.jpg`,
+      width: 1200,
+      height: 630,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Restoration FAQs",
+        item: `${siteUrl}/faqs`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Commercial Restoration FAQs",
+        item: `${siteUrl}/faqs/commercial`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Commercial Mold Remediation FAQs",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${canonical}#faq`,
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHtml(item.answer),
+      },
+    })),
+  },
+];
+
+export default function CommercialMoldRemediationFaqPage() {
   return (
-    <div>
+    <main>
+      <JsonLd data={jsonLd} />
+
       <div className="top-image">
-        <img src="/commercialmold.jpg" />
+        <Image
+          src="/commercialmold.jpg"
+          alt="Commercial mold remediation and removal services"
+          width={1920}
+          height={600}
+          priority
+        />
       </div>
+
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
-            <h1>Commercial Mold Remediation FAQ</h1>
-            <p>You've got questions, our experts have the answers</p>
+            <h1>Commercial Mold Remediation FAQs</h1>
+
+            <p>
+              Get answers to common questions about commercial mold growth,
+              removal, and remediation.
+            </p>
 
             <FAQAccordion items={faqItems} />
 
-            <GetHelpNow
-              text={
-                "Contact us today to learn more about our commercial mold remediation services."
-              }
-            />
+            <GetHelpNow text="Contact us today to learn more about our commercial mold remediation services." />
           </div>
 
-          <div className="column-two">
-            <SideBarBox title={"Commercial"} links={Links} list={List} />
+          <aside
+            className="column-two"
+            aria-label="Commercial restoration FAQ categories"
+          >
+            <SideBarBox title="Commercial FAQs" links={links} list={list} />
 
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

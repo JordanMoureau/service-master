@@ -1,54 +1,43 @@
+import Image from "next/image";
+
 import RestorePeace from "../components/RestoringPeace";
 import SideBarBox from "../components/SideBarBox";
 import GetHelpNow from "../components/GetHelpNow";
-
 import JsonLd from "../components/JsonLd";
 
-// --- SEO + JSON-LD ---
-const canonical = "https://smcfireandwater.com/faqs";
-const title =
-  "Restoration FAQs | Water, Fire & Mold | Spokane WA & Coeur d’Alene ID";
-const description =
-  "Answers to common questions about water damage cleanup, fire & smoke restoration, and mold remediation. Explore residential & commercial FAQs for Spokane, Spokane Valley & Coeur d’Alene. 24/7 help.";
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/faqs`;
 
-// app/faqs/page.tsx
+const title = "Restoration FAQs | Water, Fire & Mold Damage";
+
+const description =
+  "Find answers to common questions about water damage cleanup, fire and smoke restoration, and mold remediation for homes and businesses in Spokane and Coeur d’Alene.";
 
 export const metadata = {
-  title:
-    "Restoration FAQs | Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
-  description:
-    "Answers to common questions about water damage cleanup, fire & smoke restoration, and mold remediation. Explore residential & commercial FAQs for Spokane, Spokane Valley & Coeur d’Alene. 24/7 help.",
-  keywords: [
-    "mold remediation and removal Spokane WA",
-    "mold removal services Coeur d’Alene ID",
-    "fire damage restoration Spokane WA",
-    "mold abatement service Coeur d’Alene ID",
-    "water damage clean up Spokane Valley WA",
-    "fire damage restoration service near me Spokane",
-    "restoration mold removal CDA Idaho",
-    "fire damage restoration companies Spokane WA",
-    "emergency flood cleanup Coeur d’Alene ID",
-    "restoration FAQs Spokane",
-  ],
-  alternates: { canonical: "https://smcfireandwater.com/faqs" },
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
   openGraph: {
-    title:
-      "Restoration FAQs — Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
-    description:
-      "Your restoration questions answered: water, fire/smoke, mold, and more. Spokane, Spokane Valley & Coeur d’Alene.",
-    url: "https://smcfireandwater.com/faqs",
+    title,
+    description,
+    url: canonical,
     siteName: "ServiceMaster by Compass",
     images: [
       {
-        url: "https://smcfireandwater.com/sub-banner.jpg",
+        url: `${siteUrl}/sub-banner.jpg`,
         width: 1200,
         height: 630,
-        alt: "ServiceMaster by Compass — FAQs",
+        alt: "ServiceMaster by Compass restoration services",
       },
     ],
     locale: "en_US",
-    type: "article",
+    type: "website",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -60,25 +49,26 @@ export const metadata = {
       maxVideoPreview: -1,
     },
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Restoration FAQs | Water, Fire & Mold | Spokane WA & Coeur d’Alene ID",
-    description:
-      "Get answers to common restoration questions. 24/7 help in Spokane & CDA.",
-    images: ["https://smcfireandwater.com/sub-banner.jpg"],
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
   },
 };
 
-// JSON-LD
 const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://smcfireandwater.com/#organization",
+    "@id": `${siteUrl}/#organization`,
     name: "ServiceMaster by Compass",
-    url: "https://smcfireandwater.com",
-    logo: "https://smcfireandwater.com/logo.png",
+    url: siteUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/logo.png`,
+    },
     sameAs: [
       "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
       "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
@@ -88,23 +78,61 @@ const jsonLd = [
       "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
     ],
     areaServed: [
-      { "@type": "Place", name: "Spokane, WA" },
-      { "@type": "Place", name: "Spokane Valley, WA" },
-      { "@type": "Place", name: "Coeur d’Alene, ID" },
+      {
+        "@type": "City",
+        name: "Spokane",
+        containedInPlace: {
+          "@type": "State",
+          name: "Washington",
+        },
+      },
+      {
+        "@type": "City",
+        name: "Spokane Valley",
+        containedInPlace: {
+          "@type": "State",
+          name: "Washington",
+        },
+      },
+      {
+        "@type": "City",
+        name: "Coeur d’Alene",
+        containedInPlace: {
+          "@type": "State",
+          name: "Idaho",
+        },
+      },
     ],
   },
   {
     "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    url: siteUrl,
+    name: "ServiceMaster by Compass",
+    publisher: {
+      "@id": `${siteUrl}/#organization`,
+    },
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://smcfireandwater.com/faqs#webpage",
+    "@id": `${canonical}#webpage`,
     url: canonical,
-    name: "Restoration FAQs",
-    isPartOf: { "@id": "https://smcfireandwater.com/#website" },
-    description: description,
-    breadcrumb: { "@id": "https://smcfireandwater.com/faqs#breadcrumb" },
+    name: title,
+    description,
+    isPartOf: {
+      "@id": `${siteUrl}/#website`,
+    },
+    about: {
+      "@id": `${siteUrl}/#organization`,
+    },
+    breadcrumb: {
+      "@id": `${canonical}#breadcrumb`,
+    },
     primaryImageOfPage: {
       "@type": "ImageObject",
-      url: "https://smcfireandwater.com/sub-banner.jpg",
+      url: `${siteUrl}/sub-banner.jpg`,
       width: 1200,
       height: 630,
     },
@@ -112,92 +140,104 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": "https://smcfireandwater.com/faqs#breadcrumb",
+    "@id": `${canonical}#breadcrumb`,
     itemListElement: [
       {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://smcfireandwater.com/",
-      },
-      { "@type": "ListItem", position: 2, name: "FAQs", item: canonical },
-    ],
-  },
-  // Directory of the two FAQ detail pages
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "FAQ Categories",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        url: "https://smcfireandwater.com/faqs/residential",
-        name: "FAQs — Residential Restoration",
+        item: `${siteUrl}/`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        url: "https://smcfireandwater.com/faqs/commercial",
-        name: "FAQs — Commercial Restoration",
+        name: "Restoration FAQs",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Restoration FAQ Categories",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Residential Restoration FAQs",
+        url: `${siteUrl}/faqs/residential`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Commercial Restoration FAQs",
+        url: `${siteUrl}/faqs/commercial`,
       },
     ],
   },
 ];
 
-const Links = ["/faqs/residential", "/faqs/commercial"];
+const links = ["/faqs/residential", "/faqs/commercial"];
 
-const List = ["FAQs - Residential", "FAQs - Commercial"];
+const list = ["Residential FAQs", "Commercial FAQs"];
 
-export default function Faqs() {
+export default function FaqsPage() {
   return (
-    <div>
+    <main>
       <JsonLd data={jsonLd} />
+
       <div className="top-image">
-        <img src="/sub-banner.jpg" />
+        <Image
+          src="/sub-banner.jpg"
+          alt="ServiceMaster by Compass restoration team providing emergency property damage assistance"
+          width={1920}
+          height={600}
+          priority
+        />
       </div>
+
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
             <h1>Frequently Asked Questions</h1>
-            <h2> ServiceMaster Restore Has the Answers</h2>
+
+            <h2>ServiceMaster Restore Has the Answers</h2>
 
             <p>
-              {" "}
-              When your home or business sustains damage, whether it's from a
-              storm, a fire, or mold, you undoubtedly have many thoughts and
-              questions running through your head. The team at ServiceMaster
-              Restore wants to be there for you in every way possible, from
-              providing the restoration services you need to giving you the
-              peace of mind you deserve by answering any questions you may have.
-              With over six decades of experience, we have seen a lot and talked
-              to many home and business owners. We understand how they feel and
-              what they are going through. That's why we've compiled a list of
-              the common questions we receive, along with our answers.{" "}
+              When your home or business sustains damage from a storm, fire,
+              mold, or another disaster, you undoubtedly have many questions
+              running through your mind. The team at ServiceMaster Restore is
+              here to support you in every way possible, from providing the
+              restoration services you need to answering your questions and
+              giving you greater peace of mind.
             </p>
 
             <p>
-              {" "}
-              We've broken our questions down by category. Explore the FAQ pages
-              listed to the right for additional information on each of our
-              restoration services. If you still have lingering questions or
-              concerns, don't hesitate to reach out to our team. We are always
-              here for your during these uncertain times.
+              With more than six decades of restoration experience, we have
+              helped many homeowners and business owners navigate property
+              damage and recovery. We understand what you are going through,
+              which is why we have compiled answers to some of the most common
+              questions we receive.
             </p>
 
-            <GetHelpNow
-              text={
-                "Our team is standing by to assist you with all your needs. Give us a call today at"
-              }
-            />
+            <p>
+              We have organized our questions by category. Explore the
+              residential and commercial FAQ pages for more information about
+              our restoration services. If you still have questions or concerns,
+              do not hesitate to contact our team. We are always here for you
+              during these uncertain times.
+            </p>
+
+            <GetHelpNow text="Our team is standing by to assist you with all your restoration needs. Give us a call today at" />
           </div>
 
-          <div className="column-two">
-            <SideBarBox title={"FAQS"} links={Links} list={List} />
-          </div>
+          <aside className="column-two" aria-label="FAQ categories">
+            <SideBarBox title="FAQs" links={links} list={list} />
+          </aside>
         </div>
       </div>
+
       <RestorePeace />
-    </div>
+    </main>
   );
 }

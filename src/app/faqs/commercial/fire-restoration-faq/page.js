@@ -1,19 +1,73 @@
-"use client";
+import Image from "next/image";
 
 import FAQAccordion from "../../../components/FAQAccordion";
 import RestorePeace from "../../../components/RestoringPeace";
 import SideBarBox from "../../../components/SideBarBox";
 import UncertainTo from "../../../components/UncertaintyTo";
 import GetHelpNow from "../../../components/GetHelpNow";
+import JsonLd from "../../../components/JsonLd";
 
-const Links = [
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/faqs/commercial/fire-restoration-faq`;
+
+const title = "Commercial Fire Damage FAQs | Spokane & Coeur d’Alene";
+
+const description =
+  "Find answers about commercial fire and smoke damage restoration, safety, contents cleaning, storage, insurance, and recovery in Spokane and Coeur d’Alene.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/commercialfire.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Commercial fire and smoke damage restoration services",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/commercialfire.jpg`],
+  },
+};
+
+const links = [
   "/faqs/commercial/water-restoration-faq",
   "/faqs/commercial/mold-remediation-faq",
   "/faqs/commercial/fire-restoration-faq",
   "/faqs/commercial/air-duct-faq",
 ];
 
-const List = [
+const list = [
   "Water Damage FAQ",
   "Mold Remediation FAQ",
   "Fire Damage FAQ",
@@ -24,85 +78,175 @@ const faqItems = [
   {
     question: "How long will the restoration process take?",
     answer:
-      "Because there are many variables and many services involved in fire and smoke restoration, it is difficult to predict exactly how long the complete restoration will take. Consult with your ServiceMaster Restore restoration technician as to the estimated dates and phases of your restoration project.",
+      "Because fire and smoke restoration can involve many variables and services, it is difficult to predict exactly how long the complete restoration process will take. Your ServiceMaster Restore technician can explain the anticipated phases of the project and provide estimated dates as the scope of work becomes clear.",
   },
   {
-    question: "Can I clean it myself?",
+    question: "Can I clean the fire and smoke damage myself?",
     answer:
-      'We suggest that you do not attempt any "do-it-yourself" cleaning methods without consulting your ServiceMaster Restore restoration technician. Pretesting, using the right cleaning agent for the particular item, mixing deodorizing agents with cleaning solutions, and using correct dilution rates are just some of the ways a fire restoration technician expertly controls the results. Professional cleaning systems and products used by experienced, trained ServiceMaster Restore Restoration Technicians give you the best chance for complete restoration of your belongings.',
+      "We recommend that you do not attempt do-it-yourself cleaning methods without first consulting your ServiceMaster Restore technician.<br><br>Pretesting materials, selecting the correct cleaning agents, using proper dilution rates, and combining cleaning and deodorizing products safely are important parts of the restoration process. Professional systems and products used by trained technicians provide the best opportunity to restore your property and belongings successfully.",
   },
   {
-    question: "What are some safety concerns?",
+    question: "What are some safety concerns after a commercial fire?",
     answer:
-      "At ServiceMaster Restore, occupant and worker safety are a top priority. During the initial inspection, safety hazards are identified and addressed, including debris removal, air quality, electrical hazards, slip and trip hazards, etc. Burnt electrical cords and appliances are separated out for disposal, and questionable electrical appliances are unplugged and tagged for evaluation of safe operation. Electrical power may be turned off and kept off until evaluation by a licensed electrician.",
+      "Occupant and worker safety are top priorities. During the initial inspection, our technicians identify and address hazards such as unstable debris, poor air quality, damaged electrical systems, and slip or trip risks.<br><br>Burned electrical cords and appliances may be separated for disposal. Questionable appliances may be unplugged and tagged for professional evaluation. Electrical power may also need to remain off until the property has been inspected by a licensed electrician.",
   },
   {
-    question: "May I turn on my heating and air conditioning unit?",
+    question: "May I turn on the heating or air conditioning system?",
     answer:
-      "We recommend that you not turn on your furnace or air conditioning unit without clearance from the HVAC contractor.",
+      "Do not turn on the furnace, air conditioner, or ventilation system until it has been inspected and cleared by a qualified HVAC professional. Operating a contaminated system could circulate smoke, soot, and other particles throughout the property.",
   },
   {
-    question: "How do I keep track of non-restorable items?",
+    question: "How should I keep track of items that cannot be restored?",
     answer:
-      "For insurance purposes, we recommend you make a list of items (including food items) deemed nonrestorable.",
+      "For insurance and documentation purposes, create a detailed list of items considered nonrestorable, including damaged food, inventory, equipment, furnishings, and personal property.<br><br>Photographs, purchase records, serial numbers, and estimated replacement values may also help support your insurance claim.",
   },
   {
-    question: "Do I need general contractors?",
+    question: "Will I need a general contractor?",
     answer:
-      "Some items may require general contractors such as drywall/painting; electrical; plumbing; roofing; framing/finish carpentry; flooring/carpet; installation of doors, windows, cabinets, post-construction cleanup, etc.",
+      "Some restoration projects require licensed contractors or specialized trades. This may include drywall repair, painting, electrical work, plumbing, roofing, framing, finish carpentry, flooring, carpet installation, window or door replacement, cabinetry, and post-construction cleaning.<br><br>Your restoration team can help identify which repairs require additional contractors.",
   },
   {
-    question: "Do my belongings need to be moved away from the premises?",
+    question: "Do my belongings need to be removed from the property?",
     answer:
-      "Depending on the source, nature, and extent of the fire, it may be best to remove all belongings to a secure facility for cleaning, storage and to make room for restoration or construction. ServiceMaster Restore will work with you and your insurance claims representative to manage this process.",
+      "Depending on the source, severity, and extent of the fire damage, belongings may need to be moved to a secure facility for cleaning and storage. Removing contents can also create the space needed for structural restoration or reconstruction.<br><br>ServiceMaster Restore will coordinate with you and your insurance claims representative throughout this process.",
   },
   {
     question: "Will I have access to my belongings while they are in storage?",
     answer:
-      "Yes, with advance notice we can schedule a time for a ServiceMaster Restore Restoration Technician to meet with you and provide access to your requested items. A service charge may apply.",
+      "Yes. With advance notice, we can arrange for a ServiceMaster Restore technician to meet you and provide access to requested items. A service charge may apply depending on the location, timing, and amount of work involved.",
   },
   {
-    question: "What about special items? Artwork, computers, electronics, etc.",
+    question:
+      "What happens to special items such as artwork, computers, and electronics?",
     answer:
-      "Some high-value items require restoration by a specialist. Working with your insurance claims representative, we can help you identify these and locate a qualified restorer.",
+      "Artwork, electronics, documents, machinery, and other valuable or specialized items may require evaluation and restoration by an appropriate specialist.<br><br>We can work with you and your insurance claims representative to identify these items and locate qualified restoration professionals when necessary.",
   },
   {
     question: "Who is responsible for paying for the service?",
     answer:
-      "Prior to work being started, all responsible parties will need to sign a form authorizing payment for the restoration services. If this is an insurance claim, ServiceMaster Restore generally collects only the deductible amount from you and bills the balance to your insurance provider as a service to you. If your claim is not covered or you decide not to file a claim, you will be expected to pay in full at the time of service.",
+      "Before work begins, the responsible parties will need to sign an authorization for payment. If the work is part of a covered insurance claim, ServiceMaster Restore may collect the deductible from you and bill the remaining approved amount to your insurance provider.<br><br>If the claim is denied, the damage is not covered, or you choose not to file a claim, you will be responsible for payment according to the terms of the service agreement.",
   },
 ];
 
-export default function CommercialFireRestorationFAQ() {
+const stripHtml = (value) =>
+  value
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonical}#webpage`,
+    url: canonical,
+    name: title,
+    description,
+    isPartOf: {
+      "@id": `${siteUrl}/#website`,
+    },
+    about: {
+      "@id": `${siteUrl}/#organization`,
+    },
+    breadcrumb: {
+      "@id": `${canonical}#breadcrumb`,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/commercialfire.jpg`,
+      width: 1200,
+      height: 630,
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Restoration FAQs",
+        item: `${siteUrl}/faqs`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Commercial Restoration FAQs",
+        item: `${siteUrl}/faqs/commercial`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Commercial Fire Damage FAQs",
+        item: canonical,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${canonical}#faq`,
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stripHtml(item.answer),
+      },
+    })),
+  },
+];
+
+export default function CommercialFireRestorationFaqPage() {
   return (
-    <div>
+    <main>
+      <JsonLd data={jsonLd} />
+
       <div className="top-image">
-        <img src="/commercialfire.jpg" />
+        <Image
+          src="/commercialfire.jpg"
+          alt="Commercial fire and smoke damage restoration services"
+          width={1920}
+          height={600}
+          priority
+        />
       </div>
+
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
-            <h1>Commercial Fire Restoration FAQ</h1>
-            <p>Answers fom Our Restoration Experts</p>
+            <h1>Commercial Fire Damage Restoration FAQs</h1>
+
+            <p>
+              Get answers from our restoration experts about commercial fire and
+              smoke damage recovery.
+            </p>
 
             <FAQAccordion items={faqItems} />
 
-            <GetHelpNow
-              text={
-                "If you still have questions or concerns about our commerical fire restoration services, don't hesitate to call us at"
-              }
-            />
+            <GetHelpNow text="If you still have questions about our commercial fire restoration services, do not hesitate to call us at" />
           </div>
 
-          <div className="column-two">
-            <SideBarBox title={"Commercial"} links={Links} list={List} />
+          <aside
+            className="column-two"
+            aria-label="Commercial restoration FAQ categories"
+          >
+            <SideBarBox title="Commercial FAQs" links={links} list={list} />
 
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

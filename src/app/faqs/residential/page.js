@@ -1,5 +1,3 @@
-"use client";
-
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import GetHelpNow from "../../components/GetHelpNow";

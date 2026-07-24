@@ -6,7 +6,7 @@ import JsonLd from "../../components/JsonLd";
 import GeneralIntakeForm from "../../components/GeneralIntakeForm";
 
 // --- SEO ---
-const canonical = "https://smcfireandwater.com/we-can-help";
+const canonical = "https://smcfireandwater.com/contact/direct-form";
 const phoneTel = "+15095355440";
 const phonePretty = "(509) 535-5440";
 const ogImage = "https://smcfireandwater.com/sub-banner.jpg";
