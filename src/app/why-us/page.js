@@ -22,6 +22,10 @@ export const metadata = {
     "Why ServiceMaster by Compass | Trusted Restoration in Spokane & Coeur d’Alene",
   description:
     "65+ years of integrity-driven restoration. 24/7/365 response for water, fire & smoke, and mold in Spokane, Spokane Valley & Coeur d’Alene.",
+  alternates: {
+    canonical: canonical,
+  },
+
   keywords: [
     "mold remediation and removal Spokane WA",
     "mold removal services Coeur d’Alene ID",

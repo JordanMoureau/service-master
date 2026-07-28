@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/protecting-your-home-from-water-damage`;
+
+const title = "Protect Your Home From Water Damage | Spokane & North Idaho";
+
+const description =
+  "Learn how to prevent water damage with plumbing maintenance, leak detection, winter preparation, drainage improvements, and smart shut-off technology.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Home protected from water damage in Spokane",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -46,14 +99,16 @@ const List = [
   "Commercial Water Damage Downtime",
 ];
 
-
 export default function ProtectingYourHomeFromWaterDamage() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
           alt="Home protected from water damage in Spokane"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -61,7 +116,9 @@ export default function ProtectingYourHomeFromWaterDamage() {
         <div className="home-section">
           <div className="column-one">
             <h1>Protecting Your Home From Water Damage</h1>
+
             <h2>WATER DAMAGE PREVENTION FOR SPOKANE &amp; NORTH IDAHO</h2>
+
             <h3>Simple Steps to Reduce the Risk of Costly Water Damage</h3>
 
             <p>
@@ -96,6 +153,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </div>
 
             <h2>COMMON CAUSES OF WATER DAMAGE</h2>
+
             <h3>Where Water Problems Usually Start</h3>
 
             <p>
@@ -112,18 +170,22 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 <strong>Leaky pipes and plumbing failures</strong> that release
                 water into walls, ceilings, and floors.
               </li>
+
               <li className="arrow-list">
                 <strong>Appliance breakdowns</strong> from washing machines,
                 dishwashers, refrigerators, and water heaters.
               </li>
+
               <li className="arrow-list">
                 <strong>Roof leaks and gutter problems</strong> that let water
                 into attics and wall cavities.
               </li>
+
               <li className="arrow-list">
                 <strong>Clogged drains or poor grading</strong> that push water
                 toward foundations and basements.
               </li>
+
               <li className="arrow-list">
                 <strong>Frozen or burst pipes</strong> during cold snaps and{" "}
                 <strong>sewer backups</strong> during heavy storms.
@@ -138,6 +200,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
 
             <h2>PREVENTING INTERIOR LEAKS</h2>
+
             <h3>Plumbing &amp; Appliance Maintenance That Actually Matters</h3>
 
             <p>
@@ -157,22 +220,27 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 <strong>Under sinks:</strong> Look for drips, corrosion, or
                 warped cabinet bottoms.
               </li>
+
               <li className="arrow-list">
                 <strong>Toilets:</strong> Check supply lines and shutoff valves
                 for moisture or rust.
               </li>
+
               <li className="arrow-list">
                 <strong>Washing machines:</strong> Inspect hoses and connections
                 monthly; replace rubber hoses every 3–5 years.
               </li>
+
               <li className="arrow-list">
                 <strong>Dishwashers:</strong> Check around the base and inside
                 cabinets for dampness or warped wood.
               </li>
+
               <li className="arrow-list">
                 <strong>Water heaters:</strong> Look for rust, sweating, or
                 water in the drain pan.
               </li>
+
               <li className="arrow-list">
                 <strong>Refrigerators with ice makers:</strong> Inspect the
                 small supply line for kinks, bulges, or damage.
@@ -198,15 +266,18 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 with braided stainless-steel or manufacturer-recommended
                 reinforced lines.
               </li>
+
               <li className="arrow-list">
                 <strong>Use drain pans.</strong> Place pans under water heaters,
                 washing machines, and some dishwashers where possible.
               </li>
+
               <li className="arrow-list">
                 <strong>Label shutoff valves.</strong> Make sure everyone in the
                 household can quickly shut off water to individual fixtures and
                 the main line.
               </li>
+
               <li className="arrow-list">
                 <strong>Leave space for inspection.</strong> Don&apos;t push
                 appliances tight against the wall—give yourself room to see
@@ -231,6 +302,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </div>
 
             <h2>PREVENTING FROZEN &amp; BURST PIPES</h2>
+
             <h3>Winter Water Damage Prevention</h3>
 
             <p>
@@ -247,18 +319,22 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 <strong>Insulate vulnerable runs.</strong> Focus on pipes in
                 unheated basements, crawlspaces, garages, and exterior walls.
               </li>
+
               <li className="arrow-list">
                 <strong>Install heat tape where recommended.</strong> Follow
                 manufacturer instructions and never overlap heat tape.
               </li>
+
               <li className="arrow-list">
                 <strong>Open cabinet doors on cold nights.</strong> Let warm air
                 circulate around pipes under sinks.
               </li>
+
               <li className="arrow-list">
                 <strong>Let faucets drip.</strong> A slow trickle during extreme
                 cold helps keep water moving.
               </li>
+
               <li className="arrow-list">
                 <strong>Shut off and drain outdoor lines.</strong> Disconnect
                 hoses and shut off exterior spigots before the hard freeze.
@@ -273,6 +349,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
 
             <h2>EXTERIOR DEFENSE: ROOF, GUTTERS &amp; DRAINAGE</h2>
+
             <h3>Keeping Water Outside Where It Belongs</h3>
 
             <p>
@@ -289,21 +366,25 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 should slope away so water doesn&apos;t pool against the
                 foundation.
               </li>
+
               <li className="arrow-list">
                 <strong>Clean gutters and downspouts.</strong> Do this at least
                 twice a year and after big wind or leaf events.
               </li>
+
               <li className="arrow-list">
                 <strong>Add downspout extensions.</strong> Aim to discharge
                 water at least 3–5 feet away from the foundation.
               </li>
+
               <li className="arrow-list">
                 <strong>Inspect the roof.</strong> Look for missing shingles,
                 cracked flashing, or damaged areas after storms.
               </li>
+
               <li className="arrow-list">
                 <strong>Watch basement and crawlspace walls.</strong>{" "}
-                Efflorescence (a white, chalky residue) and damp spots can
+                Efflorescence, a white chalky residue, and damp spots can
                 indicate exterior drainage issues.
               </li>
             </ul>
@@ -315,6 +396,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
 
             <h2>SEASONAL WATER DAMAGE PREPARATION</h2>
+
             <h3>Winterizing &amp; Storm-Ready Checklists</h3>
 
             <p>
@@ -328,15 +410,19 @@ export default function ProtectingYourHomeFromWaterDamage() {
               <li className="arrow-list">
                 Insulate exposed pipes in basements, crawlspaces, and attics.
               </li>
+
               <li className="arrow-list">
                 Install or check heat tape on vulnerable lines, if applicable.
               </li>
+
               <li className="arrow-list">
                 Drain and shut off exterior spigots and irrigation lines.
               </li>
+
               <li className="arrow-list">
                 Test your sump pump and battery backup if you have one.
               </li>
+
               <li className="arrow-list">
                 Check attic insulation to help prevent ice dams.
               </li>
@@ -348,15 +434,19 @@ export default function ProtectingYourHomeFromWaterDamage() {
               <li className="arrow-list">
                 Clear gutters, downspouts, and yard drains of debris.
               </li>
+
               <li className="arrow-list">
                 Move stored items off basement floors or onto shelves.
               </li>
+
               <li className="arrow-list">
                 Secure outdoor furniture and items that could block drains.
               </li>
+
               <li className="arrow-list">
                 Verify sump pumps are working and discharge lines are clear.
               </li>
+
               <li className="arrow-list">
                 Keep a simple photo inventory of valuables for insurance
                 documentation.
@@ -370,6 +460,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
 
             <h2>SMART LEAK DETECTION &amp; AUTO SHUT-OFF</h2>
+
             <h3>Using Technology to Catch Problems Early</h3>
 
             <p>
@@ -385,14 +476,17 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 <strong>Point leak sensors</strong> placed under sinks, near
                 water heaters, and behind appliances.
               </li>
+
               <li className="arrow-list">
                 <strong>Strip or rope sensors</strong> that cover a wider area
                 on floors or around mechanical rooms.
               </li>
+
               <li className="arrow-list">
                 <strong>Whole-home flow monitors</strong> that detect unusual
                 water usage patterns.
               </li>
+
               <li className="arrow-list">
                 <strong>Smart shut-off valves</strong> that automatically close
                 the main line when a leak is detected.
@@ -421,6 +515,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </div>
 
             <h2>INSURANCE &amp; RESTORATION COSTS</h2>
+
             <h3>What Happens If Water Damage Still Occurs?</h3>
 
             <p>
@@ -451,7 +546,9 @@ export default function ProtectingYourHomeFromWaterDamage() {
                 Whether sewer or drain backup is covered or requires an
                 endorsement.
               </li>
+
               <li className="arrow-list">How mold remediation is handled.</li>
+
               <li className="arrow-list">
                 What deductibles apply to water claims.
               </li>
@@ -467,13 +564,16 @@ export default function ProtectingYourHomeFromWaterDamage() {
               <li className="arrow-list">
                 Take photos and short videos of all affected areas.
               </li>
+
               <li className="arrow-list">
                 Keep receipts for any emergency supplies or temporary repairs.
               </li>
+
               <li className="arrow-list">
                 Save estimates and invoices from restoration and repair
                 contractors.
               </li>
+
               <li className="arrow-list">
                 Notify your insurance company as soon as possible.
               </li>
@@ -486,6 +586,7 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
 
             <h2>WATER DAMAGE PREVENTION FAQ</h2>
+
             <h3>How Often Should I Check for Leaks?</h3>
 
             <p>
@@ -516,18 +617,18 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
           </div>
 
-          <div className="column-two">
-            <SideBarBox
-              title={"Safety & Prevention"}
-              links={Links}
-              list={List}
-            />
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
+            <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

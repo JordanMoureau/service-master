@@ -16,6 +16,10 @@ export const metadata = {
   title: "Comprehensive Restoration Services | ServiceMaster by Compass",
   description:
     "Emergency water damage & restoration in Spokane & Coeur d’Alene. Fast response, certified technicians, and clear guidance from first call to full recovery.",
+  alternates: {
+    canonical: "https://smcfireandwater.com/",
+  },
+
   keywords: [
     "mold remediation and removal Spokane WA",
     "mold removal services Coeur d’Alene ID",

@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/preparing-for-water-damage`;
+
+const title = "Prepare Your Home for Water Damage | Spokane & North Idaho";
+
+const description =
+  "Learn how to prepare your home for water damage emergencies with prevention tips, leak detection, maintenance, emergency planning, and smart upgrades.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Home water damage emergency planning in Spokane and North Idaho",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,11 +101,14 @@ const List = [
 
 export default function PrepareHomeForWaterDamageEmergencies() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
           alt="Home emergency planning for water damage in Spokane and North Idaho"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -63,7 +119,9 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               How to Prepare Your Home for Water Damage Emergencies Before They
               Happen
             </h1>
+
             <h2>WATER DAMAGE EMERGENCY PREP FOR SPOKANE &amp; NORTH IDAHO</h2>
+
             <h3>
               Prevention Tips, Smart Upgrades, and a Simple Emergency Plan
             </h3>
@@ -93,6 +151,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </div>
 
             <h2>COMMON CAUSES OF RESIDENTIAL WATER DAMAGE</h2>
+
             <h3>Where Emergencies Usually Start</h3>
 
             <p>
@@ -104,6 +163,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </p>
 
             <h3>How burst pipes and appliance leaks lead to water damage</h3>
+
             <p>
               Burst pipes can happen during freezing temperatures, due to aging
               or corroded plumbing, or from water pressure issues. Appliance
@@ -117,16 +177,19 @@ export default function PrepareHomeForWaterDamageEmergencies() {
                 Inspect exposed pipes and fittings for corrosion, staining, or
                 slow drips.
               </li>
+
               <li className="arrow-list">
                 Check appliance supply lines and replace worn hoses before they
                 fail.
               </li>
+
               <li className="arrow-list">
                 Consider leak detection devices for early warnings.
               </li>
             </ul>
 
             <h3>Home vulnerabilities that increase flood and leak risks</h3>
+
             <p>
               Some homes are simply more vulnerable because of exterior
               conditions and drainage. Foundation cracks, poor grading, roof
@@ -136,9 +199,11 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </p>
 
             <h2>PROTECT YOUR HOME’S EXTERIOR FROM WATER DAMAGE</h2>
+
             <h3>Your First Line of Defense Is Outside</h3>
 
             <h3>Best practices for roof and gutter maintenance</h3>
+
             <p>
               Roof and gutter problems are a common source of water damage. The
               goal is to keep water moving off the roof and away from the home
@@ -149,14 +214,17 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               <li className="arrow-list">
                 Inspect the roof at least twice a year and after major storms.
               </li>
+
               <li className="arrow-list">
                 Look for missing shingles, damaged flashing, and soft spots
                 around roof penetrations.
               </li>
+
               <li className="arrow-list">
                 Clean gutters regularly so water can flow freely and not
                 overflow onto siding or into attics.
               </li>
+
               <li className="arrow-list">
                 Confirm downspouts discharge water away from the foundation.
               </li>
@@ -166,6 +234,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               How foundation grading and landscape design prevent water
               intrusion
             </h3>
+
             <p>
               Water should drain away from your foundation, not toward it.
               Proper grading, drainage solutions, and smart landscaping reduce
@@ -177,13 +246,16 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               <li className="arrow-list">
                 Ensure the ground slopes away from the home.
               </li>
+
               <li className="arrow-list">
                 Add downspout extensions to move water 3–5 feet away.
               </li>
+
               <li className="arrow-list">
                 Consider drainage solutions like French drains or swales where
                 water collects.
               </li>
+
               <li className="arrow-list">
                 Avoid overwatering near the foundation and keep soil levels
                 below siding.
@@ -199,11 +271,13 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </div>
 
             <h2>INTERIOR MAINTENANCE THAT PREVENTS WATER DAMAGE</h2>
+
             <h3>Plumbing, Appliances, and Quick Shut-Off Access</h3>
 
             <h3>
               How to inspect and maintain plumbing systems and appliance hoses
             </h3>
+
             <p>
               Interior water damage often comes from supply lines and fixtures.
               A quick routine inspection can catch small issues before they turn
@@ -214,17 +288,21 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               <li className="arrow-list">
                 Check under sinks for moisture, corrosion, or warped cabinetry.
               </li>
+
               <li className="arrow-list">
                 Inspect toilets for leaking at the base or behind the tank.
               </li>
+
               <li className="arrow-list">
                 Look behind washing machines and dishwashers for dampness or
                 water staining.
               </li>
+
               <li className="arrow-list">
-                Replace washing machine hoses every 3–5 years (sooner if worn or
-                heavily used).
+                Replace washing machine hoses every 3–5 years, or sooner if worn
+                or heavily used.
               </li>
+
               <li className="arrow-list">
                 Watch water heaters for rust, sweating, or water in the drain
                 pan.
@@ -232,6 +310,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </ul>
 
             <h3>Locate and operate water shut-off valves effectively</h3>
+
             <p>
               Knowing where your shut-off valves are is one of the most
               important emergency-prep steps you can take. The main shut-off is
@@ -244,9 +323,11 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               <li className="arrow-list">
                 Find the main shut-off valve and confirm it turns smoothly.
               </li>
+
               <li className="arrow-list">
                 Label valves so anyone in the household can use them quickly.
               </li>
+
               <li className="arrow-list">
                 Keep a flashlight nearby if valves are in basements, garages, or
                 crawl spaces.
@@ -254,9 +335,11 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </ul>
 
             <h2>SMART HOME TECHNOLOGY FOR LEAK DETECTION &amp; PREVENTION</h2>
+
             <h3>Catch Problems Early and Reduce Damage</h3>
 
             <h3>Benefits of water leak detection systems and sensors</h3>
+
             <p>
               Leak detection sensors provide early warnings so you can respond
               quickly. Placing sensors near water heaters, under sinks, behind
@@ -266,6 +349,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </p>
 
             <h3>How automatic shut-off valves and smart sump pumps work</h3>
+
             <p>
               Automatic shut-off valves can detect leaks and stop the main water
               supply to reduce damage. Smart sump pumps monitor water levels and
@@ -287,6 +371,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </div>
 
             <h2>BUILD A WATER DAMAGE EMERGENCY PREPAREDNESS PLAN</h2>
+
             <h3>Emergency Kit, Contact List, and Simple Next Steps</h3>
 
             <p>
@@ -296,6 +381,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </p>
 
             <h3>Emergency kit essentials and a contact list</h3>
+
             <p>
               Your emergency kit should include basics for power outages and
               quick response. You should also keep a contact list with emergency
@@ -310,27 +396,32 @@ export default function PrepareHomeForWaterDamageEmergencies() {
                   <th>Recommended Quantity</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>Flashlight</td>
                   <td>Provides light during power outages</td>
                   <td>2</td>
                 </tr>
+
                 <tr>
                   <td>Batteries</td>
                   <td>Powers flashlights and other devices</td>
                   <td>10</td>
                 </tr>
+
                 <tr>
                   <td>First Aid Kit</td>
                   <td>Addresses minor injuries</td>
                   <td>1</td>
                 </tr>
+
                 <tr>
                   <td>Non-Perishable Food</td>
                   <td>Sustains during emergencies</td>
                   <td>3 days&apos; worth</td>
                 </tr>
+
                 <tr>
                   <td>Water</td>
                   <td>Hydration during emergencies</td>
@@ -340,6 +431,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </table>
 
             <h3>What homeowners need to know about insurance coverage</h3>
+
             <p>
               Insurance coverage can vary by policy and by the source of the
               water. Many homeowners policies often cover sudden and accidental
@@ -357,17 +449,20 @@ export default function PrepareHomeForWaterDamageEmergencies() {
                   <th>Importance</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>Homeowners Insurance</td>
                   <td>Covers damage from burst pipes and appliance leaks</td>
                   <td>Essential for most homeowners</td>
                 </tr>
+
                 <tr>
                   <td>Flood Insurance</td>
                   <td>Covers damage from flooding events</td>
                   <td>Important in flood-prone areas</td>
                 </tr>
+
                 <tr>
                   <td>Liability Coverage</td>
                   <td>
@@ -381,13 +476,13 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             <h2>
               GET HELP WITH WATER DAMAGE PREVENTION &amp; EMERGENCY RESPONSE
             </h2>
+
             <h3>Support for Spokane &amp; North Idaho Homeowners</h3>
 
             <p>
               Prevention matters—but response matters too. If you’re seeing
-              moisture, leaks, staining, or you want help assessing your risk,
+              moisture, leaks, staining, or you want help assessing your risk,{" "}
               <a className="underline-link" href="/">
-                {" "}
                 ServiceMaster by Compass
               </a>{" "}
               can help you plan, prevent, and respond with confidence.
@@ -408,18 +503,18 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             </div>
           </div>
 
-          <div className="column-two">
-            <SideBarBox
-              title={"Safety & Prevention"}
-              links={Links}
-              list={List}
-            />
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
+            <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

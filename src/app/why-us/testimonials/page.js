@@ -17,6 +17,10 @@ export const metadata = {
     "ServiceMaster by Compass Reviews | Spokane & Coeur d’Alene Restoration",
   description:
     "Read real customer reviews for water damage cleanup, fire & smoke restoration, and mold removal in Spokane, Spokane Valley & Coeur d’Alene. 24/7 trusted service.",
+
+  alternates: {
+    canonical: canonical,
+  },
   keywords: [
     "fire damage restoration companies Spokane WA",
     "water damage clean up Spokane Valley WA",

@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/signs-of-hidden-water-damage`;
+
+const title = "Signs of Hidden Water Damage | Spokane & North Idaho";
+
+const description =
+  "Learn the warning signs of hidden water damage, how to detect concealed leaks, where moisture commonly hides, and when to call a restoration professional.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Signs of hidden water damage in a Spokane and North Idaho home",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,11 +101,14 @@ const List = [
 
 export default function SignsOfHiddenWaterDamage() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
           alt="Signs of hidden water damage in a Spokane and North Idaho home"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -60,9 +116,11 @@ export default function SignsOfHiddenWaterDamage() {
         <div className="home-section">
           <div className="column-one">
             <h1>Signs of Hidden Water Damage That Should Never Be Ignored</h1>
+
             <h2>
               HIDDEN WATER DAMAGE WARNING SIGNS FOR SPOKANE &amp; NORTH IDAHO
             </h2>
+
             <h3>How to Spot Problems Early and Prevent Expensive Repairs</h3>
 
             <p>
@@ -93,6 +151,7 @@ export default function SignsOfHiddenWaterDamage() {
             </div>
 
             <h2>COMMON SIGNS OF HIDDEN WATER DAMAGE IN HOMES</h2>
+
             <h3>Odors, Stains, and Surface Changes That Point to Moisture</h3>
 
             <p>
@@ -102,6 +161,7 @@ export default function SignsOfHiddenWaterDamage() {
             </p>
 
             <h3>How a musty smell can indicate hidden water damage</h3>
+
             <p>
               A persistent musty odor often points to mold or mildew growth.
               Mold thrives in damp environments and can develop when moisture is
@@ -111,6 +171,7 @@ export default function SignsOfHiddenWaterDamage() {
             </p>
 
             <h3>What water stains on ceilings and walls reveal about leaks</h3>
+
             <p>
               Stains on ceilings or walls usually mean water has traveled
               through building materials. These stains can look yellow, brown,
@@ -124,17 +185,20 @@ export default function SignsOfHiddenWaterDamage() {
                 Look for discoloration rings, streaking, or spots that grow over
                 time.
               </li>
+
               <li className="arrow-list">
                 Check areas below bathrooms, laundry rooms, kitchens, and
                 rooflines.
               </li>
+
               <li className="arrow-list">
-                If stains feel soft or damp, avoid poking at them (wet drywall
-                can collapse).
+                If stains feel soft or damp, avoid poking at them because wet
+                drywall can collapse.
               </li>
             </ul>
 
             <h2>HOW TO DETECT HIDDEN WATER LEAKS EARLY</h2>
+
             <h3>DIY Checks That Catch Problems Before They Get Expensive</h3>
 
             <p>
@@ -144,19 +208,23 @@ export default function SignsOfHiddenWaterDamage() {
             </p>
 
             <h3>Effective DIY methods to find hidden water leaks</h3>
+
             <ul>
               <li className="arrow-list">
                 <strong>Watch your water bill:</strong> Unexpected increases may
                 indicate a leak.
               </li>
+
               <li className="arrow-list">
                 <strong>Inspect around appliances:</strong> Check washing
-                machines, dishwashers, fridges, and water heaters.
+                machines, dishwashers, refrigerators, and water heaters.
               </li>
+
               <li className="arrow-list">
                 <strong>Check under sinks:</strong> Look for warped cabinet
                 bottoms, dampness, or corrosion.
               </li>
+
               <li className="arrow-list">
                 <strong>Use a moisture meter:</strong> Helpful for confirming
                 damp areas in walls or floors.
@@ -164,6 +232,7 @@ export default function SignsOfHiddenWaterDamage() {
             </ul>
 
             <h3>How to use a water meter test and visual inspections</h3>
+
             <p>
               A water meter test can reveal leaks you can’t see. Turn off all
               water sources in the home, note the meter reading, then check it
@@ -193,11 +262,13 @@ export default function SignsOfHiddenWaterDamage() {
             </div>
 
             <h2>VISIBLE SIGNS THAT OFTEN MEAN HIDDEN MOISTURE</h2>
+
             <h3>Paint, Wallpaper, Floors, and Surfaces Give It Away</h3>
 
             <h3>
               Why peeling paint or bubbling wallpaper indicates moisture issues
             </h3>
+
             <p>
               Paint and wallpaper lose adhesion when moisture builds behind the
               surface. You might notice bubbling, peeling, cracking, or a soft
@@ -208,6 +279,7 @@ export default function SignsOfHiddenWaterDamage() {
             <h3>
               How warped floors and soft spots reflect structural water damage
             </h3>
+
             <p>
               Warped flooring can happen when wood absorbs moisture and swells.
               Soft spots may indicate the subfloor has been compromised from
@@ -220,22 +292,26 @@ export default function SignsOfHiddenWaterDamage() {
                 Watch for floorboards lifting, curling edges, or changes in
                 height between rooms.
               </li>
+
               <li className="arrow-list">
                 Pay attention to soft areas near bathrooms, kitchens, and entry
                 points.
               </li>
+
               <li className="arrow-list">
                 Persistent dampness under flooring can lead to mold and rot.
               </li>
             </ul>
 
             <h2>WHERE HIDDEN WATER DAMAGE IS MOST COMMON</h2>
+
             <h3>High-Risk Areas Homeowners Should Check Often</h3>
 
             <h3>
               Why basements, crawl spaces, and attics are prone to hidden water
               damage
             </h3>
+
             <p>
               These areas are vulnerable because they often have limited
               ventilation and can trap moisture. Plumbing lines, roof leaks, and
@@ -247,30 +323,36 @@ export default function SignsOfHiddenWaterDamage() {
             <h3>
               How to inspect bathrooms, kitchens, and ceilings for subtle signs
             </h3>
+
             <ul>
               <li className="arrow-list">
                 Look under sinks and around supply lines for corrosion,
                 dampness, or warped cabinetry.
               </li>
+
               <li className="arrow-list">
                 Check around toilets for moisture at the base and behind the
                 tank.
               </li>
+
               <li className="arrow-list">
                 Inspect ceilings below bathrooms and laundry areas for staining
                 or bubbling paint.
               </li>
+
               <li className="arrow-list">
                 Watch for caulk failure around tubs, showers, and backsplashes.
               </li>
             </ul>
 
             <h2>RISKS OF IGNORING HIDDEN WATER DAMAGE</h2>
+
             <h3>Health, Structural, and Financial Consequences</h3>
 
             <h3>
               How hidden water damage can lead to mold growth and health issues
             </h3>
+
             <p>
               Moisture that stays trapped creates ideal conditions for mold.
               Mold can trigger allergic reactions and respiratory issues,
@@ -280,6 +362,7 @@ export default function SignsOfHiddenWaterDamage() {
             </p>
 
             <h3>Structural and financial damage from delayed repairs</h3>
+
             <p>
               When water damage is ignored, it can weaken framing, rot wood,
               compromise drywall and insulation, and reduce the overall safety
@@ -299,6 +382,7 @@ export default function SignsOfHiddenWaterDamage() {
             </div>
 
             <h2>WHEN TO CALL A PROFESSIONAL FOR HIDDEN WATER DAMAGE</h2>
+
             <h3>Tools and Expertise That Find What Homeowners Can’t See</h3>
 
             <p>
@@ -308,15 +392,18 @@ export default function SignsOfHiddenWaterDamage() {
             </p>
 
             <h3>Advanced tools experts use to detect hidden water damage</h3>
+
             <ul>
               <li className="arrow-list">
                 <strong>Moisture meters</strong> to measure moisture content in
                 materials.
               </li>
+
               <li className="arrow-list">
                 <strong>Thermal imaging cameras</strong> to identify temperature
                 differences that indicate damp areas.
               </li>
+
               <li className="arrow-list">
                 <strong>Infrared technology</strong> to pinpoint hidden moisture
                 paths and affected zones.
@@ -324,6 +411,7 @@ export default function SignsOfHiddenWaterDamage() {
             </ul>
 
             <h3>How professional restoration prevents further home damage</h3>
+
             <p>
               A professional team can assess the situation, remove water, dry
               the structure properly, and prevent secondary damage like mold.
@@ -355,18 +443,18 @@ export default function SignsOfHiddenWaterDamage() {
             </div>
           </div>
 
-          <div className="column-two">
-            <SideBarBox
-              title={"Safety & Prevention"}
-              links={Links}
-              list={List}
-            />
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
+            <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/when-it-becomes-an-emergency`;
+
+const title = "When Property Damage Becomes an Emergency | Spokane";
+
+const description =
+  "Learn when water, fire, smoke, weather, or structural damage requires emergency restoration help in Spokane and Coeur d’Alene.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Emergency property restoration services in Spokane and Coeur d’Alene",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,11 +101,14 @@ const List = [
 
 export default function WhenSituationBecomesEmergency() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
-          alt="Emergency restoration services in Spokane and Coeur d’Alene"
+          alt="Emergency property restoration services in Spokane and Coeur d’Alene"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -60,6 +116,7 @@ export default function WhenSituationBecomesEmergency() {
         <div className="home-section">
           <div className="column-one">
             <h1>When a Situation Becomes an Emergency</h1>
+
             <h2>HOW TO KNOW IF IT’S TIME TO CALL A RESTORATION TEAM</h2>
 
             <p>
@@ -77,6 +134,7 @@ export default function WhenSituationBecomesEmergency() {
 
             <div className="black-box">
               <h2>IF YOU’RE UNSURE, CALL</h2>
+
               <p>
                 If there’s active water, smoke odor, safety concerns, or the
                 damage is spreading, don’t gamble. Call{" "}
@@ -100,6 +158,7 @@ export default function WhenSituationBecomesEmergency() {
             </div>
 
             <h2>THE EMERGENCY LINE</h2>
+
             <h3>If Any of These Are True, It’s Time to Call</h3>
 
             <ul>
@@ -107,26 +166,32 @@ export default function WhenSituationBecomesEmergency() {
                 <strong>Water is active</strong> (dripping, pooling, soaking,
                 leaking, or spreading).
               </li>
+
               <li className="arrow-list">
                 <strong>You smell smoke</strong>, electrical burning, or strong
                 chemical odor.
               </li>
+
               <li className="arrow-list">
                 <strong>Power or electrical systems are affected</strong>{" "}
                 (sparking, hot outlets, tripping breakers).
               </li>
+
               <li className="arrow-list">
                 <strong>Materials are staying wet</strong> (carpet, drywall,
                 insulation, subflooring).
               </li>
+
               <li className="arrow-list">
                 <strong>Damage is spreading</strong> (stains growing, bubbling
                 paint, warping, sagging).
               </li>
+
               <li className="arrow-list">
                 <strong>There’s a safety risk</strong> (slip hazards,
                 contaminated water, structural instability).
               </li>
+
               <li className="arrow-list">
                 <strong>You can’t identify or stop the source</strong> quickly
                 and safely.
@@ -135,6 +200,7 @@ export default function WhenSituationBecomesEmergency() {
 
             <div className="yellow-box">
               <h3>The Simple Rule</h3>
+
               <p>
                 If you’re asking yourself whether you should call, the answer is
                 usually yes. That’s not dramatic—that’s you noticing a real
@@ -143,36 +209,44 @@ export default function WhenSituationBecomesEmergency() {
             </div>
 
             <h2>WATER DAMAGE</h2>
+
             <h3>When Water Goes From “Annoying” to “Emergency”</h3>
 
             <p>
               Water damage becomes an emergency when it’s active, when it’s
               touching building materials, or when it has any chance of becoming
-              hidden (inside walls, under flooring, in insulation). Water
+              hidden inside walls, under flooring, or in insulation. Water
               spreads fast and does quiet damage before it gets obvious.
             </p>
 
             <h3>Call Now If You Notice:</h3>
+
             <ul>
               <li className="arrow-list">
                 A burst pipe, appliance leak, or overflow that won’t stop
               </li>
+
               <li className="arrow-list">
                 Water reaching drywall, baseboards, cabinets, or flooring seams
               </li>
+
               <li className="arrow-list">
                 Ceiling staining, sagging drywall, or dripping from light
                 fixtures
               </li>
+
               <li className="arrow-list">
-                Wet carpet padding (even if the surface feels “kind of dry”)
+                Wet carpet padding, even if the surface feels “kind of dry”
               </li>
+
               <li className="arrow-list">
                 A sewage backup or any contaminated water source
               </li>
+
               <li className="arrow-list">
                 Standing water in a basement or crawl space
               </li>
+
               <li className="arrow-list">
                 Persistent musty odor after a leak event
               </li>
@@ -183,11 +257,11 @@ export default function WhenSituationBecomesEmergency() {
               <a className="underline-link" href="/residential/water-damage">
                 Water Damage Restoration
               </a>{" "}
-              to understand what proper extraction and drying should include. If
-              it’s active right now.
+              to understand what proper extraction and drying should include.
             </p>
 
             <h2>FIRE AND SMOKE</h2>
+
             <h3>When Smoke, Soot, or Odor Means You Need Help</h3>
 
             <p>
@@ -198,29 +272,35 @@ export default function WhenSituationBecomesEmergency() {
             </p>
 
             <h3>Call Now If You Notice:</h3>
+
             <ul>
               <li className="arrow-list">
-                Any recent fire event (even if it seems “small”)
+                Any recent fire event, even if it seems “small”
               </li>
+
               <li className="arrow-list">
                 Smoke odor that returns after airing out the property
               </li>
+
               <li className="arrow-list">
                 Visible soot residue on walls, ceilings, or vents
               </li>
+
               <li className="arrow-list">
-                Irritation symptoms indoors (eyes/throat) after a smoke event
+                Irritation symptoms indoors after a smoke event
               </li>
+
               <li className="arrow-list">
                 Electrical burning smell or melted plastic odor
               </li>
+
               <li className="arrow-list">
-                Kitchen fire aftermath (grease smoke spreads aggressively)
+                Kitchen fire aftermath, since grease smoke spreads aggressively
               </li>
             </ul>
 
             <p>
-              For next steps and service info, go to{" "}
+              For next steps and service information, go to{" "}
               <a className="underline-link" href="/residential/fire-and-smoke">
                 Fire and Smoke Damage Restoration
               </a>
@@ -233,6 +313,7 @@ export default function WhenSituationBecomesEmergency() {
             </p>
 
             <h2>WEATHER DAMAGE</h2>
+
             <h3>When Storm Damage Turns Into a Safety Issue</h3>
 
             <p>
@@ -243,19 +324,24 @@ export default function WhenSituationBecomesEmergency() {
             </p>
 
             <h3>Call Now If You Notice:</h3>
+
             <ul>
               <li className="arrow-list">
                 Roof leaks, missing shingles, or damaged flashing after wind
               </li>
+
               <li className="arrow-list">
                 Water stains appearing after a storm or rapid melt
               </li>
+
               <li className="arrow-list">
                 Ice dam buildup with interior dripping or attic moisture
               </li>
+
               <li className="arrow-list">
-                Fallen tree/branch impact or structural compromise
+                Fallen tree or branch impact or structural compromise
               </li>
+
               <li className="arrow-list">
                 Flooding risk near foundations, basements, or crawl spaces
               </li>
@@ -274,11 +360,12 @@ export default function WhenSituationBecomesEmergency() {
             </p>
 
             <h2>AM I OVERREACTING?</h2>
+
             <h3>No. You’re Not. You’re Catching It Early.</h3>
 
             <p>
               People hesitate to call because they don’t want to be “dramatic.”
-              The truth is: restoration is most effective when it’s early.
+              The truth is that restoration is most effective when it’s early.
               Calling early doesn’t mean the situation is catastrophic—it means
               you’re preventing it from becoming catastrophic.
             </p>
@@ -291,11 +378,13 @@ export default function WhenSituationBecomesEmergency() {
 
             <div className="yellow-box">
               <h3>Fast Decision Guide</h3>
+
               <p>
                 <strong>Call today</strong> if you have any active water, smoke
                 odor, spreading stains, electrical concerns, or wet materials
                 that won’t dry quickly.
               </p>
+
               <p>
                 <strong>Call immediately</strong> if the source can’t be
                 stopped, safety is impacted, or you suspect contaminated water,
@@ -305,6 +394,7 @@ export default function WhenSituationBecomesEmergency() {
 
             <div className="black-box">
               <h2>READY FOR A REAL ANSWER?</h2>
+
               <p>
                 If you’re unsure what you’re looking at, you don’t have to
                 diagnose it alone. Call{" "}
@@ -339,18 +429,18 @@ export default function WhenSituationBecomesEmergency() {
             </div>
           </div>
 
-          <div className="column-two">
-            <SideBarBox
-              title={"Safety & Prevention"}
-              links={Links}
-              list={List}
-            />
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
+            <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

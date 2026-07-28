@@ -8,7 +8,7 @@ import GetHelpNow from "../../../components/GetHelpNow";
 import JsonLd from "../../../components/JsonLd";
 
 const siteUrl = "https://smcfireandwater.com";
-const canonical = `${siteUrl}/faqs/commercial/fire-restoration-faq`;
+const canonical = `${siteUrl}/faqs/commercial/air-duct-faq`;
 
 const title = "Commercial Fire Damage FAQs | Spokane & Coeur d’Alene";
 

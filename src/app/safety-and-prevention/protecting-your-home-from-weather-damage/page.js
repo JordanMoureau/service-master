@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/protecting-your-home-from-weather-damage`;
+
+const title = "Protect Your Home From Weather Damage | Spokane";
+
+const description =
+  "Learn how to protect your home from wind, water, fire, and storm damage with practical weatherproofing tips for Spokane and North Idaho.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Protecting a home from storm and weather damage",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,11 +101,14 @@ const List = [
 
 export default function WeatherDamagePrevention() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
           alt="Protecting a home from storm and weather damage"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -60,7 +116,9 @@ export default function WeatherDamagePrevention() {
         <div className="home-section">
           <div className="column-one">
             <h1>Protecting Your Home From Weather Damage</h1>
+
             <h2>STORM DAMAGE PREVENTION &amp; WEATHERPROOFING FOR SPOKANE</h2>
+
             <h3>
               Essential Steps to Safeguard Your Home From Wind, Water &amp; Fire
               Risk
@@ -97,6 +155,7 @@ export default function WeatherDamagePrevention() {
             </div>
 
             <h2>COMMON TYPES OF WEATHER DAMAGE</h2>
+
             <h3>Wind • Water • Fire — The “Big Three” Threats</h3>
 
             <p>
@@ -107,15 +166,17 @@ export default function WeatherDamagePrevention() {
             <ul>
               <li className="arrow-list">
                 <strong>Wind Damage:</strong> Uplift on roofs, torn shingles,
-                broken windows, flying debris.
+                broken windows, and flying debris.
               </li>
+
               <li className="arrow-list">
                 <strong>Water Damage:</strong> Foundation seepage, basement
-                flooding, roof leaks, runoff entry.
+                flooding, roof leaks, and runoff entry.
               </li>
+
               <li className="arrow-list">
                 <strong>Fire Damage:</strong> Wildfire embers, wind-driven
-                ignition sources, electrical fires.
+                ignition sources, and electrical fires.
               </li>
             </ul>
 
@@ -126,6 +187,7 @@ export default function WeatherDamagePrevention() {
             </p>
 
             <h2>PREVENTING WIND DAMAGE</h2>
+
             <h3>How Wind Affects Roofs, Windows &amp; Exteriors</h3>
 
             <p>
@@ -142,14 +204,17 @@ export default function WeatherDamagePrevention() {
                 <strong>Reinforce roof-to-wall connections</strong> with
                 hurricane clips or roof straps.
               </li>
+
               <li className="arrow-list">
                 <strong>Upgrade to wind-rated shingles</strong> or metal roofing
                 where feasible.
               </li>
+
               <li className="arrow-list">
                 <strong>Use storm shutters or impact-resistant glass</strong> on
                 vulnerable windows.
               </li>
+
               <li className="arrow-list">
                 <strong>Secure siding and exterior fixtures</strong> to prevent
                 blow-off or impact hazards.
@@ -168,12 +233,15 @@ export default function WeatherDamagePrevention() {
               <li className="arrow-list">
                 Install impact-rated windows or storm shutters.
               </li>
+
               <li className="arrow-list">
                 Reinforce garage doors with bracing kits.
               </li>
+
               <li className="arrow-list">
                 Fasten or replace loose siding before storm season.
               </li>
+
               <li className="arrow-list">
                 Trim trees and remove yard items that can become airborne.
               </li>
@@ -188,6 +256,7 @@ export default function WeatherDamagePrevention() {
             </div>
 
             <h2>PREVENTING WATER DAMAGE FROM WEATHER</h2>
+
             <h3>Foundation, Basement &amp; Surface Water Protection</h3>
 
             <p>
@@ -203,18 +272,22 @@ export default function WeatherDamagePrevention() {
                 <strong>Correct yard grading</strong> so soil slopes away from
                 the foundation.
               </li>
+
               <li className="arrow-list">
                 <strong>Extend downspouts 3–5 feet</strong> to redirect roof
                 runoff.
               </li>
+
               <li className="arrow-list">
                 <strong>Install a sump pump</strong> with a battery backup for
                 heavy rain or high groundwater.
               </li>
+
               <li className="arrow-list">
                 <strong>Use exterior membranes or French drains</strong> for
                 persistent seepage areas.
               </li>
+
               <li className="arrow-list">
                 <strong>Seal foundation cracks and window wells</strong> before
                 the wet season.
@@ -239,18 +312,22 @@ export default function WeatherDamagePrevention() {
               <li className="arrow-list">
                 Clean gutters at least twice a year.
               </li>
+
               <li className="arrow-list">
                 Repair sagging or disconnected downspouts promptly.
               </li>
+
               <li className="arrow-list">
                 Add splash blocks or extensions to divert water further away.
               </li>
+
               <li className="arrow-list">
                 Clear yard drains after storms to prevent flooding.
               </li>
             </ul>
 
             <h2>REDUCING FIRE DAMAGE RISK</h2>
+
             <h3>Electrical &amp; Wildfire-Related Prevention</h3>
 
             <p>
@@ -264,14 +341,17 @@ export default function WeatherDamagePrevention() {
                 <strong>Inspect outlets and breakers</strong> for heat,
                 flickering lights, or repeated trips.
               </li>
+
               <li className="arrow-list">
                 <strong>Maintain defensible space</strong> by clearing dead
                 vegetation and using fire-resistant plants near the home.
               </li>
+
               <li className="arrow-list">
                 <strong>Use Class A fire-rated roofing</strong> materials when
                 replacing your roof.
               </li>
+
               <li className="arrow-list">
                 <strong>Install ember-resistant vents</strong> to reduce
                 ignition risk from wind-driven embers.
@@ -279,6 +359,7 @@ export default function WeatherDamagePrevention() {
             </ul>
 
             <h2>STORM PREPAREDNESS</h2>
+
             <h3>Create an Emergency Plan Before You Need One</h3>
 
             <p>
@@ -291,12 +372,15 @@ export default function WeatherDamagePrevention() {
                 Assemble a 72-hour emergency kit with food, water &amp; first
                 aid.
               </li>
+
               <li className="arrow-list">
                 Create a family communication plan and meeting point.
               </li>
+
               <li className="arrow-list">
                 Test generators and backup power systems seasonally.
               </li>
+
               <li className="arrow-list">
                 Document your home’s condition with photos for insurance.
               </li>
@@ -310,11 +394,15 @@ export default function WeatherDamagePrevention() {
               <li className="arrow-list">
                 Battery-powered flashlight &amp; lanterns
               </li>
+
               <li className="arrow-list">Backup phone chargers</li>
+
               <li className="arrow-list">
                 Portable generator or battery backup
               </li>
+
               <li className="arrow-list">Weather radio</li>
+
               <li className="arrow-list">Copies of insurance documents</li>
             </ul>
 
@@ -329,6 +417,7 @@ export default function WeatherDamagePrevention() {
             </div>
 
             <h2>SEASONAL WEATHER MAINTENANCE</h2>
+
             <h3>Year-Round Home Protection Checklist</h3>
 
             <p>
@@ -337,48 +426,57 @@ export default function WeatherDamagePrevention() {
             </p>
 
             <h3>Fall</h3>
+
             <ul>
               <li className="arrow-list">Inspect roofs and flashing</li>
+
               <li className="arrow-list">
                 Clean gutters and remove fallen branches
               </li>
+
               <li className="arrow-list">
                 Check attic ventilation for moisture
               </li>
             </ul>
 
             <h3>Spring</h3>
+
             <ul>
               <li className="arrow-list">
                 Test sump pumps and drainage systems
               </li>
+
               <li className="arrow-list">
                 Look for new cracks or foundation seepage
               </li>
+
               <li className="arrow-list">
                 Clear yard debris from winter storms
               </li>
             </ul>
 
             <h3>Summer &amp; Winter Prep</h3>
+
             <ul>
               <li className="arrow-list">Service HVAC &amp; generators</li>
+
               <li className="arrow-list">
                 Check seals around windows &amp; doors
               </li>
+
               <li className="arrow-list">
-                Prepare for extreme heat or freezing temps
+                Prepare for extreme heat or freezing temperatures
               </li>
             </ul>
 
             <p>
-              And whenever you’re unsure whether damage is cosmetic or
-              structural, a professional inspection gives clarity and peace of
-              mind.
+              Whenever you’re unsure whether damage is cosmetic or structural, a
+              professional inspection gives clarity and peace of mind.
             </p>
 
             <p>
-              Whether you're preparing for storm season or recovering from one,{" "}
+              Whether you&apos;re preparing for storm season or recovering from
+              one,{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>{" "}
@@ -386,14 +484,18 @@ export default function WeatherDamagePrevention() {
             </p>
           </div>
 
-          <div className="column-two">
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
             <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

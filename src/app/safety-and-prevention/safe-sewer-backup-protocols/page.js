@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/safe-sewer-backup-protocols`;
+
+const title = "Safe Sewer Backup Protocols | Spokane & North Idaho";
+
+const description =
+  "Learn what to do before, during, and after a sewer backup, including emergency safety, cleanup, health risks, insurance documentation, and prevention.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Emergency sewer backup cleanup in Spokane and North Idaho",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,11 +101,14 @@ const List = [
 
 export default function SewerBackupSafety() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
           alt="Technician helping a homeowner after a sewer backup"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -60,7 +116,9 @@ export default function SewerBackupSafety() {
         <div className="home-section">
           <div className="column-one">
             <h1>Safe Sewer Backup Protocols for Your Home</h1>
+
             <h2>SEWER BACKUP PREVENTION, SAFETY &amp; CLEANUP IN SPOKANE</h2>
+
             <h3>What To Do Before, During, and After a Sewer Backup</h3>
 
             <p>
@@ -96,6 +154,7 @@ export default function SewerBackupSafety() {
             </div>
 
             <h2>UNDERSTANDING SEWER BACKUPS</h2>
+
             <h3>What Is a Sewer Backup and Why Does It Happen?</h3>
 
             <p>
@@ -114,18 +173,22 @@ export default function SewerBackupSafety() {
                 <strong>Grease buildup:</strong> Cooking oils and fats poured
                 down the sink cool, harden, and narrow the pipe over time.
               </li>
+
               <li className="arrow-list">
                 <strong>Tree root intrusion:</strong> Roots find tiny cracks in
                 older sewer lines and grow inside, blocking flow.
               </li>
+
               <li className="arrow-list">
                 <strong>Non-flushable items:</strong> Wipes, sanitary products,
                 and other solids get stuck and trap debris.
               </li>
+
               <li className="arrow-list">
                 <strong>Stormwater overload:</strong> Heavy rain or snowmelt can
                 overwhelm municipal lines and push sewage backward.
               </li>
+
               <li className="arrow-list">
                 <strong>Aging or damaged pipes:</strong> Cracked, offset, or
                 collapsed lines reduce capacity and increase backup risk.
@@ -150,16 +213,20 @@ export default function SewerBackupSafety() {
                 Gurgling toilets or floor drains when you use water elsewhere in
                 the house
               </li>
+
               <li className="arrow-list">
-                Slow drains throughout the home (not just one sink or tub)
+                Slow drains throughout the home, not just one sink or tub
               </li>
+
               <li className="arrow-list">
                 Sewage odors near floor drains, in the basement, or around
                 lower-level bathrooms
               </li>
+
               <li className="arrow-list">
                 Backed-up water or residue around floor drains after heavy rain
               </li>
+
               <li className="arrow-list">
                 A history of previous backups in the same area
               </li>
@@ -172,6 +239,7 @@ export default function SewerBackupSafety() {
             </p>
 
             <h2>WHAT TO DO DURING A SEWER BACKUP EMERGENCY</h2>
+
             <h3>Immediate Safety Steps When Sewage Appears</h3>
 
             <p>
@@ -187,20 +255,24 @@ export default function SewerBackupSafety() {
                 toilets, running sinks, or using the washing machine or
                 dishwasher.
               </li>
+
               <li className="arrow-list">
                 <strong>Keep people and pets away.</strong> Do not let children
                 or pets enter the contaminated area.
               </li>
+
               <li className="arrow-list">
                 <strong>Shut off water supply if needed.</strong> Use your
                 home&apos;s main water shutoff to limit additional inflow.
               </li>
+
               <li className="arrow-list">
                 <strong>Turn off electricity to affected areas.</strong> If
                 water is near outlets or appliances, switch off breakers to that
                 area. If you cannot reach the panel safely, stay out and wait
                 for help.
               </li>
+
               <li className="arrow-list">
                 <strong>Start documentation.</strong> Take photos and short
                 videos of the damage from a safe distance.
@@ -221,19 +293,22 @@ export default function SewerBackupSafety() {
             <h3>Protective Gear for Brief, Essential Tasks</h3>
 
             <p>
-              If you must enter a mildly affected area for an urgent reason (for
-              example, to shut off a valve) and it is safe from an electrical
+              If you must enter a mildly affected area for an urgent reason, for
+              example to shut off a valve, and it is safe from an electrical
               standpoint, use basic protective gear:
             </p>
 
             <ul>
               <li className="arrow-list">Rubber or nitrile gloves</li>
+
               <li className="arrow-list">
                 Waterproof boots that cover your ankles
               </li>
+
               <li className="arrow-list">Eye protection</li>
+
               <li className="arrow-list">
-                A properly fitted mask or respirator (such as N95) in spaces
+                A properly fitted mask or respirator, such as an N95, in spaces
                 with splashing or potential aerosols
               </li>
             </ul>
@@ -255,17 +330,22 @@ export default function SewerBackupSafety() {
               <li className="arrow-list">
                 Standing sewage covers more than a very small, isolated area
               </li>
+
               <li className="arrow-list">
                 The backup lasts more than a short time or keeps recurring
               </li>
+
               <li className="arrow-list">
-                Vulnerable occupants (children, elderly, pregnant people,
-                immunocompromised individuals) live in the home
+                Vulnerable occupants, including children, elderly people,
+                pregnant people, or immunocompromised individuals, live in the
+                home
               </li>
+
               <li className="arrow-list">
                 Sewage has reached porous building materials like carpet,
                 drywall, or insulation
               </li>
+
               <li className="arrow-list">
                 You&apos;re unsure about safety or how far the damage extends
               </li>
@@ -279,6 +359,7 @@ export default function SewerBackupSafety() {
             </p>
 
             <h2>SAFE CLEANUP &amp; DISINFECTION</h2>
+
             <h3>Why Sewer Backups Are Treated as “Black Water”</h3>
 
             <p>
@@ -292,10 +373,12 @@ export default function SewerBackupSafety() {
                 Contains bacteria, viruses, and parasites that can cause serious
                 illness
               </li>
+
               <li className="arrow-list">
                 Can carry chemicals and contaminants from streets, yards, or
                 industrial sources
               </li>
+
               <li className="arrow-list">
                 Soaks into porous materials, making them almost impossible to
                 disinfect completely
@@ -321,28 +404,34 @@ export default function SewerBackupSafety() {
                 where the sewage has traveled, check for structural or
                 electrical hazards, and document the damage.
               </li>
+
               <li className="arrow-list">
                 <strong>Containment:</strong> We isolate affected areas to
                 prevent contaminants from spreading to clean rooms.
               </li>
+
               <li className="arrow-list">
                 <strong>Extraction:</strong> Standing sewage and contaminated
                 water are pumped out using professional equipment.
               </li>
+
               <li className="arrow-list">
                 <strong>Removal of non-salvageable materials:</strong>{" "}
                 Contaminated carpet, padding, insulation, and drywall are
                 removed and bagged.
               </li>
+
               <li className="arrow-list">
                 <strong>Cleaning &amp; disinfection:</strong> Hard surfaces are
                 cleaned and treated with appropriate disinfectants.
               </li>
+
               <li className="arrow-list">
                 <strong>Drying &amp; dehumidification:</strong> Air movers and
                 dehumidifiers run until moisture levels are back in a safe
                 range.
               </li>
+
               <li className="arrow-list">
                 <strong>Verification &amp; planning repairs:</strong> We confirm
                 drying goals are met and discuss any needed reconstruction.
@@ -366,9 +455,11 @@ export default function SewerBackupSafety() {
               <li className="arrow-list">
                 Carpet and padding in affected areas
               </li>
+
               <li className="arrow-list">
                 Portions of drywall and insulation that contacted sewage
               </li>
+
               <li className="arrow-list">
                 Upholstered furniture and mattresses that were saturated
               </li>
@@ -389,6 +480,7 @@ export default function SewerBackupSafety() {
             </p>
 
             <h2>HEALTH RISKS OF SEWER BACKUP EXPOSURE</h2>
+
             <h3>Germs Commonly Found in Sewage</h3>
 
             <p>
@@ -402,14 +494,17 @@ export default function SewerBackupSafety() {
                 <strong>Pathogenic E. coli and Salmonella:</strong> Can cause
                 diarrhea, vomiting, and abdominal pain.
               </li>
+
               <li className="arrow-list">
                 <strong>Norovirus:</strong> Extremely contagious; often causes
                 sudden nausea, vomiting, and stomach cramps.
               </li>
+
               <li className="arrow-list">
                 <strong>Hepatitis A:</strong> A viral infection that affects the
                 liver and can cause fatigue and jaundice.
               </li>
+
               <li className="arrow-list">
                 <strong>Giardia and Cryptosporidium:</strong> Parasites that can
                 cause prolonged gastrointestinal illness.
@@ -430,12 +525,16 @@ export default function SewerBackupSafety() {
 
             <ul>
               <li className="arrow-list">Nausea, vomiting, or diarrhea</li>
+
               <li className="arrow-list">Stomach cramps or abdominal pain</li>
+
               <li className="arrow-list">Fever or chills</li>
+
               <li className="arrow-list">
                 Persistent coughing or breathing issues after exposure to
                 contaminated air
               </li>
+
               <li className="arrow-list">
                 Unusual fatigue, especially alongside other symptoms
               </li>
@@ -449,6 +548,7 @@ export default function SewerBackupSafety() {
             </p>
 
             <h2>WHEN TO CALL SERVICEMASTER BY COMPASS</h2>
+
             <h3>Professional Sewer Backup Cleanup &amp; Restoration</h3>
 
             <p>
@@ -458,15 +558,17 @@ export default function SewerBackupSafety() {
 
             <ul>
               <li className="arrow-list">
-                Category 3 black water (sewage from drains, toilets, or floor
-                drains)
+                Category 3 black water from drains, toilets, or floor drains
               </li>
+
               <li className="arrow-list">
                 Multiple rooms, levels, or structural materials
               </li>
+
               <li className="arrow-list">
                 Recurring backups or suspected damage to the main sewer line
               </li>
+
               <li className="arrow-list">
                 Vulnerable individuals who need a safe, thoroughly cleaned
                 environment
@@ -494,12 +596,15 @@ export default function SewerBackupSafety() {
               <li className="arrow-list">
                 Written estimates and scopes of work
               </li>
+
               <li className="arrow-list">
                 Time-stamped photos and moisture readings
               </li>
+
               <li className="arrow-list">
                 Details on materials removed and areas treated
               </li>
+
               <li className="arrow-list">
                 Clear communication with you and, when requested, your adjuster
               </li>
@@ -525,6 +630,7 @@ export default function SewerBackupSafety() {
             </div>
 
             <h2>LONG-TERM SEWER BACKUP PREVENTION</h2>
+
             <h3>Everyday Habits That Reduce Risk</h3>
 
             <p>
@@ -537,15 +643,18 @@ export default function SewerBackupSafety() {
                 <strong>Keep grease out of drains.</strong> Let it cool, then
                 scrape or pour it into a container for the trash.
               </li>
+
               <li className="arrow-list">
-                <strong>Only flush toilet paper.</strong> Wipes (even
-                “flushable” ones), paper towels, and hygiene products should go
+                <strong>Only flush toilet paper.</strong> Wipes, even
+                “flushable” ones, paper towels, and hygiene products should go
                 in the trash.
               </li>
+
               <li className="arrow-list">
                 <strong>Use drain screens.</strong> Catch hair and debris before
                 they enter the plumbing system.
               </li>
+
               <li className="arrow-list">
                 <strong>Know your home&apos;s history.</strong> If you&apos;ve
                 had backups before, plan for regular inspections and
@@ -560,7 +669,7 @@ export default function SewerBackupSafety() {
 
             <p>
               For homes with a higher risk of backups—older neighborhoods,
-              low-lying basements, or past issues— advanced solutions may be
+              low-lying basements, or past issues—advanced solutions may be
               worth considering:
             </p>
 
@@ -569,15 +678,18 @@ export default function SewerBackupSafety() {
                 <strong>Sewer camera inspections:</strong> Identify cracks, root
                 intrusion, and blockages before they cause a backup.
               </li>
+
               <li className="arrow-list">
                 <strong>Hydro jetting:</strong> Use high-pressure water to clear
                 heavy grease or root buildup and restore pipe capacity.
               </li>
+
               <li className="arrow-list">
                 <strong>Backwater valves:</strong> Allow wastewater to flow out
                 but prevent it from flowing back into the home during municipal
                 surges.
               </li>
+
               <li className="arrow-list">
                 <strong>Sump pump systems:</strong> Help manage groundwater and
                 minor inflow events in basements and crawlspaces.
@@ -611,18 +723,18 @@ export default function SewerBackupSafety() {
             </p>
           </div>
 
-          <div className="column-two">
-            <SideBarBox
-              title={"Safety & Prevention"}
-              links={Links}
-              list={List}
-            />
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
+            <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

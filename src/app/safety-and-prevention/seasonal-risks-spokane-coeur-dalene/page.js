@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/seasonal-risks-spokane-coeur-dalene`;
+
+const title = "Seasonal Property Risks | Spokane & Coeur d’Alene";
+
+const description =
+  "Learn how winter freezes, spring runoff, wildfire smoke, windstorms, and other seasonal hazards can damage Spokane and Coeur d’Alene properties.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Seasonal property damage risks in Spokane and Coeur d’Alene",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,9 +101,15 @@ const List = [
 
 export default function SeasonalRisksSpokaneCDA() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img src="/sub-banner.jpg" alt="Safety and prevention seasonal risks" />
+        <Image
+          src="/sub-banner.jpg"
+          alt="Seasonal property damage risks in Spokane and Coeur d’Alene"
+          width={1920}
+          height={600}
+          priority
+        />
       </div>
 
       <div className="home-container bg-white">
@@ -474,6 +533,6 @@ export default function SeasonalRisksSpokaneCDA() {
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }

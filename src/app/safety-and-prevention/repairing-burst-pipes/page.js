@@ -1,8 +1,61 @@
-"use client";
+import Image from "next/image";
 
 import RestorePeace from "../../components/RestoringPeace";
 import SideBarBox from "../../components/SideBarBox";
 import UncertainTo from "../../components/UncertaintyTo";
+
+const siteUrl = "https://smcfireandwater.com";
+const canonical = `${siteUrl}/safety-and-prevention/repairing-burst-pipes`;
+
+const title = "Burst Pipe Repair & Water Damage Cleanup | Spokane";
+
+const description =
+  "Learn what to do when a pipe bursts, how emergency repairs work, and how to prevent water damage in Spokane and Coeur d’Alene homes.";
+
+export const metadata = {
+  title,
+  description,
+
+  alternates: {
+    canonical,
+  },
+
+  openGraph: {
+    title,
+    description,
+    url: canonical,
+    siteName: "ServiceMaster by Compass",
+    images: [
+      {
+        url: `${siteUrl}/sub-banner.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Emergency burst pipe repair and water damage restoration",
+      },
+    ],
+    locale: "en_US",
+    type: "article",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [`${siteUrl}/sub-banner.jpg`],
+  },
+};
 
 const Links = [
   "/safety-and-prevention/protecting-your-home-from-water-damage",
@@ -48,11 +101,14 @@ const List = [
 
 export default function BurstPipeRepair() {
   return (
-    <div>
+    <main>
       <div className="top-image">
-        <img
+        <Image
           src="/sub-banner.jpg"
           alt="Repairing burst pipes in a Spokane home"
+          width={1920}
+          height={600}
+          priority
         />
       </div>
 
@@ -60,14 +116,16 @@ export default function BurstPipeRepair() {
         <div className="home-section">
           <div className="column-one">
             <h1>Repairing Burst Pipes</h1>
+
             <h2>EMERGENCY PIPE BURSTS, FREEZE DAMAGE &amp; RESTORATION</h2>
+
             <h3>What To Do When a Pipe Bursts in Your Spokane Home</h3>
 
             <p>
-              A burst pipe isn’t just a plumbing problem—it's an emergency that
-              can flood a home in minutes. Water rushes into walls, ceilings,
-              and flooring, causing structural damage and creating ideal
-              conditions for mold within 24–48 hours. At{" "}
+              A burst pipe isn’t just a plumbing problem—it&apos;s an emergency
+              that can flood a home in minutes. Water rushes into walls,
+              ceilings, and flooring, causing structural damage and creating
+              ideal conditions for mold within 24–48 hours. At{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>
@@ -95,6 +153,7 @@ export default function BurstPipeRepair() {
             </div>
 
             <h2>IMMEDIATE STEPS WHEN A PIPE BURSTS</h2>
+
             <h3>Stop the Water. Stay Safe. Limit Damage.</h3>
 
             <p>
@@ -109,22 +168,27 @@ export default function BurstPipeRepair() {
                 <strong>Turn off the main water supply.</strong> Stopping the
                 flow is priority #1.
               </li>
+
               <li className="arrow-list">
                 <strong>Shut off electricity</strong> to affected rooms if water
                 is near outlets or appliances.
               </li>
+
               <li className="arrow-list">
                 <strong>Move valuables and electronics</strong> out of the wet
                 area immediately.
               </li>
+
               <li className="arrow-list">
                 <strong>Contain water</strong> using towels, buckets, or
                 anything absorbent you can grab.
               </li>
+
               <li className="arrow-list">
                 <strong>Apply a temporary patch</strong> only if it’s safe to
                 get near the pipe.
               </li>
+
               <li className="arrow-list">
                 <strong>Call emergency restoration</strong> if the leak is
                 large, inside walls, or still spreading.
@@ -143,6 +207,7 @@ export default function BurstPipeRepair() {
             </div>
 
             <h2>FINDING &amp; USING THE MAIN WATER SHUTOFF</h2>
+
             <h3>Where It Typically Is &amp; How to Close It</h3>
 
             <p>
@@ -154,12 +219,15 @@ export default function BurstPipeRepair() {
               <li className="arrow-list">
                 In the basement near the front foundation wall
               </li>
+
               <li className="arrow-list">
                 Inside a utility room near the water heater
               </li>
+
               <li className="arrow-list">
                 In crawlspaces or on exterior walls in older homes
               </li>
+
               <li className="arrow-list">
                 At the outdoor meter box (HOA or municipal access)
               </li>
@@ -172,6 +240,7 @@ export default function BurstPipeRepair() {
             </p>
 
             <h2>TEMPORARY FIXES FOR A BURST PIPE</h2>
+
             <h3>Short-Term Solutions Until Permanent Repairs</h3>
 
             <p>
@@ -184,10 +253,12 @@ export default function BurstPipeRepair() {
                 <strong>Epoxy putty:</strong> Works on wet surfaces and forms a
                 hardened seal.
               </li>
+
               <li className="arrow-list">
                 <strong>Rubber patch + hose clamp:</strong> Compresses rubber
                 over a crack or split.
               </li>
+
               <li className="arrow-list">
                 <strong>Pipe repair tape:</strong> Creates a wrapped seal, best
                 for hairline cracks.
@@ -201,6 +272,7 @@ export default function BurstPipeRepair() {
             </p>
 
             <h2>PERMANENT PIPE REPAIRS</h2>
+
             <h3>How Copper, PEX &amp; PVC Pipes Are Professionally Repaired</h3>
 
             <p>
@@ -215,10 +287,12 @@ export default function BurstPipeRepair() {
                 <strong>Soldering:</strong> The most durable method when done
                 correctly.
               </li>
+
               <li className="arrow-list">
                 <strong>Compression fittings:</strong> No flame required, ideal
                 for tight spaces.
               </li>
+
               <li className="arrow-list">
                 <strong>Push-fit connectors:</strong> Fast installation and no
                 heat involved.
@@ -237,6 +311,7 @@ export default function BurstPipeRepair() {
                 <strong>Crimp or expansion fittings</strong> depending on your
                 home’s PEX system.
               </li>
+
               <li className="arrow-list">
                 Replacement of damaged runs for freeze-prone areas.
               </li>
@@ -249,6 +324,7 @@ export default function BurstPipeRepair() {
                 <strong>Solvent-weld joints:</strong> Permanent and strong when
                 installed correctly.
               </li>
+
               <li className="arrow-list">
                 <strong>Mechanical couplings:</strong> Ideal when space is tight
                 or moisture is present.
@@ -256,6 +332,7 @@ export default function BurstPipeRepair() {
             </ul>
 
             <h2>WATER DAMAGE CLEANUP AFTER A BURST PIPE</h2>
+
             <h3>Why Fast Drying Matters</h3>
 
             <p>
@@ -266,15 +343,19 @@ export default function BurstPipeRepair() {
 
             <ul>
               <li className="arrow-list">Extract standing water</li>
+
               <li className="arrow-list">
                 Set up high-capacity air movers &amp; dehumidifiers
               </li>
+
               <li className="arrow-list">
                 Remove soaked drywall, carpet, padding &amp; insulation
               </li>
+
               <li className="arrow-list">
                 Sanitize surfaces to prevent microbial growth
               </li>
+
               <li className="arrow-list">
                 Monitor moisture until materials are fully dry
               </li>
@@ -286,6 +367,7 @@ export default function BurstPipeRepair() {
             </p>
 
             <h2>INSURANCE CLAIM HELP</h2>
+
             <h3>Document Everything</h3>
 
             <p>
@@ -295,12 +377,15 @@ export default function BurstPipeRepair() {
 
             <ul>
               <li className="arrow-list">Photos and videos of all damage</li>
+
               <li className="arrow-list">
                 Proof you acted quickly to mitigate further damage
               </li>
+
               <li className="arrow-list">
                 Professional moisture readings and drying logs
               </li>
+
               <li className="arrow-list">
                 Estimates for repairs and restoration
               </li>
@@ -322,21 +407,26 @@ export default function BurstPipeRepair() {
             </div>
 
             <h2>PREVENTING FUTURE BURST PIPES</h2>
+
             <h3>Simple Upgrades That Make a Big Difference</h3>
 
             <ul>
               <li className="arrow-list">
                 Insulate exposed pipes in crawlspaces &amp; basements
               </li>
+
               <li className="arrow-list">
                 Install heat tape in freeze-prone areas
               </li>
+
               <li className="arrow-list">
                 Add a pressure regulator to prevent pipe stress
               </li>
+
               <li className="arrow-list">
                 Use smart leak detectors with auto-shutoff
               </li>
+
               <li className="arrow-list">
                 Disconnect outdoor hoses before winter
               </li>
@@ -348,8 +438,8 @@ export default function BurstPipeRepair() {
             </p>
 
             <p>
-              Whether you're facing an active burst pipe or want to strengthen
-              your home's defenses,{" "}
+              Whether you&apos;re facing an active burst pipe or want to
+              strengthen your home&apos;s defenses,{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>{" "}
@@ -357,14 +447,18 @@ export default function BurstPipeRepair() {
             </p>
           </div>
 
-          <div className="column-two">
+          <aside
+            className="column-two"
+            aria-label="Safety and prevention resources"
+          >
             <SideBarBox title="Safety & Prevention" links={Links} list={List} />
+
             <UncertainTo />
-          </div>
+          </aside>
         </div>
       </div>
 
       <RestorePeace />
-    </div>
+    </main>
   );
 }
