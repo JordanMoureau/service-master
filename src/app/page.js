@@ -86,7 +86,9 @@ export default function Home() {
       <div className="home-container">
         <div className="home-section">
           <div className="column-one">
-            <h1>Top-Rated Disaster Restoration in Spokane, WA</h1>
+            <h2 className="extra">
+              Top-Rated Disaster Restoration in Spokane, WA
+            </h2>
             <h2>Trusted Spokane Restoration Services Near You</h2>
             <p>
               ServiceMaster by Compass is a full-service disaster restoration

@@ -5,12 +5,12 @@ export default function GetHelpNow({ text }) {
     <div className="get-help-box">
       <div className="clip-box">
         <div className="get1"></div>
-        <h1>
+        <h2 className="extra">
           {text}{" "}
           <a href="tel:(509) 535-5440" className="underline-link">
             (509) 535-5440
           </a>
-        </h1>
+        </h2>
       </div>
 
       <div className="bottom-flex">
