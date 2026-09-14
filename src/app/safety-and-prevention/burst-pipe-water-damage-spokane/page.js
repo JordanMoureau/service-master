@@ -73,6 +73,7 @@ export const metadata = {
     "ServiceMaster by Compass burst pipe cleanup",
   ],
   alternates: { canonical },
+
   openGraph: {
     title,
     description:
@@ -90,6 +91,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -101,6 +103,7 @@ export const metadata = {
       maxVideoPreview: -1,
     },
   },
+
   twitter: {
     card: "summary_large_image",
     title,
@@ -129,6 +132,7 @@ export const jsonLd = [
     },
     breadcrumb: { "@id": `${canonical}#breadcrumb` },
   },
+
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -136,7 +140,10 @@ export const jsonLd = [
     headline: "Burst Pipe Water Damage in Spokane",
     description,
     mainEntityOfPage: { "@id": `${canonical}#webpage` },
-    author: { "@type": "Organization", name: "ServiceMaster by Compass" },
+    author: {
+      "@type": "Organization",
+      name: "ServiceMaster by Compass",
+    },
     publisher: {
       "@type": "Organization",
       "@id": "https://smcfireandwater.com/#organization",
@@ -149,6 +156,7 @@ export const jsonLd = [
     image: ["https://smcfireandwater.com/sub-banner.jpg"],
     articleSection: "Safety & Prevention",
   },
+
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -174,6 +182,7 @@ export const jsonLd = [
       },
     ],
   },
+
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -183,6 +192,7 @@ export const jsonLd = [
     image: "https://smcfireandwater.com/logo.png",
     logo: "https://smcfireandwater.com/logo.png",
     telephone: "+1-509-646-7488",
+
     sameAs: [
       "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
       "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
@@ -191,11 +201,13 @@ export const jsonLd = [
       "https://g.co/kgs/PCuFHgp",
       "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
     ],
+
     areaServed: [
       { "@type": "Place", name: "Spokane, WA" },
       { "@type": "Place", name: "Spokane Valley, WA" },
       { "@type": "Place", name: "Coeur d’Alene, ID" },
     ],
+
     makesOffer: [
       {
         "@type": "Offer",
@@ -219,6 +231,7 @@ export const jsonLd = [
         },
       },
     ],
+
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -247,6 +260,7 @@ export default function BurstPipeWaterDamageSpokane() {
         <div className="home-section">
           <div className="column-one">
             <h1>Burst Pipe Water Damage in Spokane</h1>
+
             <h2>
               WHAT TO DO AFTER A BROKEN PIPE, FROZEN PIPE, OR PLUMBING LEAK
             </h2>
@@ -270,18 +284,26 @@ export default function BurstPipeWaterDamageSpokane() {
 
             <div className="yellow-box">
               <h3>Quick Answer</h3>
+
               <p>
                 If a pipe bursts, shut off the water supply if you can do so
                 safely, avoid electrical hazards, move valuables away from the
-                affected area, document the damage, and call a professional
-                water damage restoration team for extraction and drying. Visible
-                water is only part of the problem—moisture can spread under
-                flooring, behind walls, and into insulation fast.
+                affected area, document the damage, and call a professional{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  burst pipe water damage restoration team
+                </a>{" "}
+                for extraction and drying. Visible water is only part of the
+                problem—moisture can spread under flooring, behind walls, and
+                into insulation fast.
               </p>
             </div>
 
             <div className="black-box">
               <h2>DEALING WITH A BURST PIPE NOW?</h2>
+
               <p>
                 If water is actively leaking or has already soaked walls,
                 ceilings, or flooring, call{" "}
@@ -308,6 +330,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Frozen Pipes</h3>
+
             <p>
               Freezing temperatures are one of the most common causes of burst
               pipes in the Spokane area. When water freezes inside a pipe, it
@@ -317,6 +340,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Aging or Corroded Plumbing</h3>
+
             <p>
               Older plumbing systems can become more vulnerable over time.
               Corrosion, worn fittings, weakened joints, and aging supply lines
@@ -324,6 +348,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>High Water Pressure</h3>
+
             <p>
               Excessive water pressure can strain pipes, valves, and appliance
               connections. Over time, that pressure may contribute to leaks,
@@ -331,6 +356,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Appliance and Fixture Connections</h3>
+
             <p>
               Washing machines, dishwashers, refrigerators, toilets, sinks,
               water heaters, and ice makers all rely on water supply
@@ -339,6 +365,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Accidental Damage</h3>
+
             <p>
               Renovations, drilling, moving appliances, or impact damage can
               crack or puncture plumbing lines. Even a small pipe leak can cause
@@ -366,6 +393,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>1. Shut Off the Water</h3>
+
             <p>
               If you know where the fixture shutoff or main water shutoff is,
               turn the water off immediately. For a sink or toilet leak, a local
@@ -386,6 +414,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>2. Avoid Electrical Hazards</h3>
+
             <p>
               If water is near outlets, light fixtures, appliances, cords, a
               breaker panel, or anything plugged in, stay out of the affected
@@ -394,6 +423,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>3. Move Belongings if It Is Safe</h3>
+
             <p>
               If the area is safe to enter, move dry or lightly affected items
               away from the water. Focus on documents, electronics, furniture,
@@ -402,6 +432,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>4. Document the Damage</h3>
+
             <p>
               Take photos and videos before moving too much, if you can do so
               safely. Capture the source of the water, affected rooms, wet
@@ -410,6 +441,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>5. Call for Water Extraction and Drying</h3>
+
             <p>
               A burst pipe can send water into building materials fast. Even
               after the visible water is cleaned up, moisture may remain behind
@@ -419,11 +451,18 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <p>
-              For immediate water cleanup information, visit{" "}
+              For professional cleanup after a broken or frozen pipe, visit{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                Burst Pipe Water Damage Restoration
+              </a>
+              . For broader water loss services, see our{" "}
               <a className="underline-link" href="/residential/water-damage">
                 Water Damage Restoration
-              </a>
-              .
+              </a>{" "}
+              page.
             </p>
 
             <h2>WHERE WATER HIDES AFTER A BURST PIPE</h2>
@@ -436,18 +475,26 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Common Hidden Moisture Areas</h3>
+
             <ul>
               <li className="arrow-list">Behind drywall and baseboards</li>
+
               <li className="arrow-list">Under carpet and carpet padding</li>
+
               <li className="arrow-list">
                 Below laminate, vinyl, or wood flooring
               </li>
+
               <li className="arrow-list">Inside ceiling cavities</li>
+
               <li className="arrow-list">Inside cabinets and vanities</li>
+
               <li className="arrow-list">Around insulation and framing</li>
+
               <li className="arrow-list">
                 Behind appliances and plumbing fixtures
               </li>
+
               <li className="arrow-list">
                 Inside basements, crawl spaces, and utility rooms
               </li>
@@ -455,6 +502,7 @@ export default function BurstPipeWaterDamageSpokane() {
 
             <div className="yellow-box">
               <h3>Do Not Trust “Looks Dry”</h3>
+
               <p>
                 If water came from a burst pipe, moisture may remain inside
                 materials even after the surface looks better. Moisture readings
@@ -481,18 +529,36 @@ export default function BurstPipeWaterDamageSpokane() {
               insulation, ceilings, or structural materials.
             </p>
 
+            <p>
+              Learn more about our professional{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe cleanup and restoration services
+              </a>{" "}
+              for homes affected by broken, leaking, or frozen pipes.
+            </p>
+
             <h3>Professional Cleanup May Include:</h3>
+
             <ul>
               <li className="arrow-list">Inspection and moisture mapping</li>
+
               <li className="arrow-list">Water extraction</li>
+
               <li className="arrow-list">
                 Removal of unsalvageable wet materials
               </li>
+
               <li className="arrow-list">Air movers and dehumidifiers</li>
+
               <li className="arrow-list">Ongoing moisture monitoring</li>
+
               <li className="arrow-list">
                 Cleaning and deodorizing affected areas
               </li>
+
               <li className="arrow-list">Restoration planning after drying</li>
             </ul>
 
@@ -516,22 +582,30 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Call for Emergency Help If:</h3>
+
             <ul>
               <li className="arrow-list">
                 Water is actively leaking or spreading
               </li>
+
               <li className="arrow-list">
                 Water is coming through a ceiling or wall
               </li>
+
               <li className="arrow-list">Standing water is present</li>
+
               <li className="arrow-list">Water is near electrical systems</li>
+
               <li className="arrow-list">
                 Carpet, padding, drywall, or insulation is soaked
               </li>
+
               <li className="arrow-list">
                 The leak happened while you were away
               </li>
+
               <li className="arrow-list">The source of the water is unknown</li>
+
               <li className="arrow-list">
                 Multiple rooms or levels are affected
               </li>
@@ -551,6 +625,7 @@ export default function BurstPipeWaterDamageSpokane() {
             <h2>BURST PIPES IN BASEMENTS, CEILINGS, AND WALLS</h2>
 
             <h3>Basement Pipe Leaks</h3>
+
             <p>
               Basements often contain water heaters, utility lines, laundry
               connections, and exposed plumbing. A burst pipe in a basement can
@@ -567,10 +642,19 @@ export default function BurstPipeWaterDamageSpokane() {
               >
                 Basement Water Damage in Spokane
               </a>
-              .
+              . If the break has already left standing water in the basement,
+              our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage restoration services
+              </a>{" "}
+              cover water extraction and structural drying.
             </p>
 
             <h3>Ceiling Leaks From Burst Pipes</h3>
+
             <p>
               When a pipe breaks above a ceiling, water can collect before it
               breaks through. Bulging drywall, staining, dripping, sagging, or
@@ -579,6 +663,7 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Wall Cavity Leaks</h3>
+
             <p>
               Pipes inside walls can leak for a while before the damage becomes
               visible. Watch for bubbling paint, soft drywall, warped
@@ -606,31 +691,39 @@ export default function BurstPipeWaterDamageSpokane() {
             </p>
 
             <h3>Burst Pipe Prevention Checklist</h3>
+
             <ul>
               <li className="arrow-list">
                 Insulate pipes in unheated areas like garages, crawl spaces, and
                 exterior walls.
               </li>
+
               <li className="arrow-list">
                 Disconnect outdoor hoses before freezing weather.
               </li>
+
               <li className="arrow-list">
                 Keep indoor temperatures consistent during cold snaps.
               </li>
+
               <li className="arrow-list">
                 Open cabinet doors under sinks on exterior walls during extreme
                 cold.
               </li>
+
               <li className="arrow-list">
                 Know where your main water shutoff is located.
               </li>
+
               <li className="arrow-list">
                 Replace old or worn appliance hoses and supply lines.
               </li>
+
               <li className="arrow-list">
                 Watch for low water pressure, dripping sounds, stains, or
                 unexplained moisture.
               </li>
+
               <li className="arrow-list">
                 Have vulnerable plumbing inspected before winter if you have had
                 issues before.
@@ -685,6 +778,58 @@ export default function BurstPipeWaterDamageSpokane() {
               .
             </p>
 
+            <h2>RELATED WATER DAMAGE RESTORATION SERVICES</h2>
+
+            <p>
+              Different water losses require different cleanup and restoration
+              approaches. ServiceMaster by Compass provides specialized services
+              for several common residential water emergencies.
+            </p>
+
+            <ul>
+              <li className="arrow-list">
+                <a className="underline-link" href="/residential/water-damage">
+                  Water Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  Burst Pipe Water Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Flood Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/sewage-backup"
+                >
+                  Sewage Backup Cleanup
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flooding-from-fire"
+                >
+                  Water Damage From Firefighting
+                </a>
+              </li>
+            </ul>
+
             <h2>BURST PIPE WATER DAMAGE CLEANUP IN SPOKANE</h2>
 
             <p>
@@ -701,8 +846,25 @@ export default function BurstPipeWaterDamageSpokane() {
               extraction, drying, cleanup, and restoration support.
             </p>
 
+            <p>
+              If a broken or frozen pipe has already damaged your property, see
+              our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage restoration services
+              </a>{" "}
+              for the professional cleanup process, or visit our main{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage restoration
+              </a>{" "}
+              page for other water-loss services.
+            </p>
+
             <div className="black-box">
               <h2>GET HELP AFTER A BURST PIPE</h2>
+
               <p>
                 If a broken pipe has soaked your home or business, call{" "}
                 <a className="underline-link" href="tel:5096467488">
@@ -724,6 +886,7 @@ export default function BurstPipeWaterDamageSpokane() {
               links={Links}
               list={List}
             />
+
             <UncertainTo />
           </div>
         </div>

@@ -302,6 +302,18 @@ ul {
   margin-top: 16px;
 }
 
+.column-one p a,
+.column-one li a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.column-one p a:hover,
+.column-one li a:hover {
+  text-decoration-thickness: 2px;
+}
+
 // @media screen and (max-width: 1200px) {
 //   html {
 //     font-size: 1.24875vw;

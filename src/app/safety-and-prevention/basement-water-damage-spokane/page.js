@@ -73,6 +73,7 @@ export const metadata = {
     "ServiceMaster by Compass basement water damage",
   ],
   alternates: { canonical },
+
   openGraph: {
     title,
     description:
@@ -90,6 +91,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -101,6 +103,7 @@ export const metadata = {
       maxVideoPreview: -1,
     },
   },
+
   twitter: {
     card: "summary_large_image",
     title,
@@ -129,6 +132,7 @@ export const jsonLd = [
     },
     breadcrumb: { "@id": `${canonical}#breadcrumb` },
   },
+
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -136,7 +140,10 @@ export const jsonLd = [
     headline: "Basement Water Damage in Spokane",
     description,
     mainEntityOfPage: { "@id": `${canonical}#webpage` },
-    author: { "@type": "Organization", name: "ServiceMaster by Compass" },
+    author: {
+      "@type": "Organization",
+      name: "ServiceMaster by Compass",
+    },
     publisher: {
       "@type": "Organization",
       "@id": "https://smcfireandwater.com/#organization",
@@ -149,6 +156,7 @@ export const jsonLd = [
     image: ["https://smcfireandwater.com/sub-banner.jpg"],
     articleSection: "Safety & Prevention",
   },
+
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -174,6 +182,7 @@ export const jsonLd = [
       },
     ],
   },
+
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -183,6 +192,7 @@ export const jsonLd = [
     image: "https://smcfireandwater.com/logo.png",
     logo: "https://smcfireandwater.com/logo.png",
     telephone: "+1-509-646-7488",
+
     sameAs: [
       "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
       "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
@@ -191,11 +201,13 @@ export const jsonLd = [
       "https://g.co/kgs/PCuFHgp",
       "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
     ],
+
     areaServed: [
       { "@type": "Place", name: "Spokane, WA" },
       { "@type": "Place", name: "Spokane Valley, WA" },
       { "@type": "Place", name: "Coeur d’Alene, ID" },
     ],
+
     makesOffer: [
       {
         "@type": "Offer",
@@ -219,6 +231,7 @@ export const jsonLd = [
         },
       },
     ],
+
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -247,6 +260,7 @@ export default function BasementWaterDamageSpokane() {
         <div className="home-section">
           <div className="column-one">
             <h1>Basement Water Damage in Spokane</h1>
+
             <h2>
               WHAT TO DO WHEN YOUR BASEMENT FLOODS, LEAKS, OR STARTS TAKING ON
               WATER
@@ -270,18 +284,23 @@ export default function BasementWaterDamageSpokane() {
 
             <div className="yellow-box">
               <h3>Quick Answer</h3>
+
               <p>
                 If your basement has standing water, active seepage, wet
                 drywall, soaked carpet, or water near electrical systems, treat
                 it as an urgent water damage situation. Stop the source if you
                 can do so safely, avoid contaminated water, move valuables only
-                if safe, and call a professional water damage restoration team
+                if safe, and call a professional{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water damage restoration team
+                </a>{" "}
                 for extraction, drying, and moisture inspection.
               </p>
             </div>
 
             <div className="black-box">
               <h2>NEED BASEMENT WATER REMOVAL NOW?</h2>
+
               <p>
                 If water is actively entering your basement or you already have
                 standing water, call{" "}
@@ -308,6 +327,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Heavy Rain and Poor Drainage</h3>
+
             <p>
               When gutters are clogged, downspouts discharge too close to the
               foundation, or the yard slopes toward the home, water can collect
@@ -316,7 +336,20 @@ export default function BasementWaterDamageSpokane() {
               or weak points in the foundation.
             </p>
 
+            <p>
+              If heavy rain or outside water has already caused standing water
+              in your basement, learn more about our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage restoration services
+              </a>
+              .
+            </p>
+
             <h3>Snowmelt and Freeze-Thaw Cycles</h3>
+
             <p>
               Snowmelt can be sneaky. A slow thaw may not seem dramatic, but it
               can keep the ground wet for long periods. If drainage is poor or
@@ -326,6 +359,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Sump Pump Failure</h3>
+
             <p>
               A sump pump is supposed to move water away before it becomes a
               basement flood. If the pump fails, loses power, becomes clogged,
@@ -333,7 +367,19 @@ export default function BasementWaterDamageSpokane() {
               water quickly.
             </p>
 
+            <p>
+              Once a sump pump failure results in standing water, professional{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flooded basement cleanup
+              </a>{" "}
+              can help remove the water and dry affected materials.
+            </p>
+
             <h3>Burst Pipes and Plumbing Leaks</h3>
+
             <p>
               Not all basement water damage comes from outside. Broken pipes,
               leaking supply lines, failed water heaters, appliance leaks, and
@@ -350,7 +396,14 @@ export default function BasementWaterDamageSpokane() {
               >
                 Burst Pipe Water Damage in Spokane
               </a>
-              .
+              . If a broken or frozen pipe has already damaged your home, our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage restoration
+              </a>{" "}
+              page explains the professional cleanup and drying process.
             </p>
 
             <h2>WHAT TO DO FIRST WHEN YOUR BASEMENT HAS WATER DAMAGE</h2>
@@ -363,6 +416,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>1. Stay Out if Water Is Near Electricity</h3>
+
             <p>
               If standing water is near outlets, cords, appliances, the
               electrical panel, or anything plugged in, do not enter the water.
@@ -371,6 +425,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>2. Stop the Water Source if You Can</h3>
+
             <p>
               If the water is coming from a plumbing line, appliance, toilet,
               water heater, or pipe, shut off the water at the source or at the
@@ -386,6 +441,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>3. Avoid Contact With Contaminated Water</h3>
+
             <p>
               If water may involve sewage, drain backup, floodwater, or water
               that has passed through unknown materials, avoid contact. Do not
@@ -401,10 +457,19 @@ export default function BasementWaterDamageSpokane() {
               >
                 Safe Sewer Backup Protocols
               </a>
+              . For professional contaminated-water removal, sanitization, and
+              drying, see our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup cleanup services
+              </a>
               .
             </p>
 
             <h3>4. Move Valuables Only if It Is Safe</h3>
+
             <p>
               If the area is safe to enter, move dry or lightly affected
               belongings out of the basement. Focus on documents, electronics,
@@ -414,13 +479,17 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>5. Call for Water Extraction and Drying</h3>
+
             <p>
               Basement water damage often needs more than surface cleanup.
               Carpet padding, drywall, trim, insulation, subflooring, and
               framing can hold moisture even after the visible water is gone.
-              Professional water extraction and drying equipment help remove
-              water from affected materials and reduce the risk of lingering
-              damage.
+              Professional{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water extraction and structural drying
+              </a>{" "}
+              help remove water from affected materials and reduce the risk of
+              lingering damage.
             </p>
 
             <h2>WHY BASEMENT WATER DAMAGE NEEDS PROFESSIONAL DRYING</h2>
@@ -441,15 +510,18 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Materials That Can Hold Hidden Moisture</h3>
+
             <ul>
               <li className="arrow-list">Carpet and carpet padding</li>
               <li className="arrow-list">Drywall and baseboards</li>
               <li className="arrow-list">Insulation behind finished walls</li>
               <li className="arrow-list">Laminate and engineered flooring</li>
               <li className="arrow-list">Wood framing and sill plates</li>
+
               <li className="arrow-list">
                 Stored boxes, furniture, and fabrics
               </li>
+
               <li className="arrow-list">
                 Crawl space or utility room materials
               </li>
@@ -457,6 +529,7 @@ export default function BasementWaterDamageSpokane() {
 
             <div className="yellow-box">
               <h3>Don’t Trust the Surface</h3>
+
               <p>
                 If water reached walls, flooring, or stored materials, the
                 surface may look better before the structure is actually dry.
@@ -474,30 +547,57 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Call for Emergency Help If You Notice:</h3>
+
             <ul>
               <li className="arrow-list">Standing water in the basement</li>
+
               <li className="arrow-list">
                 Water near electrical outlets or panels
               </li>
+
               <li className="arrow-list">
                 Wet carpet, padding, drywall, or insulation
               </li>
+
               <li className="arrow-list">
                 Sewage, drain backup, or contaminated water
               </li>
+
               <li className="arrow-list">
                 Water entering through walls or window wells
               </li>
+
               <li className="arrow-list">
                 A failed sump pump during rain or snowmelt
               </li>
+
               <li className="arrow-list">
                 A burst pipe, water heater leak, or appliance leak
               </li>
+
               <li className="arrow-list">
                 Musty odor after water has been present
               </li>
             </ul>
+
+            <p>
+              A basement filled by rain, snowmelt, or sump pump failure may
+              require{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                emergency flood damage cleanup
+              </a>
+              , while a plumbing failure may require{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage restoration
+              </a>
+              .
+            </p>
 
             <p>
               If you are unsure whether the situation is urgent, visit{" "}
@@ -520,6 +620,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Inspection and Moisture Mapping</h3>
+
             <p>
               A restoration team checks where the water came from, how far it
               spread, what materials were affected, and whether moisture has
@@ -528,6 +629,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Water Extraction</h3>
+
             <p>
               Standing water and excess moisture are removed using extraction
               equipment. Removing water quickly helps reduce how deeply moisture
@@ -535,6 +637,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Drying and Dehumidification</h3>
+
             <p>
               Air movers and dehumidifiers are used to dry affected areas.
               Because basements naturally tend to hold more moisture than upper
@@ -542,6 +645,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Monitoring</h3>
+
             <p>
               Drying should be monitored with moisture readings. This helps
               confirm whether materials are actually drying instead of just
@@ -549,6 +653,7 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Cleaning and Restoration Planning</h3>
+
             <p>
               Once the area is dry, damaged materials can be addressed.
               Depending on the situation, this may involve cleaning,
@@ -574,32 +679,40 @@ export default function BasementWaterDamageSpokane() {
             </p>
 
             <h3>Basement Water Prevention Checklist</h3>
+
             <ul>
               <li className="arrow-list">
                 Clean gutters and confirm downspouts move water away from the
                 foundation.
               </li>
+
               <li className="arrow-list">
                 Check the grading around your home so water does not flow toward
                 basement walls.
               </li>
+
               <li className="arrow-list">
                 Test your sump pump before heavy rain or spring thaw.
               </li>
+
               <li className="arrow-list">
                 Keep window wells clear and make sure they drain properly.
               </li>
+
               <li className="arrow-list">
                 Inspect basement walls and floors for cracks, staining, or
                 recurring dampness.
               </li>
+
               <li className="arrow-list">
                 Store belongings in plastic bins instead of cardboard boxes on
                 the floor.
               </li>
+
               <li className="arrow-list">
                 Watch for musty smells, damp air, or water stains after storms.
               </li>
+
               <li className="arrow-list">
                 Know where your main water shutoff is before a pipe leak
                 happens.
@@ -649,7 +762,60 @@ export default function BasementWaterDamageSpokane() {
               >
                 Does Homeowners Insurance Cover Water Damage in Spokane?
               </a>
+              .
             </p>
+
+            <h2>RELATED WATER DAMAGE RESTORATION SERVICES</h2>
+
+            <p>
+              The right restoration approach depends on where the water came
+              from. ServiceMaster by Compass provides specialized cleanup and
+              restoration for several common residential water emergencies.
+            </p>
+
+            <ul>
+              <li className="arrow-list">
+                <a className="underline-link" href="/residential/water-damage">
+                  Water Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Flood Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  Burst Pipe Water Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/sewage-backup"
+                >
+                  Sewage Backup Cleanup
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flooding-from-fire"
+                >
+                  Water Damage From Firefighting
+                </a>
+              </li>
+            </ul>
 
             <h2>BASEMENT WATER DAMAGE CLEANUP IN SPOKANE</h2>
 
@@ -667,8 +833,29 @@ export default function BasementWaterDamageSpokane() {
               restoration support.
             </p>
 
+            <p>
+              If your basement has flooded after rain, snowmelt, or sump pump
+              failure, our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage restoration team
+              </a>{" "}
+              can handle extraction and drying. If the water came from damaged
+              plumbing, see our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe restoration services
+              </a>
+              .
+            </p>
+
             <div className="black-box">
               <h2>GET HELP WITH BASEMENT WATER DAMAGE</h2>
+
               <p>
                 If your basement is wet, flooded, or showing signs of hidden
                 moisture, call{" "}
@@ -691,6 +878,7 @@ export default function BasementWaterDamageSpokane() {
               links={Links}
               list={List}
             />
+
             <UncertainTo />
           </div>
         </div>

@@ -5,18 +5,18 @@ import RestorePeace from "../../components/RestoringPeace";
 
 const Links = [
   "/residential/water-damage",
-  "/residential/fire-and-smoke",
-  "/residential/mold",
-  "/residential/odor",
-  "/residential/specialty-services",
+  "/residential/water-damage/burst-pipe-damage",
+  "/residential/water-damage/flood-damage",
+  "/residential/water-damage/flooding-from-fire",
+  "/residential/water-damage/sewage-backup",
 ];
 
 const List = [
-  "Water Damage",
-  "Fire And Smoke",
-  "Mold Damage",
-  "Odor",
-  "Specialty Services",
+  "Water Damage Restoration",
+  "Burst Pipe Damage",
+  "Flood Damage",
+  "Flooding From Fire",
+  "Sewage Backup",
 ];
 
 export const metadata = {
@@ -85,7 +85,7 @@ export default function ResidentialWaterDamage() {
         <div className="home-section">
           <div className="column-one">
             <h1>
-              Flood Damage Restoration Spokane: Water Mitigation and Water
+              Water Damage Restoration Spokane: Water Mitigation and Water
               Damage Restoration in Spokane, WA
             </h1>
             <h2>Professional Water Damage Restoration Company Near You</h2>

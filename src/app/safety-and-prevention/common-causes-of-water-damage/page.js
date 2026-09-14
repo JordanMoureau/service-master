@@ -74,6 +74,7 @@ export const metadata = {
     "ServiceMaster by Compass water damage",
   ],
   alternates: { canonical },
+
   openGraph: {
     title,
     description:
@@ -91,6 +92,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
   },
+
   robots: {
     index: true,
     follow: true,
@@ -102,6 +104,7 @@ export const metadata = {
       maxVideoPreview: -1,
     },
   },
+
   twitter: {
     card: "summary_large_image",
     title,
@@ -141,7 +144,10 @@ const jsonLd = [
     description,
     mainEntityOfPage: { "@id": `${canonical}#webpage` },
     articleSection: "Safety & Prevention",
-    author: { "@type": "Organization", name: "ServiceMaster by Compass" },
+    author: {
+      "@type": "Organization",
+      name: "ServiceMaster by Compass",
+    },
     publisher: {
       "@type": "Organization",
       "@id": "https://smcfireandwater.com/#organization",
@@ -191,6 +197,7 @@ const jsonLd = [
     image: "https://smcfireandwater.com/logo.png",
     logo: "https://smcfireandwater.com/logo.png",
     telephone: "+1-509-535-5440",
+
     sameAs: [
       "https://www.youtube.com/channel/UCxhfBr5uexZ5FxWWnOtHEkQ",
       "https://www.facebook.com/p/ServiceMaster-by-Compass-100063756032122/",
@@ -199,26 +206,38 @@ const jsonLd = [
       "https://g.co/kgs/PCuFHgp",
       "https://yelp.com/biz/servicemaster-fire-and-water-restoration-by-compass-spokane",
     ],
+
     areaServed: [
       { "@type": "Place", name: "Spokane, WA" },
       { "@type": "Place", name: "Spokane Valley, WA" },
       { "@type": "Place", name: "Coeur d’Alene, ID" },
       { "@type": "Place", name: "North Idaho" },
     ],
+
     makesOffer: [
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Water Damage Clean Up" },
+        itemOffered: {
+          "@type": "Service",
+          name: "Water Damage Clean Up",
+        },
       },
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Water Damage Mitigation" },
+        itemOffered: {
+          "@type": "Service",
+          name: "Water Damage Mitigation",
+        },
       },
       {
         "@type": "Offer",
-        itemOffered: { "@type": "Service", name: "Sewer Backup Cleanup" },
+        itemOffered: {
+          "@type": "Service",
+          name: "Sewer Backup Cleanup",
+        },
       },
     ],
+
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -235,6 +254,7 @@ export default function CommonCausesEmergencyWaterDamage() {
   return (
     <div>
       <JsonLd data={jsonLd} />
+
       <div className="top-image">
         <img
           src="/sub-banner.jpg"
@@ -248,7 +268,9 @@ export default function CommonCausesEmergencyWaterDamage() {
             <h1>
               Common Causes of Emergency Water Damage and How to Prevent Them
             </h1>
+
             <h2>WATER DAMAGE PREVENTION TIPS FOR SPOKANE &amp; NORTH IDAHO</h2>
+
             <h3>
               Know What Causes Water Damage So You Can Stop It Before It Starts
             </h3>
@@ -274,11 +296,17 @@ export default function CommonCausesEmergencyWaterDamage() {
                 <a className="underline-link" href="tel:15095355440">
                   (509) 535-5440
                 </a>{" "}
-                for 24/7 water damage mitigation in Spokane and North Idaho.
+                for 24/7 water damage mitigation in Spokane and North Idaho, or
+                learn more about our{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  residential water damage restoration services
+                </a>
+                .
               </h3>
             </div>
 
             <h2>WHAT ARE THE MOST COMMON CAUSES OF HOME WATER DAMAGE?</h2>
+
             <h3>
               The Big Four: Pipes, Appliances, Roof/Foundation, and Weather
             </h3>
@@ -292,6 +320,7 @@ export default function CommonCausesEmergencyWaterDamage() {
             </p>
 
             <h3>How leaking and burst pipes lead to water damage</h3>
+
             <p>
               Pipes can fail slowly or suddenly. Small leaks often come from
               corrosion, worn fittings, or aging materials. Burst pipes are more
@@ -304,17 +333,33 @@ export default function CommonCausesEmergencyWaterDamage() {
               <li className="arrow-list">
                 Watch for stains, bubbling paint, damp drywall, or musty odors.
               </li>
+
               <li className="arrow-list">
                 Pay attention to sudden pressure changes or unexplained water
                 use.
               </li>
+
               <li className="arrow-list">
                 Know where your shut-off valve is (seriously—future you will
                 thank you).
               </li>
             </ul>
 
+            <p>
+              If a pipe has already broken or frozen and released water into
+              your home, visit our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage restoration
+              </a>{" "}
+              page for information about extraction, structural drying, and
+              cleanup.
+            </p>
+
             <h3>Appliance failures that commonly cause water damage</h3>
+
             <p>
               Appliances that use water can leak from hoses, supply lines,
               seals, or internal corrosion. Washing machines, dishwashers,
@@ -327,18 +372,30 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Inspect hoses and connections regularly for bulges, rust, or
                 moisture.
               </li>
+
               <li className="arrow-list">
                 Replace worn supply lines (especially older rubber hoses).
               </li>
+
               <li className="arrow-list">
                 Check around water heaters for rust, sweating, or water in the
                 drain pan.
               </li>
             </ul>
 
+            <p>
+              When an appliance failure releases enough water to soak flooring,
+              walls, cabinetry, or adjoining rooms, professional{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage restoration
+              </a>{" "}
+              can help remove hidden moisture and dry affected materials.
+            </p>
+
             <h2>
               ROOF &amp; EXTERIOR ISSUES THAT CAUSE EMERGENCY WATER DAMAGE
             </h2>
+
             <h3>Keeping Water Outside Where It Belongs</h3>
 
             <p>
@@ -349,6 +406,7 @@ export default function CommonCausesEmergencyWaterDamage() {
             </p>
 
             <h3>Signs and causes of roof leaks</h3>
+
             <p>
               Roof leaks are sneaky. They often show up as ceiling staining,
               damp attic insulation, or musty smells. Common causes include
@@ -361,9 +419,11 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Look for water stains on ceilings, walls, and around vents or
                 chimneys.
               </li>
+
               <li className="arrow-list">
                 Check for missing, curling, or damaged shingles after storms.
               </li>
+
               <li className="arrow-list">
                 Clean gutters and downspouts so water can drain away properly.
               </li>
@@ -373,6 +433,7 @@ export default function CommonCausesEmergencyWaterDamage() {
               How poor basement and foundation maintenance leads to water
               intrusion
             </h3>
+
             <p>
               Foundation cracks, poor grading, and weak drainage systems can
               push water toward your home and into lower levels. Basements and
@@ -385,23 +446,46 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Check for dampness, musty odors, or mold spots in basements and
                 crawlspaces.
               </li>
+
               <li className="arrow-list">
                 Look for cracks in foundation walls or floors and address them
                 quickly.
               </li>
+
               <li className="arrow-list">
                 Make sure soil slopes away from the home and downspouts
                 discharge 3–5 feet away.
               </li>
+
               <li className="arrow-list">
                 Consider sump pumps and drainage solutions if water intrusion is
                 recurring.
               </li>
             </ul>
 
+            <p>
+              If water has already entered your basement, see{" "}
+              <a
+                className="underline-link"
+                href="/safety-and-prevention/basement-water-damage-spokane"
+              >
+                Basement Water Damage in Spokane
+              </a>{" "}
+              for immediate safety guidance. If you are dealing with standing
+              water or a flooded lower level, our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage restoration services
+              </a>{" "}
+              cover water extraction and structural drying.
+            </p>
+
             <h2>
               NATURAL DISASTERS &amp; WEATHER EVENTS THAT CAUSE WATER DAMAGE
             </h2>
+
             <h3>Flooding, Storms, and Sewer Backups</h3>
 
             <p>
@@ -412,6 +496,7 @@ export default function CommonCausesEmergencyWaterDamage() {
             </p>
 
             <h3>How flooding and storm damage create emergency water loss</h3>
+
             <p>
               Heavy rain, rapid snowmelt, and wind-driven intrusion can saturate
               the ground and push water toward foundations. When systems can’t
@@ -423,15 +508,31 @@ export default function CommonCausesEmergencyWaterDamage() {
               <li className="arrow-list">
                 Keep gutters and downspouts clear and functioning.
               </li>
+
               <li className="arrow-list">
                 Test sump pumps and backup power before storm season.
               </li>
+
               <li className="arrow-list">
                 Move stored items off basement floors and onto shelving.
               </li>
             </ul>
 
+            <p>
+              When severe weather has already caused water to enter your home,
+              professional{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage cleanup
+              </a>{" "}
+              can include water extraction, moisture detection,
+              dehumidification, structural drying, and restoration.
+            </p>
+
             <h3>Risks of sewer backups and clogged drains</h3>
+
             <p>
               Sewer backups are a serious health risk and can cause extensive
               damage quickly. They can be triggered by heavy rainfall,
@@ -443,21 +544,44 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Avoid flushing wipes and inappropriate items (even “flushable”
                 ones).
               </li>
+
               <li className="arrow-list">
                 Keep drains maintained and address slow drains early.
               </li>
+
               <li className="arrow-list">
                 Consider backflow prevention devices if your area is prone to
                 backups.
               </li>
             </ul>
 
+            <p>
+              For safety guidance before cleanup, see{" "}
+              <a
+                className="underline-link"
+                href="/safety-and-prevention/safe-sewer-backup-protocols"
+              >
+                Safe Sewer Backup Protocols
+              </a>
+              . If sewage or wastewater has already entered the property, our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup cleanup services
+              </a>{" "}
+              cover contaminated water removal, cleaning, sanitization, drying,
+              and restoration.
+            </p>
+
             <h2>EFFECTIVE STRATEGIES FOR PREVENTING WATER DAMAGE</h2>
+
             <h3>Proactive Steps That Actually Reduce Risk</h3>
 
             <h3>
               How regular inspections and maintenance prevent water damage
             </h3>
+
             <p>
               Routine checks are one of the most effective prevention tools you
               have. Regular maintenance helps you spot leaks, worn connections,
@@ -469,15 +593,18 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Inspect plumbing, appliance supply lines, and shut-off valves
                 routinely.
               </li>
+
               <li className="arrow-list">
                 Check roofs, flashing, and gutters seasonally and after storms.
               </li>
+
               <li className="arrow-list">
                 Monitor basements and crawlspaces for dampness or musty odors.
               </li>
             </ul>
 
             <h3>Smart technologies that help detect and prevent leaks</h3>
+
             <p>
               Smart leak detectors, flow monitors, and automatic shut-off valves
               add an extra layer of protection by alerting you quickly and, in
@@ -489,10 +616,12 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Leak sensors can be placed under sinks, near water heaters, and
                 behind appliances.
               </li>
+
               <li className="arrow-list">
                 Flow monitors can detect unusual water usage that may indicate
                 hidden leaks.
               </li>
+
               <li className="arrow-list">
                 Automatic shut-off systems can stop the main water line when a
                 leak is detected.
@@ -502,17 +631,23 @@ export default function CommonCausesEmergencyWaterDamage() {
             <div className="black-box">
               <p>
                 If you’re dealing with repeated moisture, unexplained dampness,
-                or recurring leaks, moisture mapping and professional drying can
-                prevent long-term damage.
+                or recurring leaks, professional{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water damage restoration
+                </a>{" "}
+                can include moisture mapping and controlled structural drying to
+                help prevent long-term damage.
               </p>
             </div>
 
             <h2>HOME IMPROVEMENTS THAT REDUCE EMERGENCY WATER DAMAGE RISK</h2>
+
             <h3>Structural Protection That Pays Off</h3>
 
             <h3>
               Waterproofing and drainage solutions for basements and foundations
             </h3>
+
             <p>
               Waterproofing and drainage improvements help protect lower levels
               and reduce the likelihood of water intrusion during storms or
@@ -521,6 +656,7 @@ export default function CommonCausesEmergencyWaterDamage() {
             </p>
 
             <h3>Pipe insulation and winterization to prevent burst pipes</h3>
+
             <p>
               Frozen pipes are one of the most common winter emergencies.
               Insulating vulnerable lines and winterizing outdoor plumbing helps
@@ -532,17 +668,33 @@ export default function CommonCausesEmergencyWaterDamage() {
                 Insulate pipes in unheated basements, crawlspaces, garages, and
                 exterior walls.
               </li>
+
               <li className="arrow-list">
                 Drain and shut off outdoor spigots and irrigation lines before
                 hard freezes.
               </li>
+
               <li className="arrow-list">
                 Open cabinet doors on very cold nights to allow warm air
                 circulation.
               </li>
             </ul>
 
+            <p>
+              If prevention comes a little too late and a frozen pipe breaks,
+              our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe restoration services
+              </a>{" "}
+              cover water extraction, hidden moisture detection, drying, and
+              repairs after the plumbing source is controlled.
+            </p>
+
             <h2>WHAT TO DO IMMEDIATELY AFTER WATER DAMAGE OCCURS</h2>
+
             <h3>First Steps to Limit Damage and Stay Safe</h3>
 
             <p>
@@ -551,17 +703,21 @@ export default function CommonCausesEmergencyWaterDamage() {
             </p>
 
             <h3>First steps after discovering water damage</h3>
+
             <ul>
               <li className="arrow-list">
                 If safe, turn off electricity in affected areas and stop the
                 water source.
               </li>
+
               <li className="arrow-list">
                 Document damage with photos and video for insurance purposes.
               </li>
+
               <li className="arrow-list">
                 Remove standing water and start drying affected areas quickly.
               </li>
+
               <li className="arrow-list">
                 Keep airflow moving with fans and reduce humidity with
                 dehumidifiers.
@@ -569,22 +725,60 @@ export default function CommonCausesEmergencyWaterDamage() {
             </ul>
 
             <h3>When to contact professionals for water damage restoration</h3>
+
             <ul>
               <li className="arrow-list">
                 Significant flooding or water spread into walls, floors,
                 ceilings, or insulation.
               </li>
+
               <li className="arrow-list">
                 Suspected mold or musty odors that persist during drying.
               </li>
+
               <li className="arrow-list">
                 Contaminated water (gray water or sewage) or any health risk
                 concerns.
               </li>
+
               <li className="arrow-list">
                 Structural instability or electrical hazards.
               </li>
             </ul>
+
+            <p>
+              For significant water damage, ServiceMaster by Compass provides{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                professional water damage restoration
+              </a>{" "}
+              throughout Spokane and the surrounding area.
+            </p>
+
+            <p>
+              If the damage came from a broken or frozen pipe, see{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                Burst Pipe Water Damage Restoration
+              </a>
+              . If your home has flooded because of storms, snowmelt, drainage
+              failure, or another large water intrusion, see{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                Flood Damage Restoration
+              </a>
+              . For wastewater or drain backups, visit{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                Sewage Backup Cleanup
+              </a>
+              .
+            </p>
 
             <div className="yellow-box">
               <h3>
@@ -600,6 +794,7 @@ export default function CommonCausesEmergencyWaterDamage() {
             </div>
 
             <h2>WATER DAMAGE PREVENTION STRATEGIES AT A GLANCE</h2>
+
             <h3>Quick Reference Table</h3>
 
             <table className="table">
@@ -610,6 +805,7 @@ export default function CommonCausesEmergencyWaterDamage() {
                   <th>Benefits</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>Regular Inspections</td>
@@ -618,6 +814,7 @@ export default function CommonCausesEmergencyWaterDamage() {
                   </td>
                   <td>Early detection of issues</td>
                 </tr>
+
                 <tr>
                   <td>Smart Technologies</td>
                   <td>
@@ -625,6 +822,7 @@ export default function CommonCausesEmergencyWaterDamage() {
                   </td>
                   <td>Immediate alerts and damage prevention</td>
                 </tr>
+
                 <tr>
                   <td>Waterproofing Solutions</td>
                   <td>
@@ -641,6 +839,58 @@ export default function CommonCausesEmergencyWaterDamage() {
               Understanding common causes and staying proactive helps protect
               your property, reduce health risks, and avoid expensive repairs.
             </p>
+
+            <h2>RELATED WATER DAMAGE RESTORATION SERVICES</h2>
+
+            <p>
+              When prevention is no longer enough, the right restoration
+              response depends on where the water came from and what materials
+              were affected.
+            </p>
+
+            <ul>
+              <li className="arrow-list">
+                <a className="underline-link" href="/residential/water-damage">
+                  Water Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  Burst Pipe Water Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Flood Damage Restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/sewage-backup"
+                >
+                  Sewage Backup Cleanup
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flooding-from-fire"
+                >
+                  Water Damage From Firefighting
+                </a>
+              </li>
+            </ul>
 
             <p>
               If you’re experiencing water damage—or want help assessing risk—{" "}
@@ -672,6 +922,7 @@ export default function CommonCausesEmergencyWaterDamage() {
               links={Links}
               list={List}
             />
+
             <UncertainTo />
           </div>
         </div>
