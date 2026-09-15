@@ -213,17 +213,27 @@ export default function WhenSituationBecomesEmergency() {
             <h3>When Water Goes From “Annoying” to “Emergency”</h3>
 
             <p>
-              Water damage becomes an emergency when it’s active, when it’s
-              touching building materials, or when it has any chance of becoming
-              hidden inside walls, under flooring, or in insulation. Water
-              spreads fast and does quiet damage before it gets obvious.
+              <a className="underline-link" href="/residential/water-damage">
+                Water damage
+              </a>{" "}
+              becomes an emergency when it’s active, when it’s touching building
+              materials, or when it has any chance of becoming hidden inside
+              walls, under flooring, or in insulation. Water spreads fast and
+              does quiet damage before it gets obvious.
             </p>
 
             <h3>Call Now If You Notice:</h3>
 
             <ul>
               <li className="arrow-list">
-                A burst pipe, appliance leak, or overflow that won’t stop
+                A{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  burst pipe
+                </a>
+                , appliance leak, or overflow that won’t stop
               </li>
 
               <li className="arrow-list">
@@ -240,11 +250,24 @@ export default function WhenSituationBecomesEmergency() {
               </li>
 
               <li className="arrow-list">
-                A sewage backup or any contaminated water source
+                A{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/sewage-backup"
+                >
+                  sewage backup
+                </a>{" "}
+                or any contaminated water source
               </li>
 
               <li className="arrow-list">
-                Standing water in a basement or crawl space
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Standing water in a basement
+                </a>{" "}
+                or crawl space
               </li>
 
               <li className="arrow-list">
@@ -265,10 +288,12 @@ export default function WhenSituationBecomesEmergency() {
             <h3>When Smoke, Soot, or Odor Means You Need Help</h3>
 
             <p>
-              Fire damage isn’t only flames. Smoke and soot can travel through
-              HVAC systems, settle into porous materials, and create long-term
-              odor and corrosion issues. If smoke is present, treat it as
-              time-sensitive.
+              <a className="underline-link" href="/residential/fire-and-smoke">
+                Fire damage
+              </a>{" "}
+              isn’t only flames. Smoke and soot can travel through HVAC systems,
+              settle into porous materials, and create long-term odor and
+              corrosion issues. If smoke is present, treat it as time-sensitive.
             </p>
 
             <h3>Call Now If You Notice:</h3>
@@ -317,10 +342,16 @@ export default function WhenSituationBecomesEmergency() {
             <h3>When Storm Damage Turns Into a Safety Issue</h3>
 
             <p>
-              Weather events can cause hidden damage that escalates quickly:
-              roof breaches, ice dams, wind-driven rain intrusion, and
-              structural stress. The earlier you act, the less likely you are to
-              end up with secondary water damage.
+              <a className="underline-link" href="/residential/weather">
+                Weather events
+              </a>{" "}
+              can cause hidden damage that escalates quickly: roof breaches, ice
+              dams, wind-driven rain intrusion, and structural stress. The
+              earlier you act, the less likely you are to end up with secondary{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage
+              </a>
+              .
             </p>
 
             <h3>Call Now If You Notice:</h3>
@@ -343,7 +374,13 @@ export default function WhenSituationBecomesEmergency() {
               </li>
 
               <li className="arrow-list">
-                Flooding risk near foundations, basements, or crawl spaces
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Flooding risk
+                </a>{" "}
+                near foundations, basements, or crawl spaces
               </li>
             </ul>
 

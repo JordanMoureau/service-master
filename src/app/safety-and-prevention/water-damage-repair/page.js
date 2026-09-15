@@ -113,7 +113,6 @@ export const metadata = {
 
 // JSON-LD
 const jsonLd = [
-  // Page entity
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -147,8 +146,6 @@ const jsonLd = [
       },
     ],
   },
-
-  // Breadcrumbs
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -175,8 +172,6 @@ const jsonLd = [
       },
     ],
   },
-
-  // FAQ schema
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -215,8 +210,6 @@ const jsonLd = [
       },
     ],
   },
-
-  // Business / service info
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -298,24 +291,29 @@ export default function WaterDamageRepairSpokane() {
             <h1>
               Water Damage Repair in Spokane, WA — What It Is and Why It Matters
             </h1>
+
             <h2>
               WATER DAMAGE REPAIR VS. RESTORATION: WHAT SPOKANE HOMEOWNERS NEED
               TO KNOW
             </h2>
+
             <h3>
               From Emergency Drying to Full Reconstruction — One Company, Start
               to Finish
             </h3>
 
             <p>
-              When water damages your home, most people think of the emergency
-              response — the extraction, the fans, the drying equipment. But
-              once the moisture is gone, the real question becomes: what happens
-              to everything that got ruined? Drywall doesn&apos;t dry out and
-              bounce back. Subfloor that absorbed standing water doesn&apos;t
-              return to normal on its own. Insulation, flooring, cabinetry —
-              these materials often need to be removed and replaced, not just
-              dried.
+              When{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damages your home
+              </a>
+              , most people think of the emergency response — the extraction,
+              the fans, the drying equipment. But once the moisture is gone, the
+              real question becomes: what happens to everything that got ruined?
+              Drywall doesn&apos;t dry out and bounce back. Subfloor that
+              absorbed standing water doesn&apos;t return to normal on its own.
+              Insulation, flooring, cabinetry — these materials often need to be
+              removed and replaced, not just dried.
             </p>
 
             <p>
@@ -355,6 +353,7 @@ export default function WaterDamageRepairSpokane() {
                 as possible. Mitigation does not restore your home to its
                 pre-loss condition. It stabilizes it.
               </li>
+
               <li className="arrow-list">
                 <strong>Repair (reconstruction)</strong> is what comes after.
                 Once the structure is dry and the adjuster has documented the
@@ -389,9 +388,14 @@ export default function WaterDamageRepairSpokane() {
                 long enough to swell, crumble, or develop microbial growth
                 cannot be salvaged. Affected sections are cut out during
                 mitigation and must be replaced, taped, mudded, and painted to
-                match. Water-damaged drywall repair is one of the most common
-                repair line items after any residential water event.
+                match.{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  Water-damaged drywall repair
+                </a>{" "}
+                is one of the most common repair line items after any
+                residential water event.
               </li>
+
               <li className="arrow-list">
                 <strong>Flooring removal and reinstallation:</strong> Hardwood,
                 laminate, and engineered flooring that has buckled, warped, or
@@ -400,6 +404,7 @@ export default function WaterDamageRepairSpokane() {
                 and pad are almost always removed and replaced after significant
                 water exposure.
               </li>
+
               <li className="arrow-list">
                 <strong>Subfloor repair or replacement:</strong> The subfloor is
                 often the most overlooked — and most critical — part of water
@@ -409,6 +414,7 @@ export default function WaterDamageRepairSpokane() {
                 spots, squeaks, and potential mold issues regardless of what
                 flooring goes on top.
               </li>
+
               <li className="arrow-list">
                 <strong>Insulation replacement:</strong> Batt insulation in
                 walls, floors, and crawl spaces absorbs water readily and holds
@@ -417,6 +423,7 @@ export default function WaterDamageRepairSpokane() {
                 place is one of the most reliable ways to end up with a mold
                 problem.
               </li>
+
               <li className="arrow-list">
                 <strong>Painting and finishing:</strong> Once structural repairs
                 are complete, the affected areas need to be primed, painted, and
@@ -424,6 +431,7 @@ export default function WaterDamageRepairSpokane() {
                 ceilings and walls require stain-blocking primer before paint to
                 prevent bleed-through.
               </li>
+
               <li className="arrow-list">
                 <strong>Cabinetry and millwork:</strong> Kitchen and bathroom
                 cabinets that sat in standing water — or were directly sprayed
@@ -447,6 +455,7 @@ export default function WaterDamageRepairSpokane() {
             <h2>
               WHY USING THE SAME COMPANY FOR MITIGATION AND REPAIR MATTERS
             </h2>
+
             <h3>No Hand-Off. No Gap. No Surprises.</h3>
 
             <p>
@@ -465,6 +474,7 @@ export default function WaterDamageRepairSpokane() {
                 moisture readings, and what was or wasn&apos;t dried become
                 common — and they slow everything down.
               </li>
+
               <li className="arrow-list">
                 <strong>Documentation inconsistencies:</strong> Insurance claims
                 require a continuous, consistent record from event to
@@ -472,6 +482,7 @@ export default function WaterDamageRepairSpokane() {
                 conflict — which gives adjusters grounds to question scope and
                 reduce payouts.
               </li>
+
               <li className="arrow-list">
                 <strong>Scheduling delays:</strong> Coordinating between a
                 mitigation company and a separate repair contractor adds weeks
@@ -479,6 +490,7 @@ export default function WaterDamageRepairSpokane() {
                 transition is seamless — repair begins as soon as drying
                 standards are met.
               </li>
+
               <li className="arrow-list">
                 <strong>Single point of contact:</strong> One company, one
                 project manager, one phone number. You know exactly who to call
@@ -508,18 +520,33 @@ export default function WaterDamageRepairSpokane() {
                 exterior walls, unheated crawl spaces, and garages are
                 particularly vulnerable. When a pipe bursts, water can flow for
                 hours before it&apos;s discovered — saturating walls, subfloor,
-                and ceilings across multiple rooms. Burst pipe repair is one of
-                our most common winter calls.
+                and ceilings across multiple rooms.{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  Burst pipe repair
+                </a>{" "}
+                is one of our most common winter calls.
               </li>
+
               <li className="arrow-list">
                 <strong>Spring snowmelt and basement flooding:</strong>{" "}
                 Spokane&apos;s significant snowpack doesn&apos;t disappear
                 overnight. As temperatures rise in March and April, saturated
                 soil pushes water against foundations and through basement
-                walls. Basement flood repair — including subfloor, insulation,
-                and drywall in finished lower levels — is a consistent spring
-                service call across the Spokane area.
+                walls.{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Basement flood repair
+                </a>{" "}
+                — including subfloor, insulation, and drywall in finished lower
+                levels — is a consistent spring service call across the Spokane
+                area.
               </li>
+
               <li className="arrow-list">
                 <strong>Ice dams and roof leaks:</strong> Ice dams form when
                 heat escapes through the roof and melts snow that then refreezes
@@ -529,6 +556,7 @@ export default function WaterDamageRepairSpokane() {
                 after ice dam damage typically involves ceiling drywall, attic
                 insulation, and painting.
               </li>
+
               <li className="arrow-list">
                 <strong>Appliance and plumbing failures:</strong> Water heater
                 failures, washing machine hose blowouts, and dishwasher leaks
@@ -537,12 +565,21 @@ export default function WaterDamageRepairSpokane() {
                 leak can saturate the subfloor and appear in the ceiling of the
                 room below before it&apos;s detected.
               </li>
+
               <li className="arrow-list">
-                <strong>Sewer backup:</strong> Aging sewer infrastructure in
-                some Spokane neighborhoods makes sewer backup a real risk —
-                especially after heavy rain or snowmelt events that overwhelm
-                municipal systems. Sewer backup repair involves not just the
-                structural materials but proper sanitization and odor treatment.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/sewage-backup"
+                  >
+                    Sewer backup:
+                  </a>
+                </strong>{" "}
+                Aging sewer infrastructure in some Spokane neighborhoods makes
+                sewer backup a real risk — especially after heavy rain or
+                snowmelt events that overwhelm municipal systems. Sewer backup
+                repair involves not just the structural materials but proper
+                sanitization and odor treatment.
               </li>
             </ul>
 
@@ -565,6 +602,7 @@ export default function WaterDamageRepairSpokane() {
                 This becomes the foundation of your claim and the benchmark
                 against which repair costs are measured.
               </li>
+
               <li className="arrow-list">
                 <strong>Moisture logs and drying records:</strong> Drying
                 documentation — daily moisture readings across all affected
@@ -572,6 +610,7 @@ export default function WaterDamageRepairSpokane() {
                 is appropriate rather than premature. Adjusters rely on this
                 data to approve reconstruction scope.
               </li>
+
               <li className="arrow-list">
                 <strong>
                   Repair estimates aligned with insurance standards:
@@ -580,6 +619,7 @@ export default function WaterDamageRepairSpokane() {
                 tools that insurers recognize, which reduces friction and
                 back-and-forth during the claims process.
               </li>
+
               <li className="arrow-list">
                 <strong>Working directly with your adjuster:</strong> We
                 communicate with your insurance adjuster throughout the process
@@ -610,34 +650,61 @@ export default function WaterDamageRepairSpokane() {
                   <th>Key Considerations</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
-                  <td>Burst pipe</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/burst-pipe-damage"
+                    >
+                      Burst pipe
+                    </a>
+                  </td>
                   <td>Drywall, insulation, flooring, painting</td>
                   <td>Scope depends on how long water ran before detection</td>
                 </tr>
+
                 <tr>
-                  <td>Basement flooding / snowmelt</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/flood-damage"
+                    >
+                      Basement flooding / snowmelt
+                    </a>
+                  </td>
                   <td>Subfloor, drywall, insulation, flooring, cabinetry</td>
                   <td>Finished basements require full reconstruction</td>
                 </tr>
+
                 <tr>
                   <td>Ice dam</td>
                   <td>Ceiling drywall, attic insulation, painting</td>
                   <td>Attic moisture must be fully remediated before repair</td>
                 </tr>
+
                 <tr>
                   <td>Appliance failure</td>
                   <td>Subfloor, flooring, ceiling below (if multi-story)</td>
                   <td>Check for water migration to adjacent rooms</td>
                 </tr>
+
                 <tr>
                   <td>Roof leak / storm damage</td>
                   <td>Ceiling drywall, insulation, painting</td>
                   <td>Roof must be addressed before interior repair begins</td>
                 </tr>
+
                 <tr>
-                  <td>Sewer backup</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/sewage-backup"
+                    >
+                      Sewer backup
+                    </a>
+                  </td>
                   <td>Flooring, drywall, subfloor, full sanitization</td>
                   <td>
                     Category 3 water — requires certified biohazard handling
@@ -654,11 +721,20 @@ export default function WaterDamageRepairSpokane() {
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>
-              , we handle the full recovery — from 24/7 emergency response and
-              water extraction through complete reconstruction and final
-              walkthrough. Our team is IICRC-certified, locally based in
-              Spokane, and experienced with the specific water damage patterns
-              that affect homes in this region.
+              , we handle the full recovery — from 24/7 emergency response and{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flooding-from-fire"
+              >
+                water extraction
+              </a>{" "}
+              through{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                complete reconstruction
+              </a>{" "}
+              and final walkthrough. Our team is IICRC-certified, locally based
+              in Spokane, and experienced with the specific water damage
+              patterns that affect homes in this region.
             </p>
 
             <p>

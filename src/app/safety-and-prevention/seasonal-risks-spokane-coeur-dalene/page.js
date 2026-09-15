@@ -156,10 +156,14 @@ export default function SeasonalRisksSpokaneCDA() {
                   CONTACT US ONLINE
                 </a>
               </h2>
+
               <p>
-                If you’re dealing with active water intrusion, smoke odor, or
-                weather damage, time matters. The sooner you act, the smaller
-                the damage footprint usually stays.
+                If you’re dealing with active{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water intrusion
+                </a>
+                , smoke odor, or weather damage, time matters. The sooner you
+                act, the smaller the damage footprint usually stays.
               </p>
             </div>
 
@@ -179,15 +183,21 @@ export default function SeasonalRisksSpokaneCDA() {
                 Many emergencies are preventable (or at least less catastrophic)
                 with early action.
               </li>
+
               <li className="arrow-list">
-                Damage often compounds: water leads to mold; smoke leads to
-                odor; freezing leads to pipe failure; roof issues become
-                interior leaks.
+                Damage often compounds:{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water damage
+                </a>{" "}
+                leads to mold; smoke leads to odor; freezing leads to pipe
+                failure; roof issues become interior leaks.
               </li>
+
               <li className="arrow-list">
                 Restoration timelines and insurance documentation tend to go
                 smoother when damage is addressed quickly and properly.
               </li>
+
               <li className="arrow-list">
                 Knowing local patterns helps you spot warning signs before the
                 situation becomes an emergency.
@@ -202,6 +212,7 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <div className="yellow-box">
               <h3>Quick Regional Reality Check</h3>
+
               <p>
                 Inland Northwest damage is rarely “random.” It follows
                 predictable seasonal patterns—freeze events, snowmelt + rain,
@@ -224,24 +235,41 @@ export default function SeasonalRisksSpokaneCDA() {
             <p>Common winter hazards include:</p>
 
             <ul>
-              <li className="arrow-list">Frozen and burst pipes</li>
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  Frozen and burst pipes
+                </a>
+              </li>
+
               <li className="arrow-list">Ice dams along rooflines</li>
+
               <li className="arrow-list">Roof stress from snow load</li>
+
               <li className="arrow-list">
                 Interior water damage from melting snow
               </li>
+
               <li className="arrow-list">
                 Heating system malfunctions and increased fire risk
               </li>
             </ul>
 
             <p>
-              Frozen pipes are one of the biggest winter culprits. Water expands
-              when it freezes, and pipes in exterior walls, crawl spaces,
-              basements, garages, and poorly insulated areas are especially
-              vulnerable. Once a pipe ruptures, water can spread fast—behind
-              walls, under floors, into insulation—sometimes before anyone
-              realizes it’s happening.
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                Frozen pipes
+              </a>{" "}
+              are one of the biggest winter culprits. Water expands when it
+              freezes, and pipes in exterior walls, crawl spaces, basements,
+              garages, and poorly insulated areas are especially vulnerable.
+              Once a pipe ruptures, water can spread fast—behind walls, under
+              floors, into insulation—sometimes before anyone realizes it’s
+              happening.
             </p>
 
             <p>
@@ -252,8 +280,14 @@ export default function SeasonalRisksSpokaneCDA() {
             </p>
 
             <p>
-              If you’re dealing with winter water damage or a burst pipe
-              situation, our{" "}
+              If you’re dealing with winter water damage or a{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe situation
+              </a>
+              , our{" "}
               <a className="underline-link" href="/residential/water-damage">
                 water damage restoration services
               </a>{" "}
@@ -274,21 +308,38 @@ export default function SeasonalRisksSpokaneCDA() {
             <p>Common spring hazards include:</p>
 
             <ul>
-              <li className="arrow-list">Basement flooding</li>
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Basement flooding
+                </a>
+              </li>
+
               <li className="arrow-list">Crawl space saturation</li>
+
               <li className="arrow-list">
                 Foundation seepage and hydrostatic pressure issues
               </li>
+
               <li className="arrow-list">Roof leaks from winter wear</li>
+
               <li className="arrow-list">
                 Mold growth from lingering moisture
               </li>
             </ul>
 
             <p>
-              Spring flooding isn’t just “river properties.” It can be a grading
-              issue, a clogged gutter issue, a sump pump issue, or a “the ground
-              is saturated and now your foundation is sweating” issue. Water
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                Spring flooding
+              </a>{" "}
+              isn’t just “river properties.” It can be a grading issue, a
+              clogged gutter issue, a sump pump issue, or a “the ground is
+              saturated and now your foundation is sweating” issue. Water
               follows physics, not optimism.
             </p>
 
@@ -330,13 +381,24 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <ul>
               <li className="arrow-list">Wildfire proximity and ember risk</li>
-              <li className="arrow-list">Smoke and soot infiltration</li>
+
+              <li className="arrow-list">
+                <a
+                  className="underline-link"
+                  href="/residential/fire-and-smoke"
+                >
+                  Smoke and soot infiltration
+                </a>
+              </li>
+
               <li className="arrow-list">
                 Odor contamination in porous materials
               </li>
+
               <li className="arrow-list">
                 Electrical strain from prolonged heat
               </li>
+
               <li className="arrow-list">
                 Power outages impacting HVAC and sump systems
               </li>
@@ -381,14 +443,20 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <ul>
               <li className="arrow-list">
-                Wind damage to shingles, flashing, and siding
+                <a className="underline-link" href="/residential/weather">
+                  Wind damage
+                </a>{" "}
+                to shingles, flashing, and siding
               </li>
+
               <li className="arrow-list">
                 Gutter clogs causing overflow and foundation pooling
               </li>
+
               <li className="arrow-list">
                 Early freeze events catching plumbing unprepared
               </li>
+
               <li className="arrow-list">
                 Interior leaks from summer or spring issues that never got
                 addressed
@@ -422,10 +490,14 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <p>
               Here’s the not-fun truth: seasonal hazards rarely stay in their
-              lane. Water damage can lead to mold. Smoke exposure can lead to
-              persistent odor. Roof issues can become structural damage. The
-              longer conditions persist, the more expensive and invasive
-              restoration tends to become.
+              lane.{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                Water damage
+              </a>{" "}
+              can lead to mold. Smoke exposure can lead to persistent odor. Roof
+              issues can become structural damage. The longer conditions
+              persist, the more expensive and invasive restoration tends to
+              become.
             </p>
 
             <p>
@@ -434,17 +506,25 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <ul>
               <li className="arrow-list">
-                Winter pipe burst → wet drywall/insulation → trapped moisture →
-                microbial growth
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  Winter pipe burst
+                </a>{" "}
+                → wet drywall/insulation → trapped moisture → microbial growth
               </li>
+
               <li className="arrow-list">
                 Spring seepage → elevated humidity → musty odor → material
                 deterioration
               </li>
+
               <li className="arrow-list">
                 Summer smoke → HVAC contamination → recurring odor indoors even
                 after air clears
               </li>
+
               <li className="arrow-list">
                 Fall roof damage → slow leak → hidden rot → winter freeze makes
                 it worse
@@ -466,6 +546,7 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <div className="yellow-box">
               <h3>When “Wait and See” Gets Expensive</h3>
+
               <p>
                 If water is actively spreading, materials are staying wet, odor
                 is increasing, or you see staining, warping, bubbling paint, or
@@ -506,9 +587,17 @@ export default function SeasonalRisksSpokaneCDA() {
 
             <div className="black-box">
               <h2>TALK TO A LOCAL TEAM TODAY</h2>
+
               <p>
-                If you’re seeing signs of water intrusion, smoke odor, or
-                weather-related damage, don’t gamble on it staying small. Call{" "}
+                If you’re seeing signs of{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water intrusion
+                </a>
+                , smoke odor, or{" "}
+                <a className="underline-link" href="/residential/weather">
+                  weather-related damage
+                </a>
+                , don’t gamble on it staying small. Call{" "}
                 <a className="underline-link" href="tel:5096467488">
                   (509) 646-7488
                 </a>{" "}
@@ -527,6 +616,7 @@ export default function SeasonalRisksSpokaneCDA() {
               links={Links}
               list={List}
             />
+
             <UncertainTo />
           </div>
         </div>
