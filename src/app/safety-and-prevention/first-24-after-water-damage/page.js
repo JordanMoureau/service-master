@@ -112,7 +112,6 @@ export const metadata = {
 
 // JSON-LD
 const jsonLd = [
-  // Page entity
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -147,7 +146,6 @@ const jsonLd = [
     ],
   },
 
-  // Breadcrumbs
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -175,7 +173,6 @@ const jsonLd = [
     ],
   },
 
-  // Business / service info for rich results
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -243,15 +240,19 @@ export default function First24HoursAfterWaterDamage() {
             <h1>
               What to Do in the First 24 Hours After Water Damage in Your Home
             </h1>
+
             <h2>IMMEDIATE WATER DAMAGE STEPS FOR SPOKANE &amp; NORTH IDAHO</h2>
             <h3>Safety, Damage Control, and What to Do Next</h3>
 
             <p>
-              Water damage is one of those “how is this real life right now?”
-              moments. It’s overwhelming, it spreads fast, and the clock starts
-              ticking immediately. The first 24 hours are critical for reducing
-              damage, protecting your health, and preventing issues like mold
-              growth and structural deterioration.
+              <a className="underline-link" href="/residential/water-damage">
+                Water damage
+              </a>{" "}
+              is one of those “how is this real life right now?” moments. It’s
+              overwhelming, it spreads fast, and the clock starts ticking
+              immediately. The first 24 hours are critical for reducing damage,
+              protecting your health, and preventing issues like mold growth and
+              structural deterioration.
             </p>
 
             <p>
@@ -281,6 +282,7 @@ export default function First24HoursAfterWaterDamage() {
             </p>
 
             <h3>How water damage leads to mold growth and health risks</h3>
+
             <p>
               Moisture creates ideal conditions for mold, which can begin
               developing within 24 to 48 hours. Mold spores thrive in damp
@@ -291,6 +293,7 @@ export default function First24HoursAfterWaterDamage() {
             </p>
 
             <h3>The structural and property impacts of delayed response</h3>
+
             <p>
               Waiting too long can lead to sagging ceilings, warped flooring,
               rotting wood, and weakened walls. In severe cases, water can
@@ -309,6 +312,7 @@ export default function First24HoursAfterWaterDamage() {
             </p>
 
             <h3>Which utilities should be turned off to prevent hazards?</h3>
+
             <p>
               If you can do so safely, shut off these utilities to reduce risk:
             </p>
@@ -318,10 +322,12 @@ export default function First24HoursAfterWaterDamage() {
                 <strong>Electricity:</strong> Turn off power at the main breaker
                 to prevent shocks or electrical fire risk.
               </li>
+
               <li className="arrow-list">
                 <strong>Gas:</strong> Shut off the gas supply if water has
                 reached appliances or you suspect a leak.
               </li>
+
               <li className="arrow-list">
                 <strong>Water supply:</strong> Stop the main water line to
                 prevent continued flooding.
@@ -331,19 +337,23 @@ export default function First24HoursAfterWaterDamage() {
             <h3>
               How to assess structural integrity and avoid electrical dangers
             </h3>
+
             <ul>
               <li className="arrow-list">
                 Look for sagging ceilings, bulging drywall, or warped walls and
                 floors.
               </li>
+
               <li className="arrow-list">
                 Identify pooled water areas—heavy saturation can weaken
                 materials.
               </li>
+
               <li className="arrow-list">
                 Wear protective gear: gloves, boots, and a mask if contamination
                 or debris is present.
               </li>
+
               <li className="arrow-list">
                 Avoid stepping into water if outlets, cords, or electrical
                 panels may be affected.
@@ -371,32 +381,68 @@ export default function First24HoursAfterWaterDamage() {
             </p>
 
             <h3>How to identify common water damage sources</h3>
+
             <ul>
               <li className="arrow-list">
-                <strong>Burst pipes:</strong> Sudden water flow, new pooling,
-                wet drywall, or water sounds inside walls.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/burst-pipe-damage"
+                  >
+                    Burst pipes:
+                  </a>
+                </strong>{" "}
+                Sudden water flow, new pooling, wet drywall, or water sounds
+                inside walls.
               </li>
+
               <li className="arrow-list">
                 <strong>Leaking appliances:</strong> Check around washing
                 machines, refrigerators, dishwashers, and water heaters.
               </li>
+
               <li className="arrow-list">
                 <strong>Roof leaks:</strong> Look for ceiling stains, attic
                 dampness, or dripping after storms or snowmelt.
               </li>
             </ul>
 
+            <p>
+              If the water is coming from outside the structure, rapid snowmelt,
+              heavy rain, or rising surface water, see our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage restoration
+              </a>{" "}
+              information for the next steps specific to residential flooding.
+            </p>
+
             <h3>Temporary measures to halt water flow safely</h3>
+
             <ul>
               <li className="arrow-list">
                 Use towels and buckets to catch drips and reduce spread.
               </li>
+
               <li className="arrow-list">
                 Apply waterproof tape to small leaks as a very short-term patch.
               </li>
+
               <li className="arrow-list">
-                If flooding is active or the source is unclear, contact a water
-                damage restoration company immediately.
+                If{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  flooding
+                </a>{" "}
+                is active or the source is unclear, contact a{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water damage restoration company
+                </a>{" "}
+                immediately.
               </li>
             </ul>
 
@@ -412,14 +458,17 @@ export default function First24HoursAfterWaterDamage() {
             <h3>
               What types of photos and videos best capture damage evidence?
             </h3>
+
             <ul>
               <li className="arrow-list">
                 Take wide shots of each room to show the overall impact.
               </li>
+
               <li className="arrow-list">
                 Take close-ups of damaged materials, stains, swelling, and wet
                 contents.
               </li>
+
               <li className="arrow-list">
                 Record a walkthrough video from the entry point through every
                 affected area.
@@ -427,14 +476,17 @@ export default function First24HoursAfterWaterDamage() {
             </ul>
 
             <h3>Create a detailed inventory and keep records</h3>
+
             <ul>
               <li className="arrow-list">
                 List damaged items: furniture, rugs, electronics, clothing,
                 children’s items, and stored goods.
               </li>
+
               <li className="arrow-list">
                 Keep receipts for emergency supplies and temporary fixes.
               </li>
+
               <li className="arrow-list">
                 Save all emails, claim numbers, estimates, and restoration
                 documentation in one place.
@@ -451,30 +503,57 @@ export default function First24HoursAfterWaterDamage() {
             </p>
 
             <h3>When you need a certified water damage restoration company</h3>
+
             <ul>
               <li className="arrow-list">
                 The affected area is large or water has entered walls, floors,
                 insulation, or ceilings.
               </li>
+
               <li className="arrow-list">
-                The water may be contaminated (gray water or sewage).
+                The water may be contaminated, including gray water or a{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/sewage-backup"
+                >
+                  sewage backup
+                </a>
+                .
               </li>
+
               <li className="arrow-list">
                 You suspect mold growth or cannot dry the area quickly.
               </li>
+
               <li className="arrow-list">
                 There is any electrical risk or structural instability.
               </li>
             </ul>
 
+            <p>
+              Sewage and drain backups should not be treated like ordinary clean
+              water losses. Contaminated water can affect flooring, drywall,
+              furnishings, and other porous materials. Learn more about{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup cleanup and restoration
+              </a>
+              .
+            </p>
+
             <h3>How to notify your insurance provider promptly</h3>
+
             <ul>
               <li className="arrow-list">
                 Share what happened and when it started (as best as you know).
               </li>
+
               <li className="arrow-list">
                 Provide photos, videos, and your inventory list.
               </li>
+
               <li className="arrow-list">
                 Give contact details and keep notes on who you spoke with.
               </li>
@@ -501,34 +580,54 @@ export default function First24HoursAfterWaterDamage() {
             </p>
 
             <h3>How to remove standing water and increase airflow</h3>
+
             <ul>
               <li className="arrow-list">
-                Use a wet/dry vacuum to remove standing water (only if the water
-                is not contaminated and power is safe).
+                Use a wet/dry vacuum to remove standing water only if the water
+                is not contaminated and power is safe.
               </li>
+
               <li className="arrow-list">
                 Set up fans to move air across wet surfaces and toward exits.
               </li>
+
               <li className="arrow-list">
                 Use dehumidifiers to reduce indoor humidity and speed drying.
               </li>
+
               <li className="arrow-list">
                 Open windows when weather allows, but avoid bringing in damp
                 outside air.
               </li>
             </ul>
 
+            <p>
+              Do not attempt ordinary DIY water removal after a{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup
+              </a>
+              . Contaminated water requires additional protective measures and
+              professional cleanup procedures.
+            </p>
+
             <h3>Precautions to prevent mold during drying and disinfection</h3>
+
             <ul>
               <li className="arrow-list">
                 Keep indoor humidity below 50% when possible.
               </li>
+
               <li className="arrow-list">
                 Clean hard surfaces with water and detergent.
               </li>
+
               <li className="arrow-list">
                 Check daily for musty smells, spotting, or new discoloration.
               </li>
+
               <li className="arrow-list">
                 Remove and discard porous items that cannot be dried quickly.
               </li>
@@ -545,17 +644,27 @@ export default function First24HoursAfterWaterDamage() {
                   <th>Effectiveness</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
-                  <td>Burst Pipes</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/burst-pipe-damage"
+                    >
+                      Burst Pipes
+                    </a>
+                  </td>
                   <td>Shut off main water supply</td>
                   <td>High</td>
                 </tr>
+
                 <tr>
                   <td>Leaking Appliances</td>
                   <td>Seal leaks temporarily</td>
                   <td>Medium</td>
                 </tr>
+
                 <tr>
                   <td>Roof Leaks</td>
                   <td>Use buckets to catch water</td>
@@ -570,8 +679,11 @@ export default function First24HoursAfterWaterDamage() {
             <p>
               The first 24 hours matter. If you’re dealing with active water,
               soaked materials, or damage you can’t fully see yet, it’s smart to
-              bring in trained restoration professionals with proper drying and
-              moisture monitoring equipment.
+              bring in trained{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage restoration professionals
+              </a>{" "}
+              with proper drying and moisture monitoring equipment.
             </p>
 
             <p>
@@ -581,6 +693,28 @@ export default function First24HoursAfterWaterDamage() {
               </a>
               , our team helps homeowners stabilize water loss quickly, dry and
               dehumidify the structure, and prevent avoidable secondary damage.
+              We respond to losses including{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipes
+              </a>
+              ,{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                residential flooding
+              </a>
+              , and{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backups
+              </a>
+              .
             </p>
 
             <div className="black-box">
@@ -604,6 +738,7 @@ export default function First24HoursAfterWaterDamage() {
               links={Links}
               list={List}
             />
+
             <UncertainTo />
           </div>
         </div>

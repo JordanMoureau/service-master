@@ -97,6 +97,7 @@ const jsonLd = [
       height: 630,
     },
   },
+
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -122,6 +123,7 @@ const jsonLd = [
       },
     ],
   },
+
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -208,9 +210,33 @@ export default function InsuranceResidentialPage() {
             <p>
               When the unexpected happens, the experts at ServiceMaster Restore
               are here to help your policyholders begin returning their homes
-              and lives to normal. Whether the damage involves water, fire,
-              smoke, mold, or several related problems, our team responds
-              quickly to assess the loss and begin restoration.
+              and lives to normal. Whether the damage involves{" "}
+              <Link href="/residential/water-damage" className="underline-link">
+                water damage
+              </Link>
+              , fire, smoke, mold, or several related problems, our team
+              responds quickly to assess the loss and begin restoration.
+            </p>
+
+            <p>
+              Residential water losses can take many forms. A{" "}
+              <Link
+                href="/residential/water-damage/burst-pipe-damage"
+                className="underline-link"
+              >
+                burst pipe
+              </Link>{" "}
+              may release water rapidly through walls, ceilings, and flooring,
+              while{" "}
+              <Link
+                href="/residential/water-damage/flood-damage"
+                className="underline-link"
+              >
+                flood damage
+              </Link>{" "}
+              can affect basements, crawl spaces, and multiple building
+              materials at once. Identifying the source and extent of the loss
+              helps establish the restoration scope early in the claim.
             </p>
 
             <p>
@@ -237,6 +263,21 @@ export default function InsuranceResidentialPage() {
               A fast response may help limit additional damage, reduce
               disruption, and establish a clearer restoration plan for the
               policyholder and insurance carrier.
+            </p>
+
+            <p>
+              That is especially important when the loss involves contaminated
+              water. A{" "}
+              <Link
+                href="/residential/water-damage/sewage-backup"
+                className="underline-link"
+              >
+                sewage backup
+              </Link>{" "}
+              can require specialized extraction, cleaning, sanitization, and
+              removal of affected porous materials. These conditions often
+              create a different restoration scope than a clean-water plumbing
+              leak.
             </p>
 
             <p>
@@ -270,6 +311,50 @@ export default function InsuranceResidentialPage() {
             </p>
 
             <p>
+              For{" "}
+              <Link href="/residential/water-damage" className="underline-link">
+                residential water damage claims
+              </Link>
+              , documentation may include the source of the loss, affected rooms
+              and materials, water extraction records, moisture readings, drying
+              progress, photographs, and repair recommendations.
+            </p>
+
+            <p>
+              Different sources of water loss may also create very different
+              claims.{" "}
+              <Link
+                href="/residential/water-damage/burst-pipe-damage"
+                className="underline-link"
+              >
+                Burst pipe damage
+              </Link>{" "}
+              can spread through several levels of a home before the water is
+              shut off, while{" "}
+              <Link
+                href="/residential/water-damage/flood-damage"
+                className="underline-link"
+              >
+                residential flooding
+              </Link>{" "}
+              may affect foundations, subflooring, drywall, insulation, and
+              contents across a larger area.
+            </p>
+
+            <p>
+              Fire losses can also involve significant water damage from
+              firefighting efforts or sprinkler systems. When that happens, our{" "}
+              <Link
+                href="/residential/water-damage/flooding-from-fire"
+                className="underline-link"
+              >
+                fire-related water damage restoration
+              </Link>{" "}
+              process addresses standing water, saturated materials, and hidden
+              moisture alongside the fire and smoke restoration work.
+            </p>
+
+            <p>
               Insurance coverage and claim decisions remain the responsibility
               of the carrier and are determined by the applicable policy.
             </p>
@@ -288,10 +373,12 @@ export default function InsuranceResidentialPage() {
                 Walking the policyholder through recovery information and
                 setting expectations for the restoration process
               </li>
+
               <li className="arrow-list">
-                Communicating with the insurance agent about the policyholder’s
-                situation and project status
+                Communicating with the insurance agent about the
+                policyholder&apos;s situation and project status
               </li>
+
               <li className="arrow-list">
                 Relaying the scope of damage, emergency services performed, and
                 other relevant information to the claims representative
@@ -305,6 +392,32 @@ export default function InsuranceResidentialPage() {
               project information in a mobile environment. Available information
               may include photos, estimates, mitigation records, drying data,
               contents information, and status updates.
+            </p>
+
+            <p>
+              These records can be especially useful when documenting{" "}
+              <Link
+                href="/residential/water-damage/burst-pipe-damage"
+                className="underline-link"
+              >
+                burst pipe losses
+              </Link>
+              ,{" "}
+              <Link
+                href="/residential/water-damage/flood-damage"
+                className="underline-link"
+              >
+                flooding
+              </Link>
+              ,{" "}
+              <Link
+                href="/residential/water-damage/sewage-backup"
+                className="underline-link"
+              >
+                sewage backup damage
+              </Link>
+              , and other water-related claims where moisture can migrate beyond
+              the immediately visible area.
             </p>
 
             <p>

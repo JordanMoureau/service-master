@@ -130,15 +130,25 @@ export default function TurnOffWaterSupplyEmergency() {
             <p>
               When water is actively leaking, the best “tool” you have is speed.
               Knowing how to shut off your water supply can be the difference
-              between a small cleanup and a major restoration project. This
-              guide walks you through locating and operating your main shut-off
-              valve, using fixture shut-off valves when appropriate, and what to
-              do immediately after you stop the flow.
+              between a small cleanup and a major{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage restoration
+              </a>{" "}
+              project. This guide walks you through locating and operating your
+              main shut-off valve, using fixture shut-off valves when
+              appropriate, and what to do immediately after you stop the flow.
             </p>
 
             <div className="yellow-box">
               <h3>
-                Active leak or flooding? Call{" "}
+                Active leak or{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  flooding
+                </a>
+                ? Call{" "}
                 <a className="underline-link" href="tel:15095355440">
                   (509) 535-5440
                 </a>{" "}
@@ -387,6 +397,52 @@ export default function TurnOffWaterSupplyEmergency() {
               </li>
             </ul>
 
+            <p>
+              If a pipe has already ruptured and water has spread into walls,
+              floors, ceilings, or insulation, shutting off the supply is only
+              the first step. Learn more about{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage restoration
+              </a>{" "}
+              and the drying process needed after the leak is stopped.
+            </p>
+
+            <h2>WHEN THE WATER SOURCE ISN’T A SUPPLY LINE</h2>
+
+            <h3>Flooding and Sewage Backups Need a Different Response</h3>
+
+            <p>
+              Turning off your main water supply can stop a broken pipe or
+              plumbing leak, but it will not stop water entering from heavy
+              rain, snowmelt, groundwater, or another external source. If water
+              is entering your basement, crawl space, or home from outside, see
+              our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                residential flood damage restoration
+              </a>{" "}
+              information for the appropriate next steps.
+            </p>
+
+            <p>
+              The same is true for contaminated water. If wastewater is backing
+              up through a drain or toilet, avoid direct contact with the water
+              and affected materials. A{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup
+              </a>{" "}
+              requires different safety, extraction, cleaning, and sanitization
+              procedures than an ordinary plumbing leak.
+            </p>
+
             <h2>PREVENTION &amp; PREPAREDNESS FOR FUTURE EMERGENCIES</h2>
 
             <h3>Make the Next “Oh No” Moment Way Less Dramatic</h3>
@@ -436,8 +492,12 @@ export default function TurnOffWaterSupplyEmergency() {
             </ul>
 
             <p>
-              If you’re looking for restoration support after a leak—or want to
-              understand your options for preventing future damage—{" "}
+              If you’re looking for{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                restoration support after a leak
+              </a>{" "}
+              — or want to understand your options for preventing future damage
+              —{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>{" "}

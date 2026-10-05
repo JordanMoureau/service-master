@@ -112,7 +112,6 @@ export const metadata = {
 
 // JSON-LD
 const jsonLd = [
-  // Page entity
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -147,7 +146,6 @@ const jsonLd = [
     ],
   },
 
-  // Breadcrumbs
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -175,7 +173,6 @@ const jsonLd = [
     ],
   },
 
-  // FAQ schema for insurance questions
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -215,7 +212,6 @@ const jsonLd = [
     ],
   },
 
-  // Business / service info
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -284,18 +280,22 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
               Does Homeowners Insurance Cover Water Damage in Spokane? What You
               Need to Know
             </h1>
+
             <h2>
               WATER DAMAGE INSURANCE COVERAGE FOR SPOKANE &amp; NORTH IDAHO
               HOMEOWNERS
             </h2>
+
             <h3>What's Covered, What's Not, and How to File a Strong Claim</h3>
 
             <p>
-              Water damage is stressful enough on its own. Then comes the
-              question everyone dreads: is this covered? The honest answer is —
-              it depends on how the damage happened, and most homeowners don't
-              know the difference until they're already in the middle of a
-              claim.
+              <a className="underline-link" href="/residential/water-damage">
+                Water damage
+              </a>{" "}
+              is stressful enough on its own. Then comes the question everyone
+              dreads: is this covered? The honest answer is — it depends on how
+              the damage happened, and most homeowners don't know the difference
+              until they're already in the middle of a claim.
             </p>
 
             <p>
@@ -318,6 +318,7 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             <h2>
               WHAT DOES HOMEOWNERS INSURANCE TYPICALLY COVER FOR WATER DAMAGE?
             </h2>
+
             <h3>Sudden and Accidental Damage Is Usually Covered</h3>
 
             <p>
@@ -330,24 +331,35 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             <h3>
               Water damage scenarios typically covered by homeowners insurance
             </h3>
+
             <ul>
               <li className="arrow-list">
-                <strong>Burst pipes:</strong> A pipe that freezes and bursts
-                overnight is generally considered sudden and accidental. Most
-                standard policies cover the resulting water damage to your
-                walls, floors, and belongings.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/burst-pipe-damage"
+                  >
+                    Burst pipes:
+                  </a>
+                </strong>{" "}
+                A pipe that freezes and bursts overnight is generally considered
+                sudden and accidental. Most standard policies cover the
+                resulting water damage to your walls, floors, and belongings.
               </li>
+
               <li className="arrow-list">
                 <strong>Appliance failures:</strong> A washing machine hose that
                 fails unexpectedly, a water heater that cracks, or a dishwasher
                 that malfunctions and floods your kitchen are typically covered
                 events.
               </li>
+
               <li className="arrow-list">
                 <strong>Accidental overflow:</strong> A bathtub or sink that
                 overflows and damages flooring or ceilings below is usually
                 covered as long as it wasn't due to neglect.
               </li>
+
               <li className="arrow-list">
                 <strong>Roof leaks from storm damage:</strong> If a storm causes
                 direct damage to your roof and water enters as a result, the
@@ -368,6 +380,7 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </div>
 
             <h2>WHAT IS NOT COVERED BY STANDARD HOMEOWNERS INSURANCE?</h2>
+
             <h3>The Exclusions That Catch Most Spokane Homeowners Off Guard</h3>
 
             <p>
@@ -378,31 +391,50 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </p>
 
             <h3>Common water damage exclusions in standard policies</h3>
+
             <ul>
               <li className="arrow-list">
-                <strong>Flooding from external sources:</strong> Rising rivers,
-                storm surge, surface water, and ground flooding are not covered
-                by standard homeowners insurance. Flood insurance is a separate
-                policy entirely.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/flood-damage"
+                  >
+                    Flooding from external sources:
+                  </a>
+                </strong>{" "}
+                Rising rivers, storm surge, surface water, and ground flooding
+                are not covered by standard homeowners insurance. Flood
+                insurance is a separate policy entirely.
               </li>
+
               <li className="arrow-list">
                 <strong>Gradual leaks and maintenance issues:</strong> A slow
                 drip under a sink that causes mold and rot over months is
                 typically denied as a maintenance failure, not a sudden event.
                 Insurers expect homeowners to address issues as they arise.
               </li>
+
               <li className="arrow-list">
-                <strong>Sewer and drain backup:</strong> Water backing up
-                through a floor drain or toilet due to a sewer line issue is
-                excluded in most standard policies. This is usually available as
-                a separate endorsement.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/sewage-backup"
+                  >
+                    Sewer and drain backup:
+                  </a>
+                </strong>{" "}
+                Water backing up through a floor drain or toilet due to a sewer
+                line issue is excluded in most standard policies. This is
+                usually available as a separate endorsement.
               </li>
+
               <li className="arrow-list">
                 <strong>Groundwater and seepage:</strong> Water seeping through
                 a foundation, basement walls, or a crawl space is generally
                 excluded as a moisture or structural issue rather than a covered
                 water event.
               </li>
+
               <li className="arrow-list">
                 <strong>Mold remediation (in some cases):</strong> If mold
                 results from a covered water event, some policies include mold
@@ -412,19 +444,27 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </ul>
 
             <h2>FLOOD INSURANCE IN SPOKANE: A SEPARATE POLICY</h2>
+
             <h3>When You Need More Than a Standard Homeowners Policy</h3>
 
             <p>
               If your property is in or near a floodplain — or you simply want
-              protection against external flooding — you'll need a separate
-              flood insurance policy. In Spokane and North Idaho, spring
-              snowmelt and heavy rain events can create flooding risks that a
-              standard homeowners policy won't touch.
+              protection against external{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flooding
+              </a>{" "}
+              — you'll need a separate flood insurance policy. In Spokane and
+              North Idaho, spring snowmelt and heavy rain events can create
+              flooding risks that a standard homeowners policy won't touch.
             </p>
 
             <h3>
               Flood insurance options for Spokane and North Idaho homeowners
             </h3>
+
             <ul>
               <li className="arrow-list">
                 <strong>National Flood Insurance Program (NFIP):</strong>{" "}
@@ -432,16 +472,25 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
                 participating communities. Covers the structure and, with a
                 separate policy, personal contents.
               </li>
+
               <li className="arrow-list">
                 <strong>Private flood insurance:</strong> Private insurers
                 sometimes offer broader coverage or faster claims processing
                 than the NFIP. Worth comparing if you're in a higher-risk area.
               </li>
+
               <li className="arrow-list">
-                <strong>Sewer backup endorsements:</strong> Ask your current
-                insurer about adding a sewer or water backup rider to your
-                existing policy — it's often surprisingly affordable and covers
-                a common and expensive event.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/sewage-backup"
+                  >
+                    Sewer backup endorsements:
+                  </a>
+                </strong>{" "}
+                Ask your current insurer about adding a sewer or water backup
+                rider to your existing policy — it's often surprisingly
+                affordable and covers a common and expensive event.
               </li>
             </ul>
 
@@ -458,6 +507,7 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </div>
 
             <h2>HOW TO FILE A WATER DAMAGE INSURANCE CLAIM IN SPOKANE</h2>
+
             <h3>Steps That Help Your Claim Go Smoothly</h3>
 
             <p>
@@ -468,15 +518,24 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </p>
 
             <h3>Step one: Document everything before cleanup begins</h3>
+
             <ul>
               <li className="arrow-list">
                 Take photos and video of every affected room, wall, floor, and
                 ceiling before anything is moved or dried.
               </li>
+
               <li className="arrow-list">
-                Capture the source of the damage if visible — the burst pipe,
-                the failed appliance, the roof opening.
+                Capture the source of the damage if visible — the{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/burst-pipe-damage"
+                >
+                  burst pipe
+                </a>
+                , the failed appliance, the roof opening.
               </li>
+
               <li className="arrow-list">
                 Create a written list of damaged belongings with estimated
                 values.
@@ -484,12 +543,14 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </ul>
 
             <h3>Step two: Prevent further damage — but don't over-repair</h3>
+
             <ul>
               <li className="arrow-list">
                 You have an obligation under most policies to take reasonable
                 steps to prevent additional damage. Start drying, remove
                 standing water, and cover roof openings if safe to do so.
               </li>
+
               <li className="arrow-list">
                 Do not make permanent repairs before your adjuster has
                 inspected. Temporary mitigation is expected — major
@@ -498,16 +559,19 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </ul>
 
             <h3>Step three: Contact your insurer promptly</h3>
+
             <ul>
               <li className="arrow-list">
                 Report the damage as soon as possible. Most policies require
                 timely notification — delays can give insurers grounds to reduce
                 or deny a claim.
               </li>
+
               <li className="arrow-list">
                 Ask for your claim number and the name of your assigned
                 adjuster. Keep notes on every conversation.
               </li>
+
               <li className="arrow-list">
                 Request a copy of your full policy if you don't have one — you
                 have a right to know exactly what you're covered for.
@@ -515,16 +579,23 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </ul>
 
             <h3>Step four: Bring in a certified restoration company</h3>
+
             <ul>
               <li className="arrow-list">
-                A professional restoration company provides documented moisture
-                readings, drying logs, and written reports — all of which
-                support your claim and demonstrate the scope of damage.
+                A professional{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water damage restoration company
+                </a>{" "}
+                provides documented moisture readings, drying logs, and written
+                reports — all of which support your claim and demonstrate the
+                scope of damage.
               </li>
+
               <li className="arrow-list">
                 Restoration professionals work alongside adjusters regularly and
                 understand what documentation insurers need.
               </li>
+
               <li className="arrow-list">
                 Acting fast on mitigation also demonstrates good faith to your
                 insurer, which can support a stronger claim outcome.
@@ -532,6 +603,7 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </ul>
 
             <h2>WATER DAMAGE COVERAGE: QUICK REFERENCE</h2>
+
             <h3>What's Typically Covered vs. Excluded</h3>
 
             <table className="table">
@@ -542,37 +614,65 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
                   <th>Notes</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
-                  <td>Burst pipe (sudden)</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/burst-pipe-damage"
+                    >
+                      Burst pipe (sudden)
+                    </a>
+                  </td>
                   <td>Yes</td>
                   <td>Must be sudden, not a known slow leak</td>
                 </tr>
+
                 <tr>
                   <td>Appliance failure</td>
                   <td>Yes</td>
                   <td>Unexpected malfunction, not wear and tear</td>
                 </tr>
+
                 <tr>
                   <td>Storm-related roof leak</td>
                   <td>Yes</td>
                   <td>Must result from direct storm damage</td>
                 </tr>
+
                 <tr>
                   <td>Gradual / slow leak</td>
                   <td>No</td>
                   <td>Considered a maintenance failure</td>
                 </tr>
+
                 <tr>
-                  <td>Flooding (external)</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/flood-damage"
+                    >
+                      Flooding (external)
+                    </a>
+                  </td>
                   <td>No</td>
                   <td>Requires separate flood insurance</td>
                 </tr>
+
                 <tr>
-                  <td>Sewer / drain backup</td>
+                  <td>
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/sewage-backup"
+                    >
+                      Sewer / drain backup
+                    </a>
+                  </td>
                   <td>No (usually)</td>
                   <td>Available as endorsement on many policies</td>
                 </tr>
+
                 <tr>
                   <td>Foundation / groundwater seepage</td>
                   <td>No</td>
@@ -585,6 +685,7 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
               WATER DAMAGE RESTORATION IN SPOKANE &amp; NORTH IDAHO — WE WORK
               WITH YOUR INSURANCE
             </h2>
+
             <h3>Fast Response. Thorough Documentation. All Major Insurers.</h3>
 
             <p>
@@ -599,6 +700,32 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
             </p>
 
             <p>
+              Whether the loss involves{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe damage
+              </a>
+              ,{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flooding
+              </a>
+              , or a{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup
+              </a>
+              , documenting the source, affected materials, moisture levels, and
+              mitigation work helps establish a clear record of the loss.
+            </p>
+
+            <p>
               We work with all major insurance providers and can be on-site
               quickly to stabilize your home and start the restoration process —
               so you're not waiting, worrying, or watching the damage spread.
@@ -606,7 +733,11 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
 
             <div className="black-box">
               <p>
-                For 24/7 help with water damage in Spokane or North Idaho, call{" "}
+                For 24/7 help with{" "}
+                <a className="underline-link" href="/residential/water-damage">
+                  water damage in Spokane or North Idaho
+                </a>
+                , call{" "}
                 <a className="underline-link" href="tel:15095355440">
                   (509) 535-5440
                 </a>{" "}
@@ -625,6 +756,7 @@ export default function DoesHomeownersInsuranceCoverWaterDamageSpokane() {
               links={Links}
               list={List}
             />
+
             <UncertainTo />
           </div>
         </div>

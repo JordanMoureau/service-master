@@ -120,17 +120,20 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               Happen
             </h1>
 
-            <h2>WATER DAMAGE EMERGENCY PREP FOR SPOKANE &amp; NORTH IDAHO</h2>
+            <h2>WATER DAMAGE EMERGENCY PREP FOR SPOKANE & NORTH IDAHO</h2>
 
             <h3>
               Prevention Tips, Smart Upgrades, and a Simple Emergency Plan
             </h3>
 
             <p>
-              Water damage is the kind of chaos nobody schedules. It can ruin
-              floors, soak walls, destroy contents, and create mold-friendly
-              conditions fast. The good news is that most water emergencies are
-              preventable—or at least manageable—when you prepare ahead of time.
+              <a className="underline-link" href="/residential/water-damage">
+                Water damage
+              </a>{" "}
+              is the kind of chaos nobody schedules. It can ruin floors, soak
+              walls, destroy contents, and create mold-friendly conditions fast.
+              The good news is that most water emergencies are preventable—or at
+              least manageable—when you prepare ahead of time.
             </p>
 
             <p>
@@ -165,11 +168,16 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             <h3>How burst pipes and appliance leaks lead to water damage</h3>
 
             <p>
-              Burst pipes can happen during freezing temperatures, due to aging
-              or corroded plumbing, or from water pressure issues. Appliance
-              leaks often come from worn hoses, loose fittings, or internal
-              failures in washing machines, dishwashers, water heaters, and
-              refrigerators.
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                Burst pipes
+              </a>{" "}
+              can happen during freezing temperatures, due to aging or corroded
+              plumbing, or from water pressure issues. Appliance leaks often
+              come from worn hoses, loose fittings, or internal failures in
+              washing machines, dishwashers, water heaters, and refrigerators.
             </p>
 
             <ul>
@@ -194,8 +202,28 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               Some homes are simply more vulnerable because of exterior
               conditions and drainage. Foundation cracks, poor grading, roof
               issues, clogged gutters, and landscaping that pushes water toward
-              the structure can increase the chance of water
-              intrusion—especially during heavy rain or snowmelt.
+              the structure can increase the chance of{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                water intrusion
+              </a>
+              —especially during heavy rain or snowmelt.
+            </p>
+
+            <p>
+              Drain and sewer problems can create a different kind of water
+              emergency. If wastewater backs up through a floor drain, toilet,
+              or other plumbing fixture, avoid direct contact and treat the
+              affected area as contaminated. Learn more about{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup cleanup and restoration
+              </a>
+              .
             </p>
 
             <h2>PROTECT YOUR HOME’S EXTERIOR FROM WATER DAMAGE</h2>
@@ -334,7 +362,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               </li>
             </ul>
 
-            <h2>SMART HOME TECHNOLOGY FOR LEAK DETECTION &amp; PREVENTION</h2>
+            <h2>SMART HOME TECHNOLOGY FOR LEAK DETECTION & PREVENTION</h2>
 
             <h3>Catch Problems Early and Reduce Damage</h3>
 
@@ -353,8 +381,15 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             <p>
               Automatic shut-off valves can detect leaks and stop the main water
               supply to reduce damage. Smart sump pumps monitor water levels and
-              can activate to prevent basement flooding. Together, these tools
-              help protect your home during emergencies and severe weather.
+              can activate to prevent{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                basement flooding
+              </a>
+              . Together, these tools help protect your home during emergencies
+              and severe weather.
             </p>
 
             <div className="yellow-box">
@@ -419,7 +454,7 @@ export default function PrepareHomeForWaterDamageEmergencies() {
                 <tr>
                   <td>Non-Perishable Food</td>
                   <td>Sustains during emergencies</td>
-                  <td>3 days&apos; worth</td>
+                  <td>3 days' worth</td>
                 </tr>
 
                 <tr>
@@ -435,10 +470,23 @@ export default function PrepareHomeForWaterDamageEmergencies() {
             <p>
               Insurance coverage can vary by policy and by the source of the
               water. Many homeowners policies often cover sudden and accidental
-              water damage such as burst pipes or appliance failures. Flooding
-              from natural events typically requires separate flood insurance.
-              Review your policy, understand exclusions, and consider coverage
-              upgrades if your home is in a flood-prone area.
+              water damage such as{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipes
+              </a>{" "}
+              or appliance failures.{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                Flooding from natural events
+              </a>{" "}
+              typically requires separate flood insurance. Review your policy,
+              understand exclusions, and consider coverage upgrades if your home
+              is in a flood-prone area.
             </p>
 
             <table className="table">
@@ -453,13 +501,30 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               <tbody>
                 <tr>
                   <td>Homeowners Insurance</td>
-                  <td>Covers damage from burst pipes and appliance leaks</td>
+                  <td>
+                    Covers damage from{" "}
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/burst-pipe-damage"
+                    >
+                      burst pipes
+                    </a>{" "}
+                    and appliance leaks
+                  </td>
                   <td>Essential for most homeowners</td>
                 </tr>
 
                 <tr>
                   <td>Flood Insurance</td>
-                  <td>Covers damage from flooding events</td>
+                  <td>
+                    Covers damage from{" "}
+                    <a
+                      className="underline-link"
+                      href="/residential/water-damage/flood-damage"
+                    >
+                      flooding events
+                    </a>
+                  </td>
                   <td>Important in flood-prone areas</td>
                 </tr>
 
@@ -473,17 +538,15 @@ export default function PrepareHomeForWaterDamageEmergencies() {
               </tbody>
             </table>
 
-            <h2>
-              GET HELP WITH WATER DAMAGE PREVENTION &amp; EMERGENCY RESPONSE
-            </h2>
+            <h2>GET HELP WITH WATER DAMAGE PREVENTION & EMERGENCY RESPONSE</h2>
 
-            <h3>Support for Spokane &amp; North Idaho Homeowners</h3>
+            <h3>Support for Spokane & North Idaho Homeowners</h3>
 
             <p>
               Prevention matters—but response matters too. If you’re seeing
               moisture, leaks, staining, or you want help assessing your risk,{" "}
-              <a className="underline-link" href="/">
-                ServiceMaster by Compass
+              <a className="underline-link" href="/residential/water-damage">
+                ServiceMaster by Compass water damage restoration
               </a>{" "}
               can help you plan, prevent, and respond with confidence.
             </p>

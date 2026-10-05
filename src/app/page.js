@@ -10,12 +10,14 @@ import Hero from "./components/Hero";
 import GetHelpNow from "./components/GetHelpNow";
 import SMCPopup from "./components/HomePopUp";
 
-// app/page.tsx (Home)
+// app/page.js (Home)
 
 export const metadata = {
   title: "Comprehensive Restoration Services | ServiceMaster by Compass",
+
   description:
     "Emergency water damage & restoration in Spokane & Coeur d’Alene. Fast response, certified technicians, and clear guidance from first call to full recovery.",
+
   alternates: {
     canonical: "https://smcfireandwater.com/",
   },
@@ -35,10 +37,14 @@ export const metadata = {
   openGraph: {
     title:
       "Disaster Restoration in Spokane — Water, Fire & Mold | ServiceMaster by Compass",
+
     description:
       "24/7 emergency restoration for homes & businesses in Spokane, Spokane Valley & Coeur d’Alene. Water removal & drying, fire & smoke cleanup, mold remediation.",
+
     url: "https://smcfireandwater.com/",
+
     siteName: "ServiceMaster by Compass",
+
     images: [
       {
         url: "https://smcfireandwater.com/homebodyimage.jpg",
@@ -47,6 +53,7 @@ export const metadata = {
         alt: "ServiceMaster by Compass — Spokane disaster restoration",
       },
     ],
+
     locale: "en_US",
     type: "website",
   },
@@ -54,6 +61,7 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -65,10 +73,13 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title:
       "Disaster Restoration Spokane WA | Water, Fire & Mold | ServiceMaster by Compass",
+
     description:
       "24/7 water, fire & mold restoration in Spokane, Spokane Valley & Coeur d’Alene.",
+
     images: ["https://smcfireandwater.com/homebodyimage.jpg"],
   },
 };
@@ -77,6 +88,7 @@ export default function Home() {
   return (
     <div>
       <SMCPopup />
+
       <KnowUsPanel />
 
       <Hero />
@@ -96,7 +108,7 @@ export default function Home() {
 
             <p>
               ServiceMaster by Compass is a full-service disaster restoration
-              contractor serving Spokane, Coeur d'Alene, and surrounding
+              contractor serving Spokane, Coeur d&apos;Alene, and surrounding
               communities. Founded by Fred Anderson and Steve Young, we are here
               to help when water, fire, mold, or other property damage disrupts
               your home or business.
@@ -129,7 +141,7 @@ export default function Home() {
             </div>
 
             <h2>
-              Comprehensive Restoration Services in Spokane & Coeur d'Alene
+              Comprehensive Restoration Services in Spokane & Coeur d&apos;Alene
             </h2>
 
             <strong>
@@ -143,7 +155,27 @@ export default function Home() {
               </li>
 
               <li className="arrow-list">
-                <a href="/residential">Fire & smoke damage restoration</a>
+                <a href="/residential/water-damage/burst-pipe-damage">
+                  Burst pipe water damage
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a href="/residential/water-damage/flood-damage">
+                  Flood damage restoration
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a href="/residential/water-damage/sewage-backup">
+                  Sewage backup cleanup
+                </a>
+              </li>
+
+              <li className="arrow-list">
+                <a href="/residential/fire-and-smoke">
+                  Fire & smoke damage restoration
+                </a>
               </li>
 
               <li className="arrow-list">
@@ -199,14 +231,16 @@ export default function Home() {
             </ul>
 
             <h2>
-              Emergency Water Damage & Flood Cleanup in Spokane & Coeur d'Alene
+              Emergency Water Damage & Flood Cleanup in Spokane & Coeur
+              d&apos;Alene
             </h2>
 
             <p>
-              Addressing water damage quickly is critical to protecting the
-              structure of your home or building. Standing water and hidden
-              moisture can spread into flooring, walls, insulation, and other
-              building materials, increasing the risk of additional damage.
+              Addressing <a href="/residential/water-damage">water damage</a>{" "}
+              quickly is critical to protecting the structure of your home or
+              building. Standing water and hidden moisture can spread into
+              flooring, walls, insulation, and other building materials,
+              increasing the risk of additional damage.
             </p>
 
             <p>
@@ -220,10 +254,44 @@ export default function Home() {
             </p>
 
             <p>
-              Whether you're dealing with flooding, a burst pipe, an appliance
-              leak, storm damage, or another water emergency, our Spokane and
-              Coeur d'Alene restoration team has the equipment and experience
-              needed to begin the drying process quickly. Learn more about our{" "}
+              Whether you&apos;re dealing with{" "}
+              <a href="/residential/water-damage/flood-damage">flooding</a>, a{" "}
+              <a href="/residential/water-damage/burst-pipe-damage">
+                burst pipe
+              </a>
+              , an appliance leak, storm damage, or another water emergency, our
+              Spokane and Coeur d&apos;Alene restoration team has the equipment
+              and experience needed to begin the drying process quickly.
+            </p>
+
+            <p>
+              Different water emergencies can require different restoration
+              methods.{" "}
+              <a href="/residential/water-damage/flood-damage">
+                Flood damage restoration
+              </a>{" "}
+              may involve extracting standing water and drying basements, crawl
+              spaces, flooring, walls, and other affected materials.{" "}
+              <a href="/residential/water-damage/burst-pipe-damage">
+                Burst pipe water damage
+              </a>{" "}
+              can spread rapidly through ceilings, insulation, drywall, and
+              flooring before the source is discovered.
+            </p>
+
+            <p>
+              Water from a{" "}
+              <a href="/residential/water-damage/sewage-backup">
+                sewage backup
+              </a>{" "}
+              requires additional precautions because contaminated water can
+              affect flooring, drywall, furnishings, and other porous materials.
+              Proper extraction, cleaning, sanitization, drying, and restoration
+              are especially important when sewage is involved.
+            </p>
+
+            <p>
+              Learn more about our{" "}
               <a href="/residential/water-damage">
                 residential water damage and flood restoration services
               </a>{" "}
@@ -244,7 +312,9 @@ export default function Home() {
 
             <p>
               Our{" "}
-              <a href="/residential">Spokane fire restoration professionals</a>{" "}
+              <a href="/residential/fire-and-smoke">
+                Spokane fire restoration professionals
+              </a>{" "}
               have extensive training and experience. Trust us to assess the
               scope of smoke and fire damage in your home or business and
               develop a plan for restoration.
@@ -255,6 +325,18 @@ export default function Home() {
               far beyond the immediately burned area. They can be devastating to
               a home or commercial property, making professional cleanup and
               restoration an important part of the recovery process.
+            </p>
+
+            <p>
+              Fire damage can also leave significant water damage behind.
+              Firefighting efforts, sprinkler systems, and suppression equipment
+              can saturate flooring, drywall, insulation, and other building
+              materials. Our{" "}
+              <a href="/residential/water-damage/flooding-from-fire">
+                fire-related water damage restoration
+              </a>{" "}
+              services address the standing water and trapped moisture that may
+              remain after a fire has been extinguished.
             </p>
 
             <h2>Professional Mold Remediation Services in Spokane</h2>
@@ -271,17 +353,25 @@ export default function Home() {
 
             <p>
               Mold is often connected to leaks, flooding, and unresolved
-              moisture problems. If your property has recently experienced water
-              damage, our{" "}
-              <a href="/residential/water-damage">
-                water damage restoration services
-              </a>{" "}
-              can help remove excess water and dry affected materials before
-              additional problems develop.
+              moisture problems. If your property has recently experienced{" "}
+              <a href="/residential/water-damage">water damage</a>, our
+              restoration team can help remove excess water and dry affected
+              materials before additional problems develop.
+            </p>
+
+            <p>
+              Flooding,{" "}
+              <a href="/residential/water-damage/burst-pipe-damage">
+                burst pipes
+              </a>
+              , and other plumbing failures can leave moisture trapped behind
+              walls or beneath flooring long after visible water is gone.
+              Addressing the original source of water damage is an important
+              part of reducing the conditions that allow mold growth to develop.
             </p>
 
             <div className="outline-box">
-              If you've experienced a disaster, call us at{" "}
+              If you&apos;ve experienced a disaster, call us at{" "}
               <a href="tel:5095355440">(509) 535-5440</a> or{" "}
               <a href="/contact">contact our disaster restoration experts</a>{" "}
               online now!
@@ -297,13 +387,14 @@ export default function Home() {
 
         <div className="home-section">
           <div className="column-one">
-            <h2>Damage Restoration Services in Spokane & Coeur d'Alene</h2>
+            <h2>Damage Restoration Services in Spokane & Coeur d&apos;Alene</h2>
 
             <p>
               No one is ever prepared for property damage. Emotions run high and
               lives are disrupted. When a disaster turns your world upside down,
               turn to ServiceMaster by Compass. We restore property after{" "}
-              <a href="/residential/water-damage">water damage and flooding</a>,
+              <a href="/residential/water-damage">water damage</a> and{" "}
+              <a href="/residential/water-damage/flood-damage">flooding</a>,
               fire damage, <a href="/residential/mold">mold</a>,{" "}
               <a href="/residential/weather">severe weather</a>, vandalism, and
               other structural damage.
@@ -338,6 +429,24 @@ export default function Home() {
               or{" "}
               <a className="underline-link" href="/contact">
                 request a disaster restoration estimate online
+              </a>
+              .
+            </p>
+
+            <p>
+              Our residential water damage team also handles specific loss types
+              including{" "}
+              <a href="/residential/water-damage/burst-pipe-damage">
+                burst pipe damage
+              </a>
+              ,{" "}
+              <a href="/residential/water-damage/flood-damage">flood damage</a>,{" "}
+              <a href="/residential/water-damage/sewage-backup">
+                sewage backups
+              </a>
+              , and{" "}
+              <a href="/residential/water-damage/flooding-from-fire">
+                water damage caused by fire suppression
               </a>
               .
             </p>
@@ -429,17 +538,17 @@ export default function Home() {
               <li className="arrow-list">Cataldo</li>
               <li className="arrow-list">Chattaroy</li>
               <li className="arrow-list">Cheney</li>
-              <li className="arrow-list">Coeur d'Alene</li>
+              <li className="arrow-list">Coeur d&apos;Alene</li>
               <li className="arrow-list">Colbert</li>
               <li className="arrow-list">Deer Park</li>
               <li className="arrow-list">Fairchild Air Force Base</li>
             </ul>
 
             <p>
-              From Spokane and Spokane Valley to Coeur d'Alene and communities
-              across the Inland Northwest, ServiceMaster by Compass provides
-              emergency restoration services for homes and businesses affected
-              by water, fire, mold, storms, and other property damage.
+              From Spokane and Spokane Valley to Coeur d&apos;Alene and
+              communities across the Inland Northwest, ServiceMaster by Compass
+              provides emergency restoration services for homes and businesses
+              affected by water, fire, mold, storms, and other property damage.
             </p>
 
             <div className="outline-box">
@@ -473,7 +582,7 @@ export default function Home() {
 
       <div className="black-box-home">
         <h2>
-          We know disaster comes with questions. We're here <br />
+          We know disaster comes with questions. We&apos;re here <br />
           for you.
         </h2>
 
@@ -483,7 +592,9 @@ export default function Home() {
       </div>
 
       <ServiceAreaMap />
+
       <HomeContact />
+
       <AccredCarousel />
     </div>
   );

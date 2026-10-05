@@ -179,12 +179,70 @@ export default function InsuranceEducation() {
               <li className="arrow-list">Odor control techniques</li>
             </ul>
 
+            <p>
+              These principles apply across many common residential water
+              losses. Our{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage restoration services
+              </a>{" "}
+              address extraction, structural drying, dehumidification, and
+              restoration after water enters a home.
+            </p>
+
+            <p>
+              The source of the loss can significantly affect the mitigation
+              process. A{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe
+              </a>{" "}
+              may send clean water rapidly through walls, ceilings, insulation,
+              and flooring, while{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flood damage
+              </a>{" "}
+              may involve standing water across basements, crawl spaces, and
+              larger areas of the structure.
+            </p>
+
+            <p>
+              Water category also matters. Losses involving a{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup
+              </a>{" "}
+              require additional precautions because contaminated water can
+              affect porous building materials and introduce biological hazards
+              that are not present in a typical clean-water loss.
+            </p>
+
             <strong>Subrogation Reporting on Mitigation Claims</strong>
 
             <p>
               This course is designed to help you control claims costs through
               subrogation investigation and reporting, plus teach you the value
               of mitigation first responders in achieving this objective.
+            </p>
+
+            <p>
+              Understanding the origin of a water loss can also help establish a
+              clearer record during mitigation. Plumbing failures such as{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage
+              </a>{" "}
+              often have a distinct source, while flooding and water intrusion
+              can involve several contributing conditions that need to be
+              documented during the restoration process.
             </p>
 
             <h3>Mold-Related Courses</h3>
@@ -212,6 +270,26 @@ export default function InsuranceEducation() {
                 of personal protective equipment (PPE)
               </li>
             </ul>
+
+            <p>
+              Mold problems are frequently connected to unresolved moisture.
+              Leaks,{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flooding
+              </a>
+              , and{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipes
+              </a>{" "}
+              can leave moisture behind walls, underneath flooring, and inside
+              insulation even after visible water has been removed.
+            </p>
 
             <strong>Mold Remediation Removal and Containment</strong>
 
@@ -268,6 +346,20 @@ export default function InsuranceEducation() {
               </li>
             </ul>
 
+            <p>
+              Fire losses frequently involve more than smoke and soot.
+              Firefighting efforts and sprinkler systems can introduce a
+              substantial amount of water into the structure. Our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flooding-from-fire"
+              >
+                fire-related water damage restoration
+              </a>{" "}
+              services address standing water, saturated materials, and hidden
+              moisture left behind after fire suppression.
+            </p>
+
             <h3>Odor-Related Courses</h3>
 
             <strong>Odor Mitigation</strong>
@@ -281,6 +373,23 @@ export default function InsuranceEducation() {
               which in many instances can reduce costs or additional claims
               expenses, expedite the claims process, and provide better support
               throughout recovery.
+            </p>
+
+            <p>
+              Odor can also help indicate the type of property loss involved.
+              Persistent musty odors can accompany unresolved{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage
+              </a>
+              , while a{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup
+              </a>{" "}
+              can create both contamination and significant odor concerns that
+              require specialized cleanup.
             </p>
 
             <h3>Packout-Related Courses</h3>
@@ -309,6 +418,20 @@ export default function InsuranceEducation() {
               property loss situation.
             </p>
 
+            <p>
+              Water losses can be especially time-sensitive for furniture and
+              wood surfaces.{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                Flooding
+              </a>{" "}
+              and plumbing failures can expose furniture to standing water,
+              elevated humidity, and moisture migration that may increase the
+              extent of the loss if mitigation is delayed.
+            </p>
+
             <h3>Legal-Related Courses</h3>
 
             <strong>
@@ -333,6 +456,19 @@ export default function InsuranceEducation() {
               first step in understanding how to respond to the customer&apos;s
               needs. How these types of losses are handled greatly impacts
               customer retention for the insurance company.
+            </p>
+
+            <p>
+              Some water losses also involve biological contamination. A{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                residential sewage backup
+              </a>{" "}
+              requires different safety and cleanup procedures than a typical
+              plumbing leak because contaminated water can affect both the
+              structure and its contents.
             </p>
 
             <h3>Hoarding-Related Courses</h3>
@@ -419,6 +555,7 @@ export default function InsuranceEducation() {
 
           <aside className="column-two" aria-label="Insurance services">
             <SideBarBox title="Insurance" links={Links} list={List} />
+
             <UncertainTo />
           </aside>
         </div>
