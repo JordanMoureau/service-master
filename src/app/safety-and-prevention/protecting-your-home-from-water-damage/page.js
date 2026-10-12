@@ -122,12 +122,15 @@ export default function ProtectingYourHomeFromWaterDamage() {
             <h3>Simple Steps to Reduce the Risk of Costly Water Damage</h3>
 
             <p>
-              Water damage is one of the most common and expensive problems
-              homeowners face. From slow plumbing leaks to overflowing
-              appliances and storm-driven intrusion, unwanted water can stain
-              walls, warp flooring, weaken structures, and create mold-friendly
-              conditions in as little as 24–48 hours. Proactive prevention is
-              one of the best ways to protect both your home and your budget.
+              <a className="underline-link" href="/residential/water-damage">
+                Water damage
+              </a>{" "}
+              is one of the most common and expensive problems homeowners face.
+              From slow plumbing leaks to overflowing appliances and
+              storm-driven intrusion, unwanted water can stain walls, warp
+              flooring, weaken structures, and create mold-friendly conditions
+              in as little as 24–48 hours. Proactive prevention is one of the
+              best ways to protect both your home and your budget.
             </p>
 
             <p>
@@ -187,8 +190,24 @@ export default function ProtectingYourHomeFromWaterDamage() {
               </li>
 
               <li className="arrow-list">
-                <strong>Frozen or burst pipes</strong> during cold snaps and{" "}
-                <strong>sewer backups</strong> during heavy storms.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/burst-pipe-damage"
+                  >
+                    Frozen or burst pipes
+                  </a>
+                </strong>{" "}
+                during cold snaps and{" "}
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage/sewage-backup"
+                  >
+                    sewer backups
+                  </a>
+                </strong>{" "}
+                during heavy storms.
               </li>
             </ul>
 
@@ -312,7 +331,16 @@ export default function ProtectingYourHomeFromWaterDamage() {
               thaws and water begins to pour out.
             </p>
 
-            <p>To reduce the risk of frozen or burst pipes:</p>
+            <p>
+              To reduce the risk of{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                frozen or burst pipes
+              </a>
+              :
+            </p>
 
             <ul>
               <li className="arrow-list">
@@ -390,9 +418,14 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </ul>
 
             <p>
-              Good exterior maintenance makes it much less likely that heavy
-              rain or snowmelt will find its way into your basement or
-              lower-level living spaces.
+              Good exterior maintenance makes it much less likely that{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                heavy rain or snowmelt
+              </a>{" "}
+              will find its way into your basement or lower-level living spaces.
             </p>
 
             <h2>SEASONAL WATER DAMAGE PREPARATION</h2>
@@ -529,9 +562,23 @@ export default function ProtectingYourHomeFromWaterDamage() {
 
             <p>
               Many homeowners policies cover{" "}
-              <strong>sudden and accidental</strong> water damage, such as a
-              burst pipe or appliance failure. However,{" "}
-              <strong>gradual leaks, poor maintenance, and flooding</strong>{" "}
+              <strong>sudden and accidental</strong> water damage, such as a{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe
+              </a>{" "}
+              or appliance failure. However,{" "}
+              <strong>
+                gradual leaks, poor maintenance, and{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  flooding
+                </a>
+              </strong>{" "}
               from outside sources may be excluded or require additional
               coverage.
             </p>
@@ -543,8 +590,14 @@ export default function ProtectingYourHomeFromWaterDamage() {
 
             <ul>
               <li className="arrow-list">
-                Whether sewer or drain backup is covered or requires an
-                endorsement.
+                Whether{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/sewage-backup"
+                >
+                  sewer or drain backup
+                </a>{" "}
+                is covered or requires an endorsement.
               </li>
 
               <li className="arrow-list">How mold remediation is handled.</li>
@@ -608,8 +661,11 @@ export default function ProtectingYourHomeFromWaterDamage() {
             </p>
 
             <p>
-              Whether you&apos;re planning ahead or dealing with active water
-              damage,{" "}
+              Whether you&apos;re planning ahead or dealing with active{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage
+              </a>
+              ,{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>{" "}

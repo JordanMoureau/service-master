@@ -122,9 +122,15 @@ export default function SewerBackupSafety() {
             <h3>What To Do Before, During, and After a Sewer Backup</h3>
 
             <p>
-              Few things turn a good day upside down faster than discovering
-              sewage backing up into your home. It&apos;s messy, it&apos;s
-              overwhelming, and it&apos;s a serious health risk. At{" "}
+              Few things turn a good day upside down faster than discovering{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backing up into your home
+              </a>
+              . It&apos;s messy, it&apos;s overwhelming, and it&apos;s a serious
+              health risk. At{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>
@@ -158,12 +164,18 @@ export default function SewerBackupSafety() {
             <h3>What Is a Sewer Backup and Why Does It Happen?</h3>
 
             <p>
-              A sewer backup happens when wastewater can&apos;t flow properly
-              away from your home and instead reverses direction, coming up
-              through floor drains, toilets, tubs, or lower-level fixtures. This
-              is considered Category 3 “black water”—the highest contamination
-              level—because it can contain bacteria, viruses, parasites, and
-              chemicals.
+              A{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewer backup
+              </a>{" "}
+              happens when wastewater can&apos;t flow properly away from your
+              home and instead reverses direction, coming up through floor
+              drains, toilets, tubs, or lower-level fixtures. This is considered
+              Category 3 “black water”—the highest contamination level—because
+              it can contain bacteria, viruses, parasites, and chemicals.
             </p>
 
             <p>Common causes we see in Spokane-area homes include:</p>
@@ -185,8 +197,14 @@ export default function SewerBackupSafety() {
               </li>
 
               <li className="arrow-list">
-                <strong>Stormwater overload:</strong> Heavy rain or snowmelt can
-                overwhelm municipal lines and push sewage backward.
+                <strong>Stormwater overload:</strong>{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  Heavy rain or snowmelt
+                </a>{" "}
+                can overwhelm municipal lines and push sewage backward.
               </li>
 
               <li className="arrow-list">
@@ -322,8 +340,15 @@ export default function SewerBackupSafety() {
             <h3>When to Call Professional Sewer Backup Cleanup Services</h3>
 
             <p>
-              Because sewer backups involve Category 3 black water, professional
-              cleanup is recommended in almost every case—especially when:
+              Because{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewer backups
+              </a>{" "}
+              involve Category 3 black water, professional cleanup is
+              recommended in almost every case—especially when:
             </p>
 
             <ul>
@@ -363,9 +388,12 @@ export default function SewerBackupSafety() {
             <h3>Why Sewer Backups Are Treated as “Black Water”</h3>
 
             <p>
-              Not all water damage is equal. Clean water from a broken supply
-              line is very different from a sewer backup that contains waste.
-              Category 3 black water:
+              Not all{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage
+              </a>{" "}
+              is equal. Clean water from a broken supply line is very different
+              from a sewer backup that contains waste. Category 3 black water:
             </p>
 
             <ul>
@@ -552,7 +580,13 @@ export default function SewerBackupSafety() {
             <h3>Professional Sewer Backup Cleanup &amp; Restoration</h3>
 
             <p>
-              You should bring in professional water damage restoration services
+              You should bring in professional{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewer backup cleanup and restoration services
+              </a>{" "}
               any time a sewer backup involves:
             </p>
 
@@ -714,7 +748,10 @@ export default function SewerBackupSafety() {
             <p>
               And if the worst has already happened, you don&apos;t have to
               handle it alone.{" "}
-              <a className="underline-link" href="/">
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
                 ServiceMaster by Compass
               </a>{" "}
               is ready to respond with 24/7 emergency sewer backup cleanup,

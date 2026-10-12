@@ -170,8 +170,22 @@ export default function WeatherDamagePrevention() {
               </li>
 
               <li className="arrow-list">
-                <strong>Water Damage:</strong> Foundation seepage, basement
-                flooding, roof leaks, and runoff entry.
+                <strong>
+                  <a
+                    className="underline-link"
+                    href="/residential/water-damage"
+                  >
+                    Water Damage:
+                  </a>
+                </strong>{" "}
+                Foundation seepage,{" "}
+                <a
+                  className="underline-link"
+                  href="/residential/water-damage/flood-damage"
+                >
+                  basement flooding
+                </a>
+                , roof leaks, and runoff entry.
               </li>
 
               <li className="arrow-list">
@@ -260,9 +274,12 @@ export default function WeatherDamagePrevention() {
             <h3>Foundation, Basement &amp; Surface Water Protection</h3>
 
             <p>
-              Weather-driven water intrusion often begins outside the home—poor
-              drainage, clogged gutters, or saturated soil pushing moisture into
-              basements or crawlspaces.
+              Weather-driven{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage
+              </a>{" "}
+              often begins outside the home—poor drainage, clogged gutters, or
+              saturated soil pushing moisture into basements or crawlspaces.
             </p>
 
             <p>High-impact water-prevention steps include:</p>
@@ -295,8 +312,14 @@ export default function WeatherDamagePrevention() {
             </ul>
 
             <p>
-              These steps dramatically reduce your risk of basement flooding and
-              long-term foundation damage, especially during spring melt and
+              These steps dramatically reduce your risk of{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                basement flooding
+              </a>{" "}
+              and long-term foundation damage, especially during spring melt and
               heavy downpours.
             </p>
 
@@ -325,6 +348,19 @@ export default function WeatherDamagePrevention() {
                 Clear yard drains after storms to prevent flooding.
               </li>
             </ul>
+
+            <p>
+              Severe storms can also overwhelm drainage and sewer systems. If
+              wastewater backs up through floor drains, toilets, or other
+              fixtures, avoid contact with the affected water and see our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage backup cleanup and restoration
+              </a>{" "}
+              information for the appropriate response.
+            </p>
 
             <h2>REDUCING FIRE DAMAGE RISK</h2>
 
@@ -468,6 +504,18 @@ export default function WeatherDamagePrevention() {
                 Prepare for extreme heat or freezing temperatures
               </li>
             </ul>
+
+            <p>
+              Freezing weather can also create plumbing losses inside the home.
+              If a frozen line cracks and releases water as it thaws, see our{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe water damage restoration
+              </a>{" "}
+              information for what to do next.
+            </p>
 
             <p>
               Whenever you’re unsure whether damage is cosmetic or structural, a

@@ -122,10 +122,17 @@ export default function BurstPipeRepair() {
             <h3>What To Do When a Pipe Bursts in Your Spokane Home</h3>
 
             <p>
-              A burst pipe isn’t just a plumbing problem—it&apos;s an emergency
-              that can flood a home in minutes. Water rushes into walls,
-              ceilings, and flooring, causing structural damage and creating
-              ideal conditions for mold within 24–48 hours. At{" "}
+              A{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe
+              </a>{" "}
+              isn’t just a plumbing problem—it&apos;s an emergency that can
+              flood a home in minutes. Water rushes into walls, ceilings, and
+              flooring, causing structural damage and creating ideal conditions
+              for mold within 24–48 hours. At{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>
@@ -137,9 +144,12 @@ export default function BurstPipeRepair() {
             <p>
               This guide walks you through the immediate emergency steps, the
               safest temporary fixes, how permanent repairs are handled for
-              copper, PEX, and PVC pipes, and what to expect during water damage
-              restoration. We also cover prevention strategies so you’re less
-              likely to face this nightmare again.
+              copper, PEX, and PVC pipes, and what to expect during{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage restoration
+              </a>
+              . We also cover prevention strategies so you’re less likely to
+              face this nightmare again.
             </p>
 
             <div className="yellow-box">
@@ -336,9 +346,15 @@ export default function BurstPipeRepair() {
             <h3>Why Fast Drying Matters</h3>
 
             <p>
-              Burst pipes cause more damage than most homeowners expect. Water
-              travels behind walls, under flooring, and into insulation. Mold
-              grows quickly if drying isn’t immediate.
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                Burst pipes cause more damage
+              </a>{" "}
+              than most homeowners expect. Water travels behind walls, under
+              flooring, and into insulation. Mold grows quickly if drying isn’t
+              immediate.
             </p>
 
             <ul>
@@ -362,8 +378,12 @@ export default function BurstPipeRepair() {
             </ul>
 
             <p>
-              Professional drying reduces long-term structural damage and is
-              often required for insurance-covered restoration.
+              Professional{" "}
+              <a className="underline-link" href="/residential/water-damage">
+                water damage drying and restoration
+              </a>{" "}
+              reduces long-term structural damage and is often required for
+              insurance-covered restoration.
             </p>
 
             <h2>INSURANCE CLAIM HELP</h2>
@@ -438,8 +458,14 @@ export default function BurstPipeRepair() {
             </p>
 
             <p>
-              Whether you&apos;re facing an active burst pipe or want to
-              strengthen your home&apos;s defenses,{" "}
+              Whether you&apos;re facing an active{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                burst pipe
+              </a>{" "}
+              or want to strengthen your home&apos;s defenses,{" "}
               <a className="underline-link" href="/">
                 ServiceMaster by Compass
               </a>{" "}

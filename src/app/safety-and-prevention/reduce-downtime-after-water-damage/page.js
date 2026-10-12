@@ -46,6 +46,7 @@ const List = [
 ];
 
 // --- SEO + JSON-LD ---
+
 const canonical =
   "https://smcfireandwater.com/safety-and-prevention/reduce-downtime-after-water-damage";
 
@@ -111,6 +112,7 @@ export const metadata = {
 };
 
 // JSON-LD
+
 export const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -253,6 +255,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
         <div className="home-section">
           <div className="column-one">
             <h1>Commercial Water Damage in Spokane</h1>
+
             <h2>
               HOW BUSINESSES CAN REDUCE DOWNTIME AFTER A FLOOD, LEAK, OR WATER
               DAMAGE EVENT
@@ -281,10 +284,13 @@ export default function ReduceDowntimeAfterWaterDamage() {
                 To reduce downtime after commercial water damage, act quickly:
                 stop the source if possible, keep people away from unsafe areas,
                 document the damage, protect critical equipment and records, and
-                call a commercial water damage restoration team for extraction,
-                drying, and moisture monitoring. The faster the response, the
-                easier it is to contain affected areas and keep more of the
-                business functional.
+                call a{" "}
+                <a className="underline-link" href="/commercial/water-damage">
+                  commercial water damage restoration team
+                </a>{" "}
+                for extraction, drying, and moisture monitoring. The faster the
+                response, the easier it is to contain affected areas and keep
+                more of the business functional.
               </p>
             </div>
 
@@ -324,21 +330,28 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Fast Response Helps Reduce:</h3>
+
             <ul>
               <li className="arrow-list">Business interruption</li>
+
               <li className="arrow-list">
                 Tenant complaints and access issues
               </li>
+
               <li className="arrow-list">
                 Damage to flooring, walls, and fixtures
               </li>
+
               <li className="arrow-list">
                 Loss of inventory or stored materials
               </li>
+
               <li className="arrow-list">Equipment and document exposure</li>
+
               <li className="arrow-list">
                 Odor and lingering moisture problems
               </li>
+
               <li className="arrow-list">
                 The amount of space that needs to be closed off
               </li>
@@ -362,11 +375,18 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Plumbing Leaks and Burst Pipes</h3>
+
             <p>
               A broken pipe, failed fitting, or supply line leak can release
               water into offices, bathrooms, break rooms, utility areas, shared
-              walls, and storage spaces. In cold weather, frozen pipes can
-              create sudden water damage when they thaw.
+              walls, and storage spaces. In cold weather,{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/burst-pipe-damage"
+              >
+                frozen pipes can create sudden water damage
+              </a>{" "}
+              when they thaw.
             </p>
 
             <p>
@@ -381,6 +401,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Sprinkler Discharge</h3>
+
             <p>
               Sprinkler systems can release a significant amount of water. Even
               when the system works as intended, the water itself can affect
@@ -389,6 +410,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Roof Leaks and Storm Water</h3>
+
             <p>
               Roof leaks often affect ceiling systems, insulation, light
               fixtures, upper-level offices, and common areas. After heavy rain,
@@ -397,6 +419,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Appliance, Water Heater, and Fixture Failures</h3>
+
             <p>
               Restaurants, offices, salons, medical spaces, schools, retail
               stores, and multi-tenant properties may all have appliances or
@@ -406,12 +429,18 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Basement, Storage, and Lower-Level Water Intrusion</h3>
+
             <p>
               Commercial basements and lower-level spaces may be vulnerable to
-              foundation seepage, sump pump failure, drainage issues, or water
-              intrusion after storms and snowmelt. These areas often store
-              records, equipment, inventory, or supplies, which makes quick
-              response especially important.
+              foundation seepage, sump pump failure, drainage issues, or{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                water intrusion after storms and snowmelt
+              </a>
+              . These areas often store records, equipment, inventory, or
+              supplies, which makes quick response especially important.
             </p>
 
             <p>
@@ -435,15 +464,24 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>1. Protect People First</h3>
+
             <p>
               Keep employees, customers, tenants, and vendors away from affected
               areas. Water can create slip hazards, electrical hazards, ceiling
               hazards, and contamination concerns. If there is any risk from
-              electricity, sewage, or unstable materials, block access and call
-              for professional help.
+              electricity,{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                sewage
+              </a>
+              , or unstable materials, block access and call for professional
+              help.
             </p>
 
             <h3>2. Stop the Water Source if Possible</h3>
+
             <p>
               Shut off the water at the fixture, equipment connection, branch
               line, or main shutoff if you can do so safely. In a commercial
@@ -463,6 +501,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>3. Document the Damage</h3>
+
             <p>
               Take photos and videos of the source, affected rooms, flooring,
               walls, ceilings, equipment, inventory, and any visible water. Keep
@@ -471,6 +510,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>4. Identify Critical Business Areas</h3>
+
             <p>
               Decide which areas matter most for operations: customer-facing
               spaces, production areas, records, equipment rooms, inventory,
@@ -480,6 +520,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>5. Call for Commercial Water Extraction and Drying</h3>
+
             <p>
               Commercial water damage usually needs more than towels, fans, and
               a mop bucket with heroic ambitions. Professional extraction,
@@ -496,6 +537,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Moisture Inspection and Mapping</h3>
+
             <p>
               Moisture mapping helps identify where water traveled, what
               materials were affected, and whether moisture is hiding behind
@@ -504,6 +546,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Water Extraction</h3>
+
             <p>
               Removing standing water quickly helps limit how deeply moisture
               moves into building materials. In commercial spaces, fast
@@ -512,6 +555,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Drying and Dehumidification</h3>
+
             <p>
               Air movers and dehumidifiers are used to dry affected areas. In
               some cases, containment or targeted drying can help separate
@@ -519,6 +563,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Moisture Monitoring</h3>
+
             <p>
               Drying should be monitored with moisture readings so decisions are
               based on actual conditions, not vibes. Vibes are for playlists,
@@ -526,6 +571,7 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Coordination With Property Managers and Stakeholders</h3>
+
             <p>
               Commercial water damage often involves more than one decision
               maker. Building owners, tenants, managers, insurance contacts, and
@@ -543,23 +589,30 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Questions to Ask Early</h3>
+
             <ul>
               <li className="arrow-list">
                 Is the water clean, contaminated, or unknown?
               </li>
+
               <li className="arrow-list">
                 Are there electrical hazards or ceiling hazards?
               </li>
+
               <li className="arrow-list">Which rooms or zones are affected?</li>
+
               <li className="arrow-list">
                 Can customers, tenants, or staff safely access unaffected areas?
               </li>
+
               <li className="arrow-list">
                 Can equipment or inventory be moved out of the affected zone?
               </li>
+
               <li className="arrow-list">
                 Will drying equipment interfere with operations?
               </li>
+
               <li className="arrow-list">
                 Are there health, code, lease, or industry requirements to
                 consider?
@@ -591,25 +644,32 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Property Manager Checklist</h3>
+
             <ul>
               <li className="arrow-list">
                 Identify and stop the water source if possible.
               </li>
+
               <li className="arrow-list">
                 Restrict access to unsafe or affected areas.
               </li>
+
               <li className="arrow-list">
                 Notify tenants or occupants who may be affected.
               </li>
+
               <li className="arrow-list">
                 Take photos and document affected spaces.
               </li>
+
               <li className="arrow-list">
                 Protect records, equipment, and critical building systems.
               </li>
+
               <li className="arrow-list">
                 Contact a commercial water restoration provider.
               </li>
+
               <li className="arrow-list">
                 Keep communication centralized so updates do not scatter into
                 chaos confetti.
@@ -628,19 +688,24 @@ export default function ReduceDowntimeAfterWaterDamage() {
                 Do not let people walk through standing water near electrical
                 systems.
               </li>
+
               <li className="arrow-list">
                 Do not assume the damage is limited to the visible wet area.
               </li>
+
               <li className="arrow-list">
                 Do not use regular fans if water may be contaminated.
               </li>
+
               <li className="arrow-list">
                 Do not throw away damaged materials before documenting them.
               </li>
+
               <li className="arrow-list">
                 Do not reopen affected areas before safety and moisture concerns
                 are addressed.
               </li>
+
               <li className="arrow-list">
                 Do not wait overnight if water has reached walls, flooring,
                 ceilings, or equipment.
@@ -668,30 +733,38 @@ export default function ReduceDowntimeAfterWaterDamage() {
             </p>
 
             <h3>Business Water Damage Preparation Checklist</h3>
+
             <ul>
               <li className="arrow-list">
                 Label water shutoffs and make sure key staff know where they
                 are.
               </li>
+
               <li className="arrow-list">
                 Keep emergency contacts accessible after hours.
               </li>
+
               <li className="arrow-list">
                 Store important documents off the floor or digitally.
               </li>
+
               <li className="arrow-list">
                 Keep inventory and supplies elevated where possible.
               </li>
+
               <li className="arrow-list">
                 Inspect plumbing, water heaters, restrooms, and break room
                 appliances regularly.
               </li>
+
               <li className="arrow-list">
                 Maintain gutters, roof drainage, and exterior grading.
               </li>
+
               <li className="arrow-list">
                 Know which areas must be restored first to resume operations.
               </li>
+
               <li className="arrow-list">
                 Review insurance coverage before a loss, not while standing in
                 wet socks.
@@ -722,8 +795,21 @@ export default function ReduceDowntimeAfterWaterDamage() {
               Commercial water damage coverage depends on your policy, the cause
               of the damage, the type of property, and the affected materials or
               business losses. Sudden plumbing failures may be handled
-              differently than long-term leaks, exterior flooding, drain backup,
-              or maintenance-related issues.
+              differently than long-term leaks, exterior{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/flood-damage"
+              >
+                flooding
+              </a>
+              ,{" "}
+              <a
+                className="underline-link"
+                href="/residential/water-damage/sewage-backup"
+              >
+                drain backup
+              </a>
+              , or maintenance-related issues.
             </p>
 
             <p>
