@@ -40,6 +40,21 @@ const insuranceItems = [
   { href: "/insurance/education", label: "Continuing Education Classes" },
 ];
 
+const serviceAreaItems = [
+  {
+    href: "/service-area/service-master-spokane",
+    label: "Spokane, WA",
+  },
+  {
+    href: "/service-area/service-master-cda",
+    label: "Coeur d'Alene, ID",
+  },
+  {
+    href: "/service-area/service-master-hayden",
+    label: "Hayden, ID",
+  },
+];
+
 const whyUsItems = [
   { href: "/why-us/about-us", label: "About Us" },
   { href: "/why-us/testimonials", label: "Testimonials" },
@@ -136,6 +151,13 @@ export default function Nav() {
               href="/insurance"
               items={insuranceItems}
             />
+
+            <Dropdown
+              label="Service Areas"
+              href="/service-area"
+              items={serviceAreaItems}
+            />
+
             <Dropdown label="Why Us" href="/why-us" items={whyUsItems} />
             <Link href="/payments" className="nav-links">
               Payments

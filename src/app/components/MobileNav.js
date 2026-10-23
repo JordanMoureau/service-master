@@ -45,9 +45,15 @@ export default function MobileNav() {
             <Link href="/insurance" onClick={closeMenu}>
               Insurance
             </Link>
+
+            <Link href="/service-area" onClick={closeMenu}>
+              Service Area
+            </Link>
+
             <Link href="/why-us" onClick={closeMenu}>
               Why Us
             </Link>
+
             <Link href="/payments" onClick={closeMenu}>
               Payments
             </Link>

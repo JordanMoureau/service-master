@@ -107,7 +107,7 @@
   justify-content: flex-end;
   padding: 1rem 1.5rem;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 
 /* the Link itself */
@@ -125,7 +125,7 @@
   border: 0.4rem solid transparent; /* yellow L-frame on hover */
   border-left: 0;
   border-bottom: 0;
-  padding: 0.4rem 0.7rem 0.7rem 1.06rem;
+  padding: 0.2rem 0.4rem 0.4rem 0.8rem;
 
   transition: border-color 0.4s ease;
 }
@@ -255,7 +255,7 @@
 }
 
 /* breakpoints */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .header {
     display: none;
   }
