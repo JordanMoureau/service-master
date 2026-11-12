@@ -13,9 +13,7 @@ export default function WaterDamageV2() {
     <div className="lead-container">
       <main className="for-disasters">
         <header>
-          <h1>
-            Spokane’s trusted water-damage team — on-site in just a few hours
-          </h1>
+          <h1>Spokane’s trusted water-damage team — on-site within an hour</h1>
           <p>Stop damage, prevent mold, and get your life back tonight.</p>
           <div>
             {/* Swap for real review widget */}
