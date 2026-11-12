@@ -42,7 +42,7 @@ export default function WeCan() {
                 (509) 535-5440
               </a>{" "}
               to speak to a disaster-response professional. We’ll explain
-              exactly what to do and dispatch a tech within a few hours.
+              exactly what to do and dispatch a tech within an hour.
             </h2>
           </section>
         </div>
