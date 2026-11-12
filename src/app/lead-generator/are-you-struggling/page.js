@@ -66,7 +66,7 @@ export default function AreYouStruggling() {
           <p>
             <strong>Call now</strong> to speak with a disaster-response pro.
             We’ll tell you exactly what to do next and dispatch a{" "}
-            <strong>tech ASAP</strong>.
+            <strong>tech ASAP</strong>
           </p>
 
           <a
